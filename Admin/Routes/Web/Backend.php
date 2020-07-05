@@ -182,4 +182,27 @@ return [
             ],
         ],
     ],
+
+    '^.*/accounting/costcenter/list.*$' => [
+        [
+            'dest' => '\Modules\Accounting\Controller\BackendController:viewCostCenterList',
+            'verb' => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::MODULE_NAME,
+                'type'  => PermissionType::READ,
+                'state' => PermissionState::COST_CENTER,
+            ],
+        ],
+    ],
+    '^.*/accounting/costobject/list.*$' => [
+        [
+            'dest' => '\Modules\Accounting\Controller\BackendController:viewCostObjectList',
+            'verb' => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::MODULE_NAME,
+                'type'  => PermissionType::READ,
+                'state' => PermissionState::COST_OBJECT,
+            ],
+        ],
+    ],
 ];

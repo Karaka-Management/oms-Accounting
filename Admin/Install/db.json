@@ -32,6 +32,129 @@
             }
         }
     },
+
+    "accounting_costcenter": {
+        "name": "accounting_costcenter",
+        "fields": {
+            "accounting_costcenter_id": {
+                "name": "accounting_costcenter_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_costcenter_code": {
+                "name": "accounting_costcenter_code",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costcenter_parent": {
+                "name": "accounting_costcenter_parent",
+                "type": "INT",
+                "default": null,
+                "null": true
+            }
+        }
+    },
+    "accounting_costcenter_l11n": {
+        "name": "accounting_costcenter_l11n",
+        "fields": {
+            "accounting_costcenter_l11n_id": {
+                "name": "accounting_costcenter_l11n_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_costcenter_l11n_name": {
+                "name": "accounting_costcenter_l11n_name",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costcenter_l11n_description": {
+                "name": "accounting_costcenter_l11n_description",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costcenter_l11n_costcenter": {
+                "name": "accounting_costcenter_l11n_costcenter",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_costcenter",
+                "foreignKey": "accounting_costcenter_id"
+            },
+            "accounting_costcenter_l11n_language": {
+                "name": "accounting_costcenter_l11n_language",
+                "type": "VARCHAR(2)",
+                "default": null,
+                "null": true,
+                "foreignTable": "language",
+                "foreignKey": "language_639_1"
+            }
+        }
+    },
+
+    "accounting_costobject": {
+        "name": "accounting_costobject",
+        "fields": {
+            "accounting_costobject_id": {
+                "name": "accounting_costobject_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_costobject_code": {
+                "name": "accounting_costobject_code",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costobject_parent": {
+                "name": "accounting_costobject_parent",
+                "type": "INT",
+                "default": null,
+                "null": true
+            }
+        }
+    },
+    "accounting_costobject_l11n": {
+        "name": "accounting_costobject_l11n",
+        "fields": {
+            "accounting_costobject_l11n_id": {
+                "name": "accounting_costobject_l11n_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_costobject_l11n_name": {
+                "name": "accounting_costobject_l11n_name",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costobject_l11n_description": {
+                "name": "accounting_costobject_l11n_description",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_costobject_l11n_costobject": {
+                "name": "accounting_costobject_l11n_costobject",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_costobject",
+                "foreignKey": "accounting_costobject_id"
+            },
+            "accounting_costobject_l11n_language": {
+                "name": "accounting_costobject_l11n_language",
+                "type": "VARCHAR(2)",
+                "default": null,
+                "null": true,
+                "foreignTable": "language",
+                "foreignKey": "language_639_1"
+            }
+        }
+    },
+
     "accounting_batch": {
         "name": "accounting_batch",
         "fields": {

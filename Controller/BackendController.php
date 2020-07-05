@@ -14,6 +14,8 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Controller;
 
+use Modules\Accounting\Models\CostCenterMapper;
+use Modules\Accounting\Models\CostObjectMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
@@ -192,7 +194,7 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Accounting/Theme/Backend/gl-list');
-        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response));
+        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response));
 
         return $view;
     }
@@ -213,7 +215,7 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Accounting/Theme/Backend/gl-create');
-        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response));
+        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response));
 
         return $view;
     }
@@ -234,7 +236,83 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Accounting/Theme/Backend/gl-profile');
+        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response));
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behaviour.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param mixed            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewCostCenterList(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-list');
         $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response));
+
+        if ($request->getData('ptype') === '-') {
+            $view->setData('costcenter',
+                CostCenterMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
+            );
+        } elseif ($request->getData('ptype') === '+') {
+            $view->setData('costcenter',
+                CostCenterMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
+            );
+        } else {
+            $view->setData('costcenter',
+                CostCenterMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getAfterPivot(0, null, 25)
+            );
+        }
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behaviour.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param mixed            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewCostObjectList(RequestAbstract $request, ResponseAbstract $response, $data = null) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-list');
+        $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response));
+
+        if ($request->getData('ptype') === '-') {
+            $view->setData('costobject',
+                CostObjectMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
+            );
+        } elseif ($request->getData('ptype') === '+') {
+            $view->setData('costobject',
+                CostObjectMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
+            );
+        } else {
+            $view->setData('costobject',
+                CostObjectMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
+                    ::getAfterPivot(0, null, 25)
+            );
+        }
 
         return $view;
     }
