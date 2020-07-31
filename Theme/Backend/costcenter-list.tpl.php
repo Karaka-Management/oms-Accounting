@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costcenter = $this->getData('costcenter');
 
-$previous = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=-';
-$next     = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=+';
+$previous = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=p';
+$next     = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=n';
 
 echo $this->getData('nav')->render(); ?>
 <div class="row">

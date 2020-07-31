@@ -259,12 +259,12 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-list');
         $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response));
 
-        if ($request->getData('ptype') === '-') {
+        if ($request->getData('ptype') === 'p') {
             $view->setData('costcenter',
                 CostCenterMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
                     ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
             );
-        } elseif ($request->getData('ptype') === '+') {
+        } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costcenter',
                 CostCenterMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
                     ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
@@ -297,12 +297,12 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-list');
         $view->addData('nav', $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response));
 
-        if ($request->getData('ptype') === '-') {
+        if ($request->getData('ptype') === 'p') {
             $view->setData('costobject',
                 CostObjectMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
                     ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
             );
-        } elseif ($request->getData('ptype') === '+') {
+        } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costobject',
                 CostObjectMapper::withConditional('language', $response->getHeader()->getL11n()->getLanguage())
                     ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
