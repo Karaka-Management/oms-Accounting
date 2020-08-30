@@ -29,10 +29,10 @@ $footerView->setResults(1);
                 <form>
                     <table class="layout wf-100">
                         <tr>
-                            <td><label for="iAccountStart"><?= $this->getHtml('Account') ?></label>
-                            <td><label for="iAccountStart"><?= $this->getHtml('CostCenter') ?>
-                            <td><label for="iAccountStart"><?= $this->getHtml('CostObject') ?>
-                            <td><label for="iAccountStart"><?= $this->getHtml('EntryDate') ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('Account'); ?></label>
+                            <td><label for="iAccountStart"><?= $this->getHtml('CostCenter'); ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('CostObject'); ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('EntryDate'); ?>
                         <tr>
                             <td><span class="input"><button type="button" id="account-start" formaction="" data-action='[{"type": "popup", "tpl": "entry-list-tpl", "aniIn": "fadeIn", "aniOut": "fadeOut", "stay": 1000}]'><i class="fa fa-book"></i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
@@ -42,10 +42,10 @@ $footerView->setResults(1);
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
                             <td><input type="datetime-local" id="iId" min="1" name="id" required>
                         <tr>
-                            <td><label for="iAccountStart"><?= $this->getHtml('To') ?></label>
-                            <td><label for="iAccountStart"><?= $this->getHtml('To') ?>
-                            <td><label for="iAccountStart"><?= $this->getHtml('To') ?>
-                            <td><label for="iAccountStart"><?= $this->getHtml('To') ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('To'); ?></label>
+                            <td><label for="iAccountStart"><?= $this->getHtml('To'); ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('To'); ?>
+                            <td><label for="iAccountStart"><?= $this->getHtml('To'); ?>
                         <tr>
                             <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
@@ -66,9 +66,9 @@ $footerView->setResults(1);
 <div class="box w-100">
     <div class="tabview tab-2">
         <ul class="tab-links">
-            <li><label for="c-tab2-1"><?= $this->getHtml('List') ?></label></li>
-            <li><label for="c-tab2-2"><?= $this->getHtml('Evaluation') ?></label></li>
-            <li><label for="c-tab2-3"><?= $this->getHtml('Charts') ?></label></li>
+            <li><label for="c-tab2-1"><?= $this->getHtml('List'); ?></label></li>
+            <li><label for="c-tab2-2"><?= $this->getHtml('Evaluation'); ?></label></li>
+            <li><label for="c-tab2-3"><?= $this->getHtml('Charts'); ?></label></li>
         </ul>
         <div class="tab-content">
             <input type="radio" id="c-tab2-1" name="tabular-2" checked>
@@ -80,19 +80,19 @@ $footerView->setResults(1);
                                 <caption><?= $this->getHtml('Entries'); ?><i class="fa fa-download floatRight download btn"></i></caption>
                                 <thead>
                                 <tr>
-                                    <td><?= $this->getHtml('EntryDate') ?>
-                                    <td><?= $this->getHtml('Receipt') ?>
-                                    <td><?= $this->getHtml('Debit') ?>
-                                    <td><?= $this->getHtml('Credit') ?>
-                                    <td class="wf-100"><?= $this->getHtml('Text') ?>
-                                    <td><?= $this->getHtml('Account') ?>
-                                    <td><?= $this->getHtml('ContraAccount') ?>
-                                    <td><?= $this->getHtml('CostCenter') ?>
-                                    <td><?= $this->getHtml('CostObject') ?>
-                                    <td><?= $this->getHtml('ReceiptDate') ?>
-                                    <td><?= $this->getHtml('ExternalVoucher') ?>
-                                    <td><?= $this->getHtml('Creator') ?>
-                                    <td><?= $this->getHtml('Created') ?>
+                                    <td><?= $this->getHtml('EntryDate'); ?>
+                                    <td><?= $this->getHtml('Receipt'); ?>
+                                    <td><?= $this->getHtml('Debit'); ?>
+                                    <td><?= $this->getHtml('Credit'); ?>
+                                    <td class="wf-100"><?= $this->getHtml('Text'); ?>
+                                    <td><?= $this->getHtml('Account'); ?>
+                                    <td><?= $this->getHtml('ContraAccount'); ?>
+                                    <td><?= $this->getHtml('CostCenter'); ?>
+                                    <td><?= $this->getHtml('CostObject'); ?>
+                                    <td><?= $this->getHtml('ReceiptDate'); ?>
+                                    <td><?= $this->getHtml('ExternalVoucher'); ?>
+                                    <td><?= $this->getHtml('Creator'); ?>
+                                    <td><?= $this->getHtml('Created'); ?>
                                 <tfoot>
                                 <tr>
                                     <td colspan="13">
@@ -118,9 +118,9 @@ $footerView->setResults(1);
                                 <caption><?= $this->getHtml('Accounts'); ?><i class="fa fa-download floatRight download btn"></i></caption>
                                 <thead>
                                 <tr>
-                                    <td><?= $this->getHtml('Account') ?>
-                                    <td class="wf-100"><?= $this->getHtml('Name') ?>
-                                    <td><?= $this->getHtml('Total') ?>
+                                    <td><?= $this->getHtml('Account'); ?>
+                                    <td class="wf-100"><?= $this->getHtml('Name'); ?>
+                                    <td><?= $this->getHtml('Total'); ?>
                                 <tbody>
                                 <?php $count = 0;
                                 foreach ([] as $key => $value) : ++$count; ?>
@@ -138,9 +138,9 @@ $footerView->setResults(1);
                                 <caption><?= $this->getHtml('CostCenter'); ?><i class="fa fa-download floatRight download btn"></i></caption>
                                 <thead>
                                 <tr>
-                                    <td><?= $this->getHtml('CostCenter') ?>
-                                    <td class="wf-100"><?= $this->getHtml('Name') ?>
-                                    <td><?= $this->getHtml('Total') ?>
+                                    <td><?= $this->getHtml('CostCenter'); ?>
+                                    <td class="wf-100"><?= $this->getHtml('Name'); ?>
+                                    <td><?= $this->getHtml('Total'); ?>
                                 <tbody>
                                 <?php $count = 0;
                                 foreach ([] as $key => $value) : ++$count; ?>
@@ -158,9 +158,9 @@ $footerView->setResults(1);
                                 <caption><?= $this->getHtml('CostObject'); ?><i class="fa fa-download floatRight download btn"></i></caption>
                                 <thead>
                                 <tr>
-                                    <td><?= $this->getHtml('Account') ?>
-                                    <td class="wf-100"><?= $this->getHtml('Name') ?>
-                                    <td><?= $this->getHtml('Total') ?>
+                                    <td><?= $this->getHtml('Account'); ?>
+                                    <td class="wf-100"><?= $this->getHtml('Name'); ?>
+                                    <td><?= $this->getHtml('Total'); ?>
                                 <tbody>
                                 <?php $count = 0;
                                 foreach ([] as $key => $value) : ++$count; ?>

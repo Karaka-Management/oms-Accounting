@@ -27,13 +27,13 @@ echo $this->getData('nav')->render(); ?>
 
 <div class="box w-100">
     <table class="default">
-        <caption><?= $this->getHtml('BatchPostings') ?><i class="fa fa-download floatRight download btn"></i></caption>
+        <caption><?= $this->getHtml('BatchPostings'); ?><i class="fa fa-download floatRight download btn"></i></caption>
         <thead>
         <tr>
             <td><?= $this->getHtml('ID', '0', '0'); ?>
-            <td class="wf-100"><?= $this->getHtml('Name') ?>
-            <td><?= $this->getHtml('Creator') ?>
-            <td><?= $this->getHtml('Created') ?>
+            <td class="wf-100"><?= $this->getHtml('Name'); ?>
+            <td><?= $this->getHtml('Creator'); ?>
+            <td><?= $this->getHtml('Created'); ?>
         <tfoot>
         <tr><td colspan="5">
         <tbody>

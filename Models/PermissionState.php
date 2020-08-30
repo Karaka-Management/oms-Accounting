@@ -27,12 +27,20 @@ use phpOMS\Stdlib\Base\Enum;
 abstract class PermissionState extends Enum
 {
     public const PERSONAL    = 1;
+
     public const IMPERSONAL  = 2;
+
     public const JOURNAL     = 3;
+
     public const STACK       = 4;
+
     public const GL          = 5;
+
     public const COST_CENTER = 6;
+
     public const COST_OBJECT = 7;
+
     public const ACCOUNT     = 8;
+
     public const ENTRY       = 9;
 }

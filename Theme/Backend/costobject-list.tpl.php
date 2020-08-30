@@ -27,18 +27,18 @@ echo $this->getData('nav')->render(); ?>
 <div class="row">
     <div class="col-xs-12">
         <div class="portlet">
-            <div class="portlet-head"><?= $this->getHtml('CostObjects') ?><i class="fa fa-download floatRight download btn"></i></div>
+            <div class="portlet-head"><?= $this->getHtml('CostObjects'); ?><i class="fa fa-download floatRight download btn"></i></div>
             <table class="default">
             <thead>
             <tr>
-                <td><?= $this->getHtml('Code') ?>
-                <td class="wf-100"><?= $this->getHtml('Name') ?>
+                <td><?= $this->getHtml('Code'); ?>
+                <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <tbody>
             <?php $count = 0; foreach ($costobject as $key => $value) : ++$count;
             $url = UriFactory::build('{/prefix}tag/single?{?}&id=' . $value->getId()); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
-                    <td data-label="<?= $this->getHtml('Code') ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getCode()); ?></a>
-                    <td data-label="<?= $this->getHtml('Name') ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
+                    <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getCode()); ?></a>
+                    <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
             <?php endforeach; ?>
             <?php if ($count === 0) : ?>
                 <tr><td colspan="3" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>

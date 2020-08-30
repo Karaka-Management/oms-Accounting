@@ -20,6 +20,7 @@ namespace Modules\Accounting\tests\Admin;
 class AccountingTest extends \PHPUnit\Framework\TestCase
 {
     protected const MODULE_NAME = 'Accounting';
+
     protected const URI_LOAD = 'http://127.0.0.1/en/backend/accounting';
 
     use \Modules\tests\ModuleTestTrait;
