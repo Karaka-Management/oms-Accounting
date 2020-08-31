@@ -36,11 +36,11 @@ final class L11nCostObjectMapper extends DataMapperAbstract
      * @since 1.0.0
      */
     protected static array $columns = [
-        'accounting_costobject_l11n_id'       => ['name' => 'accounting_costobject_l11n_id',       'type' => 'int',    'internal' => 'id'],
-        'accounting_costobject_l11n_name'    => ['name' => 'accounting_costobject_l11n_name',    'type' => 'string', 'internal' => 'name', 'autocomplete' => true],
-        'accounting_costobject_l11n_description'    => ['name' => 'accounting_costobject_l11n_description',    'type' => 'string', 'internal' => 'description', 'autocomplete' => true],
+        'accounting_costobject_l11n_id'              => ['name' => 'accounting_costobject_l11n_id',       'type' => 'int',    'internal' => 'id'],
+        'accounting_costobject_l11n_name'            => ['name' => 'accounting_costobject_l11n_name',    'type' => 'string', 'internal' => 'name', 'autocomplete' => true],
+        'accounting_costobject_l11n_description'     => ['name' => 'accounting_costobject_l11n_description',    'type' => 'string', 'internal' => 'description', 'autocomplete' => true],
         'accounting_costobject_l11n_costobject'      => ['name' => 'accounting_costobject_l11n_costobject',      'type' => 'int',    'internal' => 'costobject'],
-        'accounting_costobject_l11n_language' => ['name' => 'accounting_costobject_l11n_language', 'type' => 'string', 'internal' => 'language'],
+        'accounting_costobject_l11n_language'        => ['name' => 'accounting_costobject_l11n_language', 'type' => 'string', 'internal' => 'language'],
     ];
 
     /**
@@ -51,10 +51,10 @@ final class L11nCostObjectMapper extends DataMapperAbstract
      */
     protected static array $ownsOne = [
         'language' => [
-            'mapper' => LanguageMapper::class,
-            'self'   => 'accounting_costobject_l11n_language',
-            'by'     => 'code2',
-            'column' => 'code2',
+            'mapper'        => LanguageMapper::class,
+            'self'          => 'accounting_costobject_l11n_language',
+            'by'            => 'code2',
+            'column'        => 'code2',
             'conditional'   => true,
         ],
     ];

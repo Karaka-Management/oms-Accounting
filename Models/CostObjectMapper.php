@@ -33,7 +33,7 @@ final class CostObjectMapper extends DataMapperAbstract
      * @since 1.0.0
      */
     protected static array $columns = [
-        'accounting_costobject_id'    => ['name' => 'accounting_costobject_id',    'type' => 'int',    'internal' => 'id'],
+        'accounting_costobject_id'      => ['name' => 'accounting_costobject_id',    'type' => 'int',    'internal' => 'id'],
         'accounting_costobject_code'    => ['name' => 'accounting_costobject_code',    'type' => 'string',    'internal' => 'code'],
     ];
 
@@ -45,11 +45,11 @@ final class CostObjectMapper extends DataMapperAbstract
      */
     protected static array $hasMany = [
         'l11n' => [
-            'mapper'   => L11nCostObjectMapper::class,
-            'table'    => 'accounting_costobject_l11n',
-            'external' => 'accounting_costobject_l11n_costobject',
+            'mapper'        => L11nCostObjectMapper::class,
+            'table'         => 'accounting_costobject_l11n',
+            'external'      => 'accounting_costobject_l11n_costobject',
             'conditional'   => true,
-            'self'     => null,
+            'self'          => null,
         ],
     ];
 

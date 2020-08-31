@@ -189,10 +189,10 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
     public function toArray() : array
     {
         return [
-            'id'       => $this->id,
-            'name'    => $this->name,
+            'id'              => $this->id,
+            'name'            => $this->name,
             'costcenter'      => $this->costcenter,
-            'language' => $this->language,
+            'language'        => $this->language,
         ];
     }
 
