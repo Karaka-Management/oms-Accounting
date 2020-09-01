@@ -28,9 +28,9 @@ abstract class AccountType extends Enum
 {
     public const IMPERSONAL = 0;
 
-    public const PERSONAL   = 1;
+    public const PERSONAL = 1;
 
-    public const CREDITOR   = 2;
+    public const CREDITOR = 2;
 
-    public const DEBITOR    = 4;
+    public const DEBITOR = 4;
 }
