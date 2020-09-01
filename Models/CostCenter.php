@@ -159,7 +159,7 @@ class CostCenter
     /**
      * Set parent
      *
-     * @param string $parent Parent
+     * @param null|int|CostCenter $parent Parent
      *
      * @return void
      *

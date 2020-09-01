@@ -159,7 +159,7 @@ class CostObject
     /**
      * Set parent
      *
-     * @param string $parent Parent
+     * @param null|int|CostObject $parent Parent
      *
      * @return void
      *
