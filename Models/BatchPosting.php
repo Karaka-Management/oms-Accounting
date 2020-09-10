@@ -119,7 +119,7 @@ class BatchPosting implements \Countable
      *
      * @since 1.0.0
      */
-    public function getCreatedAt() : \DateTime
+    public function getCreatedAt() : \DateTimeInterface
     {
         return $this->created;
     }
