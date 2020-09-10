@@ -115,11 +115,11 @@ class BatchPosting implements \Countable
     /**
      * Get created.
      *
-     * @return \DateTime
+     * @return \DateTimeImmutable
      *
      * @since 1.0.0
      */
-    public function getCreatedAt() : \DateTimeInterface
+    public function getCreatedAt() : \DateTimeImmutable
     {
         return $this->created;
     }
