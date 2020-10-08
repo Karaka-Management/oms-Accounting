@@ -21,6 +21,10 @@ use Modules\Accounting\Models\CostObject;
  */
 class CostObjectTest extends \PHPUnit\Framework\TestCase
 {
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
     public function testDefault() : void
     {
         $co = new CostObject();
@@ -32,6 +36,10 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
         self::assertNull($co->getParent());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
     public function testNameInputOutput() : void
     {
         $co = new CostObject();
@@ -40,6 +48,10 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestName', $co->getName());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
     public function testCodeInputOutput() : void
     {
         $co = new CostObject();
@@ -48,6 +60,10 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestCode', $co->getCode());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
     public function testDescriptionInputOutput() : void
     {
         $co = new CostObject();
@@ -56,6 +72,10 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestDescription', $co->getDescription());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
     public function testParentInputOutput() : void
     {
         $co = new CostObject();

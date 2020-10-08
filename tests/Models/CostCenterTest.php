@@ -21,6 +21,10 @@ use Modules\Accounting\Models\CostCenter;
  */
 class CostCenterTest extends \PHPUnit\Framework\TestCase
 {
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
     public function testDefault() : void
     {
         $cc = new CostCenter();
@@ -32,6 +36,10 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
         self::assertNull($cc->getParent());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
     public function testNameInputOutput() : void
     {
         $cc = new CostCenter();
@@ -40,6 +48,10 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestName', $cc->getName());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
     public function testCodeInputOutput() : void
     {
         $cc = new CostCenter();
@@ -48,6 +60,10 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestCode', $cc->getCode());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
     public function testDescriptionInputOutput() : void
     {
         $cc = new CostCenter();
@@ -56,6 +72,10 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('TestDescription', $cc->getDescription());
     }
 
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
     public function testParentInputOutput() : void
     {
         $cc = new CostCenter();
