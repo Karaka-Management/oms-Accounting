@@ -47,9 +47,9 @@ final class CostCenterMapper extends DataMapperAbstract
         'l11n' => [
             'mapper'        => L11nCostCenterMapper::class,
             'table'         => 'accounting_costcenter_l11n',
-            'external'      => 'accounting_costcenter_l11n_costcenter',
+            'self'      => 'accounting_costcenter_l11n_costcenter',
             'conditional'   => true,
-            'self'          => null,
+            'external'          => null,
         ],
     ];
 

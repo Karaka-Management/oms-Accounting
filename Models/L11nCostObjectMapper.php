@@ -52,7 +52,7 @@ final class L11nCostObjectMapper extends DataMapperAbstract
     protected static array $ownsOne = [
         'language' => [
             'mapper'        => LanguageMapper::class,
-            'self'          => 'accounting_costobject_l11n_language',
+            'external'          => 'accounting_costobject_l11n_language',
             'by'            => 'code2',
             'column'        => 'code2',
             'conditional'   => true,
