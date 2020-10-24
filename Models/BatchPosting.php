@@ -43,10 +43,10 @@ class BatchPosting implements \Countable
     /**
      * Created.
      *
-     * @var \DateTime
+     * @var \DateTimeImmutable
      * @since 1.0.0
      */
-    private \DateTime $created;
+    private \DateTimeImmutable $created;
 
     /**
      * Description.
@@ -71,7 +71,7 @@ class BatchPosting implements \Countable
      */
     public function __construct()
     {
-        $this->created = new \DateTime('now');
+        $this->created = new \DateTimeImmutable('now');
     }
 
     /**
