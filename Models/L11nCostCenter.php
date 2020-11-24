@@ -57,7 +57,7 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
      * @var string
      * @since 1.0.0
      */
-    private string $name = '';
+    public string $name = '';
 
     /**
      * Description.
@@ -65,7 +65,7 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
      * @var string
      * @since 1.0.0
      */
-    private string $description = '';
+    public string $description = '';
 
     /**
      * Get id
@@ -129,58 +129,6 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
     public function setLanguage(string $language) : void
     {
         $this->language = $language;
-    }
-
-    /**
-     * Get costcenter name.
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getName() : string
-    {
-        return $this->name;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name Name
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setName(string $name) : void
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * Get costcenter description.
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getDescription() : string
-    {
-        return $this->description;
-    }
-
-    /**
-     * Set description
-     *
-     * @param string $description Description
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setDescription(string $description) : void
-    {
-        $this->description = $description;
     }
 
     /**

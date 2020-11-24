@@ -30,10 +30,10 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
         $co = new CostObject();
 
         self::assertEquals(0, $co->getId());
-        self::assertEquals('', $co->getName());
-        self::assertEquals('', $co->getCode());
-        self::assertEquals('', $co->getDescription());
-        self::assertNull($co->getParent());
+        self::assertEquals('', $co->l11n->name);
+        self::assertEquals('', $co->code);
+        self::assertEquals('', $co->l11n->description);
+        self::assertNull($co->parent);
     }
 
     /**
@@ -44,8 +44,8 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
     {
         $co = new CostObject();
 
-        $co->setName('TestName');
-        self::assertEquals('TestName', $co->getName());
+        $co->l11n->name = 'TestName';
+        self::assertEquals('TestName', $co->l11n->name);
     }
 
     /**
@@ -56,8 +56,8 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
     {
         $co = new CostObject();
 
-        $co->setCode('TestCode');
-        self::assertEquals('TestCode', $co->getCode());
+        $co->code = 'TestCode';
+        self::assertEquals('TestCode', $co->code);
     }
 
     /**
@@ -68,8 +68,8 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
     {
         $co = new CostObject();
 
-        $co->setDescription('TestDescription');
-        self::assertEquals('TestDescription', $co->getDescription());
+        $co->l11n->description = 'TestDescription';
+        self::assertEquals('TestDescription', $co->l11n->description);
     }
 
     /**
@@ -80,7 +80,7 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
     {
         $co = new CostObject();
 
-        $co->setParent(1);
-        self::assertEquals(1, $co->getParent());
+        $co->parent = 1;
+        self::assertEquals(1, $co->parent);
     }
 }

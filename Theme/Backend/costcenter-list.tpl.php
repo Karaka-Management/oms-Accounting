@@ -38,7 +38,7 @@ echo $this->getData('nav')->render(); ?>
             $url         = UriFactory::build('{/prefix}tag/single?{?}&id=' . $value->getId()); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
                     <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getCode()); ?></a>
-                    <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
+                    <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
             <?php endforeach; ?>
             <?php if ($count === 0) : ?>
                 <tr><td colspan="3" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>

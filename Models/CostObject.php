@@ -38,7 +38,7 @@ class CostObject
      * @var string
      * @since 1.0.0
      */
-    private string $code = '';
+    public string $code = '';
 
     /**
      * Localization.
@@ -46,7 +46,7 @@ class CostObject
      * @var L11nCostObject
      * @since 1.0.0
      */
-    private L11nCostObject $l11n;
+    public L11nCostObject $l11n;
 
     /**
      * Parent.
@@ -54,7 +54,7 @@ class CostObject
      * @var null|int|CostObject
      * @since 1.0.0
      */
-    private $parent = null;
+    public $parent = null;
 
     /**
      * Constructor.
@@ -76,109 +76,5 @@ class CostObject
     public function getId() : int
     {
         return $this->id;
-    }
-
-    /**
-     * Set code
-     *
-     * @param string $code Balance code
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setCode(string $code) : void
-    {
-        $this->code = $code;
-    }
-
-    /**
-     * Get code
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getCode() : string
-    {
-        return $this->code;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name Balance name
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setName(string $name) : void
-    {
-        $this->l11n->setName($name);
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getName() : string
-    {
-        return $this->l11n->getName();
-    }
-
-    /**
-     * Set description
-     *
-     * @param string $description Balance description
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setDescription(string $description) : void
-    {
-        $this->l11n->setDescription($description);
-    }
-
-    /**
-     * Get description
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getDescription() : string
-    {
-        return $this->l11n->getDescription();
-    }
-
-    /**
-     * Set parent
-     *
-     * @param null|int|CostObject $parent Parent
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setParent($parent) : void
-    {
-        $this->parent = $parent;
-    }
-
-    /**
-     * Get parent
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    public function getParent()
-    {
-        return $this->parent;
     }
 }

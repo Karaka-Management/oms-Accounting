@@ -30,10 +30,10 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
         $cc = new CostCenter();
 
         self::assertEquals(0, $cc->getId());
-        self::assertEquals('', $cc->getName());
-        self::assertEquals('', $cc->getCode());
-        self::assertEquals('', $cc->getDescription());
-        self::assertNull($cc->getParent());
+        self::assertEquals('', $cc->l11n->name);
+        self::assertEquals('', $cc->code);
+        self::assertEquals('', $cc->l11n->description);
+        self::assertNull($cc->parent);
     }
 
     /**
@@ -44,8 +44,8 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
     {
         $cc = new CostCenter();
 
-        $cc->setName('TestName');
-        self::assertEquals('TestName', $cc->getName());
+        $cc->l11n->name = 'TestName';
+        self::assertEquals('TestName', $cc->l11n->name);
     }
 
     /**
@@ -56,8 +56,8 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
     {
         $cc = new CostCenter();
 
-        $cc->setCode('TestCode');
-        self::assertEquals('TestCode', $cc->getCode());
+        $cc->code = 'TestCode';
+        self::assertEquals('TestCode', $cc->code);
     }
 
     /**
@@ -68,8 +68,8 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
     {
         $cc = new CostCenter();
 
-        $cc->setDescription('TestDescription');
-        self::assertEquals('TestDescription', $cc->getDescription());
+        $cc->l11n->description = 'TestDescription';
+        self::assertEquals('TestDescription', $cc->l11n->description);
     }
 
     /**
@@ -80,7 +80,7 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
     {
         $cc = new CostCenter();
 
-        $cc->setParent(1);
-        self::assertEquals(1, $cc->getParent());
+        $cc->parent = 1;
+        self::assertEquals(1, $cc->parent);
     }
 }

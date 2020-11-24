@@ -46,7 +46,7 @@ class Balance
      * @var string
      * @since 1.0.0
      */
-    private string $name = '';
+    public string $name = '';
 
     /**
      * Balance description.
@@ -66,32 +66,6 @@ class Balance
     public function getId() : int
     {
         return $this->id;
-    }
-
-    /**
-     * Set name
-     *
-     * @param string $name Balance name
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setName(string $name) : void
-    {
-        $this->name = $name;
-    }
-
-    /**
-     * Get name
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getName() : string
-    {
-        return $this->name;
     }
 
     /**

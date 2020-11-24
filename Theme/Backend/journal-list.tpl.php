@@ -39,7 +39,7 @@ echo $this->getData('nav')->render(); ?>
         $url     = \phpOMS\Uri\UriFactory::build('{/prefix}admin/group/settings?{?}&id=' . $value->getId()); ?>
         <tr>
             <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getId()); ?></a>
-            <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getName()); ?></a>
+            <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
             <td>
             <td>
             <td>

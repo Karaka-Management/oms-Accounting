@@ -30,17 +30,17 @@ class CostCenterMapperTest extends \PHPUnit\Framework\TestCase
     public function testCR() : void
     {
         $costcenter = new CostCenter();
-        $costcenter->setCode('123');
-        $costcenter->setName('Test CostCenter');
-        $costcenter->setDescription('Test description');
+        $costcenter->code = '123';
+        $costcenter->l11n->name = 'Test CostCenter';
+        $costcenter->l11n->description = 'Test description';
 
         $id = CostCenterMapper::create($costcenter);
         self::assertGreaterThan(0, $costcenter->getId());
         self::assertEquals($id, $costcenter->getId());
 
         $costcenterR = CostCenterMapper::withConditional('language', ISO639x1Enum::_EN)::get($costcenter->getId());
-        self::assertEquals($costcenter->getCode(), $costcenterR->getCode());
-        self::assertEquals($costcenter->getName(), $costcenterR->getName());
-        self::assertEquals($costcenter->getDescription(), $costcenterR->getDescription());
+        self::assertEquals($costcenter->code, $costcenterR->code);
+        self::assertEquals($costcenter->l11n->name, $costcenterR->l11n->name);
+        self::assertEquals($costcenter->l11n->description, $costcenterR->l11n->description);
     }
 }
