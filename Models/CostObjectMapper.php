@@ -47,7 +47,7 @@ final class CostObjectMapper extends DataMapperAbstract
         'l11n' => [
             'mapper'        => L11nCostObjectMapper::class,
             'table'         => 'accounting_costobject_l11n',
-            'self'      => 'accounting_costobject_l11n_costobject',
+            'self'          => 'accounting_costobject_l11n_costobject',
             'conditional'   => true,
             'external'      => null,
         ],

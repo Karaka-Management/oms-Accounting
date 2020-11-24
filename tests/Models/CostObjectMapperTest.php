@@ -29,9 +29,9 @@ class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
      */
     public function testCR() : void
     {
-        $costobject = new CostObject();
-        $costobject->code = '123';
-        $costobject->l11n->name = 'Test CostObject';
+        $costobject                    = new CostObject();
+        $costobject->code              = '123';
+        $costobject->l11n->name        = 'Test CostObject';
         $costobject->l11n->description = 'Test description';
 
         $id = CostObjectMapper::create($costobject);

@@ -29,9 +29,9 @@ class CostCenterMapperTest extends \PHPUnit\Framework\TestCase
      */
     public function testCR() : void
     {
-        $costcenter = new CostCenter();
-        $costcenter->code = '123';
-        $costcenter->l11n->name = 'Test CostCenter';
+        $costcenter                    = new CostCenter();
+        $costcenter->code              = '123';
+        $costcenter->l11n->name        = 'Test CostCenter';
         $costcenter->l11n->description = 'Test description';
 
         $id = CostCenterMapper::create($costcenter);
