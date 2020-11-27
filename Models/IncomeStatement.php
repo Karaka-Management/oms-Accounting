@@ -32,7 +32,7 @@ class IncomeStatement
      */
     protected int $id = 0;
 
-    private $date = null;
+    private ?\DateTime $date = null;
 
-    private $incomeStatement = [];
+    private array $incomeStatement = [];
 }
