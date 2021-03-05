@@ -4,7 +4,7 @@
  *
  * PHP Version 8.0
  *
- * @package   Modules\Accounting
+ * @package   Modules\Localization
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -17,6 +17,7 @@ return ['Accounting' => [
     'Accounts'        => 'Accounts',
     'BatchPostings'   => 'Batch Postings',
     'Charts'          => 'Charts',
+    'Code'            => 'Code',
     'ContraAccount'   => 'Contra Account',
     'CostCenter'      => 'Cost Center',
     'CostCenters'     => 'Cost Centers',
@@ -33,12 +34,14 @@ return ['Accounting' => [
     'ExternalVoucher' => 'External Voucher',
     'GL'              => 'GL',
     'Incoming'        => 'Incoming',
+    'Journal'         => 'Journal',
     'List'            => 'List',
     'Name'            => 'Name',
     'Outgoing'        => 'Outgoing',
     'Parent'          => 'Parent',
     'Receipt'         => 'Receipt',
     'ReceiptDate'     => 'Receipt Date',
+    'Search'          => 'Search',
     'Stack'           => 'Stack',
     'TAccount'        => 'T-Account',
     'Text'            => 'Text',
