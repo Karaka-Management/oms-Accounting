@@ -38,7 +38,7 @@ class CostCenterMapperTest extends \PHPUnit\Framework\TestCase
         self::assertGreaterThan(0, $costcenter->getId());
         self::assertEquals($id, $costcenter->getId());
 
-        $costcenterR = CostCenterMapper::withConditional('language', ISO639x1Enum::_EN)::get($costcenter->getId());
+        $costcenterR = CostCenterMapper::with('language', ISO639x1Enum::_EN)::get($costcenter->getId());
         self::assertEquals($costcenter->code, $costcenterR->code);
         self::assertEquals($costcenter->l11n->name, $costcenterR->l11n->name);
         self::assertEquals($costcenter->l11n->description, $costcenterR->l11n->description);

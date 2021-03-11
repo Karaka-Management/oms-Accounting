@@ -38,7 +38,7 @@ class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
         self::assertGreaterThan(0, $costobject->getId());
         self::assertEquals($id, $costobject->getId());
 
-        $costobjectR = CostObjectMapper::withConditional('language', ISO639x1Enum::_EN)::get($costobject->getId());
+        $costobjectR = CostObjectMapper::with('language', ISO639x1Enum::_EN)::get($costobject->getId());
         self::assertEquals($costobject->code, $costobjectR->code);
         self::assertEquals($costobject->l11n->name, $costobjectR->l11n->name);
         self::assertEquals($costobject->l11n->description, $costobjectR->l11n->description);
