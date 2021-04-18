@@ -1,6 +1,6 @@
 <template id="entry-list-tpl">
     <div id="entry-list" class="box" style="z-index: 99; position: relative; top: 20px; display: block; margin: 0 auto; width: 20%;">
-        <table class="default">
+        <table class="default sticky">
             <caption><?= $this->getHtml('Accounts'); ?><i class="fa fa-download floatRight download btn"></i></caption>
             <thead>
             <tr>

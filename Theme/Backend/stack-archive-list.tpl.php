@@ -26,7 +26,7 @@ $footerView->setResults(1);
 echo $this->getData('nav')->render(); ?>
 
 <div class="box w-100">
-    <table class="default">
+    <table class="default sticky">
         <caption><?= $this->getHtml('BatchPostings'); ?><i class="fa fa-download floatRight download btn"></i></caption>
         <thead>
         <tr>
