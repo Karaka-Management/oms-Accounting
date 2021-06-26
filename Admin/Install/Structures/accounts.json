@@ -1,627 +1,627 @@
 [
-	{
-		"number": "0110",
-		"name": "Konzessionen",
-		"type": "asset",
-	},
-	{
-		"number": "0120",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0128",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0129",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0130",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0134",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0135",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0140",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0143",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0144",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0145",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0146",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0147",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0148",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0149",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0150",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0160",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0170",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0179",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0200",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0210",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0215",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0220",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0225",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0229",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0230",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0235",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0240",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0250",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0260",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0270",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0280",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0285",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0290",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0300",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0305",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0310",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0320",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0329",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0330",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0340",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0350",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0360",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0370",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0380",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0390",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0395",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0398",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0400",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0420",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0440",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0450",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0460",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0470",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0500",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0510",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0520",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0540",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0560",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0570",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0580",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0620",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0630",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0635",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0640",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0650",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0660",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0670",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0675",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0680",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0695",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0696",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0697",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0698",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0699",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0700",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0705",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0710",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0720",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0725",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0735",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0740",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0750",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0755",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0765",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0770",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0780",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0785",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0795",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0800",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0803",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0804",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0805",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0806",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0807",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0808",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0809",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0810",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0813",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0814",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0815",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0820",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0829",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0830",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0840",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0850",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0860",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0880",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0883",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0885",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0900",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0910",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0920",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0930",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0940",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0960",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0961",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0962",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0963",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0964",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0970",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0980",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0990",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0995",
-		"name": "",
-		"type": "asset",
-	},
-	{
-		"number": "0997",
-		"name": "",
-		"type": "asset",
-	}
+    {
+        "number": "0110",
+        "name": "Konzessionen",
+        "type": "asset",
+    },
+    {
+        "number": "0120",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0128",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0129",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0130",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0134",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0135",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0140",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0143",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0144",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0145",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0146",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0147",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0148",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0149",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0150",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0160",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0170",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0179",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0200",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0210",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0215",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0220",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0225",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0229",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0230",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0235",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0240",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0250",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0260",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0270",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0280",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0285",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0290",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0300",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0305",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0310",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0320",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0329",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0330",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0340",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0350",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0360",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0370",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0380",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0390",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0395",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0398",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0400",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0420",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0440",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0450",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0460",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0470",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0500",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0510",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0520",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0540",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0560",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0570",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0580",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0620",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0630",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0635",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0640",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0650",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0660",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0670",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0675",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0680",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0695",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0696",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0697",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0698",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0699",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0700",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0705",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0710",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0720",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0725",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0735",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0740",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0750",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0755",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0765",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0770",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0780",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0785",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0795",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0800",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0803",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0804",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0805",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0806",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0807",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0808",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0809",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0810",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0813",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0814",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0815",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0820",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0829",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0830",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0840",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0850",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0860",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0880",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0883",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0885",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0900",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0910",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0920",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0930",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0940",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0960",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0961",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0962",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0963",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0964",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0970",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0980",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0990",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0995",
+        "name": "",
+        "type": "asset",
+    },
+    {
+        "number": "0997",
+        "name": "",
+        "type": "asset",
+    }
 ]
