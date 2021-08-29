@@ -32,7 +32,19 @@ class IncomeStatement
      */
     protected int $id = 0;
 
+    /**
+     * Date.
+     *
+     * @var null|\DateTime
+     * @since 1.0.0
+     */
     private ?\DateTime $date = null;
 
+    /**
+     * Income statement structure.
+     *
+     * @var array
+     * @since 1.0.0
+     */
     private array $incomeStatement = [];
 }

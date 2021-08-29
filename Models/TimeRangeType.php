@@ -33,4 +33,8 @@ abstract class TimeRangeType extends Enum
     public const RECEIPT_DATE = 2; /* Date of the receipt */
 
     public const ASSOCIATED_DATE = 3; /* Date of the association (e.g. when did the articles arrive) */
+
+    public const PERIOD_DATE = 4; /* Date of the period this booking is assoziated with */
+
+    public const SQUARED_DATE = 5; /* Date of when the entry got squared/balanced */
 }
