@@ -93,9 +93,6 @@ $footerView->setResults(1);
                                     <td><?= $this->getHtml('ExternalVoucher'); ?>
                                     <td><?= $this->getHtml('Creator'); ?>
                                     <td><?= $this->getHtml('Created'); ?>
-                                <tfoot>
-                                <tr>
-                                    <td colspan="13">
                                 <tbody>
                                 <?php $count = 0;
                                 foreach ([] as $key => $value) : ++$count; ?>

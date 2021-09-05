@@ -35,8 +35,6 @@ echo $this->getData('nav')->render(); ?>
             <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <td><?= $this->getHtml('Creator'); ?>
             <td><?= $this->getHtml('Created'); ?>
-        <tfoot>
-        <tr><td colspan="5">
         <tbody>
         <?php $c = 0; foreach ([] as $key => $value) : ++$c;
         $url     = \phpOMS\Uri\UriFactory::build('{/prefix}admin/group/settings?{?}&id=' . $value->getId()); ?>
