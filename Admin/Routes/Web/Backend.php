@@ -23,7 +23,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewPersonalEntries',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::PERSONAL,
             ],
@@ -34,7 +34,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewImpersonalEntries',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::IMPERSONAL,
             ],
@@ -45,7 +45,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntries',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::ENTRY,
             ],
@@ -56,7 +56,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewJournalList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::JOURNAL,
             ],
@@ -67,7 +67,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::STACK,
             ],
@@ -78,7 +78,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackEntries',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::STACK,
             ],
@@ -89,7 +89,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackArchiveList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::STACK,
             ],
@@ -100,7 +100,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackCreate',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
                 'state'  => PermissionState::STACK,
             ],
@@ -111,7 +111,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackPredefinedList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::STACK,
             ],
@@ -122,7 +122,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::GL,
             ],
@@ -133,7 +133,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLCreate',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
                 'state'  => PermissionState::GL,
             ],
@@ -144,7 +144,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLProfile',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::GL,
             ],
@@ -155,7 +155,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::COST_CENTER,
             ],
@@ -166,7 +166,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::ACCOUNT,
             ],
@@ -177,7 +177,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::ACCOUNT,
             ],
@@ -188,7 +188,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::ACCOUNT,
             ],
@@ -200,7 +200,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::COST_CENTER,
             ],
@@ -211,7 +211,7 @@ return [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectList',
             'verb'       => RouteVerb::GET,
             'permission' => [
-                'module' => BackendController::MODULE_NAME,
+                'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionState::COST_OBJECT,
             ],
