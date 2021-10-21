@@ -21,31 +21,25 @@ use Modules\Accounting\Models\CostObject;
  */
 class CostObjectTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @covers Modules\Accounting\Models\CostObject
-     * @group module
-     */
-    public function testDefault() : void
-    {
-        $co = new CostObject();
+    private CostObject $cc;
 
-        self::assertEquals(0, $co->getId());
-        self::assertEquals('', $co->l11n->name);
-        self::assertEquals('', $co->code);
-        self::assertEquals('', $co->l11n->description);
-        self::assertNull($co->parent);
+    /**
+     * {@inheritdoc}
+     */
+    protected function setUp() : void
+    {
+        $this->cc = new CostObject();
     }
 
     /**
      * @covers Modules\Accounting\Models\CostObject
      * @group module
      */
-    public function testNameInputOutput() : void
+    public function testDefault() : void
     {
-        $co = new CostObject();
-
-        $co->l11n->name = 'TestName';
-        self::assertEquals('TestName', $co->l11n->name);
+        self::assertEquals(0, $this->cc->getId());
+        self::assertEquals('', $this->cc->code);
+        self::assertNull($this->cc->parent);
     }
 
     /**
@@ -54,22 +48,8 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testCodeInputOutput() : void
     {
-        $co = new CostObject();
-
-        $co->code = 'TestCode';
-        self::assertEquals('TestCode', $co->code);
-    }
-
-    /**
-     * @covers Modules\Accounting\Models\CostObject
-     * @group module
-     */
-    public function testDescriptionInputOutput() : void
-    {
-        $co = new CostObject();
-
-        $co->l11n->description = 'TestDescription';
-        self::assertEquals('TestDescription', $co->l11n->description);
+        $this->cc->code = 'TestCode';
+        self::assertEquals('TestCode', $this->cc->code);
     }
 
     /**
@@ -78,9 +58,7 @@ class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testParentInputOutput() : void
     {
-        $co = new CostObject();
-
-        $co->parent = 1;
-        self::assertEquals(1, $co->parent);
+        $this->cc->parent = 1;
+        self::assertEquals(1, $this->cc->parent);
     }
 }

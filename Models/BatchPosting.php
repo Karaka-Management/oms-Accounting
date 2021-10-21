@@ -30,7 +30,7 @@ class BatchPosting implements \Countable
      * @var int
      * @since 1.0.0
      */
-    private int $id = 0;
+    protected int $id = 0;
 
     /**
      * Creator.
@@ -38,7 +38,7 @@ class BatchPosting implements \Countable
      * @var int
      * @since 1.0.0
      */
-    private int $creator = 0;
+    public int $creator = 0;
 
     /**
      * Created.
@@ -46,7 +46,7 @@ class BatchPosting implements \Countable
      * @var \DateTimeImmutable
      * @since 1.0.0
      */
-    private \DateTimeImmutable $created;
+    public \DateTimeImmutable $created;
 
     /**
      * Description.
@@ -54,7 +54,7 @@ class BatchPosting implements \Countable
      * @var string
      * @since 1.0.0
      */
-    private string $description = '';
+    public string $description = '';
 
     /**
      * Postings.
@@ -84,70 +84,6 @@ class BatchPosting implements \Countable
     public function getId() : int
     {
         return $this->id;
-    }
-
-    /**
-     * Get description.
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getDescription() : string
-    {
-        return $this->description;
-    }
-
-    /**
-     * Set description.
-     *
-     * @param string $desc Description
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setDescription(string $desc) : void
-    {
-        $this->description = $desc;
-    }
-
-    /**
-     * Get created.
-     *
-     * @return \DateTimeImmutable
-     *
-     * @since 1.0.0
-     */
-    public function getCreatedAt() : \DateTimeImmutable
-    {
-        return $this->created;
-    }
-
-    /**
-     * Get creator.
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getCreator()
-    {
-        return $this->creator;
-    }
-
-    /**
-     * Set creator.
-     *
-     * @param int $creator Creator ID
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setCreator($creator) : void
-    {
-        $this->creator = $creator;
     }
 
     /**

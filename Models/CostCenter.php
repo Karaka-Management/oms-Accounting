@@ -43,10 +43,10 @@ class CostCenter
     /**
      * Localization.
      *
-     * @var L11nCostCenter
+     * @var CostCenterL11n
      * @since 1.0.0
      */
-    public L11nCostCenter $l11n;
+    public CostCenterL11n $l11n;
 
     /**
      * Parent.
@@ -63,7 +63,7 @@ class CostCenter
      */
     public function __construct()
     {
-        $this->l11n = new L11nCostCenter();
+        $this->l11n = new CostCenterL11n();
     }
 
     /**

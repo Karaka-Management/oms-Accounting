@@ -45,7 +45,7 @@ final class CostObjectMapper extends DataMapperAbstract
      */
     protected static array $hasMany = [
         'l11n' => [
-            'mapper'        => L11nCostObjectMapper::class,
+            'mapper'        => CostObjectL11nMapper::class,
             'table'         => 'accounting_costobject_l11n',
             'self'          => 'accounting_costobject_l11n_costobject',
             'conditional'   => true,

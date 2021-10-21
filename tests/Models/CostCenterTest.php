@@ -21,31 +21,25 @@ use Modules\Accounting\Models\CostCenter;
  */
 class CostCenterTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @covers Modules\Accounting\Models\CostCenter
-     * @group module
-     */
-    public function testDefault() : void
-    {
-        $cc = new CostCenter();
+    private CostCenter $cc;
 
-        self::assertEquals(0, $cc->getId());
-        self::assertEquals('', $cc->l11n->name);
-        self::assertEquals('', $cc->code);
-        self::assertEquals('', $cc->l11n->description);
-        self::assertNull($cc->parent);
+    /**
+     * {@inheritdoc}
+     */
+    protected function setUp() : void
+    {
+        $this->cc = new CostCenter();
     }
 
     /**
      * @covers Modules\Accounting\Models\CostCenter
      * @group module
      */
-    public function testNameInputOutput() : void
+    public function testDefault() : void
     {
-        $cc = new CostCenter();
-
-        $cc->l11n->name = 'TestName';
-        self::assertEquals('TestName', $cc->l11n->name);
+        self::assertEquals(0, $this->cc->getId());
+        self::assertEquals('', $this->cc->code);
+        self::assertNull($this->cc->parent);
     }
 
     /**
@@ -54,22 +48,8 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
      */
     public function testCodeInputOutput() : void
     {
-        $cc = new CostCenter();
-
-        $cc->code = 'TestCode';
-        self::assertEquals('TestCode', $cc->code);
-    }
-
-    /**
-     * @covers Modules\Accounting\Models\CostCenter
-     * @group module
-     */
-    public function testDescriptionInputOutput() : void
-    {
-        $cc = new CostCenter();
-
-        $cc->l11n->description = 'TestDescription';
-        self::assertEquals('TestDescription', $cc->l11n->description);
+        $this->cc->code = 'TestCode';
+        self::assertEquals('TestCode', $this->cc->code);
     }
 
     /**
@@ -78,9 +58,7 @@ class CostCenterTest extends \PHPUnit\Framework\TestCase
      */
     public function testParentInputOutput() : void
     {
-        $cc = new CostCenter();
-
-        $cc->parent = 1;
-        self::assertEquals(1, $cc->parent);
+        $this->cc->parent = 1;
+        self::assertEquals(1, $this->cc->parent);
     }
 }

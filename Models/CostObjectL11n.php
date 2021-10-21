@@ -25,7 +25,7 @@ use phpOMS\Localization\ISO639x1Enum;
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-class L11nCostObject implements \JsonSerializable, ArrayableInterface
+class CostObjectL11n implements \JsonSerializable, ArrayableInterface
 {
     /**
      * Article ID.
@@ -41,7 +41,7 @@ class L11nCostObject implements \JsonSerializable, ArrayableInterface
      * @var int
      * @since 1.0.0
      */
-    protected int $costobject = 0;
+    public int $costobject = 0;
 
     /**
      * Language.
@@ -80,32 +80,6 @@ class L11nCostObject implements \JsonSerializable, ArrayableInterface
     }
 
     /**
-     * Set costobject.
-     *
-     * @param int $costobject CostObject id
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setCostObject(int $costobject) : void
-    {
-        $this->costobject = $costobject;
-    }
-
-    /**
-     * Get costobject
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getCostObject() : int
-    {
-        return $this->costobject;
-    }
-
-    /**
      * Get language
      *
      * @return string
@@ -139,6 +113,7 @@ class L11nCostObject implements \JsonSerializable, ArrayableInterface
         return [
             'id'              => $this->id,
             'name'            => $this->name,
+            'description'            => $this->description,
             'costobject'      => $this->costobject,
             'language'        => $this->language,
         ];

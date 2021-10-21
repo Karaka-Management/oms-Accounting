@@ -18,14 +18,14 @@ use phpOMS\Contract\ArrayableInterface;
 use phpOMS\Localization\ISO639x1Enum;
 
 /**
- * CostCenter class.
+ * Balance class.
  *
  * @package Modules\Accounting\Models
  * @license OMS License 1.0
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-class L11nCostCenter implements \JsonSerializable, ArrayableInterface
+class BalanceL11n implements \JsonSerializable, ArrayableInterface
 {
     /**
      * Article ID.
@@ -36,12 +36,12 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
     protected int $id = 0;
 
     /**
-     * CostCenter ID.
+     * Balance ID.
      *
      * @var int
      * @since 1.0.0
      */
-    protected int $costcenter = 0;
+    public int $balance = 0;
 
     /**
      * Language.
@@ -80,32 +80,6 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
     }
 
     /**
-     * Set costcenter.
-     *
-     * @param int $costcenter CostCenter id
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setCostCenter(int $costcenter) : void
-    {
-        $this->costcenter = $costcenter;
-    }
-
-    /**
-     * Get costcenter
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getCostCenter() : int
-    {
-        return $this->costcenter;
-    }
-
-    /**
      * Get language
      *
      * @return string
@@ -139,7 +113,8 @@ class L11nCostCenter implements \JsonSerializable, ArrayableInterface
         return [
             'id'              => $this->id,
             'name'            => $this->name,
-            'costcenter'      => $this->costcenter,
+            'description'            => $this->description,
+            'balance'      => $this->balance,
             'language'        => $this->language,
         ];
     }

@@ -30,7 +30,7 @@ class Balance
      * @var int
      * @since 1.0.0
      */
-    private int $id = 0;
+    protected int $id = 0;
 
     /**
      * Balance data.
@@ -41,20 +41,22 @@ class Balance
     private array $balance = [];
 
     /**
-     * Balance name.
+     * Localization.
      *
-     * @var string
+     * @var BalanceL11n
      * @since 1.0.0
      */
-    public string $name = '';
+    public BalanceL11n $l11n;
 
     /**
-     * Balance description.
+     * Constructor.
      *
-     * @var string
      * @since 1.0.0
      */
-    private string $description = '';
+    public function __construct()
+    {
+        $this->l11n = new BalanceL11n();
+    }
 
     /**
      * Get balance id
@@ -66,31 +68,5 @@ class Balance
     public function getId() : int
     {
         return $this->id;
-    }
-
-    /**
-     * Set description
-     *
-     * @param string $description Balance description
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function setDescription(string $description) : void
-    {
-        $this->description = $description;
-    }
-
-    /**
-     * Get description
-     *
-     * @return string
-     *
-     * @since 1.0.0
-     */
-    public function getDescription() : string
-    {
-        return $this->description;
     }
 }

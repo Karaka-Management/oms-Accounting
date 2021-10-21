@@ -43,10 +43,10 @@ class CostObject
     /**
      * Localization.
      *
-     * @var L11nCostObject
+     * @var CostObjectL11n
      * @since 1.0.0
      */
-    public L11nCostObject $l11n;
+    public CostObjectL11n $l11n;
 
     /**
      * Parent.
@@ -63,7 +63,7 @@ class CostObject
      */
     public function __construct()
     {
-        $this->l11n = new L11nCostObject();
+        $this->l11n = new CostObjectL11n();
     }
 
     /**

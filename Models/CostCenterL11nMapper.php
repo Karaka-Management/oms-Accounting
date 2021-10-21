@@ -24,7 +24,7 @@ use phpOMS\DataStorage\Database\DataMapperAbstract;
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-final class L11nCostCenterMapper extends DataMapperAbstract
+final class CostCenterL11nMapper extends DataMapperAbstract
 {
     /**
      * Columns.

@@ -33,6 +33,14 @@ abstract class AccountAbstract
     protected int $id = 0;
 
     /**
+     * Summary account.
+     *
+     * @var null|int
+     * @since 1.0.0
+     */
+    public ?int $summaryAccount = null;
+
+    /**
      * Type.
      *
      * @var int
@@ -47,18 +55,6 @@ abstract class AccountAbstract
      * @since 1.0.0
      */
     protected array $entries = [];
-
-    /**
-     * Constructor.
-     *
-     * @param int $id Account ID
-     *
-     * @since 1.0.0
-     */
-    public function __construct(int $id = 0)
-    {
-        $this->id = $id;
-    }
 
     /**
      * Get account id.
@@ -90,14 +86,14 @@ abstract class AccountAbstract
      * Get entry.
      *
      * @param \DateTime $start    Interval start
-     * @param \DateTime $end      Interval end
+     * @param null|\DateTime $end      Interval end
      * @param int       $dateType Date type by witch the entries should be filtered
      *
      * @return array
      *
      * @since   1.0.0
      */
-    public function getEntriesByDate(\DateTime $start, \DateTime $end, int $dateType = TimeRangeType::RECEIPT_DATE) : array
+    public function getEntriesByDate(\DateTime $start, \DateTime $end = null, int $dateType = TimeRangeType::RECEIPT_DATE) : array
     {
         return [];
     }

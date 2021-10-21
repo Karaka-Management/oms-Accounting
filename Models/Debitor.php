@@ -40,7 +40,7 @@ class Debitor
      * @var null|int|Account
      * @since 1.0.0
      */
-    protected $account = null;
+    public $account = null;
 
     /**
      * Get id.
@@ -52,17 +52,5 @@ class Debitor
     public function getId() : int
     {
         return $this->id;
-    }
-
-    /**
-     * Get account.
-     *
-     * @return null|int|Account
-     *
-     * @since 1.0.0
-     */
-    public function getAccount()
-    {
-        return $this->account;
     }
 }
