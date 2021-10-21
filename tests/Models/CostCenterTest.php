@@ -19,7 +19,7 @@ use Modules\Accounting\Models\CostCenter;
 /**
  * @internal
  */
-class CostCenterTest extends \PHPUnit\Framework\TestCase
+final class CostCenterTest extends \PHPUnit\Framework\TestCase
 {
     private CostCenter $cc;
 

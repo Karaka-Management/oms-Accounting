@@ -21,7 +21,7 @@ use phpOMS\Localization\ISO639x1Enum;
 /**
  * @internal
  */
-class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
+final class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @covers Modules\Accounting\Models\CostObjectMapper

@@ -19,7 +19,7 @@ use Modules\Accounting\Models\Debitor;
 /**
  * @internal
  */
-class DebitorTest extends \PHPUnit\Framework\TestCase
+final class DebitorTest extends \PHPUnit\Framework\TestCase
 {
     private Debitor $creditor;
 

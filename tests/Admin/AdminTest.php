@@ -17,7 +17,7 @@ namespace Modules\Accounting\tests\Admin;
 /**
  * @internal
  */
-class AccountingTest extends \PHPUnit\Framework\TestCase
+final class AccountingTest extends \PHPUnit\Framework\TestCase
 {
     protected const NAME = 'Accounting';
 

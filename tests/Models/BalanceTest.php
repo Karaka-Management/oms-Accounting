@@ -19,7 +19,7 @@ use Modules\Accounting\Models\Balance;
 /**
  * @internal
  */
-class BalanceTest extends \PHPUnit\Framework\TestCase
+final class BalanceTest extends \PHPUnit\Framework\TestCase
 {
     private Balance $balance;
 

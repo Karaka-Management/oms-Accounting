@@ -19,7 +19,7 @@ use Modules\Accounting\Models\Creditor;
 /**
  * @internal
  */
-class CreditorTest extends \PHPUnit\Framework\TestCase
+final class CreditorTest extends \PHPUnit\Framework\TestCase
 {
     private Creditor $creditor;
 

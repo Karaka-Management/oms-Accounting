@@ -21,7 +21,7 @@ use Modules\Accounting\Models\AccountAbstract;
  *
  * @internal
  */
-class AccountAbstractTest extends \PHPUnit\Framework\TestCase
+final class AccountAbstractTest extends \PHPUnit\Framework\TestCase
 {
     private $class = null;
 

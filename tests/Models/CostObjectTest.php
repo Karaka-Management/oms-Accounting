@@ -19,7 +19,7 @@ use Modules\Accounting\Models\CostObject;
 /**
  * @internal
  */
-class CostObjectTest extends \PHPUnit\Framework\TestCase
+final class CostObjectTest extends \PHPUnit\Framework\TestCase
 {
     private CostObject $cc;
 
