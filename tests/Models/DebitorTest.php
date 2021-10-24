@@ -21,14 +21,14 @@ use Modules\Accounting\Models\Debitor;
  */
 final class DebitorTest extends \PHPUnit\Framework\TestCase
 {
-    private Debitor $creditor;
+    private Debitor $debitor;
 
     /**
      * {@inheritdoc}
      */
     protected function setUp() : void
     {
-        $this->creditor = new Debitor();
+        $this->debitor = new Debitor();
     }
 
     /**
@@ -37,6 +37,21 @@ final class DebitorTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->creditor->getId());
+        self::assertEquals(0, $this->debitor->getId());
+    }
+
+    /**
+     * @covers Modules\Accounting\Models\Debitor
+     * @group module
+     */
+    public function testSerialize() : void
+    {
+        self::assertEquals(
+            [
+                'id'       => 0,
+                'account'       => null,
+            ],
+            $this->debitor->jsonSerialize()
+        );
     }
 }

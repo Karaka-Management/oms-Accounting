@@ -61,4 +61,22 @@ final class CostCenterTest extends \PHPUnit\Framework\TestCase
         $this->cc->parent = 1;
         self::assertEquals(1, $this->cc->parent);
     }
+
+    /**
+     * @covers Modules\Accounting\Models\CostCenter
+     * @group module
+     */
+    public function testSerialize() : void
+    {
+        $this->cc->code = '123';
+
+        self::assertEquals(
+            [
+                'id'       => 0,
+                'code'       => '123',
+                'parent'       => null,
+            ],
+            $this->cc->jsonSerialize()
+        );
+    }
 }

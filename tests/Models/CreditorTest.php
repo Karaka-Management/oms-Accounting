@@ -39,4 +39,19 @@ final class CreditorTest extends \PHPUnit\Framework\TestCase
     {
         self::assertEquals(0, $this->creditor->getId());
     }
+
+    /**
+     * @covers Modules\Accounting\Models\Creditor
+     * @group module
+     */
+    public function testSerialize() : void
+    {
+        self::assertEquals(
+            [
+                'id'       => 0,
+                'account'       => null,
+            ],
+            $this->creditor->jsonSerialize()
+        );
+    }
 }

@@ -53,4 +53,23 @@ class Creditor
     {
         return $this->id;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray() : array
+    {
+        return [
+            'id'    => $this->id,
+            'account'    => $this->account,
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
 }

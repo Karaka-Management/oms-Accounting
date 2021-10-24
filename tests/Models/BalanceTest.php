@@ -39,4 +39,18 @@ final class BalanceTest extends \PHPUnit\Framework\TestCase
     {
         self::assertEquals(0, $this->balance->getId());
     }
+
+    /**
+     * @covers Modules\Accounting\Models\Balance
+     * @group module
+     */
+    public function testSerialize() : void
+    {
+        self::assertEquals(
+            [
+                'id'       => 0,
+            ],
+            $this->balance->jsonSerialize()
+        );
+    }
 }

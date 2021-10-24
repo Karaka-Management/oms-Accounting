@@ -21,14 +21,14 @@ use Modules\Accounting\Models\CostObject;
  */
 final class CostObjectTest extends \PHPUnit\Framework\TestCase
 {
-    private CostObject $cc;
+    private CostObject $co;
 
     /**
      * {@inheritdoc}
      */
     protected function setUp() : void
     {
-        $this->cc = new CostObject();
+        $this->co = new CostObject();
     }
 
     /**
@@ -37,9 +37,9 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->cc->getId());
-        self::assertEquals('', $this->cc->code);
-        self::assertNull($this->cc->parent);
+        self::assertEquals(0, $this->co->getId());
+        self::assertEquals('', $this->co->code);
+        self::assertNull($this->co->parent);
     }
 
     /**
@@ -48,8 +48,8 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testCodeInputOutput() : void
     {
-        $this->cc->code = 'TestCode';
-        self::assertEquals('TestCode', $this->cc->code);
+        $this->co->code = 'TestCode';
+        self::assertEquals('TestCode', $this->co->code);
     }
 
     /**
@@ -58,7 +58,25 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testParentInputOutput() : void
     {
-        $this->cc->parent = 1;
-        self::assertEquals(1, $this->cc->parent);
+        $this->co->parent = 1;
+        self::assertEquals(1, $this->co->parent);
+    }
+
+    /**
+     * @covers Modules\Accounting\Models\CostObject
+     * @group module
+     */
+    public function testSerialize() : void
+    {
+        $this->co->code = '123';
+
+        self::assertEquals(
+            [
+                'id'       => 0,
+                'code'       => '123',
+                'parent'       => null,
+            ],
+            $this->co->jsonSerialize()
+        );
     }
 }

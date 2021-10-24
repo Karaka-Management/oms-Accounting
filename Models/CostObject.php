@@ -77,4 +77,24 @@ class CostObject
     {
         return $this->id;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray() : array
+    {
+        return [
+            'id'    => $this->id,
+            'code'    => $this->code,
+            'parent'    => $this->parent,
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function jsonSerialize()
+    {
+        return $this->toArray();
+    }
 }

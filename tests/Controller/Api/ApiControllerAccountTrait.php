@@ -27,7 +27,7 @@ trait ApiControllerAccountTrait
      */
     public function testApiAccountCreate() : void
     {
-       $response = new HttpResponse();
+        $response = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -45,7 +45,7 @@ trait ApiControllerAccountTrait
      */
     public function testApiAccountCreateInvalid() : void
     {
-       $response = new HttpResponse();
+        $response = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -61,7 +61,7 @@ trait ApiControllerAccountTrait
      */
     public function testApiAccountUpdate() : void
     {
-       $response = new HttpResponse();
+        $response = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -79,7 +79,7 @@ trait ApiControllerAccountTrait
      */
     public function testApiAccountUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+        $response = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
