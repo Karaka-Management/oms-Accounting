@@ -48,7 +48,7 @@ final class CreditorTest extends \PHPUnit\Framework\TestCase
     {
         self::assertEquals(
             [
-                'id'       => 0,
+                'id'            => 0,
                 'account'       => null,
             ],
             $this->creditor->jsonSerialize()

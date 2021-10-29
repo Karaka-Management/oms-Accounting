@@ -84,8 +84,8 @@ class CostCenter
     public function toArray() : array
     {
         return [
-            'id'    => $this->id,
-            'code'    => $this->code,
+            'id'        => $this->id,
+            'code'      => $this->code,
             'parent'    => $this->parent,
         ];
     }

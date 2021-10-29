@@ -27,7 +27,7 @@ trait ApiControllerTaxKeyTrait
      */
     public function testApiTaxKeyCreate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -45,7 +45,7 @@ trait ApiControllerTaxKeyTrait
      */
     public function testApiTaxKeyCreateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -61,7 +61,7 @@ trait ApiControllerTaxKeyTrait
      */
     public function testApiTaxKeyUpdate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -79,7 +79,7 @@ trait ApiControllerTaxKeyTrait
      */
     public function testApiTaxKeyUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;

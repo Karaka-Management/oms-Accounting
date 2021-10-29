@@ -111,11 +111,11 @@ class CostObjectL11n implements \JsonSerializable, ArrayableInterface
     public function toArray() : array
     {
         return [
-            'id'              => $this->id,
-            'name'            => $this->name,
+            'id'                     => $this->id,
+            'name'                   => $this->name,
             'description'            => $this->description,
-            'costobject'      => $this->costobject,
-            'language'        => $this->language,
+            'costobject'             => $this->costobject,
+            'language'               => $this->language,
         ];
     }
 

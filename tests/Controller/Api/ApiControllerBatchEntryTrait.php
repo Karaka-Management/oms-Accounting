@@ -27,7 +27,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryCreate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -45,7 +45,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryCreateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -61,7 +61,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryUpdate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -79,7 +79,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -95,7 +95,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryCreate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -113,7 +113,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryCreateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -129,7 +129,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryUpdate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -147,7 +147,7 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;

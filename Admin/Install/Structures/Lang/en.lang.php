@@ -13,5 +13,5 @@
 declare(strict_types=1);
 
 return [
-    '0100' => ''
+    '0100' => '',
 ];

@@ -85,9 +85,9 @@ abstract class AccountAbstract
     /**
      * Get entry.
      *
-     * @param \DateTime $start    Interval start
+     * @param \DateTime      $start    Interval start
      * @param null|\DateTime $end      Interval end
-     * @param int       $dateType Date type by witch the entries should be filtered
+     * @param int            $dateType Date type by witch the entries should be filtered
      *
      * @return array
      *

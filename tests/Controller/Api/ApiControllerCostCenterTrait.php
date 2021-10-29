@@ -27,7 +27,7 @@ trait ApiControllerCostCenterTrait
      */
     public function testApiCostCenterCreate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -45,7 +45,7 @@ trait ApiControllerCostCenterTrait
      */
     public function testApiCostCenterCreateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -61,7 +61,7 @@ trait ApiControllerCostCenterTrait
      */
     public function testApiCostCenterUpdate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -79,7 +79,7 @@ trait ApiControllerCostCenterTrait
      */
     public function testApiCostCenterUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;

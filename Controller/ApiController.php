@@ -14,9 +14,9 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Controller;
 
+use phpOMS\Message\Http\RequestStatusCode;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
-use phpOMS\Message\Http\RequestStatusCode;
 use phpOMS\Model\Message\FormValidation;
 
 /**
@@ -31,7 +31,7 @@ use phpOMS\Model\Message\FormValidation;
  */
 final class ApiController extends Controller
 {
-	/**
+    /**
      * Api method to create an account
      *
      * @param RequestAbstract  $request  Request

@@ -27,7 +27,7 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectCreate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -45,7 +45,7 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectCreateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -61,7 +61,7 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectUpdate() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
@@ -79,7 +79,7 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectUpdateInvalid() : void
     {
-       $response = new HttpResponse();
+       $response  = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;

@@ -111,11 +111,11 @@ class BalanceL11n implements \JsonSerializable, ArrayableInterface
     public function toArray() : array
     {
         return [
-            'id'              => $this->id,
-            'name'            => $this->name,
+            'id'                     => $this->id,
+            'name'                   => $this->name,
             'description'            => $this->description,
-            'balance'      => $this->balance,
-            'language'        => $this->language,
+            'balance'                => $this->balance,
+            'language'               => $this->language,
         ];
     }
 

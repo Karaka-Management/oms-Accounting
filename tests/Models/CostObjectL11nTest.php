@@ -81,18 +81,18 @@ final class CostObjectL11nTest extends \PHPUnit\Framework\TestCase
      */
     public function testSerialize() : void
     {
-        $this->l11n->name = 'Title';
-        $this->l11n->description = 'Description';
+        $this->l11n->name         = 'Title';
+        $this->l11n->description  = 'Description';
         $this->l11n->costobject   = 2;
         $this->l11n->setLanguage(ISO639x1Enum::_DE);
 
         self::assertEquals(
             [
-                'id'       => 0,
-                'name'    => 'Title',
+                'id'               => 0,
+                'name'             => 'Title',
                 'description'      => 'Description',
-                'costobject'      => 2,
-                'language' => ISO639x1Enum::_DE,
+                'costobject'       => 2,
+                'language'         => ISO639x1Enum::_DE,
             ],
             $this->l11n->jsonSerialize()
         );
