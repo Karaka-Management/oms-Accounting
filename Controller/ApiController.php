@@ -46,7 +46,7 @@ final class ApiController extends Controller
      */
     public function apiAccountCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateAccountCreate($request))) {
+        if (!empty($val = $this->validateAccountCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -104,7 +104,7 @@ final class ApiController extends Controller
      */
     public function apiAccountUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateAccountUpdate($request))) {
+        if (!empty($val = $this->validateAccountUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -162,7 +162,7 @@ final class ApiController extends Controller
      */
     public function apiCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateCostCenterCreate($request))) {
+        if (!empty($val = $this->validateCostCenterCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -220,7 +220,7 @@ final class ApiController extends Controller
      */
     public function apiCostCenterUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateCostCenterUpdate($request))) {
+        if (!empty($val = $this->validateCostCenterUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -278,7 +278,7 @@ final class ApiController extends Controller
      */
     public function apiCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateCostObjectCreate($request))) {
+        if (!empty($val = $this->validateCostObjectCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -336,7 +336,7 @@ final class ApiController extends Controller
      */
     public function apiCostObjectUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateCostObjectUpdate($request))) {
+        if (!empty($val = $this->validateCostObjectUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -394,7 +394,7 @@ final class ApiController extends Controller
      */
     public function apiEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateEntryCreate($request))) {
+        if (!empty($val = $this->validateEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -452,7 +452,7 @@ final class ApiController extends Controller
      */
     public function apiEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateEntryUpdate($request))) {
+        if (!empty($val = $this->validateEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -510,7 +510,7 @@ final class ApiController extends Controller
      */
     public function apiRecurringEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateRecurringEntryCreate($request))) {
+        if (!empty($val = $this->validateRecurringEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -568,7 +568,7 @@ final class ApiController extends Controller
      */
     public function apiRecurringEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateRecurringEntryUpdate($request))) {
+        if (!empty($val = $this->validateRecurringEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -626,7 +626,7 @@ final class ApiController extends Controller
      */
     public function apiTaxKeyCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateTaxKeyCreate($request))) {
+        if (!empty($val = $this->validateTaxKeyCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -684,7 +684,7 @@ final class ApiController extends Controller
      */
     public function apiTaxKeyUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateTaxKeyUpdate($request))) {
+        if (!empty($val = $this->validateTaxKeyUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -742,7 +742,7 @@ final class ApiController extends Controller
      */
     public function apiBatchEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateBatchEntryCreate($request))) {
+        if (!empty($val = $this->validateBatchEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
@@ -800,7 +800,7 @@ final class ApiController extends Controller
      */
     public function apiBatchEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
     {
-    	if (!empty($val = $this->validateBatchEntryUpdate($request))) {
+        if (!empty($val = $this->validateBatchEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
             $response->header->status = RequestStatusCode::R_400;
 
