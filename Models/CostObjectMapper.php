@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Models;
 
-use phpOMS\DataStorage\Database\DataMapperAbstract;
+use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
 
 /**
  * Accounting mapper class.
@@ -24,7 +24,7 @@ use phpOMS\DataStorage\Database\DataMapperAbstract;
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-final class CostObjectMapper extends DataMapperAbstract
+final class CostObjectMapper extends DataMapperFactory
 {
     /**
      * Columns.
@@ -32,7 +32,7 @@ final class CostObjectMapper extends DataMapperAbstract
      * @var array<string, array{name:string, type:string, internal:string, autocomplete?:bool, readonly?:bool, writeonly?:bool, annotations?:array}>
      * @since 1.0.0
      */
-    protected static array $columns = [
+    public const COLUMNS = [
         'accounting_costobject_id'      => ['name' => 'accounting_costobject_id',    'type' => 'int',    'internal' => 'id'],
         'accounting_costobject_code'    => ['name' => 'accounting_costobject_code',    'type' => 'string',    'internal' => 'code'],
     ];
@@ -43,7 +43,7 @@ final class CostObjectMapper extends DataMapperAbstract
      * @var array<string, array{mapper:string, table:string, self?:?string, external?:?string, column?:string}>
      * @since 1.0.0
      */
-    protected static array $hasMany = [
+    public const HAS_MANY = [
         'l11n' => [
             'mapper'        => CostObjectL11nMapper::class,
             'table'         => 'accounting_costobject_l11n',
@@ -59,7 +59,7 @@ final class CostObjectMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $model = CostObject::class;
+    public const MODEL = CostObject::class;
 
     /**
      * Primary table.
@@ -67,7 +67,7 @@ final class CostObjectMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $table = 'accounting_costobject';
+    public const TABLE = 'accounting_costobject';
 
     /**
      * Primary field name.
@@ -75,5 +75,5 @@ final class CostObjectMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $primaryField = 'accounting_costobject_id';
+    public const PRIMARYFIELD ='accounting_costobject_id';
 }

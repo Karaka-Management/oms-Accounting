@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Models;
 
-use phpOMS\DataStorage\Database\DataMapperAbstract;
+use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
 
 /**
  * CostObject mapper class.
@@ -24,7 +24,7 @@ use phpOMS\DataStorage\Database\DataMapperAbstract;
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-final class CostObjectL11nMapper extends DataMapperAbstract
+final class CostObjectL11nMapper extends DataMapperFactory
 {
     /**
      * Columns.
@@ -32,7 +32,7 @@ final class CostObjectL11nMapper extends DataMapperAbstract
      * @var array<string, array{name:string, type:string, internal:string, autocomplete?:bool, readonly?:bool, writeonly?:bool, annotations?:array}>
      * @since 1.0.0
      */
-    protected static array $columns = [
+    public const COLUMNS = [
         'accounting_costobject_l11n_id'              => ['name' => 'accounting_costobject_l11n_id',       'type' => 'int',    'internal' => 'id'],
         'accounting_costobject_l11n_name'            => ['name' => 'accounting_costobject_l11n_name',    'type' => 'string', 'internal' => 'name', 'autocomplete' => true],
         'accounting_costobject_l11n_description'     => ['name' => 'accounting_costobject_l11n_description',    'type' => 'string', 'internal' => 'description', 'autocomplete' => true],
@@ -46,7 +46,7 @@ final class CostObjectL11nMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $table = 'accounting_costobject_l11n';
+    public const TABLE = 'accounting_costobject_l11n';
 
     /**
      * Primary field name.
@@ -54,5 +54,5 @@ final class CostObjectL11nMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $primaryField = 'accounting_costobject_l11n_id';
+    public const PRIMARYFIELD ='accounting_costobject_l11n_id';
 }

@@ -325,18 +325,15 @@ final class BackendController extends Controller
 
         if ($request->getData('ptype') === 'p') {
             $view->setData('costcenter',
-                CostCenterMapper::with('language', $response->getLanguage())
-                    ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
+                CostCenterMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '<')->limit(25)->execute()
             );
         } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costcenter',
-                CostCenterMapper::with('language', $response->getLanguage())
-                    ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
+                CostCenterMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '>')->limit(25)->execute()
             );
         } else {
             $view->setData('costcenter',
-                CostCenterMapper::with('language', $response->getLanguage())
-                    ::getAfterPivot(0, null, 25)
+                CostCenterMapper::getAll()->where('id', 0, '>')->limit(25)->execute()
             );
         }
 
@@ -363,18 +360,15 @@ final class BackendController extends Controller
 
         if ($request->getData('ptype') === 'p') {
             $view->setData('costobject',
-                CostObjectMapper::with('language', $response->getLanguage())
-                    ::getBeforePivot((int) ($request->getData('id') ?? 0), null, 25)
+                CostObjectMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '<')->limit(25)->execute()
             );
         } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costobject',
-                CostObjectMapper::with('language', $response->getLanguage())
-                    ::getAfterPivot((int) ($request->getData('id') ?? 0), null, 25)
+                CostObjectMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '>')->limit(25)->execute()
             );
         } else {
             $view->setData('costobject',
-                CostObjectMapper::with('language', $response->getLanguage())
-                    ::getAfterPivot(0, null, 25)
+                CostObjectMapper::getAll()->where('id', 0, '>')->limit(25)->execute()
             );
         }
 

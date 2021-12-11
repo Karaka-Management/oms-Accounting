@@ -34,11 +34,11 @@ final class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
         $costobject->l11n->name        = 'Test CostObject';
         $costobject->l11n->description = 'Test description';
 
-        $id = CostObjectMapper::create($costobject);
+        $id = CostObjectMapper::create()->execute($costobject);
         self::assertGreaterThan(0, $costobject->getId());
         self::assertEquals($id, $costobject->getId());
 
-        $costobjectR = CostObjectMapper::with('language', ISO639x1Enum::_EN)::get($costobject->getId());
+        $costobjectR = CostObjectMapper::get()->with('l11n')->where('l11n/language', ISO639x1Enum::_EN)->where('id', $costobject->getId())->execute();
         self::assertEquals($costobject->code, $costobjectR->code);
         self::assertEquals($costobject->l11n->name, $costobjectR->l11n->name);
         self::assertEquals($costobject->l11n->description, $costobjectR->l11n->description);

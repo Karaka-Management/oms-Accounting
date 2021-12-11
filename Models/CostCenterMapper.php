@@ -14,7 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Models;
 
-use phpOMS\DataStorage\Database\DataMapperAbstract;
+use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
 
 /**
  * Accounting mapper class.
@@ -24,7 +24,7 @@ use phpOMS\DataStorage\Database\DataMapperAbstract;
  * @link    https://orange-management.org
  * @since   1.0.0
  */
-final class CostCenterMapper extends DataMapperAbstract
+final class CostCenterMapper extends DataMapperFactory
 {
     /**
      * Columns.
@@ -32,7 +32,7 @@ final class CostCenterMapper extends DataMapperAbstract
      * @var array<string, array{name:string, type:string, internal:string, autocomplete?:bool, readonly?:bool, writeonly?:bool, annotations?:array}>
      * @since 1.0.0
      */
-    protected static array $columns = [
+    public const COLUMNS = [
         'accounting_costcenter_id'   => ['name' => 'accounting_costcenter_id',   'type' => 'int',    'internal' => 'id'],
         'accounting_costcenter_code' => ['name' => 'accounting_costcenter_code', 'type' => 'string', 'internal' => 'code'],
     ];
@@ -43,12 +43,11 @@ final class CostCenterMapper extends DataMapperAbstract
      * @var array<string, array{mapper:string, table:string, self?:?string, external?:?string, column?:string}>
      * @since 1.0.0
      */
-    protected static array $hasMany = [
+    public const HAS_MANY = [
         'l11n' => [
             'mapper'            => CostCenterL11nMapper::class,
             'table'             => 'accounting_costcenter_l11n',
             'self'              => 'accounting_costcenter_l11n_costcenter',
-            'conditional'       => true,
             'external'          => null,
         ],
     ];
@@ -59,7 +58,7 @@ final class CostCenterMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $model = CostCenter::class;
+    public const MODEL = CostCenter::class;
 
     /**
      * Primary table.
@@ -67,7 +66,7 @@ final class CostCenterMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $table = 'accounting_costcenter';
+    public const TABLE = 'accounting_costcenter';
 
     /**
      * Primary field name.
@@ -75,5 +74,5 @@ final class CostCenterMapper extends DataMapperAbstract
      * @var string
      * @since 1.0.0
      */
-    protected static string $primaryField = 'accounting_costcenter_id';
+    public const PRIMARYFIELD ='accounting_costcenter_id';
 }
