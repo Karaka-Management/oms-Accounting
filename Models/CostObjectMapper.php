@@ -33,8 +33,8 @@ final class CostObjectMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'accounting_costobject_id'      => ['name' => 'accounting_costobject_id',    'type' => 'int',    'internal' => 'id'],
-        'accounting_costobject_code'    => ['name' => 'accounting_costobject_code',    'type' => 'string',    'internal' => 'code'],
+        'accounting_costobject_id'   => ['name' => 'accounting_costobject_id',   'type' => 'int',    'internal' => 'id'],
+        'accounting_costobject_code' => ['name' => 'accounting_costobject_code', 'type' => 'string', 'internal' => 'code'],
     ];
 
     /**
@@ -45,11 +45,11 @@ final class CostObjectMapper extends DataMapperFactory
      */
     public const HAS_MANY = [
         'l11n' => [
-            'mapper'        => CostObjectL11nMapper::class,
-            'table'         => 'accounting_costobject_l11n',
-            'self'          => 'accounting_costobject_l11n_costobject',
-            'conditional'   => true,
-            'external'      => null,
+            'mapper'      => CostObjectL11nMapper::class,
+            'table'       => 'accounting_costobject_l11n',
+            'self'        => 'accounting_costobject_l11n_costobject',
+            'conditional' => true,
+            'external'    => null,
         ],
     ];
 

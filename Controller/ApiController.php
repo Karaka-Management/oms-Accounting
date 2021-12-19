@@ -67,7 +67,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -125,7 +124,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -183,7 +181,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -241,7 +238,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -299,7 +295,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -357,7 +352,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -415,7 +409,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -473,7 +466,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -531,7 +523,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -589,7 +580,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -647,7 +637,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -705,7 +694,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -763,7 +751,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['name'] = empty($request->getData('name')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }
@@ -821,7 +808,6 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = empty($request->getData('id')))
-            || ($val['status'] = false)
         ) {
             return $val;
         }

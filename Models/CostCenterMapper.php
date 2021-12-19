@@ -45,10 +45,11 @@ final class CostCenterMapper extends DataMapperFactory
      */
     public const HAS_MANY = [
         'l11n' => [
-            'mapper'            => CostCenterL11nMapper::class,
-            'table'             => 'accounting_costcenter_l11n',
-            'self'              => 'accounting_costcenter_l11n_costcenter',
-            'external'          => null,
+            'mapper'      => CostCenterL11nMapper::class,
+            'table'       => 'accounting_costcenter_l11n',
+            'self'        => 'accounting_costcenter_l11n_costcenter',
+            'conditional' => true,
+            'external'    => null,
         ],
     ];
 
