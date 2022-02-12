@@ -4,7 +4,7 @@
  *
  * PHP Version 8.0
  *
- * @package   Modules\Accounting
+ * @package   Modules\Localization
  * @copyright Dennis Eichhorn
  * @license   OMS License 1.0
  * @version   1.0.0
@@ -13,8 +13,8 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'Accounting'      => 'Accounting',
     'AccountPostings' => 'Account Postings',
+    'Accounting'      => 'Accounting',
     'Balance'         => 'Balance',
     'BatchPostings'   => 'Batch Postings',
     'CostCenters'     => 'Cost Centers',
