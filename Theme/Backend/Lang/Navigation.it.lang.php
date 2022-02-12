@@ -13,7 +13,7 @@
 declare(strict_types=1);
 
 return ['Navigation' => [
-    'AccountPostings' => 'Messaggi dell\\'account.',
+    'AccountPostings' => 'Messaggi dell\'account.',
     'Accounting'      => 'Contabilità',
     'Balance'         => 'Bilancia',
     'BatchPostings'   => 'Messaggi in batch.',
