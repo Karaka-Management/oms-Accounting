@@ -44,7 +44,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiAccountCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiAccountCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateAccountCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -101,7 +101,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiAccountUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiAccountUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateAccountUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -158,7 +158,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateCostCenterCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -215,7 +215,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostCenterUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiCostCenterUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateCostCenterUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -272,7 +272,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateCostObjectCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -329,7 +329,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostObjectUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiCostObjectUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateCostObjectUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -386,7 +386,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -443,7 +443,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -500,7 +500,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiRecurringEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiRecurringEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateRecurringEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -557,7 +557,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiRecurringEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiRecurringEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateRecurringEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -614,7 +614,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiTaxKeyCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiTaxKeyCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateTaxKeyCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -671,7 +671,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiTaxKeyUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiTaxKeyUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateTaxKeyUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
@@ -728,7 +728,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiBatchEntryCreate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiBatchEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateBatchEntryCreate($request))) {
             $response->set('account_create', new FormValidation($val));
@@ -785,7 +785,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiBatchEntryUpdate(RequestAbstract $request, ResponseAbstract $response, $data = null) : void
+    public function apiBatchEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
     {
         if (!empty($val = $this->validateBatchEntryUpdate($request))) {
             $response->set('account_update', new FormValidation($val));
