@@ -55,7 +55,7 @@ $footerView->setResults(1);
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
                             <td><input type="datetime-local" id="iId" min="1" name="id" required>
                         <tr>
-                            <td colspan="4"><input type="submit" value="<?= $this->getHtml('Search'); ?>">
+                            <td colspan="4"><input type="submit" value="<?= $this->getHtml('Search'); ?>" name="search">
                     </table>
                 </form>
             </div>
