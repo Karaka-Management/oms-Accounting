@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costcenter = $this->getData('costcenter');
 
-$previous = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=p';
-$next     = empty($costcenter) ? '{/prefix}tag/list' : '{/prefix}tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=n';
+$previous = empty($costcenter) ? 'tag/list' : 'tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=p';
+$next     = empty($costcenter) ? 'tag/list' : 'tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=n';
 
 echo $this->getData('nav')->render(); ?>
 <div class="row">
@@ -35,7 +35,7 @@ echo $this->getData('nav')->render(); ?>
                 <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <tbody>
             <?php $count = 0; foreach ($costcenter as $key => $value) : ++$count;
-            $url         = UriFactory::build('{/prefix}tag/single?{?}&id=' . $value->getId()); ?>
+            $url         = UriFactory::build('tag/single?{?}&id=' . $value->getId()); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
                     <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->code); ?></a>
                     <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->l11n->name); ?></a>
