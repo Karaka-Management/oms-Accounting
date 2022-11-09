@@ -35,4 +35,12 @@ final class NullCostObject extends CostObject
     {
         $this->id = $id;
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function jsonSerialize() : mixed
+    {
+        return ['id' => $this->id];
+    }
 }
