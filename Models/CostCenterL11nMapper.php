@@ -54,5 +54,5 @@ final class CostCenterL11nMapper extends DataMapperFactory
      * @var string
      * @since 1.0.0
      */
-    public const PRIMARYFIELD ='accounting_costcenter_l11n_id';
+    public const PRIMARYFIELD = 'accounting_costcenter_l11n_id';
 }

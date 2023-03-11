@@ -75,5 +75,5 @@ final class CostCenterMapper extends DataMapperFactory
      * @var string
      * @since 1.0.0
      */
-    public const PRIMARYFIELD ='accounting_costcenter_id';
+    public const PRIMARYFIELD = 'accounting_costcenter_id';
 }
