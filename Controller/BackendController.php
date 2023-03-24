@@ -6,7 +6,7 @@
  *
  * @package   Modules\Accounting
  * @copyright Dennis Eichhorn
- * @license   OMS License 1.0
+ * @license   OMS License 2.0
  * @version   1.0.0
  * @link      https://jingga.app
  */
@@ -25,7 +25,7 @@ use phpOMS\Views\View;
  * Controller class.
  *
  * @package Modules\Accounting
- * @license OMS License 1.0
+ * @license OMS License 2.0
  * @link    https://jingga.app
  * @since   1.0.0
  * @codeCoverageIgnore
@@ -325,11 +325,11 @@ final class BackendController extends Controller
 
         if ($request->getData('ptype') === 'p') {
             $view->setData('costcenter',
-                CostCenterMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '<')->limit(25)->execute()
+                CostCenterMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '<')->limit(25)->execute()
             );
         } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costcenter',
-                CostCenterMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '>')->limit(25)->execute()
+                CostCenterMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '>')->limit(25)->execute()
             );
         } else {
             $view->setData('costcenter',
@@ -360,11 +360,11 @@ final class BackendController extends Controller
 
         if ($request->getData('ptype') === 'p') {
             $view->setData('costobject',
-                CostObjectMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '<')->limit(25)->execute()
+                CostObjectMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '<')->limit(25)->execute()
             );
         } elseif ($request->getData('ptype') === 'n') {
             $view->setData('costobject',
-                CostObjectMapper::getAll()->where('id', (int) ($request->getData('id') ?? 0), '>')->limit(25)->execute()
+                CostObjectMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '>')->limit(25)->execute()
             );
         } else {
             $view->setData('costobject',

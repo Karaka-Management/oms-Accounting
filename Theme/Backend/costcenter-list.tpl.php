@@ -6,7 +6,7 @@
  *
  * @package   Modules\Accounting
  * @copyright Dennis Eichhorn
- * @license   OMS License 1.0
+ * @license   OMS License 2.0
  * @version   1.0.0
  * @link      https://jingga.app
  */
@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costcenter = $this->getData('costcenter');
 
-$previous = empty($costcenter) ? '{/lang}/{/app}/tag/list' : '{/lang}/{/app}/tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=p';
-$next     = empty($costcenter) ? '{/lang}/{/app}/tag/list' : '{/lang}/{/app}/tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=n';
+$previous = empty($costcenter) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \reset($costcenter)->getId() . '&ptype=p';
+$next     = empty($costcenter) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \end($costcenter)->getId() . '&ptype=n';
 
 echo $this->getData('nav')->render(); ?>
 <div class="row">
@@ -35,7 +35,7 @@ echo $this->getData('nav')->render(); ?>
                 <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <tbody>
             <?php $count = 0; foreach ($costcenter as $key => $value) : ++$count;
-            $url         = UriFactory::build('{/lang}/{/app}/tag/single?{?}&id=' . $value->getId()); ?>
+            $url         = UriFactory::build('{/base}/tag/single?{?}&id=' . $value->getId()); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
                     <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->code); ?></a>
                     <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->l11n->name); ?></a>

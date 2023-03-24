@@ -6,7 +6,7 @@
  *
  * @package   Modules\Accounting
  * @copyright Dennis Eichhorn
- * @license   OMS License 1.0
+ * @license   OMS License 2.0
  * @version   1.0.0
  * @link      https://jingga.app
  */
@@ -36,7 +36,7 @@ echo $this->getData('nav')->render(); ?>
                     <td class="wf-100"><?= $this->getHtml('Name'); ?>
                 <tbody>
                 <?php $c = 0; foreach ([] as $key => $value) : ++$c;
-                $url     = \phpOMS\Uri\UriFactory::build('{/lang}/{/app}/admin/group/settings?{?}&id=' . $value->getId()); ?>
+                $url     = \phpOMS\Uri\UriFactory::build('{/base}/admin/group/settings?{?}&id=' . $value->getId()); ?>
                 <tr>
                     <td><a href="<?= $url; ?>"><?= $value->getId(); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>
