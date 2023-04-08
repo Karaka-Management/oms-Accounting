@@ -66,7 +66,7 @@ final class ApiController extends Controller
     private function validateAccountCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -123,7 +123,7 @@ final class ApiController extends Controller
     private function validateAccountUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -180,7 +180,7 @@ final class ApiController extends Controller
     private function validateCostCenterCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -237,7 +237,7 @@ final class ApiController extends Controller
     private function validateCostCenterUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -294,7 +294,7 @@ final class ApiController extends Controller
     private function validateCostObjectCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -351,7 +351,7 @@ final class ApiController extends Controller
     private function validateCostObjectUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -408,7 +408,7 @@ final class ApiController extends Controller
     private function validateEntryCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -465,7 +465,7 @@ final class ApiController extends Controller
     private function validateEntryUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -522,7 +522,7 @@ final class ApiController extends Controller
     private function validateRecurringEntryCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -579,7 +579,7 @@ final class ApiController extends Controller
     private function validateRecurringEntryUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -636,7 +636,7 @@ final class ApiController extends Controller
     private function validateTaxKeyCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -693,7 +693,7 @@ final class ApiController extends Controller
     private function validateTaxKeyUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
@@ -750,7 +750,7 @@ final class ApiController extends Controller
     private function validateBatchEntryCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = empty($request->getData('name')))
+        if (($val['name'] = !$request->hasData('name'))
         ) {
             return $val;
         }
@@ -807,7 +807,7 @@ final class ApiController extends Controller
     private function validateBatchEntryUpdate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['id'] = empty($request->getData('id')))
+        if (($val['id'] = !$request->hasData('id'))
         ) {
             return $val;
         }
