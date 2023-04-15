@@ -26,15 +26,15 @@ use phpOMS\Stdlib\Base\Enum;
  */
 abstract class TimeRangeType extends Enum
 {
-    public const ENTRY_DATE = 0; /* Date of when the entry happened */
+    public const ENTRY_DATE = 1; /* Date of when the entry happened */
 
-    public const DUE_DATE = 1; /* Date of when the entry is due (only for invoices) */
+    public const DUE_DATE = 2; /* Date of when the entry is due (only for invoices) */
 
-    public const RECEIPT_DATE = 2; /* Date of the receipt */
+    public const RECEIPT_DATE = 3; /* Date of the receipt */
 
-    public const ASSOCIATED_DATE = 3; /* Date of the association (e.g. when did the articles arrive) */
+    public const ASSOCIATED_DATE = 4; /* Date of the association (e.g. when did the articles arrive) */
 
-    public const PERIOD_DATE = 4; /* Date of the period this booking is assoziated with */
+    public const PERIOD_DATE = 5; /* Date of the period this booking is assoziated with */
 
-    public const SQUARED_DATE = 5; /* Date of when the entry got squared/balanced */
+    public const SQUARED_DATE = 6; /* Date of when the entry got squared/balanced */
 }

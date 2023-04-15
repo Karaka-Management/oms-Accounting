@@ -26,11 +26,11 @@ use phpOMS\Stdlib\Base\Enum;
  */
 abstract class AccountType extends Enum
 {
-    public const IMPERSONAL = 0;
+    public const IMPERSONAL = 1;
 
-    public const PERSONAL = 1;
+    public const PERSONAL = 2;
 
-    public const CREDITOR = 2;
+    public const CREDITOR = 3;
 
     public const DEBITOR = 4;
 }
