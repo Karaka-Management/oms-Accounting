@@ -32,7 +32,6 @@
             }
         }
     },
-
     "accounting_costcenter": {
         "name": "accounting_costcenter",
         "fields": {
@@ -93,7 +92,6 @@
             }
         }
     },
-
     "accounting_costobject": {
         "name": "accounting_costobject",
         "fields": {
@@ -154,7 +152,6 @@
             }
         }
     },
-
     "accounting_batch": {
         "name": "accounting_batch",
         "fields": {
