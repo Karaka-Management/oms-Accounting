@@ -37,7 +37,7 @@ final class BalanceTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->balance->getId());
+        self::assertEquals(0, $this->balance->id);
     }
 
     /**

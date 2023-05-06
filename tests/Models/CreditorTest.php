@@ -37,7 +37,7 @@ final class CreditorTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->creditor->getId());
+        self::assertEquals(0, $this->creditor->id);
     }
 
     /**

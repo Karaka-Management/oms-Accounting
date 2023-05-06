@@ -30,7 +30,7 @@ abstract class AccountAbstract
      * @var int
      * @since 1.0.0
      */
-    protected int $id = 0;
+    public int $id = 0;
 
     /**
      * Summary account.
@@ -46,7 +46,7 @@ abstract class AccountAbstract
      * @var int
      * @since 1.0.0
      */
-    protected int $type = AccountType::IMPERSONAL;
+    public int $type = AccountType::IMPERSONAL;
 
     /**
      * Entry list.

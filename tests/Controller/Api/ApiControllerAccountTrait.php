@@ -36,7 +36,7 @@ trait ApiControllerAccountTrait
         $this->module->apiAccountCreate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**
@@ -70,7 +70,7 @@ trait ApiControllerAccountTrait
         $this->module->apiAccountUpdate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**

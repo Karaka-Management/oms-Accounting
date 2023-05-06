@@ -35,10 +35,10 @@ final class CostCenterMapperTest extends \PHPUnit\Framework\TestCase
         $costcenter->l11n->description = 'Test description';
 
         $id = CostCenterMapper::create()->execute($costcenter);
-        self::assertGreaterThan(0, $costcenter->getId());
-        self::assertEquals($id, $costcenter->getId());
+        self::assertGreaterThan(0, $costcenter->id);
+        self::assertEquals($id, $costcenter->id);
 
-        $costcenterR = CostCenterMapper::get()->with('l11n')->where('l11n/language', ISO639x1Enum::_EN)->where('id', $costcenter->getId())->execute();
+        $costcenterR = CostCenterMapper::get()->with('l11n')->where('l11n/language', ISO639x1Enum::_EN)->where('id', $costcenter->id)->execute();
         self::assertEquals($costcenter->code, $costcenterR->code);
         self::assertEquals($costcenter->l11n->name, $costcenterR->l11n->name);
         self::assertEquals($costcenter->l11n->description, $costcenterR->l11n->description);

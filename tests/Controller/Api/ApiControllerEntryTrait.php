@@ -36,7 +36,7 @@ trait ApiControllerEntryTrait
         $this->module->apiEntryCreate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**
@@ -70,7 +70,7 @@ trait ApiControllerEntryTrait
         $this->module->apiEntryUpdate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**

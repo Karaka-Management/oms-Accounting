@@ -36,7 +36,7 @@ final class AccountAbstractTest extends \PHPUnit\Framework\TestCase
 
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->class->getId());
+        self::assertEquals(0, $this->class->id);
         self::assertNull($this->class->summaryAccount);
         self::assertNull($this->class->getEntryById(0));
         self::assertEquals([], $this->class->getEntriesByDate(new \DateTime()));

@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costobject = $this->getData('costobject');
 
-$previous = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \reset($costobject)->getId() . '&ptype=p';
-$next     = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \end($costobject)->getId() . '&ptype=n';
+$previous = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \reset($costobject)->id . '&ptype=p';
+$next     = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \end($costobject)->id . '&ptype=n';
 
 echo $this->getData('nav')->render(); ?>
 <div class="row">
@@ -35,7 +35,7 @@ echo $this->getData('nav')->render(); ?>
                 <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <tbody>
             <?php $count = 0; foreach ($costobject as $key => $value) : ++$count;
-            $url         = UriFactory::build('{/base}/tag/single?{?}&id=' . $value->getId()); ?>
+            $url         = UriFactory::build('{/base}/tag/single?{?}&id=' . $value->id); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
                     <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->code); ?></a>
                     <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->l11n->name); ?></a>

@@ -37,7 +37,7 @@ final class CostCenterTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->cc->getId());
+        self::assertEquals(0, $this->cc->id);
         self::assertEquals('', $this->cc->code);
         self::assertNull($this->cc->parent);
     }

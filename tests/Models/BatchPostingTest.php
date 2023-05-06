@@ -37,7 +37,7 @@ final class BatchPostingTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->batch->getId());
+        self::assertEquals(0, $this->batch->id);
         self::assertEquals(0, $this->batch->creator);
         self::assertEquals('', $this->batch->description);
         self::assertEquals(0, $this->batch->count());

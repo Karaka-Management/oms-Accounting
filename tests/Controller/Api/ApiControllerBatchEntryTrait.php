@@ -36,7 +36,7 @@ trait ApiControllerBatchEntryTrait
         $this->module->apiBatchEntryCreate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**
@@ -70,7 +70,7 @@ trait ApiControllerBatchEntryTrait
         $this->module->apiBatchEntryUpdate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**
@@ -104,7 +104,7 @@ trait ApiControllerBatchEntryTrait
         $this->module->apiRecurringEntryCreate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**
@@ -138,7 +138,7 @@ trait ApiControllerBatchEntryTrait
         $this->module->apiRecurringEntryUpdate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->getId());
+        //self::assertGreaterThan(0, $response->get('')['response']->id);
     }
 
     /**

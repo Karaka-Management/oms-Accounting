@@ -37,7 +37,7 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
      */
     public function testDefault() : void
     {
-        self::assertEquals(0, $this->co->getId());
+        self::assertEquals(0, $this->co->id);
         self::assertEquals('', $this->co->code);
         self::assertNull($this->co->parent);
     }
