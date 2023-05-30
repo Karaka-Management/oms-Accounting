@@ -42,7 +42,7 @@ final class CostCenterL11nTest extends \PHPUnit\Framework\TestCase
         self::assertEquals('', $this->l11n->name);
         self::assertEquals('', $this->l11n->description);
         self::assertEquals(0, $this->l11n->costcenter);
-        self::assertEquals(ISO639x1Enum::_EN, $this->l11n->getLanguage());
+        self::assertEquals(ISO639x1Enum::_EN, $this->l11n->language);
     }
 
     /**
@@ -72,7 +72,7 @@ final class CostCenterL11nTest extends \PHPUnit\Framework\TestCase
     public function testLanguageInputOutput() : void
     {
         $this->l11n->setLanguage(ISO639x1Enum::_DE);
-        self::assertEquals(ISO639x1Enum::_DE, $this->l11n->getLanguage());
+        self::assertEquals(ISO639x1Enum::_DE, $this->l11n->language);
     }
 
     /**
