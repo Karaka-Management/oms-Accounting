@@ -12,7 +12,7 @@
  */
 declare(strict_types=1);
 
-//echo $this->getData('nav')->render();
+//echo $this->data['nav']->render();
 
 $footerView = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
 $footerView->setTemplate('/Web/Templates/Lists/Footer/PaginationBig');

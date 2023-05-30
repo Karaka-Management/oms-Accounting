@@ -23,7 +23,7 @@ $footerView->setPages(25);
 $footerView->setPage(1);
 $footerView->setResults(1);
 
-echo $this->getData('nav')->render(); ?>
+echo $this->data['nav']->render(); ?>
 
 <div class="box w-100">
     <table class="default sticky">

@@ -18,12 +18,12 @@ use phpOMS\Uri\UriFactory;
  * @var \phpOMS\Views\View               $this
  * @var \Modules\Tag\Models\CostObject[] $costobject
  */
-$costobject = $this->getData('costobject');
+$costobject = $this->data['costobject'];
 
 $previous = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \reset($costobject)->id . '&ptype=p';
 $next     = empty($costobject) ? '{/base}/tag/list' : '{/base}/tag/list?{?}&id=' . \end($costobject)->id . '&ptype=n';
 
-echo $this->getData('nav')->render(); ?>
+echo $this->data['nav']->render(); ?>
 <div class="row">
     <div class="col-xs-12">
         <div class="portlet">

@@ -15,7 +15,7 @@ declare(strict_types=1);
 /**
  * @var \phpOMS\Views\View $this
  */
-echo $this->getData('nav')->render(); ?>
+echo $this->data['nav']->render(); ?>
 
 <section class="box w-50">
     <header><h1><?= $this->getHtml('Stack'); ?></h1></header>
