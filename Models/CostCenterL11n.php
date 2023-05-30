@@ -66,17 +66,6 @@ class CostCenterL11n implements \JsonSerializable
      */
     public string $description = '';
 
-    /**
-     * Get id
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getId() : int
-    {
-        return $this->id;
-    }
 
     /**
      * Get language
