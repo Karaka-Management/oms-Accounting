@@ -66,7 +66,6 @@ class CostCenterL11n implements \JsonSerializable
      */
     public string $description = '';
 
-
     /**
      * Get language
      *

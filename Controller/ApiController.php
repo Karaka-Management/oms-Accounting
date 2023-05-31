@@ -48,7 +48,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateAccountCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -105,7 +105,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateAccountUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -162,7 +162,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateCostCenterCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -219,7 +219,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateCostCenterUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -276,7 +276,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateCostObjectCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -333,7 +333,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateCostObjectUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -390,7 +390,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateEntryCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -447,7 +447,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -504,7 +504,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateRecurringEntryCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -561,7 +561,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateRecurringEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -618,7 +618,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateTaxKeyCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -675,7 +675,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateTaxKeyUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -732,7 +732,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateBatchEntryCreate($request))) {
             $response->data['account_create'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }
@@ -789,7 +789,7 @@ final class ApiController extends Controller
     {
         if (!empty($val = $this->validateBatchEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
-            $response->header->status = RequestStatusCode::R_400;
+            $response->header->status         = RequestStatusCode::R_400;
 
             return;
         }

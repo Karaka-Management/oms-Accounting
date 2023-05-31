@@ -198,4 +198,4 @@ $footerView->setResults(1);
     </div>
 </div>
 
-<?php include 'account-list.tpl.php'; ?>
+<?php include __DIR__ . '/account-list.tpl.php'; ?>

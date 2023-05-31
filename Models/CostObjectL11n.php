@@ -66,7 +66,6 @@ class CostObjectL11n implements \JsonSerializable
      */
     public string $description = '';
 
-
     /**
      * Get language
      *
