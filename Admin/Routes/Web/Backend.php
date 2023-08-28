@@ -117,9 +117,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/gl/list.*$' => [
+    '^.*/accounting/coa/list.*$' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLList',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCOAList',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -128,9 +128,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/gl/create.*$' => [
+    '^.*/accounting/coa/create.*$' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLCreate',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCOACreate',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,

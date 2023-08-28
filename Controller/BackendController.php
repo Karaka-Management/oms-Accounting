@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Controller;
 
+use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObjectMapper;
 use phpOMS\Contract\RenderableInterface;
@@ -191,11 +192,16 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewGLList(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
+    public function viewCOAList(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/gl-list');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+
+        $view->data['accounts']  = AccountAbstractMapper::getAll()
+            ->with('l11n')
+            ->where('l11n/language', $response->header->l11n->language)
+            ->execute();
 
         return $view;
     }
@@ -212,10 +218,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewGLCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
+    public function viewCOACreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/gl-create');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-create');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
         return $view;

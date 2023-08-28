@@ -18,6 +18,11 @@ use phpOMS\Message\Http\RequestStatusCode;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
 use phpOMS\Model\Message\FormValidation;
+use Modules\Accounting\Models\AccountAbstract;
+use Modules\Accounting\Models\AccountAbstractMapper;
+use Modules\Accounting\Models\AccountL11nMapper;
+use phpOMS\Localization\BaseStringL11n;
+use phpOMS\Localization\ISO639x1Enum;
 
 /**
  * Accounting controller class.
@@ -52,6 +57,10 @@ final class ApiController extends Controller
 
             return;
         }
+
+        $account = $this->createAccountFromRequest($request);
+        $this->createModel($request->header->account, $account, AccountAbstractMapper::class, 'account', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $account);
     }
 
     /**
@@ -66,7 +75,8 @@ final class ApiController extends Controller
     private function validateAccountCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = !$request->hasData('name'))
+        if (($val['account'] = !$request->hasData('account'))
+            || ($val['content'] = !$request->hasData('content'))
         ) {
             return $val;
         }
@@ -79,13 +89,86 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract $request Request
      *
-     * @return mixed
+     * @return AccountAbstract
      *
      * @since 1.0.0
      */
-    private function createAccountFromRequest(RequestAbstract $request) : mixed
+    private function createAccountFromRequest(RequestAbstract $request) : AccountAbstract
     {
-        return null;
+        $account = new AccountAbstract();
+        $account->account = $request->getDataString('account') ?? '';
+        $account->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+
+        return $account;
+    }
+
+    /**
+     * Api method to create item attribute l11n
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param mixed            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiAccountL11nCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    {
+        if (!empty($val = $this->validateAccountL11nCreate($request))) {
+            $response->header->status = RequestStatusCode::R_400;
+            $this->createInvalidCreateResponse($request, $response, $val);
+
+            return;
+        }
+
+        $contractTypeL11n = $this->createAccountL11nFromRequest($request);
+        $this->createModel($request->header->account, $contractTypeL11n, AccountL11nMapper::class, 'contract_type_l11n', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $contractTypeL11n);
+    }
+
+    /**
+     * Method to create item attribute l11n from request.
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return BaseStringL11n
+     *
+     * @since 1.0.0
+     */
+    private function createAccountL11nFromRequest(RequestAbstract $request) : BaseStringL11n
+    {
+        $contractTypeL11n      = new BaseStringL11n();
+        $contractTypeL11n->ref = $request->getDataInt('ref') ?? 0;
+        $contractTypeL11n->setLanguage(
+            $request->getDataString('language') ?? $request->header->l11n->language
+        );
+        $contractTypeL11n->content = $request->getDataString('content') ?? '';
+
+        return $contractTypeL11n;
+    }
+
+    /**
+     * Validate item attribute l11n create request
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return array<string, bool>
+     *
+     * @since 1.0.0
+     */
+    private function validateAccountL11nCreate(RequestAbstract $request) : array
+    {
+        $val = [];
+        if (($val['content'] = !$request->hasData('content'))
+            || ($val['ref'] = !$request->hasData('ref'))
+        ) {
+            return $val;
+        }
+
+        return [];
     }
 
     /**

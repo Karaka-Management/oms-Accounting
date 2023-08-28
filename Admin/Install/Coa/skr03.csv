@@ -1,0 +1,1615 @@
+﻿,Balance/P&L,Credit/Debit,Is acc. Account,What is the parent/acc. Account,Accounting types,,,,"Tax types (Gewerbe, Umsatz, Koest)",,,Allowed tax id,Overwrites tax id definitions if defined,,,,Tax report pos.,,,
+Account,Type (B/PL),C/D,S,Sammelkonto,IFRS,HB,SB,EUR,G,U,K,Tax ID,PL Tax1,B Tax1,PL Tax2,B Tax2,Bemessungsgrundlage,Steuer,de,en
+5,B,C,0,1400,1,1,1,1,1,1,1,"M19,M07",,,,,81,66,Fällige Einzahlung auf Geschäftsanteile,Unpaid and due shares in co-operatives
+10,,,,,,,,,,,,,,,,,,,"Konzessionen,Rechte, entgeltl. erworben","Purchased concessions, industrial and similar rights and assets, and licences in such rights and assets"
+15,,,,,,,,,,,,,,,,,,,"Konzessionen, entgeltl. erworben",Concessions
+20,,,,,,,,,,,,,,,,,,,"Gew. Schutzrechte, entgeltl. erworben",Industrial rights
+25,,,,,,,,,,,,,,,,,,,"Ähnl. Rechte, Werte, entgeltl. erworben",Other rights and assets
+27,,,,,,,,,,,,,,,,,,,"EDV-Software, entgeltl. erworben",Computer software
+30,,,,,,,,,,,,,,,,,,,"Lizenz gew. Schutzrechte,entg.erworben",Licences in industrial
+35,,,,,,,,,,,,,,,,,,,Geschäfts- oder Firmenwert,Goodwill
+38,,,,,,,,,,,,,,,,,,,"Anzahlungen auf Geschäfts-, Firmenwert",Prepayments for goodwill
+39,,,,,,,,,,,,,,,,,,,Anzahlungen immaterielle VermG,Prepayments for intangible fixed assets
+40,,,,,,,,,,,,,,,,,,,Verschmelzungsmehrwert,Goodwill
+43,,,,,,,,,,,,,,,,,,,Selbst geschaffene immaterielle VermG.,Internally generated intangible fixed assets
+44,,,,,,,,,,,,,,,,,,,"EDV-Software, selbst geschaffen",Computer software
+45,,,,,,,,,,,,,,,,,,,"Lizenzen, Franchise, selbst geschaffen",Licences and franchise
+46,,,,,,,,,,,,,,,,,,,"Konzessionen, Schutzr.,selbst geschaffen",Concessions and industrial rights
+47,,,,,,,,,,,,,,,,,,,"Rezepte, Verfahren, selbst geschaffen","Recipes and formulas, processes, prototypes"
+48,,,,,,,,,,,,,,,,,,,Immat. Vermögensgegenst. in Entwicklung,Intangible fixed assets under development
+50,,,,,,,,,,,,,,,,,,,"Grundstücke,grndst.Rechte und Bauten","Land, land rights and buildings, including buildings on third-party land"
+59,,,,,,,,,,,,,,,,,,,Grundstücksanteil häusl. Arbeitszimmer,Share of land attributable to home office
+60,,,,,,,,,,,,,,,,,,,Grundstücksgleiche Rechte ohne Bauten,Land rights without buildings
+65,,,,,,,,,,,,,,,,,,,Unbebaute Grundstücke,Undeveloped land
+70,,,,,,,,,,,,,,,,,,,Grundstücksgleiche Rechte,"Land rights (heritable building rights, long-term occupancy rights)"
+75,,,,,,,,,,,,,,,,,,,Grundstücke mit Substanzverzehr,Impaired land
+79,,,,,,,,,,,,,,,,,,,Anzahlungen auf Grund und Boden,Advance payments on land
+80,,,,,,,,,,,,,,,,,,,Bauten auf eigenen Grundstücken,Buildings on own land and land rights
+85,,,,,,,,,,,,,,,,,,,Grundstückswert bebauter Grundstücke,Property values of own developed land
+90,,,,,,,,,,,,,,,,,,,Geschäftsbauten (eigene Grundstücke),Commercial buildings
+100,,,,,,,,,,,,,,,,,,,Fabrikbauten (eigene Grundstücke),Industrial buildings
+110,,,,,,,,,,,,,,,,,,,"Garagen (eigene Grst., Geschäftsbauten)",Garages
+111,,,,,,,,,,,,,,,,,,,"Außenanlagen (eigene Grst., Geschäftsb.)",Outdoor facilities
+112,,,,,,,,,,,,,,,,,,,"Hof-, Wegebefestig (eig Grst,Geschäftsb)",Paved courtyards and other paved surfaces
+113,,,,,,,,,,,,,,,,,,,"Einrichtungen (eigene Grst.,Geschäftsb.)",Fixtures in commercial and industrial buildings
+115,,,,,,,,,,,,,,,,,,,Andere Bauten (eigene Grundstücke),Other buildings
+120,,,,,,,,,,,,,,,,,,,"Geschäfts-,Fabrik-u.and. Bauten im Bau","Commercial, industrial and other buildings under construction"
+129,,,,,,,,,,,,,,,,,,,Anzahlg.Bauten auf eigenen Grundstücken,"Advance payments on commercial, industrial and other buildings on own properties"
+140,,,,,,,,,,,,,,,,,,,Wohnbauten (eigene Grundstücke),Residential buildings
+145,,,,,,,,,,,,,,,,,,,"Garagen (eigene Grundst., Wohnbauten)",Garages
+146,,,,,,,,,,,,,,,,,,,"Außenanlagen (eigene Grst., Wohnbauten)",Outdoor facilities
+147,,,,,,,,,,,,,,,,,,,"Hof-, Wegebefestig (eig Grst,Wohnbauten)",Paved courtyards and other paved surfaces
+148,,,,,,,,,,,,,,,,,,,"Einrichtungen (eigene Grst., Wohnbauten)",Fixtures in residential buildings
+149,,,,,,,,,,,,,,,,,,,Gebäudeteil häusliches Arbeitszimmer,Share of building attributable to home office
+150,,,,,,,,,,,,,,,,,,,Wohnbauten im Bau eigenen Grundstücken,Residential buildings under construction
+159,,,,,,,,,,,,,,,,,,,Anzahlg. Wohnbauten auf eig.Grundstücken,Advance payments on residential buildings on own properties
+160,,,,,,,,,,,,,,,,,,,Bauten auf fremden Grundstücken,Buildings on third-party land
+165,,,,,,,,,,,,,,,,,,,Geschäftsbauten (fremde Grundstücke),Commercial buildings
+170,,,,,,,,,,,,,,,,,,,Fabrikbauten (fremde Grundstücke),Industrial buildings
+175,,,,,,,,,,,,,,,,,,,"Garagen (fremde Grst., Geschäftsbauten)",Garages
+176,,,,,,,,,,,,,,,,,,,"Außenanlagen (fremde Grst.,Geschäftsb.)",Outdoor facilities
+177,,,,,,,,,,,,,,,,,,,"Hof-, Wegebefestig (frd Grst,Geschäftsb)",Paved courtyards and other paved surfaces
+178,,,,,,,,,,,,,,,,,,,"Einrichtungen (fremde Grst.,Geschäftsb.)",Fixtures in commercial and industrial buildings
+179,,,,,,,,,,,,,,,,,,,Andere Bauten (fremde Grundstücke),Other buildings
+180,,,,,,,,,,,,,,,,,,,"Geschäfts-,Fabrik-u.and. Bauten im Bau","Commercial, industrial and other buildings under construction"
+189,,,,,,,,,,,,,,,,,,,Anzahlg. auf Bauten fremd. Grundstücken,"Prepayments on commercial, industrial and other buildings on third-party land"
+190,,,,,,,,,,,,,,,,,,,Wohnbauten (fremde Grundstücke),Residential buildings
+191,,,,,,,,,,,,,,,,,,,"Garagen (fremde Grundstücke, Wohnbauten)",Garages
+192,,,,,,,,,,,,,,,,,,,"Außenanlagen (fremde Grundstücke,Wohnb.)",Outdoor facilities
+193,,,,,,,,,,,,,,,,,,,"Hof-, Wegebefestigung (frd Grst.,Wohnb.)",Paved courtyards and other paved surfaces
+194,,,,,,,,,,,,,,,,,,,"Einrichtungen (fremde Grundst., Wohnb.)",Fixtures in residential
+195,,,,,,,,,,,,,,,,,,,Wohnbauten im Bau fremden Grundstücken,Residential buildings under construction
+199,,,,,,,,,,,,,,,,,,,Anzahlungen a. Wohnbauten a. fremd. Gr.,Prepayments on residential buildings on third-party land
+200,,,,,,,,,,,,,,,,,,,Technische Anlagen und Maschinen,Technical equipment and machinery
+210,,,,,,,,,,,,,,,,,,,Maschinen,Machinery
+220,,,,,,,,,,,,,,,,,,,Maschinengebundene Werkzeuge,Machine tools
+240,,,,,,,,,,,,,,,,,,,Technische Anlagen,Technical equipment
+260,,,,,,,,,,,,,,,,,,,Transportanlagen und Ähnliches,Transportation and similar systems
+280,,,,,,,,,,,,,,,,,,,Betriebsvorrichtungen,Operating facilities
+290,,,,,,,,,,,,,,,,,,,Technische Anlagen und Maschinen im Bau,Technical equipment and machinery under construction
+299,,,,,,,,,,,,,,,,,,,Anzahlungen auf technische Anlagen,Prepayments on technical equipment and machinery
+300,,,,,,,,,,,,,,,,,,,Betriebs- und Geschäftsausstattung,"Other equipment, operating and office equipment"
+310,,,,,,,,,,,,,,,,,,,Andere Anlagen,Other equipment
+320,,,,,,,,,,,,,,,,,,,Pkw,Passenger cars
+350,,,,,,,,,,,,,,,,,,,Lkw,Heavy goods vehicles
+380,,,,,,,,,,,,,,,,,,,Sonstige Transportmittel,Other transportation resources
+400,,,,,,,,,,,,,,,,,,,Betriebsausstattung,Operating equipment
+410,,,,,,,,,,,,,,,,,,,Geschäftsausstattung,Office equipment
+420,,,,,,,,,,,,,,,,,,,Büroeinrichtung,Office fittings
+430,,,,,,,,,,,,,,,,,,,Ladeneinrichtung,Shop fittings
+440,,,,,,,,,,,,,,,,,,,Werkzeuge,Tools
+450,,,,,,,,,,,,,,,,,,,Einbauten in fremde Grundstücke,Leasehold improvements
+460,,,,,,,,,,,,,,,,,,,Gerüst- und Schalungsmaterial,Scaffolding and formwork materials
+480,,,,,,,,,,,,,,,,,,,Geringwertige Wirtschaftsgüter,Low-value assets
+485,,,,,,,,,,,,,,,,,,,Wirtschaftsgüter (Sammelposten),Assets (collective item)
+490,,,,,,,,,,,,,,,,,,,Sonstige Betriebs-u.Gesch.ausstattung,Other operating and office equipment
+498,,,,,,,,,,,,,,,,,,,Betriebs- u. Gesch.ausstattung im Bau,"Other equipment, operating and office equipment under construction"
+499,,,,,,,,,,,,,,,,,,,Anzahlung Betriebs- u. Gesch.ausstattung,"Prepayments on other equipment, operating and office equipment"
+500,,,,,,,,,,,,,,,,,,,Anteile an verbundenen Unternehmen (AV),Shares in affiliated companies (fixed assets)
+501,,,,,,,,,,,,,,,,,,,"Anteile an verbundenen UN, PersG (AV)","Shares in affiliated companies, partnerships"
+502,,,,,,,,,,,,,,,,,,,"Anteile an verbundenen UN, KapG (AV)","Shares in affiliated companies, corporations"
+503,,,,,,,,,,,,,,,,,,,"Anteile an herrsch. Gesell., KapG (AV)","Shares in parent or majority investor, corporations"
+504,,,,,,,,,,,,,,,,,,,Anteile a. herrschend. Gesellschaft (AV),Shares in parent or in majority investor
+505,,,,,,,,,,,,,,,,,,,Ausleihungen an verbundene Unternehmen,Loans to affiliated companies
+506,,,,,,,,,,,,,,,,,,,"Ausleihungen an verbundene UN, PersG","Loans to affiliated companies, partnerships"
+507,,,,,,,,,,,,,,,,,,,"Ausleihungen an verbundene UN, KapG","Loans to affiliated companies, corporations"
+508,,,,,,,,,,,,,,,,,,,"Ausleihungen an verbundene UN, EinzelUN","Loans to affiliated companies, sole proprietorships"
+509,,,,,,,,,,,,,,,,,,,"Anteile an herrsch. Gesell., PersG (AV)","Shares in affiliated majority investor, partnership"
+510,,,,,,,,,,,,,,,,,,,Beteiligungen,Other long-term equity investments
+513,,,,,,,,,,,,,,,,,,,Typisch stille Beteiligungen,Typical silent partnerships
+516,,,,,,,,,,,,,,,,,,,Atypische stille Beteiligungen,Atypical silent partnerships
+517,,,,,,,,,,,,,,,,,,,Beteiligungen an Kapitalgesellschaft,Investments in corporations
+518,,,,,,,,,,,,,,,,,,,Beteiligungen an Personengesellschaft,Investments in partnerships
+519,,,,,,,,,,,,,,,,,,,Beteiligung GmbH&Co.an Komplementär-GmbH,Investment by a GmbH & Co. KG in a general partner GmbH
+520,,,,,,,,,,,,,,,,,,,Ausleih. an UN mit Beteiligungsverh.,Loans to other long-term investees and investors
+523,,,,,,,,,,,,,,,,,,,"Ausleihungen an UN mit Beteilig., PersG","Loans to other long-term investees or investors, partnerships"
+524,,,,,,,,,,,,,,,,,,,"Ausleihungen an UN mit Beteilig., KapG","Loans to other long-term investees or investors, corporations"
+525,,,,,,,,,,,,,,,,,,,Wertpapiere des Anlagevermögens,Long-term securities
+530,,,,,,,,,,,,,,,,,,,Wertpapiere mit Gewinnbeteil.ansprüch.,Securities with profit participation rights that are subject to the partial income system
+535,,,,,,,,,,,,,,,,,,,Festverzinsliche Wertpapiere,Fixed-income securities
+538,,,,,,,,,,,,,,,,,,,Anteile GmbH & Co. an Komplementär-GmbH,Shares of a GmbH & Co. KG in a general partner GmbH
+540,,,,,,,,,,,,,,,,,,,Übrige sonstige Ausleihungen,Other miscellaneous loans
+550,,,,,,,,,,,,,,,,,,,Darlehen (Finanzanlagen),Loans
+570,,,,,,,,,,,,,,,,,,,Genossenschaftsanteile z.lfr.Verbleib,Long-term shares in cooperatives
+580,,,,,,,,,,,,,,,,,,,Ausleihungen an Gesellschafter,Loans to sharehol-
+582,,,,,,,,,,,,,,,,,,,Ausleihungen an GmbH-Gesellschafter,Loans to GmbH shareholders
+583,,,,,,,,,,,,,,,,,,,Ausleih. an stille Gesellschafter,Loans to GmbH shareholders
+584,,,,,,,,,,,,,,,,,,,Ausleih. an persönlich haftende Ges.er,Loans to general partners
+586,,,,,,,,,,,,,,,,,,,Ausleihungen an Kommanditisten,Loans to limited partners
+590,,,,,,,,,,,,,,,,,,,Ausleihungen an nahe stehende Personen,Loans to related parties
+595,,,,,,,,,,,,,,,,,,,LV-Rückdeckungsansprüche z.lfr.Verbl.,Long-term pension liability claims from life insurance policies
+600,,,,,,,,,,,,,,,,,,,"Anleihen, nicht konvertibel",Non-convertible bonds
+601,,,,,,,,,,,,,,,,,,,"Anleihen, nicht konvertibel (b. 1 Jahr)",Non-convertible bonds
+605,,,,,,,,,,,,,,,,,,,"Anleihen, nicht konvertibel (1-5 Jahre)",Non-convertible bonds
+610,,,,,,,,,,,,,,,,,,,"Anleihen, nicht konvertibel (g.5 Jahre)",Non-convertible bonds
+615,,,,,,,,,,,,,,,,,,,Anleihen konvertibel,Convertible bonds
+616,,,,,,,,,,,,,,,,,,,Anleihen konvertibel(bis 1 Jahr),Convertible bonds remaining term up to 1 year
+620,,,,,,,,,,,,,,,,,,,Anleihen konvertibel(1-5 Jahre),Convertible bonds remaining term between 1 and 5 years
+625,,,,,,,,,,,,,,,,,,,Anleihen konvertibel(größer 5 Jahre),Convertible bonds remaining term greater than 5 years
+630,,,,,,,,,,,,,,,,,,,Verbindlichkeiten gg. Kreditinstituten,Liabilities to banks
+631,,,,,,,,,,,,,,,,,,,Verbindlichkeiten Kreditinstitut(b.1J),Liabilities to banks remaining term up to 1 year
+640,,,,,,,,,,,,,,,,,,,Verbindlichkeiten Kreditinstitut(1-5J),Liabilities to banks remaining term between 1 and 5 years
+650,,,,,,,,,,,,,,,,,,,Verbindlichkeiten Kreditinstitut(g.5J),Liabilities to banks remaining term greater than 5 years
+660,,,,,,,,,,,,,,,,,,,TZ-Verbindlichkeit. gg. Kreditinstituten,Liabilities to banks instalment credit agreements
+661,,,,,,,,,,,,,,,,,,,TZ-Verbindlichkeit. Kreditinstitut(b.1J),Liabilities to banks instalment credit agreements remaining term up to 1 year
+670,,,,,,,,,,,,,,,,,,,TZ-Verbindlichkeit. Kreditinstitut(1-5J),Liabilities to banks instalment credit agreements remaining term between 1 and 5 years
+680,,,,,,,,,,,,,,,,,,,TZ-Verbindlichkeit. Kreditinstitut(g.5J),Liabilities to banks instalment credit agreements remaining term greater than 5 years
+690,,,,,,,,,,,,,,,,,,,"Verb.g.Kred.inst.,vor Rlz-Differenzierg","Liabilities to banks, previous to residual term differentiation"
+699,,,,,,,,,,,,,,,,,,,Gegenkonto bei Aufteilung Kto 0690-0698,Contra account 0690-0698
+700,,,,,,,,,,,,,,,,,,,Verbindlichk.gegenüber verbundenen UN,Liabilities to affiliated companies
+701,,,,,,,,,,,,,,,,,,,Verbindlichkeit. gg.verbundene UN(b.1 J),Liabilities to affiliated companies remaining term up to 1 year
+705,,,,,,,,,,,,,,,,,,,Verbindlichkeit. gg.verbundene UN(1-5 J),Liabilities to affiliated companies remaining term between 1 and 5 years
+710,,,,,,,,,,,,,,,,,,,Verbindlichkeit. gg.verbundene UN(g.5 J),Liabilities to affiliated companies remaining term greater than 5 years
+715,,,,,,,,,,,,,,,,,,,Verbindl. gg.UN mit Beteiligungsverh.,Liabilities to other long-term investees and investors
+716,,,,,,,,,,,,,,,,,,,Verbindl. gg.UN mit Beteiligg.verh. b.1J,Liabilities to other long-term investees and investors remaining term up to 1 year
+720,,,,,,,,,,,,,,,,,,,Verbindl. gg.UN mit Beteiligg.verh. 1-5J,Liabilities to other long-term investees and investors remaining term between 1 and 5 years
+725,,,,,,,,,,,,,,,,,,,Verbindl. gg.UN mit Beteiligg.verh. g.5J,Liabilities to other long-term investees and investors remaining
+730,,,,,,,,,,,,,,,,,,,Verbindlichkeit.gg. Gesellschaftern,Liabilities to shareholders/partners
+731,,,,,,,,,,,,,,,,,,,Verbindlichkeit.gg. Gesellschaftern b.1J,Liabilities to shareholders/partners remaining term up to 1 year
+740,,,,,,,,,,,,,,,,,,,Verbindlichkeit.gg. Gesellschaftern 1-5J,Liabilities to shareholders/partners remaining term between 1 and 5 years
+750,,,,,,,,,,,,,,,,,,,Verbindlichkeit.gg. Gesellschaftern g.5J,Liabilities to shareholders/partners remaining term greater than 5 years
+755,,,,,,,,,,,,,,,,,,,Verb.gg.Gesellschaftern off.Ausschüttg.,Liabilities to shareholders/partners for outstanding distributions
+760,,,,,,,,,,,,,,,,,,,Verb.ggü.typ.stillen Gesellschaftern,Liabilities to typical silent partners
+761,,,,,,,,,,,,,,,,,,,Verb.ggü.typ.stillen Gesellsch.(b.1J),Liabilities to typical silent partners remaining term up to 1 year
+764,,,,,,,,,,,,,,,,,,,Verb.ggü.typ.stillen Gesellsch.(1-5J),Liabilities to typical silent partners remaining term between 1 and 5 years
+767,,,,,,,,,,,,,,,,,,,Verb.ggü.typ.stillen Gesellsch.(g.5J),Liabilities to typical silent partners remaining term greater than 5 years
+770,,,,,,,,,,,,,,,,,,,Verb.ggü.atyp.stillen Gesellschaftern,Liabilities to atypical silent partners
+771,,,,,,,,,,,,,,,,,,,Verb.ggü.atyp.stillen Gesellsch.(b.1J),Liabilities to atypical silent partners remaining term up to 1 year
+774,,,,,,,,,,,,,,,,,,,Verb.ggü.atyp.stillen Gesellsch.(1-5J),Liabilities to atypical silent partners remaining term between 1 and 5 years
+777,,,,,,,,,,,,,,,,,,,Verb.ggü.atyp.stillen Gesellsch.(g.5J),Liabilities to atypical silent partners remaining term greater than 5 years
+780,,,,,,,,,,,,,,,,,,,Partiarische Darlehen,Profit-participation loans
+781,,,,,,,,,,,,,,,,,,,Partiarische Darlehen(bis 1 Jahr),Profit-participation loans remaining term up to 1 year
+784,,,,,,,,,,,,,,,,,,,Partiarische Darlehen(1-5 Jahre),Profit-participation loans remaining term between 1 and 5 years
+787,,,,,,,,,,,,,,,,,,,Partiarische Darlehen(g. 5 Jahre),Profit-participation loans remaining term greater than 5 years
+790,,,,,,,,,,,,,,,,,,,So.Verb.vor Rlz-Differenz.(n.Bilanzier.),"Other liabilities, previous to residual term differentiation (balance sheet accounting only)"
+799,,,,,,,,,,,,,,,,,,,Gegenkonto Aufteilung so.Verbindlichk. 0730-1789 and 1665-1678,Contra account 0730-1789 and 1665-1678
+800,,,,,,,,,,,,,,,,,,,Gezeichnetes Kapital,Subscribed capital
+809,,,,,,,,,,,,,,,,,,,Kapitalerhöhung aus Gesellschaftsmitteln,Capital increase from reserves or retained earnings
+810,,,,,,,,,,,,,,,,,,,Geschäftsguthaben verbleib. Mitglieder,Paid-up shares of remaining members of co-operatives
+811,,,,,,,,,,,,,,,,,,,Geschäftsguthaben ausscheid.Mitglieder,Paid-up shares of withdrawing members of co-operatives
+812,,,,,,,,,,,,,,,,,,,Geschäftsguthaben gekünd. Geschäftsant,"Paid-up shares of cooperatives, cancelled shares"
+813,,,,,,,,,,,,,,,,,,,Fällige Einzahl. Geschäftsant. vermerkt,"Unpaid and due shares in co-operatives, recorded"
+815,,,,,,,,,,,,,,,,,,,Gkto.fällige Einzah.Geschäftsant. verm.,"Contra account for unpaid and due shares in co-operatives, recorded"
+819,,,,,,,,,,,,,,,,,,,Erworbene eigene Anteile,Purchased treasury
+820,,,,,,,,,,,,,,,,,,,Ausstehende Einlage nicht eingefordert,Unpaid uncalled contributions to subscribed capital
+830,,,,,,,,,,,,,,,,,,,Ausstehende Einlage eingefordert,Unpaid called contributions to subscribed capital
+839,,,,,,,,,,,,,,,,,,,Nachschüsse,Supplementary calls (receivables; contra account 0845)
+840,,,,,,,,,,,,,,,,,,,Kapitalrücklage,Capital reserves
+841,,,,,,,,,,,,,,,,,,,Kapitalrücklage/Anteile ü. Nennbetrag,Capital reserves from issuance of shares above par or notional amount
+842,,,,,,,,,,,,,,,,,,,Kapitalrückl./Ausgabe Schuldverschr.,Capital reserves from issuance of convertible bonds and options to acquire shares
+843,,,,,,,,,,,,,,,,,,,Kapitalrücklage gg.Vorzugsgewährung,Capital reserves from additional payments as consideration for preferential rights for shares
+844,,,,,,,,,,,,,,,,,,,Kapitalrückl. durch Zuzahlungen in EK,Other additional capital contributions
+845,,,,,,,,,,,,,,,,,,,Nachschusskapital,Supplementary calls
+846,,,,,,,,,,,,,,,,,,,Gesetzliche Rücklage,Legal reserve
+848,,,,,,,,,,,,,,,,,,,Gewinnrücklage Erwerb eigener Anteile,Other revenue reserves from the purchase of treasury shares
+849,,,,,,,,,,,,,,,,,,,Rücklage Anteile an herrsch. Unternehmen,Reserve for shares in a parent or majority investor
+851,,,,,,,,,,,,,,,,,,,Satzungsmäßige Rücklagen,Reserves provided for by the articles of association
+852,,,,,,,,,,,,,,,,,,,Andere Ergebnisrücklagen,Other revenue reserves (co-operatives)
+853,,,,,,,,,,,,,,,,,,,Gewinnrücklage Übergangsvorschr. BilMoG,Revenue reserves from the transitional BilMoG provisions
+854,,,,,,,,,,,,,,,,,,,Gewinnrücklage Zuschreibg. Sachanlage,Revenue reserves from the transitional BilMoG provisions (reversal of writedowns of tangible fixed assets)
+855,,,,,,,,,,,,,,,,,,,Andere Gewinnrücklagen,Other revenue reserves
+856,,,,,,,,,,,,,,,,,,,Eigenkapitalanteil von Wertaufholungen,Equity component of reversals of writedowns
+857,,,,,,,,,,,,,,,,,,,Gewinnrücklage Zuschreibg. Finanzanl.,Revenue reserves from the transitional BilMoG provisions (reversal of writedowns of long-term financial assets)
+858,,,,,,,,,,,,,,,,,,,Gewinnrücklage Auflösung SoPo,Revenue reserves from reversal of special tax-allowable reserves
+859,,,,,,,,,,,,,,,,,,,Latente Steuern (H) neutrale Verrechnung,Deferred taxes (revenue reserves credit balance) from items taken directly to equity
+860,,,,,,,,,,,,,,,,,,,Gewinnvortrag vor Verwendung,Retained profits
+865,,,,,,,,,,,,,,,,,,,Gewinnvortrag vor Verwendung (KKE),Retained profits brought forward before appropriation of net profit (with breakdown for statement of changes in capital accounts)
+867,,,,,,,,,,,,,,,,,,,Verlustvortrag vor Verwendung (KKE),Accumulated losses brought forward before appropriation of net profit (with breakdown for statement of changes in capital accounts)
+868,,,,,,,,,,,,,,,,,,,Verlustvortrag vor Verwendung,Accumulated losses brought forward before appropriation of net profit
+870,,,,,,,,,,,,,,,,,,,"Festkapital (VH), EK","Fixed capital, gp"
+871,,,,,,,,,,,,,,,,,,,"Kapital (fester Anteil, nur EU)","Capital (fixed share, only sole proprietorships)"
+880,,,,,,,,,,,,,,,,,,,"Variables Kapital (VH), EK","Variable capital, gp"
+881,,,,,,,,,,,,,,,,,,,"Kapital (variabler Anteil, nur EU)","Capital (variable share, only sole proprietorships)"
+890,,,,,,,,,,,,,,,,,,,"Gesellschafter-Darlehen (VH), FK","Partner loans, gp"
+900,,,,,,,,,,,,,,,,,,,"Kommandit-Kapital (TH), EK","Loss adjustment account, lp"
+910,,,,,,,,,,,,,,,,,,,"Verlustausgleichskonto (TH), EK","Loss adjustment account, lp"
+920,,,,,,,,,,,,,,,,,,,"Gesellschafter-Darlehen (TH), FK","Partner loans, lp"
+930,,,,,,,,,,,,,,,,,,,Übrige andere Sonderposten,Miscellaneous other special reserves
+931,,,,,,,,,,,,,,,,,,,Steuerfreie Rücklagen nach § 6b EStG,Untaxed reserves under section 6b EStG
+932,,,,,,,,,,,,,,,,,,,Rücklage für Ersatzbeschaffung,Replacement reserves
+940,,,,,,,,,,,,,,,,,,,"SoPo mit Rücklageanteil, Sonder-AfA","Special tax-allowable reserves, accelerated tax depreciation and writedowns"
+945,,,,,,,,,,,,,,,,,,,Ausgleichsposten Entnahmen § 4g EStG,"Adjustment item for withdrawals, s. 4g EStG"
+946,,,,,,,,,,,,,,,,,,,Rücklage für Zuschüsse,Reserve for investment
+947,,,,,,,,,,,,,,,,,,,SoPo Rücklageanteil nach § 7g (5) EStG,Special tax-allowable
+948,,,,,,,,,,,,,,,,,,,Sonderposten für Zuschüsse Dritter,Special reserves for
+949,,,,,,,,,,,,,,,,,,,Sonderposten für Investitionszulagen,Extraordinary items for investment grants
+950,,,,,,,,,,,,,,,,,,,Pensions-und ähnliche Rückstellungen,Provisions for pensions and similar obligations
+951,,,,,,,,,,,,,,,,,,,Rückstellung Pensionen zur Saldierung,Provisions for pensions and similar obligations for offsetting against long-term assets in accordance with section 246(2) HGB
+952,,,,,,,,,,,,,,,,,,,Pensionsrückstellungen ggb. Ges.ern,Provisions for pensions and similar obligations to shareholders or related parties (10 % capital investment)
+953,,,,,,,,,,,,,,,,,,,Rückstellungen für Direktzusagen,Provisions for direct commitments
+954,,,,,,,,,,,,,,,,,,,"Rückst. Zuschussverpfl. Pens.kasse, LV",Provisions for subsidy obligations for pension funds and life insurances
+955,,,,,,,,,,,,,,,,,,,Steuerrückstellungen,Provisions for taxes
+956,,,,,,,,,,,,,,,,,,,Gewerbesteuerrückstellung § 4 (5b) EStG,"Provision for trade tax, section 4(5b) EStG"
+961,,,,,,,,,,,,,,,,,,,Urlaubsrückstellungen,Provisions for vacation pay
+962,,,,,,,,,,,,,,,,,,,Steuerrückstellung Steuerstundung BStBK,Provisions for taxes for tax deferral (BStBK)
+963,,,,,,,,,,,,,,,,,,,Körperschaftsteuerrückstellung,Provision for corporate income tax
+964,,,,,,,,,,,,,,,,,,,Rückstell. langfristige Verpflichtung,Long-term provisions for long-term obligations comparable to post-employment benefits
+965,,,,,,,,,,,,,,,,,,,Rückstellungen für Personalkosten,Provisions for personnel expenses
+966,,,,,,,,,,,,,,,,,,,Rückstellungen für Aufbewahrungspflicht,Provisions for record retention obligations
+967,,,,,,,,,,,,,,,,,,,"Rückst. langfr. Verpflicht., Saldierung",Long-term provisions for long-term obligations comparable to post-employment benefits for offsetting with long-term assets under
+968,,,,,,,,,,,,,,,,,,,Passive latente Steuern,Deferred tax liabilities
+969,,,,,,,,,,,,,,,,,,,Rückstellungen für latente Steuern,Allowances for deferred tax liabilities
+970,,,,,,,,,,,,,,,,,,,Sonstige Rückstellungen,Other provisions
+971,,,,,,,,,,,,,,,,,,,Rückstellungen Instandhaltung bis 3 M,Provisions for maintenance expenses deferred to the first three months of the following year
+973,,,,,,,,,,,,,,,,,,,Rückstellungen Abraum-/Abfallbeseit.,Provisions for environmental remediation and waste disposal expenses
+974,,,,,,,,,,,,,,,,,,,Rückstellungen f. Gewährleistungen,Provisions for warranties (contra account 4790)
+976,,,,,,,,,,,,,,,,,,,Rückstellungen f. drohende Verluste,Provisions for expected losses from executory contracts
+977,,,,,,,,,,,,,,,,,,,Rückstellungen für Abschluss u. Prüfung,Provisions for period-end closing and audit costs
+978,,,,,,,,,,,,,,,,,,,Aufwandsrückstellungen § 249 (2) HGB aF,Provisions for internal expenses under section 249(2) HGB (old version)
+979,,,,,,,,,,,,,,,,,,,Rückstellungen für Umweltschutz,Provisions for environmental protection
+980,,,,,,,,,,,,,,,,,,,Aktive Rechnungsabgrenzung,Prepaid expenses
+983,,,,,,,,,,,,,,,,,,,Aktive latente Steuern,Deferred tax assets
+984,,,,,,,,,,,,,,,,,,,Aufwand Zölle und Verbrauchsteuern,Customs and excise duties relating to inventories and recognised as expenses
+985,,,,,,,,,,,,,,,,,,,Aufwand Umsatzsteuer auf Anzahlungen,Value added tax relating to prepayments and recognised as expenses
+986,,,,,,,,,,,,,,,,,,,Damnum/Disagio,Discount
+987,,,,,,,,,,,,,,,,,,,Rechnungsabgrenzung neutrale Verrechnung,Deferred income (revenue reserves debit balance) from items taken directly to equity
+988,,,,,,,,,,,,,,,,,,,Latente Steuern (S) neutrale Verrechnung,Deferred taxes (revenue reserves debit balance) from items taken directly to equity
+989,,,,,,,,,,,,,,,,,,,Gesamthänderisch geb. Rücklagen (KKE),Collectively held reserves (with breakdown for statement of changes in capital accounts)
+990,,,,,,,,,,,,,,,,,,,Passive Rechnungsabgrenzung,Deferred income
+992,,,,,,,,,,,,,,,,,,,Abgrenzung unterjährige AfA für BWA,Deferrals of intra-period flat-rate depreciation charges for management accounting analysis
+996,,,,,,,,,,,,,,,,,,,Pauschalwertberichtigung Forderg./b.1J,Global valuation allowance on receivables remaining term up to 1 year
+997,,,,,,,,,,,,,,,,,,,Pauschalwertberichtigung Forderg./g.1J,Global valuation allowance on receivables remaining term greater than 1 year
+998,,,,,,,,,,,,,,,,,,,Einzelwertberichtigung Forderung(b.1J),Specific valuation allowances on receivables remaining term up to 1 year
+999,,,,,,,,,,,,,,,,,,,Einzelwertberichtigung Forderung(g.1J),Specific valuation allowances on receivables remaining term greater than 1 year
+1000,,,,,,,,,,,,,,,,,,,Kasse,Cash in hand
+1010,,,,,,,,,,,,,,,,,,,Nebenkasse 1,Petty cash 1
+1020,,,,,,,,,,,,,,,,,,,Nebenkasse 2,Petty cash 2
+1100,,,,,,,,,,,,,,,,,,,Bank (Postbank),Bank 1 (old)
+1110,,,,,,,,,,,,,,,,,,,Bank (Postbank 1),Bank 2 (old)
+1120,,,,,,,,,,,,,,,,,,,Bank (Postbank 2),Bank 3 (old)
+1130,,,,,,,,,,,,,,,,,,,Bank (Postbank 3),Bank 4 (old)
+1190,,,,,,,,,,,,,,,,,,,LZB-Guthaben,LZB (Bundesbank regional office) balances
+1195,,,,,,,,,,,,,,,,,,,Bundesbankguthaben,Central bank balances
+1200,,,,,,,,,,,,,,,,,,,Bank 1,Bank 1
+1210,,,,,,,,,,,,,,,,,,,Bank 2,Bank 2
+1220,,,,,,,,,,,,,,,,,,,Bank 3,Bank 3
+1230,,,,,,,,,,,,,,,,,,,Bank 4,Bank 4
+1240,,,,,,,,,,,,,,,,,,,Bank 5,Bank 5
+1250,,,,,,,,,,,,,,,,,,,Bank 6,Bank 6
+1290,,,,,,,,,,,,,,,,,,,Finanzmittelanlagen kurzfr. Disposition,"Cash investments, short-term cash management (not contained in cash funds)"
+1295,,,,,,,,,,,,,,,,,,,Verb. gg Kreditinst. (n. Finanzmittelf.),Liabilities to banks (not included in cash funds)
+1300,,,,,,,,,,,,,,,,,,,Wechsel aus Lieferung und Leistung,Bills receivable
+1301,,,,,,,,,,,,,,,,,,,Wechsel a. Lieferungen/Leistungen b.1 J,Bills receivable remaining term up to 1 year
+1302,,,,,,,,,,,,,,,,,,,Wechsel a. Lieferungen/Leistungen g.1 J,Bills receivable remaining term greater than 1 year
+1305,,,,,,,,,,,,,,,,,,,Wechsel aus L+L bundesbankfähig,"Bills receivable, eligible for discount with central bank"
+1310,,,,,,,,,,,,,,,,,,,Besitzwechsel gegen verbund. Unternehmen,Bills receivable from affiliated companies
+1311,,,,,,,,,,,,,,,,,,,Besitzwechsel gegen verbundene UN (b.1J),Bills receivable from affiliated companies remaining term up to 1 year
+1312,,,,,,,,,,,,,,,,,,,Besitzwechsel gegen verbundene UN (g.1J),Bills receivable from affiliated companies remaining term greater than 1 year
+1315,,,,,,,,,,,,,,,,,,,"Besitzwechs.gg.verb.UN, bundesbankfähig","Bills receivable from affiliated companies, eligible for discount with central bank"
+1320,,,,,,,,,,,,,,,,,,,Besitzwechsel gg.UN m. Beteiligungsverh.,Bills receivable from other long-term investees and investors
+1321,,,,,,,,,,,,,,,,,,,Besitzwechsel gg.UN m.Beteiligg.verh.b1J,Bills receivable from other long-term investees and investors remaining term up to 1 year
+1322,,,,,,,,,,,,,,,,,,,Besitzwechsel gg.UN m.Beteiligg.verh.g1J,Bills receivable from other long-term investees and investors remaining term greater than 1 year
+1325,,,,,,,,,,,,,,,,,,,Besitzwechsel gg.UN m.Beteiligg.verh.bbf,"Bills receivable from other long-term investees and investors, eligible for discount with central bank"
+1327,,,,,,,,,,,,,,,,,,,Finanzwechsel,Finance bills
+1329,,,,,,,,,,,,,,,,,,,Wertpap. mit geringen Wertschwankungen,Other securities subject to immaterial changes in value
+1330,,,,,,,,,,,,,,,,,,,Schecks,Cheques
+1340,,,,,,,,,,,,,,,,,,,Anteile an verbundenen Unternehmen (UV),Shares in affiliated companies (current assets)
+1344,,,,,,,,,,,,,,,,,,,Anteile a. herrschend. Gesellschaft (UV),Shares in parent or in majority investor
+1348,,,,,,,,,,,,,,,,,,,Sonstige Wertpapiere,Other securities
+1349,,,,,,,,,,,,,,,,,,,Wertpapieranlagen kurzfr. Disposition,Securities investments (short-term cash management)
+1350,,,,,,,,,,,,,,,,,,,GmbH-Anteile z.kurzfristigen Verbleib,GmbH shares held for sale
+1352,,,,,,,,,,,,,,,,,,,Genossenschaftsanteile z.kfr.Verbleib,Shares in cooperatives held for sale
+1353,,,,,,,,,,,,,,,,,,,VermG z. Erfüllung langfr.Verpflichtung,Assets to settle obligations comparable to post-employment benefits
+1354,,,,,,,,,,,,,,,,,,,VermG z. Saldierung langfr.Verpflichtung,Assets for offsetting with obligations comparable to post-employment benefits under s. 246(2) of the HGB
+1355,,,,,,,,,,,,,,,,,,,Ansprüche a. Rückdeckungsversicherung,Pension liability insurance claims
+1356,,,,,,,,,,,,,,,,,,,VermG zur Erfüllung Pensionsrückstellung,Long-term assets for the settlement of provisions for pensions and similar obligations
+1357,,,,,,,,,,,,,,,,,,,VermG Saldierung Pensionsrückstellung,Long-term assets for offsetting provisions for pensions and similar obligations in accordance with section 246(2) HGB
+1360,,,,,,,,,,,,,,,,,,,Geldtransit,Cash in transit
+1371,,,,,,,,,,,,,,,,,,,Verr.Kto § 4 (3) EStG nicht ergebnisw.,"Clearing account for determining profit as per section 4/3 (EStG), not recognized in income"
+1372,,,,,,,,,,,,,,,,,,,Wirtschaftsgüter UV § 4 (3) EStG,Current assets in accordance with section 4(3) sentence 4 EStG
+1373,,,,,,,,,,,,,,,,,,,"Forderung gg.Kommanditist, atyp.st.Ges.",
+1374,,,,,,,,,,,,,,,,,,,"Forderung gg.Komm., atyp.st. Ges.er b1J",
+1375,,,,,,,,,,,,,,,,,,,"Forderung gg.Komm., atyp.st. Ges.er g1J",
+1376,,,,,,,,,,,,,,,,,,,Forderungen gg. typisch stille Ges.er,Receivables from typical silent partners
+1377,,,,,,,,,,,,,,,,,,,"Forderungen gg. typ.stille Ges.er, b1J",Receivables from typical silent partners remaining term up to 1 year
+1378,,,,,,,,,,,,,,,,,,,"Forderungen gg. typ.stille Ges.er, g1J",Receivables from typical silent partners remaining term greater than 1 year
+1380,,,,,,,,,,,,,,,,,,,Überleitung Kostenstellen,Cost centre reconciliation account
+1381,,,,,,,,,,,,,,,,,,,Forderungen gegen GmbH-Gesellschafter,Receivables from GmbH shareholders
+1382,,,,,,,,,,,,,,,,,,,"Forderungen gegen GmbH-Ges.er, b1J",Receivables from GmbH shareholders remaining term up to 1 year
+1383,,,,,,,,,,,,,,,,,,,"Forderungen gegen GmbH-Ges.er, g1J",Receivables from GmbH shareholders remaining term greater than 1 year
+1385,,,,,,,,,,,,,,,,,,,Forderungen gg. persönl.haftende Ges.er,Receivables from general partners
+1386,,,,,,,,,,,,,,,,,,,"Forderungen gg. persönl.haft. Ges., b1J",Receivables from general partners remaining term up to 1 year
+1387,,,,,,,,,,,,,,,,,,,"Forderungen gg. persönl.haft. Ges., g1J",Receivables from general partners remaining term greater than 1 year
+1389,,,,,,,,,,,,,,,,,,,Anspruch Altersvers./Pension Mituntern.,Occupational pension and other post-employment benefit entitlements (partners)
+1390,,,,,,,,,,,,,,,,,,,Verrechnung Ist-Versteuerung,Clearing account actual taxation
+1391,,,,,,,,,,,,,,,,,,,Neutralis.ertragsw. Sachv.§ 4 (3) EStG,Neutralization of items recognized in income for Section 4 (3) EStG
+1394,,,,,,,,,,,,,,,,,,,Forderungen gg. Gesellschaft/Gesamthand,Receivables from company/joint ownership
+1400,,,,,,,,,,,,,,,,,,,Forderungen aus L+L,Trade receivables
+1401,,,,,,,,,,,,,,,,,,,Forderungen aus L+L,Trade receivables
+1402,,,,,,,,,,,,,,,,,,,Forderungen aus L+L,Trade receivables
+1410,,,,,,,,,,,,,,,,,,,Forderungen aus L+L ohne Kontokorrent,"Trade receivables, no separate receivables/payables accounting"
+1445,,,,,,,,,,,,,,,,,,,Forderungen L+L allg. Steuersatz (EÜR),Trade receivables at general VAT rate or of a VAT-exempt small business (cash basis accounting)
+1446,,,,,,,,,,,,,,,,,,,Forderungen a. L+L erm.Steuersatz (EÜR),Trade receivables at reduced VAT rate (cash basis accounting)
+1447,,,,,,,,,,,,,,,,,,,"Forderung. aus stfr.,n.stbaren L+L (EÜR)",Tax-exempt or untaxed trade receivables (cash basis accounting)
+1448,,,,,,,,,,,,,,,,,,,Forderungen aus L+L nach § 24 UStG (EÜR),if receivables are classified by tax rates
+1449,,,,,,,,,,,,,,,,,,,Gegenkto Aufteilung Forderungen L+L(EÜR),Contra account 1445-1448 if receivables are classified by tax rates (cash basis accounting)
+1450,,,,,,,,,,,,,,,,,,,Forderungen n. § 11 Abs.1 S.2 EStG (EÜR),Receivables under section 11 (1) sentence 2 EStG for section 4/3 EStG
+1451,,,,,,,,,,,,,,,,,,,Forderg.a. Lieferungen/Leistungen b.1 J,"Trade receivables, no separate receivables/payables accounting remaining term up to 1 year"
+1455,,,,,,,,,,,,,,,,,,,Forderg.a. Lieferungen/Leistungen g.1 J,"Trade receivables, no separate receivables/payables accounting remaining term greater 1 year"
+1460,,,,,,,,,,,,,,,,,,,Zweifelhafte Forderungen,Doubtful receivables
+1461,,,,,,,,,,,,,,,,,,,Zweifelhafte Forderungen (bis 1 Jahr),Doubtful receivables remaining term up to 1 year
+1465,,,,,,,,,,,,,,,,,,,Zweifelhafte Forderungen (g. 1 Jahr),Doubtful receivables remaining term greater than 1 year
+1470,,,,,,,,,,,,,,,,,,,Forderungen aus L+L gg. verbundene UN,Trade receivables from affiliated companies
+1471,,,,,,,,,,,,,,,,,,,Forderungen aus L+L gg. verbund. UN b.1J,Trade receivables from affiliated companies remaining term up to 1 year
+1475,,,,,,,,,,,,,,,,,,,Forderungen aus L+L gg. verbund. UN g.1J,Trade receivables from affiliated companies remaining term greater than 1 year
+1478,,,,,,,,,,,,,,,,,,,WB Forderungen gg. verbundene UN (b.1J),Valuation allowances on receivables from affiliated companies remaining term up to 1 year
+1479,,,,,,,,,,,,,,,,,,,WB Forderungen gg. verbundene UN (g.1J),Valuation allowances on receivables from affiliated companies remaining term greater than 1 year
+1480,,,,,,,,,,,,,,,,,,,Forderg. L+L gg.UN m. Beteiligungsverh.,Trade receivables from other long-term investees and investors
+1481,,,,,,,,,,,,,,,,,,,Forderg. L+L gg.UN m.Beteiligg.verh.b1J,Trade receivables from other long-term investees and investors remaining term up to 1 year
+1485,,,,,,,,,,,,,,,,,,,Forderg. L+L gg.UN m.Beteiligg.verh.g1J,Trade receivables from other long-term investees and investors remaining term greater than 1 year
+1488,,,,,,,,,,,,,,,,,,,WB Forderg.gg.UN m.Beteiligg.verh. b.1J,Valuation allowances on receivables from other long-term investees and investors remaining term up to 1 year
+1489,,,,,,,,,,,,,,,,,,,WB Forderg.gg.UN m.Beteiligg.verh. g.1J,Valuation allowances on receivables from other long-term investees and investors remaining term greater than 1 year
+1490,,,,,,,,,,,,,,,,,,,Forderungen aus L+L gg. Gesellschafter,Trade receivables from shareholders/partners
+1491,,,,,,,,,,,,,,,,,,,Forderg. aus L+L gg.Gesellschafter b.1 J,Trade receivables from shareholders/partners remaining term up to 1 year
+1495,,,,,,,,,,,,,,,,,,,Forderg. aus L+L gg.Gesellschafter g.1 J,Trade receivables from shareholders/partners remaining term greater than 1 year
+1498,,,,,,,,,,,,,,,,,,,Gegenkonto sonst.VG bei Buchung Debitor,Contra account for other assets if posted via receivables account
+1499,,,,,,,,,,,,,,,,,,,Gegenkonto bei Aufteilung Debitoren,Contra account 1451-1497 if allocated to receivables account
+1500,,,,,,,,,,,,,,,,,,,Sonstige Vermögensgegenstände,Other assets
+1501,,,,,,,,,,,,,,,,,,,Sonstige Vermögensgegenstände (b.1 J),Other assets remaining term up to 1 year
+1502,,,,,,,,,,,,,,,,,,,Sonstige Vermögensgegenstände (g.1 J),Other assets remaining term greater than 1 year
+1503,,,,,,,,,,,,,,,,,,,Forderungen gg. Geschäftsf.(b.1J),Receivables from executive board members and managing directors
+1504,,,,,,,,,,,,,,,,,,,Forderungen gg. Geschäftsf.(g.1J),Receivables from executive board members and managing directors
+1505,,,,,,,,,,,,,,,,,,,Forderungen gg. Aufsichtsratsm. (b.1 J),Receivables from supervisory and advisory board members remaining term up to 1 year
+1506,,,,,,,,,,,,,,,,,,,Forderungen gg. Aufsichtsratsm. (g.1 J),Receivables from supervisory and advisory board members remaining term greater than 1 year
+1507,,,,,,,,,,,,,,,,,,,"Forderungen gegen sonstige Ges.er, b1J",Receivables from other shareholders remaining term up to 1 year
+1508,,,,,,,,,,,,,,,,,,,"Forderungen gegen sonstige Ges.er, g1J",Receivables from other shareholders remaining term greater than 1 year
+1510,,,,,,,,,,,,,,,,,,,Geleistete Anzahlungen auf Vorräte,Prepayments for inventories
+1511,,,,,,,,,,,,,,,,,,,Geleistete Anzahlungen 7% Vorsteuer,"Prepayments, 7 % input"
+1512,,,,,,,,,,,,,,,,,,,Geleistete Anzahlungen 5% Vorsteuer,"Prepayments, 5 % input"
+1517,,,,,,,,,,,,,,,,,,,Geleistete Anzahlungen 16% Vorsteuer,"Prepayments, 16 % input tax"
+1518,,,,,,,,,,,,,,,,,,,Geleistete Anzahlungen 19% Vorsteuer,"Prepayments, 19 % input tax"
+1519,,,,,,,,,,,,,,,,,,,Forderungen gg. Arbeitsgemeinschaften,Receivables from project consortiums
+1520,,,,,,,,,,,,,,,,,,,Forderungen ggb. Krankenkasse aus AAG,Receivables from health insurance funds from Act on Reimbursement of Employers' Expenses (AAG)
+1521,,,,,,,,,,,,,,,,,,,Agenturwarenabrechnung (sonstige VermG),Consignment goods accounts
+1522,,,,,,,,,,,,,,,,,,,Genussrechte,Profit participation rights
+1524,,,,,,,,,,,,,,,,,,,Einzahl.anspruch zu Nebenleist/Zuzahlung,Supplementary payments or additional contributions receivable
+1525,,,,,,,,,,,,,,,,,,,Kautionen,Security deposits
+1526,,,,,,,,,,,,,,,,,,,Kautionen (bis 1 J),Security deposits remaining term up to 1 year
+1527,,,,,,,,,,,,,,,,,,,Kautionen (größer 1 J),Security deposits remaining term greater than 1 year
+1528,,,,,,,,,,,,,,,,,,,Nachträgl. abz. Vorsteuer § 15a (2) UStG," Subsequently deductible input tax, section 15a(2) UStG"
+1529,,,,,,,,,,,,,,,,,,,Zurückzuzahlende Vorsteuer §15a (2) UStG,"Repayable input tax, section 15a(2) UStG"
+1530,,,,,,,,,,,,,,,,,,,Forderg. gg. Personal Lohn- und Gehalt,Receivables from employees (payroll)
+1531,,,,,,,,,,,,,,,,,,,Forderungen gegen Personal (bis 1Jahr),Receivables from employees (payroll) remaining term up to 1 year
+1537,,,,,,,,,,,,,,,,,,,Forderungen gegen Personal (g. 1Jahr),Receivables from employees (payroll) remaining term greater than 1 year
+1540,,,,,,,,,,,,,,,,,,,Forderung aus Gewerbesteuerüberzahlung,Receivables from trade tax overpayments
+1542,,,,,,,,,,,,,,,,,,,Steuererst.anspruch gegen andere Länder,Tax refund claims against other countries
+1543,,,,,,,,,,,,,,,,,,,Forderg. an FA aus abgeführtem Bauabzug,Receivables from tax authorities for construction withholding tax remitted
+1544,,,,,,,,,,,,,,,,,,,Forderung gegenüber Bundesagentur,Receivables from Bundesagentur für Arbeit
+1545,,,,,,,,,,,,,,,,,,,Forderungen USt-Vorauszahlungen,Accounts receivable from VAT advance payments
+1546,,,,,,,,,,,,,,,,,,,Umsatzsteuerforderungen Vorjahr,"VAT receivables, previous year"
+1547,,,,,,,,,,,,,,,,,,,Forderungen aus Verbrauchsteuern,Receivables from excise duties paid
+1548,,,,,,,,,,,,,,,,,,,Vorst. in Folgeperiode /-jahr abziehbar,Input tax deductible in following period/year
+1549,,,,,,,,,,,,,,,,,,,Körperschaftsteuerrückforderung,Reclaimed corporate income tax
+1550,,,,,,,,,,,,,,,,,,,Darlehen (sonstige VermG),Loans
+1551,,,,,,,,,,,,,,,,,,,Darlehen Rlz bis 1 J. (sonstige VermG),Loans remaining term up to 1 year
+1555,,,,,,,,,,,,,,,,,,,Darlehen Rlz > 1 J. (sonstige VermG),Loans remaining term greater than 1 year
+1556,,,,,,,,,,,,,,,,,,,"Nachträgl. abz. Vorsteuer, bewegl. WG","Subsequently deductible input tax, section 15a(1) UStG, movable assets"
+1557,,,,,,,,,,,,,,,,,,,"Zurückzuzahlende Vorsteuer, bewegl.WG","Repayable input tax, section 15a(1) UStG, movable assets"
+1558,,,,,,,,,,,,,,,,,,,"Nachträgl. abz. Vorsteuer, unbewegl. WG","Subsequently deductible input tax, section 15a(1) UStG, immovable property"
+1559,,,,,,,,,,,,,,,,,,,"Zurückzuzahl. Vorsteuer, unbewegl. WG","Repayable input tax, section 15a(1) UStG, immovable property"
+1560,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer,Input tax allocation accounts
+1561,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer 7%,"Input tax allocation account, 7 %"
+1562,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer aus EU-Erwerb,Allocation account for input tax on intra-European Union acquisitions
+1563,,,,,,,,,,,,,,,,,,,Aufzuteil. Vorsteuer aus EU-Erwerb 19%,"Allocation account for input tax on intra-European Union acquisitions, 19 %"
+1564,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer 5%,"Input tax allocation account, 5 %"
+1565,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer 16%,"Input tax allocation account, 16 %"
+1566,,,,,,,,,,,,,,,,,,,Aufzuteilende Vorsteuer 19%,"Input tax allocation account, 19 %"
+1567,,,,,,,,,,,,,,,,,,,Aufzuteil. Vorsteuer §§ 13a/13b UStG,Input tax allocation account under sections 13a and 13b UStG
+1568,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer 5%,"Deductible input tax, 5"
+1569,,,,,,,,,,,,,,,,,,,Aufzuteil. Vorsteuer §§13a/13b UStG 19%,"Input tax allocation account under sections 13a and 13b UStG, 19 %"
+1570,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer,Deductible input tax
+1571,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer 7%,"Deductible input tax, 7 %"
+1572,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer aus EU-Erwerb,Deductible input tax on intra-European Union acquisitions
+1573,,,,,,,,,,,,,,,,,,,Vorst.letzter Abnehmer Dreiecksgeschäft,Input tax from acquisition as last purchaser in a triangular transaction
+1574,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer aus EU-Erwerb 19%,"Deductible input tax on intra-European Union acquisitions, 19 %"
+1575,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer 16%,"Deductible input tax, 16 %"
+1576,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer 19%,"Deductible input tax, 19 %"
+1577,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer § 13b UStG 19%,"Deductible input tax under section 13b UStG, 19 %"
+1578,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer § 13b UStG,Deductible input tax under section 13b UStG
+1579,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer § 13b UStG 16%,"Deductible input tax under section 13b UStG, 16 %"
+1580,,,,,,,,,,,,,,,,,,,Gegenkonto Vorsteuer § 4 (3) EStG,"Contra account for input tax, section 4(3) EStG"
+1581,,,,,,,,,,,,,,,,,,,Auflösung Vorsteuer Vorjahr § 4 (3) EStG,"Reversal of input tax from previous year, section 4(3) EStG"
+1582,,,,,,,,,,,,,,,,,,,Vorsteuer aus Investitionen § 4 (3) EStG,"Input tax from investments, section 4(3) EStG"
+1583,,,,,,,,,,,,,,,,,,,Gegenkto. Vorsteuer Durchschnittssätze,"Contra account for input tax, average rates, section 4(3) EStG"
+1584,,,,,,,,,,,,,,,,,,,Vorsteuer EU-Erwerb neue Kfz ohne UStID,Deductible input tax for intra-European Union acquisition of new vehicles from suppliers without VAT identification number
+1585,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer § 13a UStG,Deductible input tax for withdrawal of goods from a VAT warehouse
+1587,,,,,,,,,,,,,,,,,,,Vorsteuer allgem. Durchschnittssätze,"Input tax, general average rates, VAT return line 63"
+1588,,,,,,,,,,,,,,,,,,,Einfuhrumsatzsteuer,Acquisition tax liability
+1589,,,,,,,,,,,,,,,,,,,Abziehbare Vorsteuer aus EU-Erwerb 16%,"Deductible input tax on intra-European Union acquisitions, 16 %"
+1590,,,,,,,,,,,,,,,,,,,Durchlaufende Posten,Items in transit
+1592,,,,,,,,,,,,,,,,,,,Fremdgeld,Third-party funds
+1593,,,,,,,,,,,,,,,,,,,Verrechnung erhaltene Anzahlungen,Allocation account for payments received on account of orders if posted via receivables account
+1594,,,,,,,,,,,,,,,,,,,Forderungen gegen verbund.Unternehmen,Receivables from affiliated companies
+1595,,,,,,,,,,,,,,,,,,,Forderungen gg. verbundene UN(b. 1 J),Receivables from affiliated companies remaining term up to 1 year
+1596,,,,,,,,,,,,,,,,,,,Forderungen gg. verbundene UN(g. 1 J),Receivables from affiliated companies remaining term greater than 1 year
+1597,,,,,,,,,,,,,,,,,,,Forderungen gg. UN m. Beteiligungsverh.,Receivables from other long-term investees and investors
+1598,,,,,,,,,,,,,,,,,,,Forderg. gg. UN mit Beteiligg.verh. b.1J,Receivables from other long-term investees and investors remaining term up to 1 year
+1599,,,,,,,,,,,,,,,,,,,Forderg. gg. UN mit Beteiligg.verh. g.1J,Receivables from other long-term investees and investors remaining term greater than 1 year
+1600,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus L+L,Trade payables
+1601,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus L+L,Trade payables
+1602,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus L+L,Trade payables
+1603,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus L+L,Trade payables
+1605,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L allg. Steuersatz (EÜR),Trade payables at general VAT rate (cash basis accounting)
+1606,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L erm. Steuersatz (EÜR),Trade payables at reduced VAT rate (cash basis accounting)
+1607,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L ohne Vorsteuerabzug,if payables are classified by tax rates (cash basis accounting)
+1609,,,,,,,,,,,,,,,,,,,Gegenkto Aufteilung Verbindl. L+L (EÜR),Contra account 1605-1607 if payables are classified by tax rates (cash basis accounting)
+1610,,,,,,,,,,,,,,,,,,,Verbindlichkeiten L+L ohne Kontokorrent,"Trade payables, no separate receivables/payables accounting"
+1624,,,,,,,,,,,,,,,,,,,Verbindl.L+L f.Invest. für § 4 (3) EStG,"Trade payables for investments, section 4(3) EStG"
+1625,,,,,,,,,,,,,,,,,,,Verbindl.a.Lieferungen/Leistungen b.1 J,"Trade payables, no separate receivables/payables accounting remaining term up to 1 year"
+1626,,,,,,,,,,,,,,,,,,,Verbindl.a.Lieferungen/Leistungen 1-5 J,"Trade payables, no separate receivables/payables accounting remaining term between 1 and 5 years"
+1628,,,,,,,,,,,,,,,,,,,Verbindl.a.Lieferungen/Leistungen g.5 J,"Trade payables, no separate receivables/payables accounting remaining term greater than 5 years"
+1630,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L gg. verbundenen UN,Trade payables to affiliated companies
+1631,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.verbundenen UN b. 1J,Trade payables to affiliated companies remaining term up to 1 year
+1635,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.verbundenen UN 1-5 J,Trade payables to affiliated companies remaining term between 1 and 5 years
+1638,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.verbundenen UN g.5 J,Trade payables to affiliated companies remaining term greater than 5 years
+1640,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.UN m.Beteiligg.verh.,Trade payables to other long-term investees and investors
+1641,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.UN m. Bet.verh. b.1J,Trade payables to other long-term investees and investors remaining term up to 1 year
+1645,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.UN m. Bet.verh. 1-5J,Trade payables to other long-term investees and investors remaining term between 1 and 5 years
+1648,,,,,,,,,,,,,,,,,,,Verbindl.aus L+L gg.UN m. Bet.verh. g.5J,Trade payables to other long-term investees and investors remaining term greater than 5 years
+1650,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L gg. Gesellschaftern,Trade payables to shareholders/partners
+1651,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L gg. Gesellsch. b. 1J,Trade payables to shareholders/partners remaining term up to 1 year
+1655,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L gg. Gesellsch. 1-5 J,Trade payables to shareholders/partners remaining term between 1 and 5 years
+1658,,,,,,,,,,,,,,,,,,,Verbindl. aus L+L gg. Gesellsch. g. 5J,Trade payables to shareholders/partners remaining term greater than 5 years
+1659,,,,,,,,,,,,,,,,,,,Gegenkonto bei Aufteilung Kreditoren,Contra account 16251658 if allocated to payables account
+1660,,,,,,,,,,,,,,,,,,,Wechselverbindlichkeiten,Bills payable
+1661,,,,,,,,,,,,,,,,,,,Wechselverbindlichkeiten (bis 1 Jahr),Bills payable remaining term up to 1 year
+1662,,,,,,,,,,,,,,,,,,,Wechselverbindlichkeiten (1-5 Jahre), Bills payable remaining term between 1 and 5 years
+1663,,,,,,,,,,,,,,,,,,,Wechselverbindlichkeiten (g. 5 Jahre),Bills payable remaining term greater than 5 years
+1665,,,,,,,,,,,,,,,,,,,Verbindlichk. ggb. GmbH-Gesellschaftern,Liabilities to GmbH shareholders
+1666,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. GmbH-Ges.ern, b1J",Liabilities to GmbH shareholders remaining term up to 1 year
+1667,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. GmbH-Ges.ern, 1-5J",Liabilities to GmbH shareholders remaining term between 1 and 5 years
+1668,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. GmbH-Ges.ern, g5J",Liabilities to GmbH shareholders remaining term greater than 5 years
+1670,,,,,,,,,,,,,,,,,,,Verbindl. ggb. pers.haftenden Ges.ern,Liabilities to general partners
+1671,,,,,,,,,,,,,,,,,,,"Verbindl. ggb. pers.haft. Ges.ern, b1J",Liabilities to general partners remaining term up to 1 year
+1672,,,,,,,,,,,,,,,,,,,"Verbindl. ggb. pers.haft. Ges.ern, 1-5J",Liabilities to general partners remaining term between 1 and 5 years
+1673,,,,,,,,,,,,,,,,,,,"Verbindl. ggb. pers.haft. Ges.ern, g5J",Liabilities to general partners remaining term greater than 5 years
+1675,,,,,,,,,,,,,,,,,,,Verbindlichkeiten ggb. Kommanditisten,Liabilities to limited partners
+1676,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. Kommanditisten, b1J",Liabilities to limited partners remaining term up to 1 year
+1677,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. Kommanditisten, 1-5J",Liabilities to limited partners remaining term between 1 and 5 years
+1678,,,,,,,,,,,,,,,,,,,"Verbindlichk. ggb. Kommanditisten, g5J",Liabilities to limited partners remaining term greater than 5 years
+1691,,,,,,,,,,,,,,,,,,,Verbindlichk. ggb. Arbeitsgemeinschaft,Liabilities to project consortiums
+1692,,,,,,,,,,,,,,,,,,,Neutralis.aufwandsw.Sachv. § 4 (3) EStG,Neutralization of items recognized in expenses for section 4(3) EStG
+1693,,,,,,,,,,,,,,,,,,,Ergebnisneutrale Sachv. § 4 (3) EStG,Items recognized in equity for section 4(3) EStG
+1695,,,,,,,,,,,,,,,,,,,Verb.ggü.still.Gesellschaftern - so.Verb,Liabilities to silent partners
+1696,,,,,,,,,,,,,,,,,,,Verb.ggü.still.Gesellsch.(b.1J) so.Verb.,Liabilities to silent partners remaining term up to 1 year
+1697,,,,,,,,,,,,,,,,,,,Verb.ggü.still.Gesellsch.(1-5J) so.Verb.,Liabilities to silent partners remaining term between 1 and 5 years
+1698,,,,,,,,,,,,,,,,,,,Verb.ggü.still.Gesellsch.(g.5J) so.Verb.,Liabilities to silent partners remaining term greater than 5 years
+1700,,,,,,,,,,,,,,,,,,,Sonstige Verbindlichkeiten,Other liabilities
+1701,,,,,,,,,,,,,,,,,,,Sonstige Verbindlichkeiten (bis 1 J),Other liabilities remaining term up to 1 year
+1702,,,,,,,,,,,,,,,,,,,Sonstige Verbindlichkeiten (1-5 J),Other liabilities remaining term between 1 and 5 years
+1703,,,,,,,,,,,,,,,,,,,Sonstige Verbindlichkeiten (g. 5 J),Other liabilities remaining term greater than 5 years
+1704,,,,,,,,,,,,,,,,,,,So. Verbindl. § 11 (2) für § 4 (3) EStG,"Other liabilities, under section 11(2) sentence 2 EStG for section 4(3) EStG"
+1705,,,,,,,,,,,,,,,,,,,Darlehen (sonstige VB),Loans
+1706,,,,,,,,,,,,,,,,,,,Darlehen Rlz bis 1 J. (sonstige VB),Loans remaining term up to 1 year
+1707,,,,,,,,,,,,,,,,,,,Darlehen Rlz 1-5 J. (sonstige VB),Loans remaining term between 1 and 5 years
+1708,,,,,,,,,,,,,,,,,,,Darlehen Rlz > 5 J. (sonstige VB),Loans remaining term greater than 5 years
+1709,,,,,,,,,,,,,,,,,,,Gewinnverfügung stille Gesellschaft.,Profit drawdown account of silent partners
+1710,,,,,,,,,,,,,,,,,,,Erhalt. Anzahlungen auf Bestellungen,Payments received on account of orders (liabilities)
+1711,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen 7% USt,"Tax-paid payments received on account of orders, 7 % VAT (liabilities)"
+1712,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen 5% USt,"Tax-paid payments received on account of orders, 5 % VAT (liabilities)"
+1715,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen - Nachsteuer,Payments received on account of orders Back taxes
+1717,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen 16% USt,"Tax-paid payments received on account of orders, 16 % VAT (liabilities)"
+1718,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen 19% USt,"Tax-paid payments received on account of orders, 19 % VAT (liabilities)"
+1719,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen (bis 1 Jahr),Payments received on account of orders remaining term up to 1 year
+1720,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen (1-5 Jahre),Payments received on account of orders remaining term between 1 and 5 years
+1721,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen (g. 5 Jahre),Payments received on account of orders remaining term greater than 5 years
+1722,,,,,,,,,,,,,,,,,,,Erhaltene Anzahlungen auf Bestellungen,Payments received on account of orders (deducted from inventories on the face of the balance sheet)
+1725,,,,,,,,,,,,,,,,,,,USt fällig Folg.per.§§13(1) u.13b(2)UStG,VAT due in following period (sections 13 (1)
+1728,,,,,,,,,,,,,,,,,,,USt im and. EU-Land stpfl.elektr. Leistg,VAT on electronic services taxable in another EU country
+1729,,,,,,,,,,,,,,,,,,,Steuerzahlg aus im and.EU-Land stpfl.DL,Tax payments on services taxable in another EU country
+1730,,,,,,,,,,,,,,,,,,,Kreditkartenabrechnung,Credit card settlements
+1731,,,,,,,,,,,,,,,,,,,Agenturwarenabrechnung (sonstige VB),Consignment goods accounts
+1732,,,,,,,,,,,,,,,,,,,Erhaltene Kautionen,Security deposits received
+1733,,,,,,,,,,,,,,,,,,,Erhaltene Kautionen (bis 1 Jahr),Security deposits received remaining term up to 1 year
+1734,,,,,,,,,,,,,,,,,,,Erhaltene Kautionen (1-5 Jahre),Security deposits received remaining term between 1 and 5 years
+1735,,,,,,,,,,,,,,,,,,,Erhaltene Kautionen (größer 5 Jahre),Security deposits received remaining term greater than 5 years
+1736,,,,,,,,,,,,,,,,,,,Verbindl. Steuern und Abgaben,Liabilities from taxes and levies
+1737,,,,,,,,,,,,,,,,,,,Verbindl. Steuern und Abgaben (b. 1 J),Liabilities from taxes and levies remaining term up to 1 year
+1738,,,,,,,,,,,,,,,,,,,Verbindl. Steuern und Abgaben (1-5 J),Liabilities from taxes and levies remaining term between 1 and 5 years
+1739,,,,,,,,,,,,,,,,,,,Verbindl. Steuern und Abgaben (g. 5 J),Liabilities from taxes and levies remaining term greater than 5 years
+1740,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus Lohn und Gehalt,Payroll liabilities
+1741,,,,,,,,,,,,,,,,,,,Verbindlichk. Lohn- und Kirchensteuer,Wage and church tax payables
+1742,,,,,,,,,,,,,,,,,,,Verbindlichkeiten soziale Sicherheit,Social security liabilities
+1743,,,,,,,,,,,,,,,,,,,Verbindlichk. soziale Sicherheit(b.1J),Social security liabilities remaining term up to 1 year
+1744,,,,,,,,,,,,,,,,,,,Verbindlichk. soziale Sicherheit(1-5J),Social security liabilities remaining term between 1 and 5 years
+1745,,,,,,,,,,,,,,,,,,,Verbindlichk. soziale Sicherheit(g.5J),Social security liabilities remaining term greater than 5 years
+1746,,,,,,,,,,,,,,,,,,,Verbindlichk. a.Einbehaltung (KapESt),"Liabilities from taxes withheld (investment income tax and solidarity surcharge, church tax on investment income tax) for open distribution"
+1747,,,,,,,,,,,,,,,,,,,Verbindlichkeiten für Verbrauchsteuern,Excise duties payable
+1748,,,,,,,,,,,,,,,,,,,Verbindlichk. Einbehaltung Arbeitnehmer,Liabilities for amounts withheld from employees
+1749,,,,,,,,,,,,,,,,,,,Verbindl. an FA abzuführender Bauabzug,Payables to tax authorities for construction withholding tax to be remitted
+1750,,,,,,,,,,,,,,,,,,,Verbindlichkeiten a. Vermögensbildung,Liabilities from capitalforming payment arrangements
+1751,,,,,,,,,,,,,,,,,,,Verbindlichk. Vermögensbildung(b.1J),Liabilities from capitalforming payment arrangements remaining term up to 1 year
+1752,,,,,,,,,,,,,,,,,,,Verbindlichk. Vermögensbildung(1-5J),Liabilities from capitalforming payment arrangements remaining term between 1 and 5 years
+1753,,,,,,,,,,,,,,,,,,,Verbindlichk. Vermögensbildung(g.5J),Liabilities from capitalforming payment arrangements remaining term greater than 5 years
+1754,,,,,,,,,,,,,,,,,,,Steuerzahlungen an andere Länder,Tax payments to other countries
+1755,,,,,,,,,,,,,,,,,,,Lohn- und Gehaltsverrechnungen,Payroll allocation
+1756,,,,,,,,,,,,,,,,,,,Lohn/Gehaltsverrg § 11 (2) f.§ 4(3) EStG,"Payroll allocation, section 11(2) EStG for section 4(3) EStG"
+1757,,,,,,,,,,,,,,,,,,,Verbindlichk. gg Gesellschaft/Gesamthand,Liabilities to company/joint ownership
+1758,,,,,,,,,,,,,,,,,,,So. Verbindl. genossensch.Rückvergütung,Other liabilities refunds by co-operatives
+1759,,,,,,,,,,,,,,,,,,,Voraus.Beitrag ggb. Sozialversich.träger,Expected contributions owed to social security funds
+1760,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig,VAT not due
+1761,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig 7%,"VAT not due, 7 %"
+1762,,,,,,,,,,,,,,,,,,,"USt nicht fällig, EU-Lieferungen",VAT not due on intra-European Union supplies of goods and services subject to domestic taxation
+1763,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig 5%,"VAT not due, 5 %"
+1764,,,,,,,,,,,,,,,,,,,"USt nicht fällig, EU-Lieferungen 19%","VAT not due on intra-European Union supplies of goods and services subject to domestic taxation, 19 %"
+1765,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig 16%,"VAT not due, 16 %"
+1766,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig 19%,"VAT not due, 19 %"
+1767,,,,,,,,,,,,,,,,,,,USt im anderen EU-Land stpfl.Lieferung,VAT on supplies of goods and services taxable in another EU country
+1768,,,,,,,,,,,,,,,,,,,USt im anderen EU-Land s.Leist./Werkl.,VAT on supplies of other goods and services/cost-plus contracts taxable in another EU country
+1769,,,,,,,,,,,,,,,,,,,Umsatzsteuer nach § 13a UStG,VAT withdrawal of goods from a VAT warehouse
+1770,,,,,,,,,,,,,,,,,,,Umsatzsteuer,VAT
+1771,,,,,,,,,,,,,,,,,,,Umsatzsteuer 7%,"VAT, 7 %"
+1772,,,,,,,,,,,,,,,,,,,Umsatzsteuer aus EU-Erwerb,VAT on intra-European Union acquisitions
+1773,,,,,,,,,,,,,,,,,,,Umsatzsteuer 5%,"VAT, 5 %"
+1774,,,,,,,,,,,,,,,,,,,Umsatzsteuer aus EU-Erwerb 19%,"VAT on intra-European Union acquisitions, 19 %"
+1775,,,,,,,,,,,,,,,,,,,Umsatzsteuer 16%,"VAT, 16 %"
+1776,,,,,,,,,,,,,,,,,,,Umsatzsteuer 19%,"VAT, 19 %"
+1777,,,,,,,,,,,,,,,,,,,Umsatzsteuer EU-Lieferungen,VAT on intra-European Union supplies of goods and services subject to domestic taxation
+1778,,,,,,,,,,,,,,,,,,,Umsatzsteuer EU-Lieferungen 19%,"VAT on intra-European Union supplies of goods and services subject to domestic taxation, 19 %"
+1779,,,,,,,,,,,,,,,,,,,USt aus EU-Erwerb ohne Vorsteuerabzug,"VAT on intra-European Union acquisitions, no input tax deduction"
+1780,,,,,,,,,,,,,,,,,,,Umsatzsteuer-Vorauszahlungen,VAT prepayments
+1781,,,,,,,,,,,,,,,,,,,Umsatzsteuer-Vorauszahlungen 1/11,VAT prepayments 1/11
+1782,,,,,,,,,,,,,,,,,,,Nachsteuer,"Back taxes, VAT return"
+1783,,,,,,,,,,,,,,,,,,,Unrichtig oder unberechtigt ausgew. USt,"Incorrect or invalid invoiced taxes, VAT return line 69"
+1784,,,,,,,,,,,,,,,,,,,USt EU-Erwerb Neufahrzeuge ohne UStID,VAT on intra-European Union acquisition of new vehicles from suppliers without VAT identification number
+1785,,,,,,,,,,,,,,,,,,,Umsatzsteuer nach § 13b UStG,VAT under section 13b UStG
+1786,,,,,,,,,,,,,,,,,,,Umsatzsteuer aus EU-Erwerb 16%,"VAT on intra-European Union acquisitions, 16 %"
+1787,,,,,,,,,,,,,,,,,,,Umsatzsteuer nach § 13b UStG 19%,"VAT under section 13b UStG, 19 %"
+1788,,,,,,,,,,,,,,,,,,,Aufgeschobene Einfuhr-Umsatzsteuer,Acquisition tax deferred until
+1789,,,,,,,,,,,,,,,,,,,Umsatzsteuer laufendes Jahr,"VAT, current year"
+1790,,,,,,,,,,,,,,,,,,,Umsatzsteuer Vorjahr,"VAT, previous year"
+1791,,,,,,,,,,,,,,,,,,,Umsatzsteuer frühere Jahre,"VAT, earlier years"
+1792,,,,,,,,,,,,,,,,,,,Sonstige Verrechnung,Other allocation accounts (interim accounts)
+1793,,,,,,,,,,,,,,,,,,,Verrechnung geleistete Anzahlungen,Allocation account for prepayments if posted via payables account
+1794,,,,,,,,,,,,,,,,,,,USt letzter Abnehmer Dreiecksgeschäft,VAT from acquisition as last purchaser in a triangular transaction
+1795,,,,,,,,,,,,,,,,,,,Verbindl soziale Sicherheit § 4 (3) EStG,Social security liabilities (section 4(3) EStG)
+1796,,,,,,,,,,,,,,,,,,,Ausgegebene Geschenkgutscheine,Issued gift tokens
+1797,,,,,,,,,,,,,,,,,,,Verbindlichkeiten aus Umsatzsteuer-VZ,Liabilities from VAT advance payments
+1798,,,,,,,,,,,,,,,,,,,"USt aus im Inland stpfl.EU-Lief.,nur OSS","VAT on intra-European Union supplies of goods and services subject to domestic taxation, only OSS"
+1800,,,,,,,,,,,,,,,,,,,"Privatentnahmen allgemein (VH), EK","Private withdrawals, general, gp"
+1801,,,,,,,,,,,,,,,,,,,Privatentnahmen allgemein (nur EU),"Private withdrawals, general (only sole proprietorships)"
+1802,,,,,,,,,,,,,,,,,,,Privatentnahmen Arbeitszimmer,"Private withdrawals, home office"
+1810,,,,,,,,,,,,,,,,,,,"Privatsteuern (VH), EK","Private taxes, gp"
+1812,,,,,,,,,,,,,,,,,,,Privatsteuern,Personal taxes
+1820,,,,,,,,,,,,,,,,,,,"Sonderausg. beschränkt abzugsf. (VH), EK","Special personal deductions, partly deductible, gp"
+1821,,,,,,,,,,,,,,,,,,,Sonderausg. beschränkt abzugsf. (nur EU),"Special personal deductions, partly deductible (only sole proprietorships)"
+1830,,,,,,,,,,,,,,,,,,,"Sonderausg. unbeschr. abzugsf. (VH), EK","Special personal deductions, fully deductible, gp"
+1831,,,,,,,,,,,,,,,,,,,Sonderausg. unbeschr. abzugsf. (nur EU),"Special personal deductions, fully deductible (only sole proprietorships)"
+1840,,,,,,,,,,,,,,,,,,,"Zuwendungen, Spenden (VH), EK","Non-cash benefits, donations, gp"
+1841,,,,,,,,,,,,,,,,,,,"Zuwendungen, Spenden (nur EU)","Non-cash benefits, donations (only sole proprietorships)"
+1850,,,,,,,,,,,,,,,,,,,"Außergewöhnliche Belastungen (VH), EK","Extraordinary expenses, gp"
+1851,,,,,,,,,,,,,,,,,,,Außergewöhnliche Belastungen (nur EU),Extraordinary expenses (only sole proprietorships)
+1860,,,,,,,,,,,,,,,,,,,"Grundstücksaufwand (VH), EK","Real estate expenses, gp"
+1861,,,,,,,,,,,,,,,,,,,Grundstücksaufwand (nur EU),Real estate expenses (only sole proprietorships)
+1869,,,,,,,,,,,,,,,,,,,Grundstücksaufw. USt-Schl. mgl. (nur EU),"Real estate expenses (VAT key possible, only sole proprietorships)"
+1870,,,,,,,,,,,,,,,,,,,"Grundstücksertrag (VH), EK","Income from real estate, gp"
+1871,,,,,,,,,,,,,,,,,,,Grundstücksertrag (nur EU),Income from real estate (only sole proprietorships)
+1879,,,,,,,,,,,,,,,,,,,Grundstücksertr. USt-Schl. mgl. (nur EU),"Income from real estate (VAT key possible, only sole proprietorships)"
+1880,,,,,,,,,,,,,,,,,,,"Unentgeltliche Wertabgaben (VH), EK","Non-cash withdrawals, gp"
+1881,,,,,,,,,,,,,,,,,,,Unentgeltliche Wertabgaben (nur EU),Non-cash withdrawals (only sole proprietorships)
+1890,,,,,,,,,,,,,,,,,,,"Privateinlagen (VH), EK","Private contributions, gp"
+1891,,,,,,,,,,,,,,,,,,,Privateinlagen (nur EU),Private contributions (only sole proprietorships)
+1900,,,,,,,,,,,,,,,,,,,"Privatentnahmen allgemein (TH), FK","Private withdrawals, general, lp"
+1910,,,,,,,,,,,,,,,,,,,"Privatsteuern (TH), FK","Private taxes, lp 1911-1919"
+1920,,,,,,,,,,,,,,,,,,,"Sonderausg. beschränkt abzugsf. (TH), FK","Special personal deductions, partly deductible, lp"
+1930,,,,,,,,,,,,,,,,,,,"Sonderausg. unbeschr. abzugsf. (TH), FK","Special personal deductions, fully deductible, lp"
+1940,,,,,,,,,,,,,,,,,,,"Zuwendungen, Spenden (TH), FK","Non-cash benefits, donations, lp"
+1950,,,,,,,,,,,,,,,,,,,"Außergewöhnliche Belastungen (TH), FK","Extraordinary expenses, lp"
+1960,,,,,,,,,,,,,,,,,,,"Grundstücksaufwand (TH), FK","Real estate expenses, lp 1961"
+1970,,,,,,,,,,,,,,,,,,,"Grundstücksertrag (TH), FK","Income from real estate, lp"
+1980,,,,,,,,,,,,,,,,,,,"Unentgeltliche Wertabgaben (TH), FK","Non-cash withdrawals, lp"
+1990,,,,,,,,,,,,,,,,,,,"Privateinlagen (TH), FK","Private contributions, lp 1991"
+2004,,,,,,,,,,,,,,,,,,,Verluste durch Verschmelzg./Umwandlung,Losses from mergers and reorganisations
+2006,,,,,,,,,,,,,,,,,,,Verl.d.außergew.Schad.fälle(Bilanzierer),Losses due to extraordinary damage (balance sheet accounting only)
+2007,,,,,,,,,,,,,,,,,,,Aufw. für Restrukturierung u. Sanierung,Restructuring and reorganisation costs
+2008,,,,,,,,,,,,,,,,,,,Verlust Veräuß/Aufg.Geschäftsaktivität,"Losses from disposal or discontinuation of business activities, net of tax"
+2010,,,,,,,,,,,,,,,,,,,Betriebsfremde Aufwendungen,Non-operating expenses
+2020,,,,,,,,,,,,,,,,,,,Periodenfremde Aufwendungen,Prior-period expenses
+2090,,,,,,,,,,,,,,,,,,,Aufwendungen Übergangsvorschr. BilMoG,Expenses from the application of transitional provisions
+2091,,,,,,,,,,,,,,,,,,,Aufwendungen Pensionsrückstellungen,Expenses from the application of transitional provisions (provisions for pensions)
+2094,,,,,,,,,,,,,,,,,,,Aufwendungen latente Steuern BilMoG,Expenses from the application of transitional provisions (deferred taxes)
+2100,,,,,,,,,,,,,,,,,,,Zinsen und ähnliche Aufwendungen,Interest and similar expenses
+2102,,,,,,,,,,,,,,,,,,,N. abzugsf. and.Nebenleistg §4 (5b) EStG,"Non-tax-deductible other incidental charges related to taxes, section 4(5b) EStG"
+2103,,,,,,,,,,,,,,,,,,,Abzugsfäh. and. Nebenleist. zu Steuern,Tax-deductible other incidental charges related to taxes
+2104,,,,,,,,,,,,,,,,,,,Nicht abzugsfäh.and.Nebenleist.z.Steuern,Non-tax-deductible other incidental charges related to taxes
+2105,,,,,,,,,,,,,,,,,,,Zinsaufw. § 233a AO nicht abzugsfähig,"Interest expenses as per Sect. 233a of the German Fiscal Code, nondeductible"
+2107,,,,,,,,,,,,,,,,,,,Zinsaufw. § 233a AO abzugsfähig,"Interest expenses as per Sect. 233a of the German Fiscal Code, deductible"
+2108,,,,,,,,,,,,,,,,,,,Zinsaufw. §§ 234 bis 237 AO n. abzugsf.,"Interest expenses as per Sect. 234 to 237 of the German Fiscal Code, non deductible"
+2109,,,,,,,,,,,,,,,,,,,Zinsaufwendungen an verbund. Unternehmen,Interest expenses to affiliated companies
+2110,,,,,,,,,,,,,,,,,,,Zinsaufwendungen f.kfr.Verbindlichkeit.,Interest expenses on short-term debt
+2111,,,,,,,,,,,,,,,,,,,Zinsaufw. §§ 234 bis 237 AO abzugsfähig,"Interest expenses as per Sect. 234 to 237 of the German Fiscal Code, deductible"
+2113,,,,,,,,,,,,,,,,,,,N. abzugsf. Schuldzinsen § 4 (4a) EStG,Non-deductible interest on long-term debt under section 4(4a) EStG (add-back)
+2114,,,,,,,,,,,,,,,,,,,Zinsen für Gesellschafterdarlehen (KapG),Interest on shareholder loans
+2115,,,,,,,,,,,,,,,,,,,Zinsen und ähnliche Aufw.z.T. nicht abz.,"Interest and similar expenses, sections 3 no. 40, 3c EStG/section 8b(1,4) KStG"
+2116,,,,,,,,,,,,,,,,,,,"Zinsen, Aufwendg. verb. UN z.T. n.abz.","Interest and similar expenses to affiliated companies, sections 3 no. 40, 3c EStG/section 8b(1) KStG"
+2117,,,,,,,,,,,,,,,,,,,"Zinsen an Gesell., Beteilig. >25% (KapG)",Interest to shareholders with an equity interest of more than 25 % or their related parties
+2118,,,,,,,,,,,,,,,,,,,Zinsen auf Kontokorrentkonten,Interest on receivables and payables accounts
+2119,,,,,,,,,,,,,,,,,,,Zinsaufwend. f.kfr. Verb.an verbund. UN,Interest expenses on short-term liabilities to affiliated companies
+2120,,,,,,,,,,,,,,,,,,,Zinsaufwendungen f.lfr.Verbindlichkeit.,Interest expense on long-term debt
+2123,,,,,,,,,,,,,,,,,,,Abschr.Agio oder Disagio z. Finanzierung,Depreciation and amortization of premium or discount/debt discount for financing purposes
+2124,,,,,,,,,,,,,,,,,,,Abschr.Agio od.Disagio zur Finanzg d.AV,Depreciation and amortization of premium or discount/debt discount for financing fixed assets
+2125,,,,,,,,,,,,,,,,,,,Zinsen für Gebäude im Betriebsvermögen,Interest expenses for buildings classified as operating assets
+2126,,,,,,,,,,,,,,,,,,,Zinsen zur Finanzierung Anlagevermögen,Borrowing costs for fixed assets
+2127,,,,,,,,,,,,,,,,,,,Renten und dauernde Lasten,Annuities and recurrent payments
+2128,,,,,,,,,,,,,,,,,,,Zinsen an Mituntern.§ 15 EStG (PersG),"Interest expenses for the provision of capital by partners, section 15 EStG (corresponds to special business income)"
+2129,,,,,,,,,,,,,,,,,,,Zinsaufw. für lfr. Verbindlichk.verb.UN,Interest expenses on long-term liabilities to affiliated companies
+2130,,,,,,,,,,,,,,,,,,,Diskontaufwendungen,Discount expenses
+2139,,,,,,,,,,,,,,,,,,,Diskontaufwendungen an verbundene UN,Discount expenses to affiliated companies
+2140,,,,,,,,,,,,,,,,,,,Zinsähnliche Aufwendungen,Expenses similar to interest expenses
+2141,,,,,,,,,,,,,,,,,,,"Kreditprovision,Verwaltungskostenbeitr.",Loan commissions and administrative cost contributions
+2142,,,,,,,,,,,,,,,,,,,Zinsant. Zuführung Pensionsrückstellung,Interest cost included in additions to pension provisions
+2143,,,,,,,,,,,,,,,,,,,Zinsaufwand Abzinsung Verbindlichkeit,Interest expenses from the discounting of liabilities
+2144,,,,,,,,,,,,,,,,,,,Zinsaufwand Abzinsung Rückstellungen,Interest expenses from the discounting of provisions
+2145,,,,,,,,,,,,,,,,,,,Aufw. Abzinsung Pensions-/ähnl. Rückst.,Interest expenses from the discounting of provisions for pensions and similar/comparable obligations
+2146,,,,,,,,,,,,,,,,,,,"Aufw. Abzins. Pensions-/ähnl. RS,Verr",Interest expenses from the discounting of provisions for pensions and similar/comparable obligations for offsetting under s. 246(2) HGB
+2147,,,,,,,,,,,,,,,,,,,Aufwendungen VG zur Verrg § 246 (2) HGB,Expenses from assets for offsetting in accordance with section 246(2) HGB
+2148,,,,,,,,,,,,,,,,,,,Aufw. Abzinsung Rückstellung n. abz.,"Interest expenses from the discounting of provisions, non-tax-deductible"
+2149,,,,,,,,,,,,,,,,,,,Zinsähnliche Aufwendungen an verb.UN,Expenses similar to interest expenses to affiliated companies
+2150,,,,,,,,,,,,,,,,,,,Aufwendungen aus Währungsumrechnungen,Currency translation losses
+2151,,,,,,,,,,,,,,,,,,,Aufw.Währungsumrechnung nicht §256a HGB,Currency translation losses (not s. 256a HGB)
+2166,,,,,,,,,,,,,,,,,,,Aufwendg. Bewertung Finanzmittelfonds,Expenses from remeasurement of cash funds
+2170,,,,,,,,,,,,,,,,,,,Nicht abziehbare Vorsteuer,Non-deductible input tax
+2171,,,,,,,,,,,,,,,,,,,Nicht abziehbare Vorsteuer 7%,Non-deductible input 7 %
+2176,,,,,,,,,,,,,,,,,,,Nicht abziehbare Vorsteuer 19%,Non-deductible input 19 %
+2200,,,,,,,,,,,,,,,,,,,Körperschaftsteuer,Corporate income tax
+2203,,,,,,,,,,,,,,,,,,,Körperschaftsteuer für Vorjahre,Corporate income tax for prior years
+2204,,,,,,,,,,,,,,,,,,,Körperschaftsteuererstattung Vorjahre,Corporate income tax refunds for prior years
+2208,,,,,,,,,,,,,,,,,,,Solidaritätszuschlag,Solidarity surcharge
+2209,,,,,,,,,,,,,,,,,,,Solidaritätszuschlag für Vorjahre,Solidarity surcharge for prior years
+2210,,,,,,,,,,,,,,,,,,,Solidaritätszuschl.-Erstattung Vorjahre,Solidarity surcharge refunds for prior years
+2213,,,,,,,,,,,,,,,,,,,Kapitalertragsteuer 25 % (KapG),"Withholding tax on investment income, 25 %"
+2216,,,,,,,,,,,,,,,,,,,SolZ auf Kapitalertragsteuer 25 % (KapG),"Allowable solidarity surcharge on withholding tax on investment income, 25 %"
+2218,,,,,,,,,,,,,,,,,,,Ausländ. Steuer auf stfr. DBA-Einkünfte,Foreign tax on DTA income exempt from domestic taxation
+2219,,,,,,,,,,,,,,,,,,,Anrechn./Abzug ausländ. Quellensteuer,Credit/ deduction of foreign withholding tax
+2250,,,,,,,,,,,,,,,,,,,Aufw. Zuführg/Auflösung latente Steuern,Expenses from additions to and reversals of deferred taxes
+2255,,,,,,,,,,,,,,,,,,,Erträge Zuführg/Auflösg latente Steuern,Income from additions to and reversals of deferred taxes
+2260,,,,,,,,,,,,,,,,,,,Aufw. Zuführung zu Steuerrückst. BStBK,Expenses from additions to provisions for taxes for tax deferral (BStBK)
+2265,,,,,,,,,,,,,,,,,,,Erträge Auflösung Steuerrückst. BStBK,Income from reversal of provisions for taxes for tax deferral (BStBK)
+2281,,,,,,,,,,,,,,,,,,,GewSt-NZ/Erstattung VJ § 4 (5b) EStG,"Back payments and refunds of trade tax for prior years, section 4(5b) EStG"
+2283,,,,,,,,,,,,,,,,,,,Ertr. Auflösung GewSt-RSt § 4 (5b) EStG,"Income from reversal of provisions for trade tax, section 4(5b) EStG"
+2285,,,,,,,,,,,,,,,,,,,Steuernachzahlg. VJ sonstige Steuern,Back payments of other taxes for prior years
+2287,,,,,,,,,,,,,,,,,,,Erstattung VJ für sonstige Steuern,Refunds of other taxes for prior years
+2289,,,,,,,,,,,,,,,,,,,Auflösung Rückstellung s. Steuern,Income from reversal of provisions for other taxes
+2300,,,,,,,,,,,,,,,,,,,Sonstige Aufwendungen,Other expenses
+2307,,,,,,,,,,,,,,,,,,,"Sonst.Aufwendungen, betriebsfr.u.regelm.",Other regular non-operating expenses
+2308,,,,,,,,,,,,,,,,,,,Sonst. nicht abziehbare Aufwendungen,Other non-deductible expenses
+2309,,,,,,,,,,,,,,,,,,,Sonstige Aufwendungen unregelmäßig,Other infrequent expenses
+2310,,,,,,,,,,,,,,,,,,,Abgänge Sachanlagen Restbuchwert bei BV,Disposals of tangible fixed assets (net carrying amount for book loss)
+2311,,,,,,,,,,,,,,,,,,,"Abgang immaterielle VermögensG, RBW, BV",Disposals of intangible fixed assets (net carrying amount for book loss)
+2312,,,,,,,,,,,,,,,,,,,"Abgänge Finanzanlagen Restbuchwert, BV",Disposals of long-term financial assets (net carrying amount for book loss)
+2313,,,,,,,,,,,,,,,,,,,"Abgänge Finanzanlagen RBW z.T.stf., BV","Disposals of long-term financial assets, section 3 no. 40 EStG/section 8b(3) KStG (net carrying amount for book loss)"
+2315,,,,,,,,,,,,,,,,,,,Abgänge Sachanlagen Restbuchwert bei BG,Disposals of tangible fixed assets (net carrying amount for book gain)
+2316,,,,,,,,,,,,,,,,,,,"Abgang immaterielle VermögensG, RBW, BG",Disposals of intangible fixed assets (net carrying amount for book gain)
+2317,,,,,,,,,,,,,,,,,,,"Abgänge Finanzanlagen Restbuchwert, BG",Disposals of long-term financial assets (net carrying amount for book gain)
+2318,,,,,,,,,,,,,,,,,,,"Abgänge Finanzanlagen RBW z.T. stf.,BG","Disposals of long-term financial assets, section 3 no. 40 EStG/section 8b(2) KStG (net carrying amount for book gain)"
+2320,,,,,,,,,,,,,,,,,,,Verluste aus Anlagenabgang,Losses on disposal of fixed assets
+2323,,,,,,,,,,,,,,,,,,,Verlust Veräuß.Ant. KapGes z.T. n. abz.,"Losses on disposal of shares in corporations (long-term financial assets), section 3 no. 40 EStG/section 8b(3) KStG"
+2325,,,,,,,,,,,,,,,,,,,Verluste aus Abgang von Umlaufvermögen,Losses on disposal of current assets (excluding inventories)
+2326,,,,,,,,,,,,,,,,,,,Verluste aus Abgang UV z.T. n. abziehbar,"Losses on disposal of current assets (excluding inventories), section 3 no. 40 EStG/section 8b(3) KStG"
+2327,,,,,,,,,,,,,,,,,,,Abgang WG UV § 4 (3) EStG,Disposal of current assets under section 4(3) sentence 4 EStG
+2328,,,,,,,,,,,,,,,,,,,Abgang WG UV § 4 (3) EStG z.T.nicht abz.,"Disposal of current assets, section 3 no. 40 EStG/section 8b(3) KStG under section 4(3) sentence 4 EStG"
+2339,,,,,,,,,,,,,,,,,,,Einstellungen stl. Rücklage § 4g EStG,Transfers to tax reserve under s. 4g EStG
+2342,,,,,,,,,,,,,,,,,,,Einstellg stl. Rücklage § 6b (3) EStG,Transfers to tax reserve under s. 6b(3) EStG
+2343,,,,,,,,,,,,,,,,,,,Einstellg stl. Rücklage § 6b (10) EStG,Transfers to tax reserve under s. 6b(10) EStG
+2344,,,,,,,,,,,,,,,,,,,Einstellungen stl. Rücklage R 6.6 EStR,Transfers to replacement reserve under
+2345,,,,,,,,,,,,,,,,,,,Einstellungen in sonstige stl. Rücklagen,Allocation to other tax reserves
+2347,,,,,,,,,,,,,,,,,,,Aufwendungen aus Erwerb eigener Anteile,Expenses from the purchase of treasury shares
+2350,,,,,,,,,,,,,,,,,,,Sonst. Grundstücksaufwendungen neutral,"Real estate expenses, non-operating"
+2375,,,,,,,,,,,,,,,,,,,Grundsteuer,Land tax
+2380,,,,,,,,,,,,,,,,,,,"Zuwendungen,Spenden steuerl. n. abziehb.","Non-cash benefits, donations, non-tax deductible"
+2381,,,,,,,,,,,,,,,,,,,Zuwendg.Spenden wissensch./kult. Zweck,"Non-cash benefits, donations for scientific and cultural purposes"
+2382,,,,,,,,,,,,,,,,,,,"Zuwendungen,Spenden mildtätige Zwecke","Non-cash benefits, donations for charitable purposes"
+2383,,,,,,,,,,,,,,,,,,,"Zuwendungen,Spenden kirchl./rel./gemein.","Non-cash benefits, donations for church, religious and non-profit purposes"
+2384,,,,,,,,,,,,,,,,,,,"Zuwendungen,Spenden an politische Partei","Non-cash benefits, donations to political parties"
+2385,,,,,,,,,,,,,,,,,,,Nicht abziehbare AR-Vergütungen,Non-deductible half of supervisory board remuneration
+2386,,,,,,,,,,,,,,,,,,,Abziehbare Aufsichtsratsvergütung,Deductible supervisory board remuneration
+2387,,,,,,,,,,,,,,,,,,,Zuwendg. an Stiftg. gemeinnützige Zwecke,"Non-cash benefits, donations to permanent assets (capital reserves) of a non-profit foundation"
+2389,,,,,,,,,,,,,,,,,,,Zuwendg. an Stiftg. kirchl./rel./gemein.,"Non-cash benefits, donations to permanent assets (capital reserves) of a church, religious or non-profit foundation"
+2390,,,,,,,,,,,,,,,,,,,Zuwendg. an Stiftg. wiss./mildt./kultur.,"Non-cash benefits, donations to permanent assets (capital reserves) of a scientific, charitable or cultural foundation"
+2400,,,,,,,,,,,,,,,,,,,Forderungsverluste (übliche Höhe),Bad debt allowances (normal amount)
+2401,,,,,,,,,,,,,,,,,,,Forderungsverluste 7% USt,"Bad debt allowances, 7 % VAT (normal amount)"
+2402,,,,,,,,,,,,,,,,,,,Ford.verluste a.stfrei.EU-Lieferungen,Bad debt allowances on tax-exempt intra-European Union supplies of goods and services (normal amount)
+2403,,,,,,,,,,,,,,,,,,,Forderungsverluste EU-Lieferungen 7%,"Bad debt allowances on intra-European Union supplies of goods and services subject to domestic taxation, 7 % VAT (normal amount)"
+2406,,,,,,,,,,,,,,,,,,,Forderungsverluste 19% USt,"Bad debt allowances, 19 % VAT (normal amount)"
+2408,,,,,,,,,,,,,,,,,,,Forderungsverluste EU-Lieferung 19% USt,"Bad debt allowances on intra-European Union supplies of goods and services subject to domestic taxation, 19 % VAT (normal amount)"
+2430,,,,,,,,,,,,,,,,,,,Forderungsverluste,Bad debt allowances (if unusually high)
+2431,,,,,,,,,,,,,,,,,,,Forderungsverluste 7% USt (unübl. hoch),"Bad debt allowances, 7 % VAT (if unusually high)"
+2436,,,,,,,,,,,,,,,,,,,Forderungsverluste 19% USt (unübl.hoch),"Bad debt allowances, 19 % VAT (if unusually high)"
+2440,,,,,,,,,,,,,,,,,,,"Abschr. Forderungen ggb.KapG, unübl.hoch","Allowances on receivables from corporations classified as long-term investees (if unusually high), s. 3c EStG/ s."
+2441,,,,,,,,,,,,,,,,,,,"Abschr. Ford. ggb. Ges.ern, unübl. hoch","Allowances on receivables from shareholders and related parties (if unusually high), s. 8b(3) KStG"
+2450,,,,,,,,,,,,,,,,,,,Einstellung in die PWB auf Forderungen,Transfers to global valuation allowance on receivables
+2451,,,,,,,,,,,,,,,,,,,Einstellung in die EWB auf Forderungen,Transfer to specific valuation allowance on receivables
+2480,,,,,,,,,,,,,,,,,,,Einstellung Rücklage Anteil herrsch.UN,Transfers to reserve for shares in a parent or majority investor
+2481,,,,,,,,,,,,,,,,,,,Einstellung gesamth.geb. Rücklagen (KKE),Appropriation to collectively held reserves (with breakdown for statement of changes in capital account)
+2485,,,,,,,,,,,,,,,,,,,Einstellung in andere Ergebnisrücklagen,Transfers to other revenue reserves (co-operatives)
+2488,,,,,,,,,,,,,,,,,,,Änd.Ausgl.posten mit Erg.Körperschaften,Change tax adjustment item (corporations)
+2489,,,,,,,,,,,,,,,,,,,Änd.Ausgl.posten mit Erg.Pers.gesellsch.,"Change tax adjustment item (partnerships, sole proprietorships)"
+2490,,,,,,,,,,,,,,,,,,,Aufwendungen aus Verlustübernahme,Cost of loss absorption
+2491,,,,,,,,,,,,,,,,,,,Abgef.Gewinn-/Verlustant.atyp.still.Bet.,Transferred profit shares (debit) / adjusted shares of losses (credit) in atypical silent partnerships
+2492,,,,,,,,,,,,,,,,,,,Abgef. Gewinne / Gewinngemeinschaft,Profit transferred on the basis of a profit pooling agreement
+2493,,,,,,,,,,,,,,,,,,,Abgef.Gewinn-Verlustant.typ.stille Bet.,Transferred profit shares (debit) / adjusted shares of losses (credit) in typical silent partnerships pursuant to section 8 of the GewStG
+2494,,,,,,,,,,,,,,,,,,,Abgef. Gewinne / Gewinn-/Teilgewinnabf.,Profit transferred on the basis of a profit and loss transfer or partial profit transfer agreement
+2495,,,,,,,,,,,,,,,,,,,Einstellungen Kapitalrücklage,Appropriation to capital reserves under the rules governing simplified capital decreases
+2496,,,,,,,,,,,,,,,,,,,Einstellungen gesetzliche Rücklage,Appropriation to legal reserve
+2497,,,,,,,,,,,,,,,,,,,Einstellungen i.satzungsmäß.Rücklagen,Appropriation to reserves provided for by the articles of association
+2498,,,,,,,,,,,,,,,,,,,Einst.Ausgleichsposten akt.eig. Anteile,Transfers to special reserves for capitalised own shares
+2499,,,,,,,,,,,,,,,,,,,Einstellungen andere Gewinnrücklagen,Appropriation to other revenue reserves
+2504,,,,,,,,,,,,,,,,,,,Erträge Verschmelzung und Umwandlung,Gains from mergers and reorganisations
+2508,,,,,,,,,,,,,,,,,,,Gewinn Veräuß/Aufg. Geschäftsaktivität,"Gain on disposal or discontinuation of business activities, net of tax"
+2510,,,,,,,,,,,,,,,,,,,Betriebsfremde Erträge,Non-operating income
+2520,,,,,,,,,,,,,,,,,,,Periodenfremde Erträge,Prior period income
+2590,,,,,,,,,,,,,,,,,,,Erträge Übergangsvorschrift BilMoG,Income from the application of transitional provisions
+2594,,,,,,,,,,,,,,,,,,,Erträge Übergangsvorschr. latente St.,Income from the application of transitional provisions (deferred taxes)
+2600,,,,,,,,,,,,,,,,,,,Erträge aus Beteiligungen,Income from long-term equity investments
+2603,,,,,,,,,,,,,,,,,,,"Ertr. Beteiligungen an PersG, verb. UN","Income from investments in partnerships (affiliated companies), s. 9 GewStG or s. 18 EStG"
+2613,,,,,,,,,,,,,,,,,,,Erträge a.typisch stillen Beteiligungen,Income from typical silent partnerships
+2614,,,,,,,,,,,,,,,,,,,Erträge a.atypisch stillen Beteiligungen,Income from atypical silent partnerships
+2615,,,,,,,,,,,,,,,,,,,Erträge aus Beteiligungen z.T. stfrei,"Income from shares in corporations (long-term equity investments), s. 3 no. 40 EStG/ s. 8b(1) KStG"
+2616,,,,,,,,,,,,,,,,,,,Ertr Ant Kap verb UN z.T.stfr (Beteilig),"Income from shares in corporations (affiliated companies), s. 3 no. 40 EStG/ s. 8b(1) KStG"
+2618,,,,,,,,,,,,,,,,,,,Gewinnanteile Mitunternehmerschaften,"Profit shares from industrial or self-employed partnerships, s. 9 GewStG or s. 18 EStG"
+2619,,,,,,,,,,,,,,,,,,,Erträge a.Beteilig. an verbundenen UN,Income from long-term equity investments in affiliated companies
+2620,,,,,,,,,,,,,,,,,,,Erträge Wertpapiere/Ausleihungen FAV,Income from other securities and long-term loans
+2621,,,,,,,,,,,,,,,,,,,Ertr. Ausleihungen Finanzanlagevermögen,Income from long-term loans
+2622,,,,,,,,,,,,,,,,,,,Ertr. Ausleihungen FAV an verbund. UN,Income from long-term loans to affiliated companies
+2623,,,,,,,,,,,,,,,,,,,"Erträge Anteile an PersG, FAV",Income from shares in partnerships (long-term financial assets)
+2625,,,,,,,,,,,,,,,,,,,Erträge a.Beteilig. FAV z.T. steuerfrei,"Income from shares in corporations (long-term equity investments), s. 3 no. 40 EStG/ s. 8b(1,4) KStG"
+2626,,,,,,,,,,,,,,,,,,,Ertr Ant KapG verb UN z.T.stfr (Wertpap),"Income from shares in corporations (affiliated companies), s. 3 no. 40 EStG/ s. 8b(1) KStG"
+2640,,,,,,,,,,,,,,,,,,,Zins- und Dividendenerträge,Interest and dividend income
+2641,,,,,,,,,,,,,,,,,,,Erhaltene Ausgleichszahlungen,Compensation payments received as an outside shareholder
+2646,,,,,,,,,,,,,,,,,,,"Erträge Anteile PersG, verbundene UN",Income from shares in partnerships (affiliated companies)
+2647,,,,,,,,,,,,,,,,,,,"Erträge andere WP FAV an KapG, verb.UN",Income from other long-term securities of corporations (affiliated companies)
+2648,,,,,,,,,,,,,,,,,,,"Erträge andere WP FAV an PersG,verb.UN",Income from other long-term securities of partnerships (affiliated companies)
+2649,,,,,,,,,,,,,,,,,,,Erträge Wertpapiere/FAV-Ausl.verb.UN,"Income from other securities and long-term loans, from affiliated companies"
+2650,,,,,,,,,,,,,,,,,,,Sonstige Zinsen und ähnliche Erträge,Other interest and similar income
+2653,,,,,,,,,,,,,,,,,,,"Zinsertr.§ 233a AO, §4 (5b) EStG, stfrei","Interest income s. 233a AO, s. 4(5b) EStG, taxexempt"
+2654,,,,,,,,,,,,,,,,,,,Erträge Wertpapiere/Ausleihungen UV,Income from other securities and short-term loans
+2655,,,,,,,,,,,,,,,,,,,Erträge aus Anteilen KapG UV z.T. stfr,"Income from shares in corporations (current assets), s. 3 no. 40 EStG/ s. 8b(1,4) KStG"
+2656,,,,,,,,,,,,,,,,,,,Ertr Ant KapG verb UN z.T.stfr (Zinsen),"Income from shares in corporations (affiliated companies), s. 3 no. 40 EStG/ s. 8b(1) KStG"
+2657,,,,,,,,,,,,,,,,,,,"Zinserträge § 233a AO, steuerpflichtig","Interest income s. 233a AO, taxable"
+2658,,,,,,,,,,,,,,,,,,,"Zinserträge § 233a AO,Anlage GK KSt,stf","Interest income s. 233a AO, tax-exempt (Schedule GK KSt)"
+2659,,,,,,,,,,,,,,,,,,,Sonst. Zinsen u.ä. Erträge aus verb.UN,Other interest and similar income from affiliated companies
+2660,,,,,,,,,,,,,,,,,,,Erträge aus der Währungsumrechnung,Currency translation gains
+2661,,,,,,,,,,,,,,,,,,,Ertr.Währungsumrechnung nicht § 256a HGB,Currency translation gains (not s. 256a HGB)
+2666,,,,,,,,,,,,,,,,,,,Erträge Bewertung Finanzmittelfonds,Income from remeasurement of cash funds
+2670,,,,,,,,,,,,,,,,,,,Diskonterträge,Discounts received
+2679,,,,,,,,,,,,,,,,,,,Diskonterträge verbundene Unternehmen,Discounts received from affiliated companies
+2680,,,,,,,,,,,,,,,,,,,Zinsähnliche Erträge,Income similar to interest income
+2682,,,,,,,,,,,,,,,,,,,Ertrag Abzinsung Rückstellung stfrei,Tax-exempt interest income from discounting of provisions
+2683,,,,,,,,,,,,,,,,,,,Zinsertrag Abzinsung Verbindlichkeit,Interest income from the discounting of liabilities
+2684,,,,,,,,,,,,,,,,,,,Zinsertrag Abzinsung Rückstellungen,Interest income from the discounting of provisions
+2685,,,,,,,,,,,,,,,,,,,Ertr. Abzinsung Pensions-/ähnl. Rückst.,Interest income from the discounting of provisions for pensions and similar/comparable obligations
+2686,,,,,,,,,,,,,,,,,,,"Ertr. Abzins. Pensions-/ähnl. RS,Verr",Interest income from the discounting of provisions for pensions and similar/comparable obligations for offsetting under s. 246(2) HGB
+2687,,,,,,,,,,,,,,,,,,,Erträge VG zur Verrechnung § 246 (2) HGB,Income from assets for offsetting in accordance with section 246(2) HGB
+2689,,,,,,,,,,,,,,,,,,,Zinsähnliche Erträge verbundene UN,Income similar to interest income from affiliated companies
+2700,,,,,,,,,,,,,,,,,,,Sonstige Erträge betriebs/periodenfremd,Other income
+2705,,,,,,,,,,,,,,,,,,,Sonstige betriebl. regelm. Erträge,Other regular operating income
+2707,,,,,,,,,,,,,,,,,,,Sonstige betriebsfr.regelm. Erträge,Other regular non-operating income
+2709,,,,,,,,,,,,,,,,,,,Sonstige Erträge unregelmäßig,Other infrequent income
+2710,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. Sachanlagevermögen,Income from reversal of writedowns of tangible fixed assets
+2711,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. immat. Anlagevermög.,Income from reversal of writedowns of intangible fixed assets
+2712,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. Finanzanlagevermögen,Income from reversal of writedowns of long-term financial assets
+2713,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. FAV z.T. steuerfrei,"Income from reversal of writedowns of long-term financial assets, section 3 no. 40 EStG/section 8b(3) sentence 8 KStG"
+2714,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. z.T. steuerfrei,"Income from reversal of writedowns, section 3 no. 40 EStG/section 8b(2) KStG"
+2715,,,,,,,,,,,,,,,,,,,Erträge a.Zuschreibung Umlaufvermögen,Income from reversal of write-downs of current assets excluding inventories
+2716,,,,,,,,,,,,,,,,,,,Erträge Zuschreibg. UV z.T. steuerfrei,"Income from reversal of writedowns of current assets, section 3 no. 40 EStG/section 8b(3) sentence 8 KStG"
+2720,,,,,,,,,,,,,,,,,,,Erträge aus Abgang von AV-Gegenständen,Income from disposal of fixed assets
+2723,,,,,,,,,,,,,,,,,,,Erträge Veräuß.Ant. KapGes z.T. stfrei,"Income from disposal of shares in corporations (long-term financial assets), section 3 no. 40 EStG/section 8b(2) KStG"
+2725,,,,,,,,,,,,,,,,,,,Erträge aus Abgang von UV-Gegenständen,Income from disposal of current assets (excluding inventories)
+2726,,,,,,,,,,,,,,,,,,,Erträge aus Abgang UV z.T. steuerfrei,"Income from disposal of current assets (excluding inventories), section 3 no. 40 EStG/section 8b(2) KStG"
+2727,,,,,,,,,,,,,,,,,,,Ertr.Auflösg stl. Rücklage § 6b (3) EStG,Income from reversal of tax reserve under s. 6b(3) EStG
+2728,,,,,,,,,,,,,,,,,,,Ertr.Auflösg stl.Rücklage § 6b(10) EStG,Income from reversal of tax reserve under s. 6b(10) EStG
+2729,,,,,,,,,,,,,,,,,,,Erträge Auflösung stl. Rücklage R 6.6,Income from reversal of replacement reserve under R.6.6 EStR
+2730,,,,,,,,,,,,,,,,,,,Erträge aus Herabsetzung PWB auf Ford,Income from reduction in global valuation allowances on receivables
+2731,,,,,,,,,,,,,,,,,,,Erträge aus Herabsetzung EWB auf Ford,Income from reduction in specific valuation allowances on receivables
+2732,,,,,,,,,,,,,,,,,,,Erträge aus abgeschriebenen Forderg.,Income from recoveries of receivables previously written off
+2735,,,,,,,,,,,,,,,,,,,Erträge Auflösung von Rückstellungen,Income from reversal of provisions
+2736,,,,,,,,,,,,,,,,,,,Erträge Herabsetzung Verbindlichkeit,Income from remission of liabilities
+2737,,,,,,,,,,,,,,,,,,,Ertr. Auflösg stl. Rücklage § 4g EStG,Income from reversal of tax reserve under s. 4g EStG
+2740,,,,,,,,,,,,,,,,,,,Erträge Auflösung sonst.stl.Rücklagen,Income from the reversal of other tax reserves
+2741,,,,,,,,,,,,,,,,,,,Erträge Auflösung stl. Sonderabschr.,Income from reversal of accelerated tax depreciation
+2742,,,,,,,,,,,,,,,,,,,"Versich.entschädigung, Schadenersatz",Insurance recoveries and compensation payments
+2743,,,,,,,,,,,,,,,,,,,Investitionszuschüsse,Investment subsidies (taxable)
+2744,,,,,,,,,,,,,,,,,,,Investitionszulage,Investment grants (taxexempt)
+2745,,,,,,,,,,,,,,,,,,,Erträge a. Kapitalherabsetzung,Income from capital decrease
+2746,,,,,,,,,,,,,,,,,,,Stfreie Erträge Auflösung stl. Rücklage,Tax-exempt income from reversal of tax reserves
+2747,,,,,,,,,,,,,,,,,,,Sonstige steuerfr. Betriebseinnahmen,Other tax-exempt operating income
+2749,,,,,,,,,,,,,,,,,,,Erstattungen AufwendungsausgleichsG,Refunds Act on Reimbursement of Employers' Expenses (AAG)
+2750,,,,,,,,,,,,,,,,,,,Grundstückserträge,Income from real estate
+2751,,,,,,,,,,,,,,,,,,,Erlöse Vermietung u.Verpachtung ustfrei,"Rental and lease income, VAT-exempt s. 4 no. 12 UStG"
+2752,,,,,,,,,,,,,,,,,,,Erlöse Vermietung u.Verpachtung 19% USt,"Rental and lease income, 19 % VAT"
+2760,,,,,,,,,,,,,,,,,,,Erträge Aktivierung unentgeltl.erworb VG,Income from capitalisation of assets acquired free of charge
+2762,,,,,,,,,,,,,,,,,,,"Kostenerstatt.,Rückvergütg. früh. Jahre","Reimbursements, refunds and credit entries relating to prior periods"
+2764,,,,,,,,,,,,,,,,,,,Erträge aus Verwaltungskostenumlagen,Income from administrative expense allocations
+2790,,,,,,,,,,,,,,,,,,,Erträge aus Verlustübernahme,Income from loss absorption
+2792,,,,,,,,,,,,,,,,,,,Gewinne auf Grund Gewinngemeinschaft,Income from profits received under a profit pooling agreement
+2794,,,,,,,,,,,,,,,,,,,Gewinne auf Grund Gewinn/Teilgewinnabf,Income from profits received under a profit and loss transfer or partial profit transfer agreement
+2795,,,,,,,,,,,,,,,,,,,Entnahmen aus Kapitalrücklagen,Withdrawals from capital reserves
+2796,,,,,,,,,,,,,,,,,,,Entnahmen aus der gesetzlichen Rücklage,Withdrawals from legal reserve
+2797,,,,,,,,,,,,,,,,,,,Entnahmen aus satzungsm.Rücklagen,Withdrawals from reserves provided for by the articles of association
+2798,,,,,,,,,,,,,,,,,,,Entn. Ausgleichsposten akt.eig. Anteile,Withdrawals from special reserves for capitalised own shares
+2799,,,,,,,,,,,,,,,,,,,Entnahmen aus anderen Gewinnrücklagen,Withdrawals from other revenue reserves
+2840,,,,,,,,,,,,,,,,,,,Entnahme Rücklage Anteile herrsch. UN,Withdrawals from reserve for shares in a parent or majority investor
+2841,,,,,,,,,,,,,,,,,,,Entnahme gesamth.geb. Rücklagen (KKE),Withdrawals from collectively held reserves (with breakdown for statement of changes in capital account)
+2850,,,,,,,,,,,,,,,,,,,Entnahme a. anderen Ergebnisrücklagen,Withdrawals from other revenue reserves (cooperatives)
+2860,,,,,,,,,,,,,,,,,,,Gewinnvortrag nach Verwendung,Retained profits brought forward after appropriation of net profit
+2865,,,,,,,,,,,,,,,,,,,Gewinnvortrag nach Verwendung (KKE),Retained profits brought forward after appropriation of net profit (with breakdown for statement of changes in capital accounts)
+2867,,,,,,,,,,,,,,,,,,,Verlustvortrag nach Verwendung (KKE),Accumulated losses brought forward after appropriation of net profit (with breakdown for statement of changes in capital accounts)
+2868,,,,,,,,,,,,,,,,,,,Verlustvortrag nach Verwendung,Accumulated losses brought forward after appropriation of net profit
+2870,,,,,,,,,,,,,,,,,,,Vorabausschüttung,Advance distribution
+2890,,,,,,,,,,,,,,,,,,,Verrechneter kalkul.Unternehmerlohn,Allocated imputed business owner’s remuneration
+2891,,,,,,,,,,,,,,,,,,,Verrechnete kalkul. Miete und Pacht,Allocated imputed
+2892,,,,,,,,,,,,,,,,,,,Verrechnete kalkulatorische Zinsen,Allocated imputed interest
+2893,,,,,,,,,,,,,,,,,,,Verrechnete kalkul. Abschreibungen,"Allocated imputed depreciation, amortisation and writedowns"
+2894,,,,,,,,,,,,,,,,,,,Verrechnete kalkulatorische Wagnisse,Allocated imputed business risks
+2895,,,,,,,,,,,,,,,,,,,"Verrechneter kalk. Lohn, unentgeltl. AN",Allocated imputed wages for non-compensated employees
+3000,,,,,,,,,,,,,,,,,,,"Einkauf Roh-,Hilfs- und Betriebsstoffe","Raw materials, consumables and supplies"
+3010,,,,,,,,,,,,,,,,,,,Einkauf RHB 7% Vorsteuer,"Cost of raw materials, consumables and supplies, 7 % input tax"
+3029,,,,,,,,,,,,,,,,,,,Einkauf RHB ohne Vorsteuerabzug,"Cost of raw materials, consumables and supplies without input tax deduction"
+3030,,,,,,,,,,,,,,,,,,,Einkauf RHB 19 % Vorsteuer,"Cost of raw materials, consumables and supplies, 19 % input tax"
+3060,,,,,,,,,,,,,,,,,,,"Einkauf RHB, EU-Erwerb 7% Vorst./USt","Cost of raw materials, consumables and supplies, intra-European Union acquisitions, 7 % input tax and 7 % VAT"
+3062,,,,,,,,,,,,,,,,,,,"Einkauf RHB,EU-Erwerb 19% Vorst./USt","Cost of raw materials, consumables and supplies, intra-European Union acquisitions, 19 % input tax and 19 % VAT"
+3066,,,,,,,,,,,,,,,,,,,"Eink.RHB,EU-Erwerb ohne Vorst., 7% USt","Cost of raw materials, consumables and supplies, intra-European Union acquisitions, no input tax and 7 % VAT"
+3067,,,,,,,,,,,,,,,,,,,"Eink.RHB,EU-Erwerb ohne Vorst.,19% USt","Cost of raw materials, consumables and supplies, intra-European Union acquisitions, no input tax and 19 % VAT"
+3070,,,,,,,,,,,,,,,,,,,"Einkauf RHB 5,5% Vorsteuer","Cost of raw materials, consumables and supplies, 5.5 % input tax"
+3071,,,,,,,,,,,,,,,,,,,"Einkauf RHB 10,7%/9,5% Vorsteuer","Cost of raw materials, consumables and supplies, 9.5 % / 9.0 % input tax"
+3075,,,,,,,,,,,,,,,,,,,Einkauf RHB aus USt-Lager 7% Vorst./USt,"Cost of raw materials, consumables and supplies from a VAT warehouse, s. 13a UStG, 7 % input tax and 7 % VAT"
+3076,,,,,,,,,,,,,,,,,,,Einkauf RHB aus USt-Lager 19% Vorst/USt,"Cost of raw materials, consumables and supplies from a VAT warehouse, s. 13a UStG, 19 % input tax and 19 % VAT"
+3089,,,,,,,,,,,,,,,,,,,Erwerb RHB letzter Abn.DG 19% Vorst./USt,"Cost of raw materials, consumables and supplies as last purchaser in a triangular transaction, 19 % input tax and 19 % VAT"
+3090,,,,,,,,,,,,,,,,,,,Energiestoffe,Fuels (production)
+3091,,,,,,,,,,,,,,,,,,,Energiestoffe (Fertigung) 7% Vorsteuer,"Fuels (production), 7 % input tax"
+3092,,,,,,,,,,,,,,,,,,,Energiestoffe (Fertigung) 19% Vorsteuer,"Fuels (production), 19 % input tax"
+3100,,,,,,,,,,,,,,,,,,,Fremdleistungen,Purchased services
+3106,,,,,,,,,,,,,,,,,,,Fremdleistungen 19% Vorsteuer,"Purchased services, 19 % input tax"
+3108,,,,,,,,,,,,,,,,,,,Fremdleistungen 7% Vorsteuer,"Purchased services, 7 % input tax"
+3109,,,,,,,,,,,,,,,,,,,Fremdleistungen ohne Vorsteuer,"Purchased services, no input tax"
+3110,,,,,,,,,,,,,,,,,,,Bauleistungen §13b UStG 7% Vorst./USt,"Construction services supplied by domestic contractor, 7 % input tax and 7 % VAT"
+3113,,,,,,,,,,,,,,,,,,,Sonstige Leistungen EU 7% Vorst./USt,"Other services supplied by a contractor in another EU country, 7 % input tax and 7 % VAT"
+3115,,,,,,,,,,,,,,,,,,,Leistungen ausländ.Untern.7% Vorst./USt,"Services supplied by foreign contractor, 7 % input tax and 7 % VAT"
+3120,,,,,,,,,,,,,,,,,,,Bauleistungen §13b UStG 19% Vorst./USt,"Construction services supplied by domestic contractor, 19 % input tax and 19 % VAT"
+3123,,,,,,,,,,,,,,,,,,,Sonstige Leistungen EU 19% Vorst./USt,"Other services supplied by a contractor in another EU country, 19 % input tax and 19 % VAT"
+3125,,,,,,,,,,,,,,,,,,,Leistungen ausländ.Untern.19% Vorst./USt,"Services supplied by  foreign contractor, 19 % input tax and 19 % VAT"
+3130,,,,,,,,,,,,,,,,,,,"Bauleistungen §13b UStG o.Vorst.,7% USt","Construction services supplied by domestic contractor, no input tax and 7 % VAT"
+3133,,,,,,,,,,,,,,,,,,,"Sonstige Leistungen EU o.Vorst.,7% USt","Other services supplied by a contractor in another EU country, no input tax and 7 % VAT"
+3135,,,,,,,,,,,,,,,,,,,"Leistungen ausl.Untern.o.Vorst.,7% USt","Services supplied by foreign contractor, no input tax and 7 % VAT"
+3140,,,,,,,,,,,,,,,,,,,"Bauleistungen §13b UStG o.Vorst.,19% USt",Construction services supplied by domestic
+3143,,,,,,,,,,,,,,,,,,,"Sonstige Leistungen EU o.Vorst.,19% USt","Other services supplied by a contractor in another EU country, no input tax and 19 % VAT"
+3145,,,,,,,,,,,,,,,,,,,"Leistungen ausl.Untern.o.Vorst.,19% USt","Services supplied by foreign contractor, no input tax and 19 % VAT"
+3150,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Leistungen §13b UStG,Cash discounts received on services for which recipient bears tax liability under section 13b UStG
+3151,,,,,,,,,,,,,,,,,,,Erhalt. Skonti § 13b UStG 19% Vorst./USt,"Cash discounts received on services for which recipient bears tax liability under section 13b UStG, 19 % input tax and 19 % VAT"
+3152,,,,,,,,,,,,,,,,,,,Erhalt. Skonti § 13b UStG 16% Vorst./USt,"Cash discounts received on services for which recipient bears tax liability under section 13b UStG, 16 % input tax and 16 % VAT"
+3153,,,,,,,,,,,,,,,,,,,Erhaltene Skonti § 13b UStG o.VoSt/m.USt,"Cash discounts received on services for which recipient bears tax liability under section 13b UStG, no input tax, with VAT"
+3154,,,,,,,,,,,,,,,,,,,Erhalt. Skonti § 13b UStG o.VoSt/19% USt,"Cash discounts received on services for which recipient bears tax liability under section 13b UStG, no input tax and 19 % VAT"
+3155,,,,,,,,,,,,,,,,,,,Erhalt. Skonti § 13b UStG o.VoSt/16% USt,"Cash discounts received on services for which recipient bears tax liability under section 13b UStG, no input tax and 16 % VAT"
+3160,,,,,,,,,,,,,,,,,,,Leistungen § 13b UStG mit VoSt-Abzug,"Services under s. 13b UStG, with input tax deduction"
+3165,,,,,,,,,,,,,,,,,,,Leistungen § 13b UStG ohne VoSt-Abzug,"Services under s. 13b UStG, without input tax deduction"
+3170,,,,,,,,,,,,,,,,,,,Fremdleistung (Miet- u.Pachtz. bew. WG),Purchased services (rent/lease for movable property)
+3175,,,,,,,,,,,,,,,,,,,Fremdleistung (Miet- u.Pachtz. unbew.WG),Purchased services (rent/lease for immovable property)
+3180,,,,,,,,,,,,,,,,,,,Fremdleistung (Entgelte Rechte u.Liz.),Purchased services (recompense for rights and licences)
+3185,,,,,,,,,,,,,,,,,,,Fremdleistung (Vergütung Überlass. WG),Purchased services (remuneration for rental and lease of assets corresponds to special business income)
+3200,,,,,,,,,,,,,,,,,,,Wareneingang,Cost of merchandise
+3300,,,,,,,,,,,,,,,,,,,Wareneingang 7% Vorsteuer,"Cost of merchandise, 7 % input tax"
+3349,,,,,,,,,,,,,,,,,,,Wareneingang ohne Vorsteuerabzug,Cost of merchandise without input tax deduction
+3400,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3401,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3402,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3403,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3404,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3405,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3406,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3407,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3408,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3409,,,,,,,,,,,,,,,,,,,Wareneingang 19% Vorsteuer,"Cost of merchandise, 19 % input tax"
+3420,,,,,,,,,,,,,,,,,,,EU-Erwerb 7% Vorst./USt,"Intra-European Union acquisitions, 7 % input tax and 7 % VAT"
+3425,,,,,,,,,,,,,,,,,,,EU-Erwerb 19% Vorst./USt,"Intra-European Union acquisitions, 19 % input tax and 19 % VAT"
+3430,,,,,,,,,,,,,,,,,,,"EU-Erwerb ohne Vorsteuer, 7% USt","Intra-European Union acquisitions, no input tax and 7 % VAT"
+3435,,,,,,,,,,,,,,,,,,,"EU-Erwerb ohne Vorsteuer, 19% USt","Intra-European Union acquisitions, no input tax and 19 % VAT"
+3440,,,,,,,,,,,,,,,,,,,EU-Erwerb Nfz ohne UStID 19% Vorst./USt,"Intra-European Union acquisition of new vehicles from supplier without VAT identification number, 19 % input tax and 19 % VAT"
+3505,,,,,,,,,,,,,,,,,,,"Wareneingang 5,5% Vorsteuer","Cost of merchandise, 5,5 % input tax"
+3540,,,,,,,,,,,,,,,,,,,"Wareneingang 10,7%/9,5% Vorsteuer",Incoming goods at the average rate pursuant to section 24 UStG (9.5 % / 9.0 % input tax)
+3550,,,,,,,,,,,,,,,,,,,Steuerfreier EU-Erwerb,Tax-exempt intra-European Union acquisitions
+3551,,,,,,,,,,,,,,,,,,,"Wareneingang, im Drittland steuerbar","Cost of merchandise in a third country, taxable"
+3552,,,,,,,,,,,,,,,,,,,Erwerb 1. Abnehmer im Dreiecksgeschäft,Acquisition by 1st purchaser in a triangular transaction
+3553,,,,,,,,,,,,,,,,,,,Erwerb Waren letzt.Abn.DG 19% Vorst./USt,"Purchase of merchandise as last purchaser in a triangular transaction, 19 % input tax and 19 % VAT"
+3558,,,,,,,,,,,,,,,,,,,"Wareneingang, im anderen EU-Land stb.","Cost of merchandise in another EU country, taxable"
+3559,,,,,,,,,,,,,,,,,,,Steuerfreie Einfuhren,Tax-exempt imports
+3560,,,,,,,,,,,,,,,,,,,Waren aus USt-Lager 7% Vorst./USt,"Merchandise from a VAT warehouse, section 13a UStG, 7 % input tax and 7 % VAT"
+3565,,,,,,,,,,,,,,,,,,,Waren aus USt-Lager 19% Vorst./USt,"Merchandise from a VAT warehouse, section 13a UStG, 19 % input tax and 19 % VAT"
+3600,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt (Materialaufwand),Non-deductible input
+3610,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt 7% (Materialaufwand),"Non-deductible input tax, 7 %"
+3660,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt 19% (Materialaufw.),"Non-deductible input tax, 19 %"
+3700,,,,,,,,,,,,,,,,,,,Nachlässe,Trade discounts
+3701,,,,,,,,,,,,,,,,,,,Nachlässe aus Einkauf RHB,"Trade discounts on cost of raw materials, consumables and supplies"
+3710,,,,,,,,,,,,,,,,,,,Nachlässe 7% Vorsteuer,"Trade discounts, 7 % input tax"
+3714,,,,,,,,,,,,,,,,,,,Nachlässe aus Einkauf RHB 7% Vorst.,"Trade discounts on cost of raw materials, consumables and supplies, 7 % input tax"
+3715,,,,,,,,,,,,,,,,,,,Nachlässe aus Einkauf RHB 19% Vorst.,"Trade discounts on cost of raw materials, consumables and supplies, 19 % input tax"
+3717,,,,,,,,,,,,,,,,,,,"Nachlässe RHB, EU-Erwerb 7% Vorst./USt","Trade discounts on cost of raw materials, consumables and supplies, intra-EU acquisitions, 7 % input tax and 7 % VAT"
+3718,,,,,,,,,,,,,,,,,,,"Nachlässe RHB, EU-Erwerb 19% Vorst./USt","Trade discounts on cost of raw materials, consumables and supplies, intra-EU acquisitions, 19 % input tax and 19 % VAT"
+3720,,,,,,,,,,,,,,,,,,,Nachlässe 19% Vorsteuer,"Trade discounts, 19 % input tax"
+3724,,,,,,,,,,,,,,,,,,,Nachlässe aus EU-Erwerb 7% Vorst./USt,"Trade discounts on intra-European Union acquisitions, 7 % input tax and 7 % VAT"
+3725,,,,,,,,,,,,,,,,,,,Nachlässe aus EU-Erwerb 19% Vorst./USt,"Trade discounts on intra-European Union acquisitions, 19 % input tax and 19 % VAT"
+3730,,,,,,,,,,,,,,,,,,,Erhaltene Skonti,Cash discounts received 3731 Cash discounts re-
+3731,,,,,,,,,,,,,,,,,,,Erhaltene Skonti 7% Vorsteuer,"Cash discounts received, 7 % input tax"
+3732,,,,,,,,,,,,,,,,,,,Erhaltene Skonti 5% Vorsteuer,"Cash discounts received, 5 % input tax"
+3733,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Einkauf RHB,"Cash discounts received on cost of raw materials, consumables and supplies"
+3734,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Einkauf RHB 7% Vorst.,"Cash discounts received on cost of raw materials, consumables and supplies, 7 % input tax"
+3735,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Einkauf RHB 5% Vorst.,"Cash discounts received on cost of raw materials, consumables and supplies, 5 % input tax"
+3736,,,,,,,,,,,,,,,,,,,Erhaltene Skonti 19% Vorsteuer,"Cash discounts received, 19 % input tax"
+3737,,,,,,,,,,,,,,,,,,,Erhaltene Skonti 16% Vorsteuer,"Cash discounts received, 16 % input tax"
+3738,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Einkauf RHB 19% Vorst.,"Cash discounts received on cost of raw materials, consumables and supplies, 19 % input tax"
+3739,,,,,,,,,,,,,,,,,,,Erhaltene Skonti Einkauf RHB 16% Vorst.,"Cash discounts received on cost of raw materials, consumables and supplies, 16 % input tax"
+3740,,,,,,,,,,,,,,,,,,,Erhalt. Skonti RHB EU-Erw.16% Vorst./USt,"Cash discounts received on cost of raw materials, consumables and supplies, taxable intra-European Union acquisitions, 16 % input tax and 16 % VAT"
+3741,,,,,,,,,,,,,,,,,,,Erhalt. Skonti RHB EU-Erw.19% Vorst./USt,"Cash discounts received on cost of raw materials, consumables and supplies, taxable intra-European Union acquisitions, 19 % input tax and 19 % VAT"
+3742,,,,,,,,,,,,,,,,,,,Erhalt. Skonti RHB EU-Erw. 5% Vorst./USt,"Cash discounts received on cost of raw materials, consumables and supplies, taxable intra-European Union acquisitions, 5 % input tax and 5 % VAT"
+3743,,,,,,,,,,,,,,,,,,,Erhalt. Skonti RHB EU-Erw. 7% Vorst./USt,"Cash discounts received on cost of raw materials, consumables and supplies, taxable intra-European Union acquisitions, 7 % input tax and 7 % VAT"
+3744,,,,,,,,,,,,,,,,,,,Erhaltene Skonti RHB EU-Erwerb,"Cash discounts received on raw materials, consumables and supplies, taxable intra-European Union acquisitions"
+3745,,,,,,,,,,,,,,,,,,,Erhaltene Skonti EU-Erwerb,Cash discounts received on taxable intra-European Union acquisitions
+3746,,,,,,,,,,,,,,,,,,,Erhalt. Skonti EU-Erwerb 7% Vorst./USt,"Cash discounts received on taxable intra-European Union acquisitions, 7 % input tax and 7 % VAT"
+3747,,,,,,,,,,,,,,,,,,,Erhalt. Skonti EU-Erwerb 5% Vorst./USt,"Cash discounts received on taxable intra-European Union acquisitions, 5 % input tax and 5 % VAT"
+3748,,,,,,,,,,,,,,,,,,,Erhalt. Skonti EU-Erwerb 19% Vorst./USt,"Cash discounts received on taxable intra-European Union acquisitions, 19 % input tax and 19 % VAT"
+3749,,,,,,,,,,,,,,,,,,,Erhalt. Skonti EU-Erwerb 16% Vorst./USt,"Cash discounts received on taxable intra-European Union acquisitions, 16 % input tax and 16 % VAT"
+3750,,,,,,,,,,,,,,,,,,,Erhaltene Boni 7% Vorsteuer,"Volume discounts received, 7 % input tax"
+3753,,,,,,,,,,,,,,,,,,,Erhaltene Boni aus Einkauf RHB,"Volume discounts received on cost of raw materials, consumables and supplies"
+3754,,,,,,,,,,,,,,,,,,,Erhaltene Boni Einkauf RHB 7% Vorst.,"Volume discounts received on cost of raw materials, consumables and supplies, 7 % input tax"
+3755,,,,,,,,,,,,,,,,,,,Erhaltene Boni Einkauf RHB 19% Vorst.,"Volume discounts received on cost of raw materials, consumables and supplies, 19 % input tax"
+3760,,,,,,,,,,,,,,,,,,,Erhaltene Boni 19% Vorsteuer,"Volume discounts received, 19 % input tax"
+3769,,,,,,,,,,,,,,,,,,,Erhaltene Boni,Volume discounts received
+3770,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte,Rebates received
+3780,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte 7% Vorsteuer,"Rebates received, 7 % input tax"
+3783,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte aus Einkauf RHB,"Rebates received on cost of raw materials, consumables and supplies"
+3784,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte Einkauf RHB 7% Vorst,"Rebates received on cost of raw materials, consumables and supplies, 7 % input tax"
+3785,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte Einkauf RHB 19% Vorst,"Rebates received on cost of raw materials, consumables and supplies, 19 % input tax"
+3788,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti RHB 10,7% Vorsteuer","Cash discounts received on cost of raw materials, consumables and supplies, 10,7 % input tax"
+3789,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti RHB 9,5% Vorsteuer","Cash discounts received on cost of raw materials, consumables and supplies, 9,5 % input tax"
+3790,,,,,,,,,,,,,,,,,,,Erhaltene Rabatte 19% Vorsteuer,"Rebates received, 19 % input tax"
+3792,,,,,,,,,,,,,,,,,,,Erh.Skonti RHB letz.Abn.DG 19% Vorst/USt,"Cash discounts received on cost of raw materials, consumables and supplies as last purchaser in a triangular transaction, 19 % input tax and 19 %"
+3793,,,,,,,,,,,,,,,,,,,Erh.Skonti Waren DG letz.Abn.19%VoSt/USt,Cash discounts received
+3794,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti 5,5% Vorsteuer","Cash discounts received on purchase of merchandise as last purchaser in a triangular transaction, 19 % input tax and 19 % VAT"
+3796,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti 10,7% Vorsteuer","Cash discounts received, 10,7 % input tax"
+3797,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti 9,5% Vorsteuer","Cash discounts received, 9,5 % input tax"
+3798,,,,,,,,,,,,,,,,,,,"Erhaltene Skonti RHB 5,5% Vorsteuer","Cash discounts received on cost of raw materials, consumables and supplies, 5.5 % input tax"
+3800,,,,,,,,,,,,,,,,,,,Bezugsnebenkosten,Delivery costs
+3830,,,,,,,,,,,,,,,,,,,Leergut,Empties
+3850,,,,,,,,,,,,,,,,,,,Zölle und Einfuhrabgaben,Customs and import duties
+3950,,,,,,,,,,,,,,,,,,,Bestandsveränderungen Waren,Changes in inventories of purchased merchandise
+3955,,,,,,,,,,,,,,,,,,,Bestandsveränderungen RHB,"Changes in inventories of raw materials, consumables and supplies"
+3960,,,,,,,,,,,,,,,,,,,Bestandsveränderung RHB-Stoffe / Waren,"Changes in inventories of raw materials, consumables and supplies, and of purchased merchandise"
+3970,,,,,,,,,,,,,,,,,,,"Bestand Roh-,Hilfs- und Betriebsstoffe","Inventories of raw materials, consumables and supplies"
+3980,,,,,,,,,,,,,,,,,,,Bestand Waren,Merchandise (inventories)
+3990,,,,,,,,,,,,,,,,,,,Verrechnete Stoffkosten,Allocated material costs
+4000,,,,,,,,,,,,,,,,,,,Material- und Stoffverbrauch,"Cost of raw materials, consumables and supplies, and of purchased merchandise"
+4100,,,,,,,,,,,,,,,,,,,Löhne und Gehälter,Wages and salaries
+4110,PL,,,,,,,,,,,,,,,,,,Löhne,Wages
+4120,,,,,,,,,,,,,,,,,,,Gehälter,Salaries
+4124,,,,,,,,,,,,,,,,,,,Geschäftsführergehälter GmbH-Gesells.,Managing director salaries of shareholders of limited liability company (GmbH)
+4125,,,,,,,,,,,,,,,,,,,Ehegattengehalt,Salaries of spouses
+4126,,,,,,,,,,,,,,,,,,,Tantiemen Gesellschafter-Geschäftsf.,Management bonuses paid to shareholder managers
+4127,,,,,,,,,,,,,,,,,,,Geschäftsführergehälter,Managing director salaries
+4128,,,,,,,,,,,,,,,,,,,Vergütung angest. Mituntern. § 15 EStG,"Remuneration of salaried partners, section 15 EStG (corresponds to special business income)"
+4129,,,,,,,,,,,,,,,,,,,Tantiemen Arbeitnehmer,Management bonuses paid to employees
+4130,,,,,,,,,,,,,,,,,,,Gesetzliche Sozialaufwendungen,Statutory social security expenses
+4137,,,,,,,,,,,,,,,,,,,Ges. soz. Aufwendg. Mituntern. §15 EStG,"Statutory social security expenses for salaried partners, section 15 EStG (corresponds to special business income)"
+4138,,,,,,,,,,,,,,,,,,,Beiträge zur Berufsgenossenschaft,Contributions to occupational health and safety agency
+4139,,,,,,,,,,,,,,,,,,,Ausgleichsabgabe n.d.SchwerbehindertenG.,Disabled persons equalisation levy
+4140,,,,,,,,,,,,,,,,,,,Freiwillige soziale Aufwendung. LSt-frei,Voluntary social benefits not subject to wage tax
+4141,,,,,,,,,,,,,,,,,,,Sonstige soziale Abgaben,Other social security costs
+4144,,,,,,,,,,,,,,,,,,,Soziale Abgaben für Minijobber,Social security contributions for marginal parttime workers
+4145,,,,,,,,,,,,,,,,,,,Freiwillige soziale Aufwendung. LSt-pfl.,Voluntary social benefits subject to wage tax
+4146,,,,,,,,,,,,,,,,,,,Freiwillige Zuwendungen an Minijobber,Voluntary non-cash benefits provided to marginal part-time workers
+4147,,,,,,,,,,,,,,,,,,,Freiwillige Zuwendungen an Ges.er-GF,Voluntary non-cash benefits provided to shareholder managers
+4148,,,,,,,,,,,,,,,,,,,Freiwillige Zuwend. Mituntern. § 15 EStG,"Voluntary non-cash benefits provided to salaried partners, section 15 EStG (corresponds to special business income)"
+4149,,,,,,,,,,,,,,,,,,,Pauschale Steuer auf sonstige Bezüge,Flat-rate tax on other benefits (e.g. travel allowances)
+4150,,,,,,,,,,,,,,,,,,,Krankengeldzuschüsse,Sick pay supplements
+4151,,,,,,,,,,,,,,,,,,,"Sachzuwend., Dienstleistungen Minijob",Non-cash benefits and services provided to marginal part-time workers
+4152,,,,,,,,,,,,,,,,,,,Sachzuwendungen und Dienstleistg. an AN,Non-cash benefits and services provided to employees
+4153,,,,,,,,,,,,,,,,,,,"Sachzuwend., Dienstleistungen Ges.er-GF",Non-cash benefits and services provided to shareholder managers
+4154,,,,,,,,,,,,,,,,,,,"Sachzuwendg, Dienstleistg. MU §15 EStG","Non-cash benefits and services provided to salaried partners, section 15 EStG (corresponds to special business income)"
+4155,,,,,,,,,,,,,,,,,,,Zuschüsse Agenturen für Arbeit,Employment agency subsidies (credit balances)
+4156,,,,,,,,,,,,,,,,,,,Aufwendung Veränderung Urlaubsrückst.,Expenses from change in provisions for vacation pay
+4157,,,,,,,,,,,,,,,,,,,Aufwendung Urlaubsrückstellg Ges.er-GF,Expenses from change in provisions for vacation pay for shareholder-managers
+4158,,,,,,,,,,,,,,,,,,,Aufwendung Urlaubsrückst. MU § 15 EStG,"Expenses from change in provisions for vacation pay for salaried partners, section 15 EStG (corresponds to special business income)"
+4159,,,,,,,,,,,,,,,,,,,Aufwendung Urlaubsrückst. Minijobber,Expenses from change in provisions for vacation pay for marginal part-time workers
+4160,,,,,,,,,,,,,,,,,,,Versorgungskassen,Pension funds
+4165,,,,,,,,,,,,,,,,,,,Aufwendungen für Altersversorgung,Post-employment benefit costs
+4166,,,,,,,,,,,,,,,,,,,Aufwendungen Altersversorgung Ges.er-GF,Post-employment benefit costs for shareholder managers
+4167,,,,,,,,,,,,,,,,,,,Pauschale Steuer für Versicherungen,Flat-rate tax on other benefits (e.g. direct insurance policies)
+4168,,,,,,,,,,,,,,,,,,,Aufwend. Altersvers. Mituntern. §15 EStG,"Post-employment benefit costs of salaried partners, section 15 EStG (corresponds to special business income)"
+4169,,,,,,,,,,,,,,,,,,,Aufwendungen für Unterstützung,Employee benefit expenses
+4170,,,,,,,,,,,,,,,,,,,Vermögenswirksame Leistungen,Capital-forming payments
+4175,,,,,,,,,,,,,,,,,,,Fahrtkostenerstatt. Whg./Arbeitsstätte,Travel expense reimbursement home/workplace
+4180,,,,,,,,,,,,,,,,,,,Bedienungsgelder,Tips
+4190,,,,,,,,,,,,,,,,,,,Aushilfslöhne,Casual labour wages
+4194,,,,,,,,,,,,,,,,,,,Pauschale Steuer für Minijobber,Flat-rate taxes for marginal part-time workers
+4195,,,,,,,,,,,,,,,,,,,Löhne für Minijobs,Wages for marginal part-time work
+4196,,,,,,,,,,,,,,,,,,,Pauschale Steuer für Gesellschafter-GF,Flat-rate taxes for shareholder managers
+4197,,,,,,,,,,,,,,,,,,,Pauschale Steuer f. Mituntern. § 15 EStG,"Flat-rate taxes for salaried partners, section 15 EStG (corresponds to special business income)"
+4198,,,,,,,,,,,,,,,,,,,Pauschale Steuer für Arbeitnehmer,Flat-rate taxes for employees
+4199,,,,,,,,,,,,,,,,,,,Pauschale Steuer für Aushilfen,Flat-rate tax on casual labour wages
+4200,,,,,,,,,,,,,,,,,,,Raumkosten,Occupancy costs
+4210,,,,,,,,,,,,,,,,,,,"Miete, unbewegliche Wirtschaftsgüter",Rent (immovable property)
+4211,,,,,,,,,,,,,,,,,,,"Aufwendungen für unbewegliche WG, GewSt",Expenses for rented or leased immovable property that must be added back under trade tax law
+4212,,,,,,,,,,,,,,,,,,,Miete/Aufw. doppelte Haushaltsführ. UN,Rent/expenses for maintaining two residences (business owner)
+4215,,,,,,,,,,,,,,,,,,,"Leasing, unbewegliche Wirtschaftsgüter",Leases (immovable property)
+4219,,,,,,,,,,,,,,,,,,,Vergütung Mitunter Miete unbew.WG(PersG),"Remuneration of partners for rental of their immovable property, section 15 EStG (corresponds to special business income)"
+4220,,,,,,,,,,,,,,,,,,,"Pacht, unbewegliche Wirtschaftsgüter",Real property leases (immovable property)
+4222,,,,,,,,,,,,,,,,,,,"Vergütung Ges.er Miete,Pacht unbew.WG",Remuneration of partners for rental and lease of their immovable property
+4228,,,,,,,,,,,,,,,,,,,Miet- und Pachtnebenkosten,"Incidental rental and lease expenses, not added back for trade tax purposes"
+4229,,,,,,,,,,,,,,,,,,,Pacht unbewegl. WG MU § 15 EStG,"Remuneration of partners for lease of their immovable property, section 15 EStG (corresponds to special business income)"
+4230,,,,,,,,,,,,,,,,,,,Heizung,Heating
+4240,,,,,,,,,,,,,,,,,,,"Gas, Strom, Wasser","Gas, electricity, water 4250 Cleaning"
+4250,,,,,,,,,,,,,,,,,,,Reinigung,#NV
+4260,,,,,,,,,,,,,,,,,,,Instandhaltung betrieblicher Räume,Maintenance of operating premises
+4270,,,,,,,,,,,,,,,,,,,Abgaben betrieblich genutzt. Grundbesitz,Levies for real property used for operating purposes
+4280,,,,,,,,,,,,,,,,,,,Sonstige Raumkosten,Other occupancy costs
+4288,,,,,,,,,,,,,,,,,,,"Aufwendung. Arbeitszimmer, abz. Anteil",Expenses for home office (deductible portion)
+4289,,,,,,,,,,,,,,,,,,,Aufwendung. Arbeitszimmer n.abz. Anteil,Expenses for home office (non-deductible portion)
+4290,,,,,,,,,,,,,,,,,,,"Grundstücksaufwendungen, betrieblich","Real estate expenses, operating"
+4300,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt (so betr Aufwand),Non-deductible input tax
+4301,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt 7% (so betr Aufwand),"Non-deductible input tax, 7 %"
+4306,,,,,,,,,,,,,,,,,,,Nicht abziehb. VoSt 19% (so betr Aufw),"Non-deductible input tax, 19 %"
+4320,,,,,,,,,,,,,,,,,,,Gewerbesteuer,Trade tax
+4340,,,,,,,,,,,,,,,,,,,Sonstige Betriebssteuern,Other taxes
+4350,,,,,,,,,,,,,,,,,,,Verbrauchsteuer (sonstige Steuern),Excise taxes (other
+4355,,,,,,,,,,,,,,,,,,,Ökosteuer,Eco tax
+4360,,,,,,,,,,,,,,,,,,,Versicherungen,Insurance premiums
+4366,,,,,,,,,,,,,,,,,,,Versicherung für Gebäude,Building insurance
+4370,,,,,,,,,,,,,,,,,,,Prämie Rückdeckung f. Versorgungsleistg,Net insurance premium for future pension benefit liability
+4380,,,,,,,,,,,,,,,,,,,Beiträge,Contributions
+4390,,,,,,,,,,,,,,,,,,,Sonstige Abgaben,Other levies
+4396,,,,,,,,,,,,,,,,,,,Abzugsf.Verspätungszuschlag/Zwangsgeld,Tax-deductible late filing penalties and administrative fines
+4397,,,,,,,,,,,,,,,,,,,Nicht abzf.Verspät.zuschlag/Zwangsgeld,Non-tax deductible late filing penalties and administrative fines
+4500,,,,,,,,,,,,,,,,,,,Fahrzeugkosten,Vehicle expenses
+4510,,,,,,,,,,,,,,,,,,,Kfz-Steuern,Motor vehicle tax
+4520,,,,,,,,,,,,,,,,,,,Kfz-Versicherungen,Vehicle-insurances
+4530,,,,,,,,,,,,,,,,,,,Laufende Kfz-Betriebskosten,Current vehicle-operating costs
+4540,,,,,,,,,,,,,,,,,,,Kfz-Reparaturen,Vehicle-repairs
+4550,,,,,,,,,,,,,,,,,,,Garagenmieten,Garage rent
+4560,,,,,,,,,,,,,,,,,,,Mautgebühren,Road tolls
+4570,,,,,,,,,,,,,,,,,,,Mietleasing Kfz,Operating leases (motor vehicles)
+4575,,,,,,,,,,,,,,,,,,,Mietleasing Elektrofahrzeuge,Leasing expenses for electric vehicles that must be added back under trade tax law
+4580,,,,,,,,,,,,,,,,,,,Sonstige Kfz-Kosten,Other vehicle costs
+4590,,,,,,,,,,,,,,,,,,,Kfz-Kosten betriebl.Nutzung Kfz im PV,Expenses for private vehicles used for business purposes
+4595,,,,,,,,,,,,,,,,,,,Fremdfahrzeugkosten,Third-party vehicle expenses
+4600,,,,,,,,,,,,,,,,,,,Werbekosten,Advertising expenses
+4605,,,,,,,,,,,,,,,,,,,Streuartikel,Giveaways
+4630,,,,,,,,,,,,,,,,,,,Geschenke abzugsfähig ohne § 37b EStG,"Gifts, deductible, without s. 37b EStG"
+4631,,,,,,,,,,,,,,,,,,,Geschenke abzugsfähig mit § 37b EStG,"Non-cash benefits to third parties, deductible, s. 37b EStG"
+4632,,,,,,,,,,,,,,,,,,,Pausch. Steuer Geschenke/Zuwend. abz.,"Flat-rate taxes on gifts and non-cash benefits, deductible"
+4635,,,,,,,,,,,,,,,,,,,Geschenke n. abzugsfähig ohne §37b EStG,"Gifts, non-deductible, without s. 37b EStG"
+4636,,,,,,,,,,,,,,,,,,,Geschenke n. abzugsfähig mit § 37b EStG,"Gifts, non-deductible, with s. 37b EStG"
+4637,,,,,,,,,,,,,,,,,,,Pausch. Steuer Geschenke/Zuwend. n.abz.,"Flat-rate taxes on noncash benefits and gifts, non-deductible"
+4638,,,,,,,,,,,,,,,,,,,Geschenke ausschl.betrieblich genutzt,Gifts used exclusively for operating purposes
+4639,,,,,,,,,,,,,,,,,,,Zugaben mit § 37b EStG,"Non-cash benefits, with s. 37b EStG"
+4640,,,,,,,,,,,,,,,,,,,Repräsentationskosten,Corporate hospitality expenses
+4650,,,,,,,,,,,,,,,,,,,Bewirtungskosten,Entertainment expenses
+4651,,,,,,,,,,,,,,,,,,,"Eingeschr. abziehb.BA, abz. Anteil",Other business expenses with limited deductibility (deductible portion)
+4652,,,,,,,,,,,,,,,,,,,"Eingeschr. abziehb.BA, n. abz. Anteil",Other business expenses with limited deductibility (non-deductible portion)
+4653,,,,,,,,,,,,,,,,,,,Aufmerksamkeiten,Small gifts
+4654,,,,,,,,,,,,,,,,,,,Nicht abzugsfähige Bewirtungskosten,Non-deductible entertainment expenses
+4655,,,,,,,,,,,,,,,,,,,Nicht abzugsfähige Betriebsausgaben,Non-deductible business expenses from advertising and corporate hospitality expenses
+4660,,,,,,,,,,,,,,,,,,,Reisekosten Arbeitnehmer,Employee travel expenses
+4663,,,,,,,,,,,,,,,,,,,"Reisekosten Arbeitnehmer, Fahrtkosten","Employee travel expenses, cost of travel"
+4664,,,,,,,,,,,,,,,,,,,Reisekosten AN Verpfleg.mehraufwand,"Employee travel expenses, additional subsistence costs"
+4666,,,,,,,,,,,,,,,,,,,Reisekosten AN Übernachtungsaufwand,"Employee travel expenses, accommodation costs"
+4668,,,,,,,,,,,,,,,,,,,Kilometergelderstattung Arbeitnehmer,Employee mileage reimbursement
+4670,,,,,,,,,,,,,,,,,,,Reisekosten Unternehmer,Business owner travel expenses
+4672,,,,,,,,,,,,,,,,,,,"Reisekosten Unternehmer, n.abz.Anteil",Business owner travel expenses (non-deductible portion)
+4673,,,,,,,,,,,,,,,,,,,"Reisekosten Unternehmer, Fahrtkosten","Business owner travel expenses, cost of travel"
+4674,,,,,,,,,,,,,,,,,,,Reisekosten UN Verpfleg.mehraufwand,"Business owner travel expenses, additional subsistence costs"
+4676,,,,,,,,,,,,,,,,,,,Reisekosten UN Übernacht./Nebenkost,"Business owner travel expenses, accommodation costs and incidental travel expenses"
+4678,,,,,,,,,,,,,,,,,,,"Fahrten Wohng./Betrieb/Familie, abz.",Travel between home and workplace and travel to family home (deductible portion)
+4679,,,,,,,,,,,,,,,,,,,"Fahrten Wohng./Betrieb/Familie, n.abz",Travel between home and workplace and travel to family home (non-deductible portion)
+4680,,,,,,,,,,,,,,,,,,,"Fahrten Wohng./Betrieb/Familie, Haben",Travel between home and workplace and travel to family home (credit balance)
+4681,,,,,,,,,,,,,,,,,,,Verpfl.Mehraufwend. dopp. Haushaltsf. UN,Additional subsistence expenses in connection with maintaining two residences (business owner)
+4700,,,,,,,,,,,,,,,,,,,Kosten Warenabgabe,Selling and distribution expenses
+4710,,,,,,,,,,,,,,,,,,,Verpackungsmaterial,Packaging materials
+4730,,,,,,,,,,,,,,,,,,,Ausgangsfrachten,Outgoing freight
+4750,,,,,,,,,,,,,,,,,,,Transportversicherungen,Transport insurance
+4760,,,,,,,,,,,,,,,,,,,Verkaufsprovisionen,Selling commissions
+4780,,,,,,,,,,,,,,,,,,,Fremdarbeiten (Vertrieb),Third-party services (distribution)
+4790,,,,,,,,,,,,,,,,,,,Aufwand für Gewährleistungen,Warranty expenses
+4800,,,,,,,,,,,,,,,,,,,Reparatur/Instandh. Anlagen u. Maschinen,Repairs and maintenance of technical equipment and machinery
+4801,,,,,,,,,,,,,,,,,,,Reparatur u.Instandhaltung von Bauten,Building repairs and maintenance
+4805,,,,,,,,,,,,,,,,,,,Reparatur/Instandh.v.and.Anlagen u. BGA,"Repairs and maintenance of other equipment, operating and office equipment"
+4806,,,,,,,,,,,,,,,,,,,Wartungskosten für Hard- und Software,Hardware and software maintenance expenses
+4808,,,,,,,,,,,,,,,,,,,Zuführung zu Aufwandsrückstellungen,Addition to provision for internal expenses
+4809,,,,,,,,,,,,,,,,,,,Sonstige Reparaturen u.Instandhaltungen,Other repairs and maintenance
+4810,,,,,,,,,,,,,,,,,,,Mietleasing bewegl. WG techn. Anlagen,Operating leases movable assets for technical equipment and machinery
+4815,,,,,,,,,,,,,,,,,,,Kaufleasing,Finance leases
+4822,,,,,,,,,,,,,,,,,,,Abschreibung immaterielle VermG,Amortisation of intangible fixed assets
+4823,,,,,,,,,,,,,,,,,,,Abschreibung selbst geschaffene imm. VG,Amortisation of internally generated intangible fixed assets
+4824,,,,,,,,,,,,,,,,,,,Abschr. Geschäfts- oder Firmenwert,Goodwill amortisation and writedowns
+4825,,,,,,,,,,,,,,,,,,,"Apl. Abschreib. Geschäfts-, Firmenwert",Goodwill writedowns
+4826,,,,,,,,,,,,,,,,,,,Apl. Abschreibungen immaterielle VermG,Writedowns of intangible fixed assets
+4827,,,,,,,,,,,,,,,,,,,Apl. Abschreibung selbst gesch. imm.VG,Writedowns of internally generated intangible fixed assets
+4830,,,,,,,,,,,,,,,,,,,Abschreibungen auf Sachanlagen,Depreciation of tangible fixed assets (excluding depreciation of vehicles and buildings)
+4831,,,,,,,,,,,,,,,,,,,Abschreibungen auf Gebäude,Depreciation of buildings
+4832,,,,,,,,,,,,,,,,,,,Abschreibungen auf Kfz,Depreciation of vehicles
+4833,,,,,,,,,,,,,,,,,,,Abschreibung Arbeitszimmer,Depreciation of share of building attributable to home office
+4840,,,,,,,,,,,,,,,,,,,Apl. Abschreibungen auf Sachanlagen,writedowns of tangible fixed assets
+4841,,,,,,,,,,,,,,,,,,,Außergewöhnliche Abschreibung Gebäude,writedowns for extraordinary technical and economic wear and tear of buildings
+4842,,,,,,,,,,,,,,,,,,,Außergewöhnliche Abschreibung auf Kfz,writedowns for extraordinary technical and economic wear and tear of vehicles
+4843,,,,,,,,,,,,,,,,,,,Außergewöhnliche Abschreibung so. WG,writedowns for extraordinary technical and economic wear and tear of other assets
+4850,,,,,,,,,,,,,,,,,,,Abschreib.Sachanlagen/stl. So-Vorschr.,writedowns of tangible fixed assets due to special tax rules
+4851,,,,,,,,,,,,,,,,,,,Sonderabschr. § 7g (5) EStG ohne Kfz,"Special depreciation pursuant to section 7g, paragraph 5, of the EStG (excl.vehicles)"
+4852,,,,,,,,,,,,,,,,,,,Sonderabschr. § 7g (5) EStG für Kfz,"Special depreciation pursuant to section 7g, paragraph 5, of the"
+4853,,,,,,,,,,,,,,,,,,,Kürzung AHK § 7g (2) EStG ohne Kfz,Reduction in cost in accordance with section 7g(2) EStG (excl. vehicles)
+4854,,,,,,,,,,,,,,,,,,,Kürzung AHK § 7g (2) EStG für Kfz,Reduction in cost in accordance with section 7g(2) EStG (for vehicles)
+4855,,,,,,,,,,,,,,,,,,,Sofortabschreibung GWG,Immediate write-off of low-value assets
+4856,,,,,,,,,,,,,,,,,,,Sonderabschreibungen nach § 7b EStG,Accelerated tax depreciation under section 7b EStG (new rental housing)
+4859,,,,,,,,,,,,,,,,,,,Abzugsbetrag nach § 6b EStG,Deduction amount pursuant to section 6b EStG
+4860,,,,,,,,,,,,,,,,,,,Abschreibungen auf aktivierte GWG,Depreciation and amortisation of capitalised low-value assets
+4862,,,,,,,,,,,,,,,,,,,Abschreibungen auf WG Sammelposten,writedowns of assets (collective item)
+4865,,,,,,,,,,,,,,,,,,,Apl. Abschreibungen auf aktivierte GWG,writedowns of capitalised low-value assets
+4866,,,,,,,,,,,,,,,,,,,Abschr. Finanzanlagen (n. dauerhaft),writedowns of long-term financial assets (not permanent)
+4870,,,,,,,,,,,,,,,,,,,Abschreibung Finanzanlagen (dauerhaft),writedowns of long-term financial assets (permanent)
+4871,,,,,,,,,,,,,,,,,,,"Abschr. Finanzanl., zT.n.abz.(dauerhaft)","writedowns of long-term financial assets, s. 3 no. 40 EStG/ s. 8b(3) KStG (permanent)"
+4872,,,,,,,,,,,,,,,,,,,Verlustanteile Mitunternehmerschaften,"Expenses due to share of loss of industrial and independent partnerships, s. 8 GewStG or s. 18 EStG"
+4873,,,,,,,,,,,,,,,,,,,AfA Finanzanlagen § 6b EStG z.T. n.abz.,"writedowns of long-term financial assets due to section 6b EStG reserve, section 3 no. 40 EStG/section 8b(3) KStG"
+4874,,,,,,,,,,,,,,,,,,,Abschreibung Finanzanlagen § 6b EStG,writedowns of long-term financial assets due to section 6b EStG reserve
+4875,,,,,,,,,,,,,,,,,,,Abschreibungen Wertpapiere des UV,writedowns of securities classified as current assets
+4876,,,,,,,,,,,,,,,,,,,Abschreibungen Wertpap. UV z.T. n.abz.,"writedowns of securities classified as current assets, section 3 no. 40 EStG/section 8b(3) KStG"
+4877,,,,,,,,,,,,,,,,,,,"Abschreibungen Finanzanlagen, verb.UN",writedowns of long-term financial assets affiliated companies
+4878,,,,,,,,,,,,,,,,,,,"Abschreibungen auf WP des UV, verb. UN",writedowns of securities classified as current assets affiliated companies
+4880,,,,,,,,,,,,,,,,,,,Abschr. sonst. VG des UV (unübl.Höhe),writedowns of other current assets (if unusually high)
+4882,,,,,,,,,,,,,,,,,,,Steuerr. Abschr. auf UV (unübliche Höhe),writedowns of current assets due to tax rules (unusually high)
+4886,,,,,,,,,,,,,,,,,,,AfA UV außer Vorr Wertp UV (übl. Höhe),writedowns of current assets excluding inventories and securities classified as current assets (normal amount)
+4887,,,,,,,,,,,,,,,,,,,Steuerr AfA UV auß Vorr Wertp (übl Höhe),"writedowns of current assets due to tax reasons, excluding inventories and securities classified as current assets (normal amount)"
+4892,,,,,,,,,,,,,,,,,,,"Abschreibungen RHB/Waren, unüblich hoch","writedowns of raw materials, consumables and supplies/merchandise (if unusually high)"
+4893,,,,,,,,,,,,,,,,,,,"Abschr. fertige, unfert. EZ, unübl.hoch",writedowns of finished goods and work in progress (if unusually high)
+4900,,,,,,,,,,,,,,,,,,,Sonstige betriebliche Aufwendungen,Other operating expenses
+4902,,,,,,,,,,,,,,,,,,,Interimskonto Vorsteuervergütung,Interim account for expenses in another country for which input tax reimbursement is possible
+4905,,,,,,,,,,,,,,,,,,,Sonstige betriebl.u.regelm.Aufwendungen,Other regular operating expenses
+4909,,,,,,,,,,,,,,,,,,,Fremdleistungen und Fremdarbeiten,Purchased services/third-party services
+4910,,,,,,,,,,,,,,,,,,,Porto,Postage
+4920,,,,,,,,,,,,,,,,,,,Telefon,Telephone
+4921,,,,,,,,,,,,,,,,,,,Handy,Cellphone
+4923,,,,,,,,,,,,,,,,,,,Domainkosten,Domain expenses
+4924,,,,,,,,,,,,,,,,,,,Internetserver,Internet server
+4925,,,,,,,,,,,,,,,,,,,Telefax und Internetkosten,Fax and Internet expenses
+4930,,,,,,,,,,,,,,,,,,,Bürobedarf,Office supplies
+4940,,,,,,,,,,,,,,,,,,,"Zeitschriften, Bücher (Fachliteratur)","Newspapers, books (specialist literature)"
+4945,,,,,,,,,,,,,,,,,,,Fortbildungskosten,Training costs
+4946,,,,,,,,,,,,,,,,,,,Freiwillige Sozialleistungen,Voluntary social benefits
+4948,,,,,,,,,,,,,,,,,,,Vergütungen an Mitunternehmer §15 EStG,"Remuneration of partners, section 15 EStG (corresponds to special business income)"
+4949,,,,,,,,,,,,,,,,,,,Haftungsvergütung MU § 15 EStG,"Liability compensation paid to partners, section 15 EStG (corresponds to special business income)"
+4950,,,,,,,,,,,,,,,,,,,Rechts- und Beratungskosten,Legal and consulting expenses
+4955,,,,,,,,,,,,,,,,,,,Buchführungskosten,Bookkeeping expenses
+4957,,,,,,,,,,,,,,,,,,,Abschluss- und Prüfungskosten,Period-end closing and audit costs
+4958,,,,,,,,,,,,,,,,,,,"Vergütung Ges.er Miete, Pacht bew. WG",Remuneration paid to shareholders for rental or lease of their movable property
+4959,,,,,,,,,,,,,,,,,,,"Miete, Pacht bewegl.WG MU § 15 EStG","Remuneration paid to partners for rental or lease of their movable property, section 15 EStG (corresponds to special business income)"
+4960,,,,,,,,,,,,,,,,,,,Mieten für Einrichtungen bewegliche WG,Rent of fixtures and fittings (movable assets)
+4961,,,,,,,,,,,,,,,,,,,Pacht (bewegliche Wirtschaftsgüter),Leases (movable assets)
+4963,,,,,,,,,,,,,,,,,,,"Aufwendungen für bewegliche WG, GewSt",Expenses for rented or leased movable assets that must be added back under trade tax law
+4964,,,,,,,,,,,,,,,,,,,"Aufwendungen für Lizenzen, Konzessionen","Expenses for temporary transfer of rights (licences, concessions)"
+4965,,,,,,,,,,,,,,,,,,,Mietleasing bewegl. WG Betriebsausstatt.,Operating leases movable assets for operating and office equipment
+4969,,,,,,,,,,,,,,,,,,,Aufwand Abraum-/Abfallbeseitigung,Environmental remediation and waste disposal expenses
+4970,,,,,,,,,,,,,,,,,,,Nebenkosten des Geldverkehrs,Incidental monetary transaction costs
+4971,,,,,,,,,,,,,,,,,,,Verwahrentgelt,Custody fee
+4975,,,,,,,,,,,,,,,,,,,Aufwendg. Anteile KapGes z.T. n. abz.,"Expenses from shares in corporations, sections 3 no. 40, 3c EStG/section 8b(1,4) KStG"
+4976,,,,,,,,,,,,,,,,,,,Veräußerungskosten (bei Veräuß.gewinn),"Costs for disposal, section 3 no. 40 EStG / section 8b (2) KStG (in the case of capital gains)"
+4977,,,,,,,,,,,,,,,,,,,Veräußerungskosten (bei Veräuß.verlust),"Costs for disposal, section 3 no. 40 EStG / section 8b (3) KStG (in the case of capital loss)"
+4980,,,,,,,,,,,,,,,,,,,Sonstiger Betriebsbedarf,Operating supplies
+4984,,,,,,,,,,,,,,,,,,,Genossenschaftliche Rückvergütung Mitgl.,Refunds by co-operatives to members
+4985,,,,,,,,,,,,,,,,,,,Werkzeuge und Kleingeräte,Tools and minor equipment
+4990,,,,,,,,,,,,,,,,,,,Kalkulatorischer Unternehmerlohn,Imputed business owner’s remuneration
+4991,,,,,,,,,,,,,,,,,,,Kalkulatorische Miete und Pacht,Imputed rent/leasing expenses
+4992,,,,,,,,,,,,,,,,,,,Kalkulatorische Zinsen,Imputed interest
+4993,,,,,,,,,,,,,,,,,,,Kalkulatorische Abschreibungen,"Imputed depreciation, amortisation and writedowns"
+4994,,,,,,,,,,,,,,,,,,,Kalkulatorische Wagnisse,Imputed business risks
+4995,,,,,,,,,,,,,,,,,,,"Kalkulatorischer Lohn, unentgeltl. AN",Imputed wages for non-compensated employees
+4996,,,,,,,,,,,,,,,,,,,Herstellungskosten,Cost of sales
+4997,,,,,,,,,,,,,,,,,,,Verwaltungskosten,Administrative expenses
+4998,,,,,,,,,,,,,,,,,,,Vertriebskosten,Selling expenses
+4999,,,,,,,,,,,,,,,,,,,Gegenkonto zu 4996 bis 4998,Contra account 4996-4998
+7000,,,,,,,,,,,,,,,,,,,Unfertige Erzeugnisse und Leistungen,Work in progress (inventories)
+7050,,,,,,,,,,,,,,,,,,,Unfertige Erzeugnisse,Unfinished goods
+7080,,,,,,,,,,,,,,,,,,,Unfertige Leistungen,Services in progress
+7090,,,,,,,,,,,,,,,,,,,In Ausführung befindl. Bauaufträge,Construction contracts in progress
+7095,,,,,,,,,,,,,,,,,,,In Arbeit befindliche Aufträge,Orders in progress
+7100,,,,,,,,,,,,,,,,,,,Fertige Erzeugnisse und Waren,Finished goods and merchandise (inventories)
+7110,,,,,,,,,,,,,,,,,,,Fertige Erzeugnisse,Finished goods (inventories)
+7140,,,,,,,,,,,,,,,,,,,Waren,Merchandise (inventories)
+8000,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8001,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8002,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8003,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8004,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8005,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8006,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8007,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8008,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8009,,,,,,,,,,,,,,,,,,,Umsatzerlöse,Sales revenue
+8100,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze § 4 Nr. 8 ff. UStG,"Tax-exempt sales, section 4 no. 8 ff. UStG"
+8105,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze V+V § 4 Nr. 12 UStG,Tax-exempt sales under section 4 no. 12 UStG (rental and leasing)
+8110,,,,,,,,,,,,,,,,,,,Sonstige steuerfr. Umsätze Inland,"Other tax-exempt sales, domestic"
+8120,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze § 4 Nr. 1a UStG,"Tax-exempt sales, section 4 no. 1a UStG"
+8125,,,,,,,,,,,,,,,,,,,Steuerfr. EU-Lieferungen § 4 Nr. 1b UStG,"Tax-exempt intra-European Union deliveries, section 4 no. 1b UStG"
+8130,,,,,,,,,,,,,,,,,,,Innergemeinschaftl. Dreiecksgeschäft,"Deliveries by first purchaser in triangular transactions (EU), section 25 b(2) UStG"
+8135,,,,,,,,,,,,,,,,,,,Steuerfr. EU-Lief.v.Neufahrzg.ohne UStID,Tax-exempt intra-European Union deliveries of new vehicles to purchasers without VAT identification number
+8140,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze Offshore usw.,"Tax-exempt offshore sales, etc."
+8150,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze § 4 Nr. 2-7 UStG,Other tax-exempt sales (e.g. section 4 nos. 2-7 UStG)
+8160,,,,,,,,,,,,,,,,,,,Stfreie Umsätze ohne VoSt-Abzug § 4 UStG,"Tax-exempt sales without input tax deduction, part of total sales, section 4 UStG"
+8165,,,,,,,,,,,,,,,,,,,Steuerfreie Umsätze ohne Vorsteuerabzug,"Tax-exempt sales without input tax deduction, part of total sales"
+8190,,,,,,,,,,,,,,,,,,,Erlöse nach § 24 UStG,Revenue taxed at average rates under section 24 UStG
+8191,,,,,,,,,,,,,,,,,,,Umsatzerlöse §§ 25 und 25a UStG 19% USt,"Revenue, ss. 25 and 25a UStG, 19 % VAT"
+8193,,,,,,,,,,,,,,,,,,,Umsatzerlöse §§ 25 u. 25a UStG ohne USt,"Revenue, ss. 25 and 25a UStG, no VAT"
+8194,,,,,,,,,,,,,,,,,,,Umsatzerl.Reiseleist § 25(2) UStG stfrei,"Revenue from travel services, s. 25(2) UStG, tax-exempt"
+8195,,,,,,,,,,,,,,,,,,,Erlöse Kleinunternehmer § 19 (1) UStG,Revenue of VAT-exempt small business as defined by section 19 (1) UStG
+8196,,,,,,,,,,,,,,,,,,,Erlöse Geldspielautomaten 19% USt,"Revenue from gaming machines, 19 % VAT"
+8200,,,,,,,,,,,,,,,,,,,Erlöse,Revenue
+8290,,,,,,,,,,,,,,,,,,,Erlöse 0% Ust,"Revenue, 0 % VAT"
+8300,,,,,,,,,,,,,,,,,,,Erlöse 7% USt,"Revenue, 7 % VAT"
+8310,,,,,,,,,,,,,,,,,,,Erlöse EU-Lieferungen 7% USt,"Revenue from intra-European Union supplies of goods and services subject to domestic taxation, 7 % VAT"
+8315,,,,,,,,,,,,,,,,,,,Erlöse EU-Lieferungen 19% USt,"Revenue from intra-European Union supplies of goods and services subject to domestic taxation, 19 % VAT"
+8320,,,,,,,,,,,,,,,,,,,Erl.a.im and.EU-Land stpfl.Lieferungen,"Revenue from services taxable in another EU country, not subject to domestic taxation"
+8331,,,,,,,,,,,,,,,,,,,Erlöse elektr.DL im anderen EU-Land stpf,Revenue from taxable electronic services in another EU country
+8333,,,,,,,,,,,,,,,,,,,Erlöse 5% USt,"Revenue, 5 % VAT"
+8334,,,,,,,,,,,,,,,,,,,Erlöse 7% USt,"Revenue, 7 % VAT"
+8335,,,,,,,,,,,,,,,,,,,Erlöse a.Lieferungen §13b (2) Nr.10 UStG,"Revenue from supplies of mobile telephony devices, tablet computers, game consoles and integrated circuits for which the recipient bears VAT under s. 13b UStG"
+8336,,,,,,,,,,,,,,,,,,,Nicht steuerbare s. Leistung § 18b UStG,"Revenue from other services taxable in another EU country, for which the recipient bears tax liability"
+8337,,,,,,,,,,,,,,,,,,,Erlöse aus Leistungen nach § 13b UStG,Revenue from services for which the recipient bears the tax liability under section 13b UStG
+8338,,,,,,,,,,,,,,,,,,,Nicht steuerbare Umsätze Drittland,"Revenue from services taxable in a third country, not subject to domestic taxation"
+8339,,,,,,,,,,,,,,,,,,,Nicht steuerbare Umsätze EU-Land,"Revenue from services taxable in another EU country, not subject to domestic taxation"
+8340,,,,,,,,,,,,,,,,,,,Erlöse 16% USt,"Revenue, 16 % VAT"
+8400,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8401,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8402,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8403,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8404,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8405,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8405,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8406,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8407,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8408,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8409,,,,,,,,,,,,,,,,,,,Erlöse 19% USt,"Revenue, 19 % VAT"
+8449,,,,,,,,,,,,,,,,,,,Erlöse elektr.DL Inland stpf 19% USt,"Revenue from electronic services subject to domestic taxation, 19 % VAT"
+8499,,,,,,,,,,,,,,,,,,,Nebenerlöse (Bezug zu Materialaufwand),Incidental income (related to purchases)
+8500,,,,,,,,,,,,,,,,,,,"Sonderbetriebsein., Tätigkeitsvergütung","Special business income, remuneration for work performed"
+8501,,,,,,,,,,,,,,,,,,,"Sonderbetriebsein., Miet-/Pachteinnahmen","Special business income, rental/lease income"
+8502,,,,,,,,,,,,,,,,,,,"Sonderbetriebsein., Zinseinnahmen","Special business income, interest income"
+8503,,,,,,,,,,,,,,,,,,,"Sonderbetriebsein., Haftungsvergütungen","Special business income, liability compensation"
+8504,,,,,,,,,,,,,,,,,,,"Sonderbetriebsein., Pensionszahlungen","Special business income, pension payments"
+8505,,,,,,,,,,,,,,,,,,,Sonstige Sonderbetriebseinnahmen,"Special business income, other special business income"
+8510,,,,,,,,,,,,,,,,,,,Provisionsumsätze,Commission revenue
+8514,,,,,,,,,,,,,,,,,,,"Provisionsumsätze, stfr.§4 Nr.8 ff.UStG","Tax-exempt commission revenue, section 4 no. 8"
+8515,,,,,,,,,,,,,,,,,,,"Provisionsumsätze, stfrei §4 Nr. 5 UStG","Tax-exempt commission revenue, section 4 no. 5 UStG"
+8516,,,,,,,,,,,,,,,,,,,Provisionsumsätze 7% USt,"Commission revenue, 7 % VAT"
+8519,,,,,,,,,,,,,,,,,,,Provisionsumsätze 19% USt,"Commission revenue, 19 % VAT"
+8520,,,,,,,,,,,,,,,,,,,Erlöse Abfallverwertung,Revenue from waste recycling
+8540,,,,,,,,,,,,,,,,,,,Erlöse Leergut,Revenue from empties
+8570,,,,,,,,,,,,,,,,,,,"Provision, sonstige Erträge","Other income from commissions, licences and patents"
+8574,,,,,,,,,,,,,,,,,,,Provision so.Ertr.stfr. § 4 Nr.8 ff UStG,"Other income from commissions, licences and patents, tax-exempt, s. 4(8) ff. UStG"
+8575,,,,,,,,,,,,,,,,,,,Provision so.Ertr.stfr. § 4 Nr. 5 UStG,"Other income from commissions, licences and patents, tax-exempt, s. 4(5) UStG"
+8576,,,,,,,,,,,,,,,,,,,"Provision, sonstige Erträge 7% USt","Other income from commissions, licences and patents, 7 % VAT"
+8579,,,,,,,,,,,,,,,,,,,"Provision, sonstige Erträge 19% USt","Other income from commissions, licences and patents, 19 % VAT"
+8580,,,,,,,,,,,,,,,,,,,Stat. Konto Erlöse allgemeiner USt-Satz,"Statistical account, revenue at general VAT rate (cash basis accounting)"
+8581,,,,,,,,,,,,,,,,,,,Stat. Konto Erlöse ermäßigter USt-Satz,"Statistical account, revenue at reduced VAT rate (cash basis accounting)"
+8582,,,,,,,,,,,,,,,,,,,Stat. Konto Erlöse steuerfr./n. stbar,"Statistical account, taxexempt and untaxed revenue (cash basis accounting)"
+8589,,,,,,,,,,,,,,,,,,,Gegenkto Aufteilung Erlöse Steuersatz,Contra account 8580-8582 if revenue is classified by tax rates (cash basis accounting)
+8590,,,,,,,,,,,,,,,,,,,Verr. sonstige Sachbezüge (keine Waren),Allocated other noncash benefits (excluding goods)
+8591,,,,,,,,,,,,,,,,,,,Sachbezüge 7% USt (Waren),"Non-cash benefits, 7 % VAT (goods)"
+8595,,,,,,,,,,,,,,,,,,,Sachbezüge 19% USt (Waren),"Non-cash benefits, 19 % VAT (goods)"
+8600,,,,,,,,,,,,,,,,,,,Sonst. Erlöse betr. u. regelmäßig,Other regular operating revenue
+8603,,,,,,,,,,,,,,,,,,,Sonstige betriebliche Erträge,Other operating income
+8604,,,,,,,,,,,,,,,,,,,Erstattete Vorsteuer anderer Länder,"Reimbursed input tax, other countries"
+8605,,,,,,,,,,,,,,,,,,,Sonst. Erträge betriebl. und regelmäßig,Other regular operating income
+8606,,,,,,,,,,,,,,,,,,,Sonstige betriebliche Erträge verbUN,Other operating income from affiliated companies
+8607,,,,,,,,,,,,,,,,,,,Andere Nebenerlöse,Other incidental income
+8609,,,,,,,,,,,,,,,,,,,Sonstige Erträge stfrei §4 Nr.8 ff.UStG,"Other regular operating income tax-exempt, section 4 no. 8 ff UStG"
+8610,,,,,,,,,,,,,,,,,,,Verrechnete sonstige Sachbezüge,Allocated other non-cash benefits
+8611,,,,,,,,,,,,,,,,,,,Verrech. sonstige Sachbezüge Kfz 19% USt,"Allocated other non-cash benefits from provision of car, 19 % VAT (use of vehicles)"
+8613,,,,,,,,,,,,,,,,,,,Verrechn. sonstige Sachbezüge 19% USt,"Allocated other non-cash benefits, 19 % VAT"
+8614,,,,,,,,,,,,,,,,,,,Verrechn. sonstige Sachbezüge ohne USt,"Allocated other non-cash benefits, no VAT"
+8625,,,,,,,,,,,,,,,,,,,Sonst. Erträge betr.u. regelmäßig stfrei,"Other regular operating income tax-exempt, e.g. section 4 nos. 2-7 UStG"
+8630,,,,,,,,,,,,,,,,,,,"Sonst. Erträge betriebl., regelm.7% USt","Other regular operating income, 7 % VAT"
+8640,,,,,,,,,,,,,,,,,,,"Sonst. Erträge betriebl,, regelm.19% USt","Other regular operating income, 19 % VAT"
+8650,,,,,,,,,,,,,,,,,,,Erlöse Zinsen und Diskontspesen,Revenue from interest and discount charges
+8660,,,,,,,,,,,,,,,,,,,Erl.Zinsen /Diskontspesen aus verb.UN,Revenue from interest and discount charges from affiliated companies
+8700,,,,,,,,,,,,,,,,,,,Erlösschmälerungen,Sales allowances
+8701,,,,,,,,,,,,,,,,,,,Erlösschmälerungen stfr.§ 4 Nr.8 ff UStG,Sales allowances on tax-exempt sales under section 4 no. 8 ff. UStG
+8702,,,,,,,,,,,,,,,,,,,Erlösschmälerungen stfr.§4 Nr. 2-7 UStG,Sales allowances on tax-exempt sales under section 4 no. 2-7 UStG
+8703,,,,,,,,,,,,,,,,,,,Erlösschmälerungen sonst.stfr. ohne VoSt,Sales allowances on other tax-exempt sales without input tax deduction
+8704,,,,,,,,,,,,,,,,,,,Erlösschmälerungen sonst.stfr. mit VoSt,Sales allowances on other tax-exempt sales with input tax deduction
+8705,,,,,,,,,,,,,,,,,,,Erlösschmälerungen stfrei §4 Nr.1a UStG,Sales allowances on tax-exempt sales under section 4 no. 1a UStG
+8706,,,,,,,,,,,,,,,,,,,"Erlösschm.stfr.Dreiecksg.§ 25b(2,4) UStG","Reductions in revenue for tax-free intra-community triangular transactions as per Sect. 25b (2, 4) of the German VAT Act (UStG)"
+8710,,,,,,,,,,,,,,,,,,,Erlösschmälerungen 7% USt,"Sales allowances, 7 % VAT"
+8719,,,,,,,,,,,,,,,,,,,Erlösschmälerungen 0% USt,"Sales allowances, 0 % VAT"
+8720,,,,,,,,,,,,,,,,,,,Erlösschmälerungen 19% USt,"Sales allowances, 19 % VAT"
+8724,,,,,,,,,,,,,,,,,,,Erlösschmälerung stfrei innerg.Lieferung,Sales allowances on tax-exempt intra-European Union deliveries
+8725,,,,,,,,,,,,,,,,,,,Erlösschmälerung EU-Lieferung 7% USt,"Sales allowances on intra-European Union supplies of goods and services subject to domestic taxation, 7 % VAT"
+8726,,,,,,,,,,,,,,,,,,,Erlösschmälerung EU-Lieferung 19% USt,"Sales allowances on intra-European Union supplies of goods and services subject to domestic taxation, 19 % VAT"
+8727,,,,,,,,,,,,,,,,,,,Erlösschmälg a.i.and.EU-Land stpfl.Liefg,Sales allowances on supplies of goods and services taxable in another EU country
+8730,,,,,,,,,,,,,,,,,,,Gewährte Skonti,Cash discounts granted
+8731,,,,,,,,,,,,,,,,,,,Gewährte Skonti 7 % USt,"Cash discounts granted, 7 % VAT"
+8732,,,,,,,,,,,,,,,,,,,Gewährte Skonti 5 % USt,"Cash discounts granted, 5 % VAT"
+8735,,,,,,,,,,,,,,,,,,,Gewährte Skonti 16 % USt,"Cash discounts granted, 16 % VAT"
+8736,,,,,,,,,,,,,,,,,,,Gewährte Skonti 19 % USt,"Cash discounts granted, 19 % VAT"
+8738,,,,,,,,,,,,,,,,,,,Gew.Skonti Leistg.§ 13b (2) Nr.10 UStG,"Cash discounts granted for supplies of cell phones, etc. for which the recipient of goods/services is liable for VAT pursuant to section 13b(2) (10) UStG"
+8741,,,,,,,,,,,,,,,,,,,Gewährte Skonti Leistungen § 13b UStG,Cash discounts granted for goods and services for which the recipient bears the tax liability under section 13b UStG
+8742,,,,,,,,,,,,,,,,,,,Gewährte Skonti s. Leistung § 18b UStG,"Cash discounts granted on revenue from other services taxable in another EU country, for which the recipient bears tax liability"
+8743,,,,,,,,,,,,,,,,,,,Gewährte Skonti stfreie EU-Lieferung,"Cash discounts granted on tax-exempt intra-European Union deliveries, section 4 no. 1b UStG"
+8745,,,,,,,,,,,,,,,,,,,Gewährte Skonti stpfl. EU-Lieferung,Cash discounts granted on intra-European Union supplies of goods and services subject to domestic taxation
+8746,,,,,,,,,,,,,,,,,,,Gewährte Skonti EU-Lieferungen 7% USt,"Cash discounts granted on intra-European Union supplies of goods and services subject to domestic taxation, 7 % VAT"
+8747,,,,,,,,,,,,,,,,,,,Gewährte Skonti EU-Lieferungen 5% USt,"Cash discounts granted on intra-European Union supplies of goods and services subject to domestic taxation, 5 % VAT"
+8748,,,,,,,,,,,,,,,,,,,Gewährte Skonti EU-Lieferungen 19% USt,"Cash discounts granted on intra-European Union supplies of goods and services subject to domestic taxation, 19 % VAT"
+8749,,,,,,,,,,,,,,,,,,,Gewährte Skonti EU-Lieferungen 16% USt,"Cash discounts granted on intra-European Union supplies of goods and services subject to domestic taxation, 16 % VAT"
+8750,,,,,,,,,,,,,,,,,,,Gewährte Boni 7% USt,"Volume discounts granted, 7 % VAT"
+8760,,,,,,,,,,,,,,,,,,,Gewährte Boni 19% USt,"Volume discounts granted, 19 % VAT"
+8769,,,,,,,,,,,,,,,,,,,Gewährte Boni,Volume discounts granted
+8770,,,,,,,,,,,,,,,,,,,Gewährte Rabatte,Rebates granted
+8780,,,,,,,,,,,,,,,,,,,Gewährte Rabatte 7 % USt,"Rebates granted, 7 % VAT"
+8790,,,,,,,,,,,,,,,,,,,Gewährte Rabatte 19 % USt,"Rebates granted, 19 % VAT"
+8800,,,,,,,,,,,,,,,,,,,Erlöse Sachanlageverkäufe Buchverlust,Revenue from sales of tangible fixed assets (book loss)
+8801,,,,,,,,,,,,,,,,,,,"Erlöse Sachanlageverkäufe 19% USt, BV","Revenue from sales of tangible fixed assets, 19 % VAT (book loss)"
+8807,,,,,,,,,,,,,,,,,,,Erl. Sachanlageverk. § 4 Nr.1a UStG (BV),"Revenue from sales of tangible fixed assets, tax-exempt, section 4 no. 1a UStG (book loss)"
+8808,,,,,,,,,,,,,,,,,,,Erl. Sachanlageverk. § 4 Nr.1b UStG (BV),"Revenue from sales of tangible fixed assets, tax-exempt, section 4 no. 1b UStG (book loss)"
+8817,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe immaterielle VermG, BV",Revenue from sales of intangible fixed assets (book loss)
+8818,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe Finanzanlagen, BV",Revenue from sales of long-term financial assets (book loss)
+8819,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe Finanzanl. z.T.stfr,BV","Revenue from sales of long-term financial assets, section 3 no. 40 EStG/section 8b(3) KStG (book loss)"
+8820,,,,,,,,,,,,,,,,,,,"Erlöse Sachanlageverkäufe 19% USt, BG","Revenue from sales of tangible fixed assets, 19 % VAT (book gain)"
+8827,,,,,,,,,,,,,,,,,,,"Erl. Sachanlageverk.§ 4 Nr.1a UStG,Buchg","Revenue from sales of tangible fixed assets, tax-exempt, section 4 no. 1a UStG (book gain)"
+8828,,,,,,,,,,,,,,,,,,,"Erl. Sachanlageverk.§ 4 Nr.1b UStG,Buchg","Revenue from sales of tangible fixed assets, tax-exempt, section 4 no. 1b UStG (book gain)"
+8829,,,,,,,,,,,,,,,,,,,Erlöse Sachanlageverkäufe Buchgewinn,Revenue from sales of tangible fixed assets (book gain)
+8837,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe immaterielle VermG, BG",Revenue from sales of intangible fixed assets (book gain)
+8838,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe Finanzanlagen, BG",Revenue from sales of long-term financial assets (book gain)
+8839,,,,,,,,,,,,,,,,,,,"Erlöse Verkäufe Finanzanl. z.T.stfr,BG","Revenue from sales of long-term financial assets, section 3 no. 40 EStG/section 8b(2) KStG (book gain)"
+8850,,,,,,,,,,,,,,,,,,,"Erl.Verk. WG UV § 4 (3) EStG,19% USt","Revenue from sales of current assets, 19 % VAT, section 4(3) sentence 4 EStG"
+8851,,,,,,,,,,,,,,,,,,,Erl. Verkauf WG UV § 4 (3) EStG stfrei,"Revenue from sales of current assets, VAT-exempt, section 4 no. 8 ff UStG in conjunction with section 4(3) sentence 4 EStG"
+8852,,,,,,,,,,,,,,,,,,,"Verkauf WG UV §4 Nr.8ff UStG,f.§4(3)EStG","Revenue from sales of current assets, VAT-exempt, section 4 no. 8 ff UStG in conjunction with section 4(3) sentence 4 EStG, section 3 no. 40 EStG/section 8b(2) KStG"
+8853,,,,,,,,,,,,,,,,,,,Erlöse Verkauf WG UV § 4 (3) EStG,Revenue from sales of current assets under section 4(3) sentence 4 EStG
+8900,,,,,,,,,,,,,,,,,,,Unentgeltliche Wertabgaben,Non-cash withdrawals
+8905,,,,,,,,,,,,,,,,,,,Entnahme von Gegenständen ohne USt,"Withdrawal of items, no VAT"
+8906,,,,,,,,,,,,,,,,,,,Verwendung von Gegenständen ohne USt,"Use of items for nonbusiness purposes, no VAT"
+8910,,,,,,,,,,,,,,,,,,,Entnahme Unternehmer (Waren) 19% USt,"Withdrawal by business owner for non-business purposes (goods), 19 % VAT"
+8915,,,,,,,,,,,,,,,,,,,Entnahme Unternehmer (Waren) 7% USt,"Withdrawal by business owner for non-business purposes (goods), 7 % VAT"
+8918,,,,,,,,,,,,,,,,,,,Verwendung von Gegenst.(Tel) ohne USt,"Use of items for nonbusiness purposes, no VAT (use of telephone)"
+8919,,,,,,,,,,,,,,,,,,,Entnahme Unternehmer (Waren) ohne USt,"Withdrawal by business owner for non-business purposes (goods), no VAT"
+8920,,,,,,,,,,,,,,,,,,,Verwendung von Gegenständen 19% USt,"Use of items for non-business purposes, 19 % VAT"
+8921,,,,,,,,,,,,,,,,,,,Verwendung von Gegenst. (Kfz) 19% USt,"Use of items for non-business purposes, 19 % VAT (use of vehicles)"
+8922,,,,,,,,,,,,,,,,,,,Verwendung von Gegenst. (Tel) 19% USt,"Use of items for non-business purposes, 19 % VAT (use of telephone)"
+8924,,,,,,,,,,,,,,,,,,,Verwendung von Gegenst.(Kfz) ohne USt,"Use of items for nonbusiness purposes, without VAT (use of vehicles)"
+8925,,,,,,,,,,,,,,,,,,,Unentgeltl. Erbringung Leist.19% USt,"Non-cash other services, 19 % VAT"
+8929,,,,,,,,,,,,,,,,,,,Unentgeltl. Erbringung Leist. ohne USt,"Non-cash other services, no VAT"
+8930,,,,,,,,,,,,,,,,,,,Verwendung von Gegenständen 7% USt,"Use of items for non-business purposes, 7 % VAT"
+8932,,,,,,,,,,,,,,,,,,,Unentgeltl. Erbringung Leist. 7% USt,"Non-cash other services, 7 % VAT"
+8935,,,,,,,,,,,,,,,,,,,Unentgeltl.Zuwendung Gegenstände 19% USt,"Non-cash benefits, 19 % VAT"
+8939,,,,,,,,,,,,,,,,,,,Unentgeltl. Zuwend. Gegenstände ohne USt,"Non-cash benefits, no VAT"
+8940,,,,,,,,,,,,,,,,,,,Unentgeltl. Zuwendung von Waren 19% USt,"Non-cash benefits (goods), 19 % VAT"
+8945,,,,,,,,,,,,,,,,,,,Unentgeltl. Zuwendung von Waren 7% USt,"Non-cash benefits (goods), 7 % VAT"
+8949,,,,,,,,,,,,,,,,,,,Unentgeltl. Zuwendung von Waren ohne USt,"Non-cash benefits (goods), no VAT"
+8950,,,,,,,,,,,,,,,,,,,Nicht steuerb.Umsätze (Innenumsätze),Untaxed sales (internal sales)
+8955,,,,,,,,,,,,,,,,,,,"USt-Vergütungen, z.B. nach § 24 UStG","VAT reimbursements, e.g. under s. 24 UStG"
+8959,,,,,,,,,,,,,,,,,,,Direkt mit dem Umsatz verb. Steuern,Taxes directly related to sales
+8960,,,,,,,,,,,,,,,,,,,Bestandsveränd.unfertige Erzeugnisse,Inventory changes unfinished goods
+8970,,,,,,,,,,,,,,,,,,,Bestandsveränderung unfertige Leistung,Inventory changes services in progress
+8975,,,,,,,,,,,,,,,,,,,Bestandsveränderung Bauaufträge,Inventory changes construction contracts in progress
+8977,,,,,,,,,,,,,,,,,,,Bestandsveränderung Aufträge in Arbeit,Inventory changes orders in progress
+8980,,,,,,,,,,,,,,,,,,,Bestandsveränderung fertige Erzeugnisse,Inventory changes finished goods
+8990,,,,,,,,,,,,,,,,,,,Andere aktivierte Eigenleistungen,Other own work capitalised
+8994,,,,,,,,,,,,,,,,,,,Akt.Eigenleistg. FK-Zins zu Herst.kosten,Other own work capitalised (borrowing costs attributable to cost of sales)
+8995,,,,,,,,,,,,,,,,,,,Akt. Eigenleistung selbst gesch. imm.VG,Own work capitalised to produce internally generated intangible fixed assets
+9000,,,,,,,,,,,,,,,,,,,Saldenvorträge Sachkonten,Balances brought forward
+9008,,,,,,,,,,,,,,,,,,,Saldenvorträge Debitoren,"Balances brought forward, receivables"
+9009,,,,,,,,,,,,,,,,,,,Saldenvorträge Kreditoren,"Balances brought forward, payables"
+9052,,,,,,,,,,,,,,,,,,,Offene Posten 2022,"Open items, 2022"
+9090,,,,,,,,,,,,,,,,,,,Summenvortrag,Aggregate carryforwards account
+9101,,,,,,,,,,,,,,,,,,,Verkaufstage,Selling days
+9102,,,,,,,,,,,,,,,,,,,Anzahl der Barkunden,Number of cash customers
+9103,,,,,,,,,,,,,,,,,,,Beschäftigte Personen (BWA),Number of employees
+9104,,,,,,,,,,,,,,,,,,,Unbezahlte Personen,Unpaid persons
+9105,,,,,,,,,,,,,,,,,,,Verkaufskräfte,Sales staff
+9106,,,,,,,,,,,,,,,,,,,Geschäftsraum qm,Business premises m2
+9107,,,,,,,,,,,,,,,,,,,Verkaufsraum qm,Sales area m2
+9116,,,,,,,,,,,,,,,,,,,Anzahl Rechnungen,Number of invoices
+9117,,,,,,,,,,,,,,,,,,,Anzahl Kreditkunden monatlich,"Number of credit customers, monthly"
+9118,,,,,,,,,,,,,,,,,,,Anzahl Kreditkunden aufgelaufen,"Number of credit customers, cumulative"
+9120,,,,,,,,,,,,,,,,,,,Erweiterungsinvestitionen,Expansion investments
+9135,,,,,,,,,,,,,,,,,,,Auftragseingang im Geschäftsjahr,Orders received in financial year
+9140,,,,,,,,,,,,,,,,,,,Auftragsbestand,Order books
+9141,,,,,,,,,,,,,,,,,,,Variables Kapital TH,Limited partner variable capital
+9142,,,,,,,,,,,,,,,,,,,Variables Kapital - Anteil Teilhafter,Variable capital limited partner share
+9143,,,,,,,,,,,,,,,,,,,Privatsteuern Kap.ertr.st.(SamPosten),"Private taxes, capital gains tax (compound item)"
+9144,,,,,,,,,,,,,,,,,,,Privatst. Solidaritätszuschl.(SamPost),"Private taxes, solidarity surcharge (compound item)"
+9145,,,,,,,,,,,,,,,,,,,Privatst. Kirchensteuer (SamPosten),"Private taxes, church tax (compound item)"
+9146,,,,,,,,,,,,,,,,,,,Variables Kapital - VH Übertrag §6b EStG,General partner variable capital transfer of reserve under section 6b EStG
+9147,,,,,,,,,,,,,,,,,,,Variables Kapital - TH Übertrag §6b EStG,Limited partner variable capital transfer of reserve under section 6b EStG
+9150,,,,,,,,,,,,,,,,,,,Festkapital -andere Kapitalanpassung VH,"Fixed capital other capital account adjustments, general partner"
+9151,,,,,,,,,,,,,,,,,,,Variables Kapital - Kapitalanpassung VH,"Variable capital other capital account adjustments, general partner"
+9152,,,,,,,,,,,,,,,,,,,Verlust/Vortragskto-Kapitalanpassung VH,"Accumulated loss carryforward account other capital account adjustments, general partner"
+9153,,,,,,,,,,,,,,,,,,,Kapitalkto III-and. Kapitalanpassung VH,"Capital account III other capital account adjustments, general partner"
+9154,,,,,,,,,,,,,,,,,,,Aust.Einlagen n. eingef.Kap.anpass.VH,"Unpaid uncalled contributions to general partner capital other capital account adjustments, general partner"
+9155,,,,,,,,,,,,,,,,,,,Verr.kto Einzahlverpfl.- Kap.anpass. VH,"Allocation account for call obligations other capital account adjustments, general partner"
+9157,,,,,,,,,,,,,,,,,,,Privatst.Kapitalertragsteuer (VH),"Private taxes, capital gains tax (general partner) equity"
+9158,,,,,,,,,,,,,,,,,,,Privatst.Solidaritätszuschlag (VH),"Private taxes, solidarity surcharge (general partner) equity"
+9159,,,,,,,,,,,,,,,,,,,Privatsteuern Kirchensteuer (VH),"Private taxes, church tax (general partner) equity"
+9160,,,,,,,,,,,,,,,,,,,Kommandit-Kapital - Kapitalanpassung TH,"Limited partner capital other capital account adjustments, limited partner"
+9161,,,,,,,,,,,,,,,,,,,Variables Kapital - Kapitalanpassung TH,"Variable capital other capital account adjustments, limited partner"
+9162,,,,,,,,,,,,,,,,,,,Verlustausgleichkto-Kapitalanpassung TH,"Loss adjustment account other capital account adjustments, limited partner"
+9163,,,,,,,,,,,,,,,,,,,Kapitalkto III-and. Kapitalanpassung TH,"Capital account III other capital account adjustments, limited partner"
+9164,,,,,,,,,,,,,,,,,,,Ausst. Einlagen n. eingef.Kap.anpass TH,"Unpaid uncalled contributions to limited partner capital other capital account adjustments, limited partner"
+9165,,,,,,,,,,,,,,,,,,,Verr.kto Einzahlverpfl.- Kap.anpass. TH,"Allocation account for call obligations other capital account adjustments, limited partner"
+9167,,,,,,,,,,,,,,,,,,,"Privatst.Kapitalertragsteuer (TH),EK","Private taxes, capital gains tax (limited partner), equity"
+9168,,,,,,,,,,,,,,,,,,,"Privatst. Solidaritätszuschlag (TH),EK","Private taxes, solidarity surcharge (limited partner), equity"
+9169,,,,,,,,,,,,,,,,,,,"Privatsteuern Kirchensteuer (TH),EK","Private taxes, church tax (limited partner), equity"
+9170,,,,,,,,,,,,,,,,,,,Festkapital - Umbuchungen VH,"Fixed capital transfers, general partner"
+9171,,,,,,,,,,,,,,,,,,,Variables Kapital - Umbuchungen VH,"Variable capital transfers, general partner"
+9172,,,,,,,,,,,,,,,,,,,Verlust/Vortragskto-Umbuchungen VH,"Accumulated loss carryforward account transfers, general partner"
+9173,,,,,,,,,,,,,,,,,,,Kapitalkonto III - Umbuchungen VH,"Capital account III transfers, general partner"
+9174,,,,,,,,,,,,,,,,,,,Ausst. Einlagen n. eingef.-Umbuchung VH,"Unpaid uncalled contributions to general partner capital transfers, general partner"
+9175,,,,,,,,,,,,,,,,,,,Verr.kto Einzahlver-pfl.-Umbuchungen VH,"Allocation account for call obligations transfers, general partner"
+9180,,,,,,,,,,,,,,,,,,,Kommandit-Kapital - Umbuchungen TH,"Limited partner capital transfers, limited partner"
+9181,,,,,,,,,,,,,,,,,,,Variables Kapital - Umbuchungen TH,"Variable capital transfers, limited partner"
+9182,,,,,,,,,,,,,,,,,,,Verlustausgleichskonto-Umbuchungen TH,"Loss adjustment account transfers, limited partner"
+9183,,,,,,,,,,,,,,,,,,,Kapitalkonto III - Umbuchungen TH,"Capital account III transfers, limited partner"
+9184,,,,,,,,,,,,,,,,,,,Ausst. Einlagen n. eingef.-Umbuchung TH,"Unpaid uncalled contributions to limited partner capital transfers, limited partner"
+9185,,,,,,,,,,,,,,,,,,,Verr.kto Einzahlverpfl.- Umbuchungen TH,"Allocation account for call obligations transfers, limited partner"
+9186,,,,,,,,,,,,,,,,,,,"Privatst.Kapitalertragsteuer (TH),FK","Private taxes, capital gains tax (limited partner), borrowed capital"
+9187,,,,,,,,,,,,,,,,,,,"Privatst. Solidaritätszuschlag (TH),FK","Private taxes, solidarity surcharge (limited partner), borrowed capital"
+9188,,,,,,,,,,,,,,,,,,,"Privatsteuern Kirchensteuer (TH),FK","Private taxes, church tax (limited partner), borrowed capital"
+9189,,,,,,,,,,,,,,,,,,,Verr.Kto Umbuchung zwischen Ges.er EK,Allocation account for transfers between partner capital accounts
+9190,,,,,,,,,,,,,,,,,,,"Gegenkto. zu Konten 9101-9107, 9116-9118","Contra account for statistical quantity units, accounts 9101-9107"
+9199,,,,,,,,,,,,,,,,,,,"Gegenkonto zu Konten 9120, 9135-9140","Contra account for accounts 9120, 9135-9140 and accounts 9116-9116"
+9200,,,,,,,,,,,,,,,,,,,Beschäftigte Personen (Bilanz),Number of employees 9201 Statistical accounts for balance sheet/ management accounting ratios and indicators
+9209,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9200,Contra account for 9200
+9210,,,,,,,,,,,,,,,,,,,Produktive Löhne,Direct labour costs
+9219,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9210,Contra account for 9210
+9220,,,,,,,,,,,,,,,,,,,Gez. Kapital in DM Art. 42 (3) S.1 EGHGB,Subscribed capital in DM (art. 42(3) s. 1 EGHGB)
+9229,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konto 9220,Contra account for 9220
+9240,,,,,,,,,,,,,,,,,,,Investitionsverbindlichk.b.Leistg.Verb.,Investment liabilities in trade payables
+9241,,,,,,,,,,,,,,,,,,,Investitionsverbindlichk. Sachanlagen,Investment liabilities from tangible fixed asset purchases in trade payables
+9242,,,,,,,,,,,,,,,,,,,Investitionsverbindlichk. immat. VG,Investment liabilities from intangible fixed asset purchases in trade payables
+9243,,,,,,,,,,,,,,,,,,,Investitionsverbindlichk. Finanzanlagen,Investment liabilities from long-term financial asset purchases in trade payables
+9244,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konten 9240 - 43,Contra account for accounts 9240-9243
+9245,,,,,,,,,,,,,,,,,,,Forderungen Sachanlagenverkäufe,Receivables from tangible fixed asset sales in other assets
+9246,,,,,,,,,,,,,,,,,,,Forderungen Verkäufe immat.Vermögensg.,Receivables from intangible fixed asset sales in other assets
+9247,,,,,,,,,,,,,,,,,,,Forderungen Verkäufe von Finanzanlagen,Receivables from long-term financial asset sales in other assets
+9249,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konten 9245 - 47,Contra account for accounts 9245-9247
+9258,,,,,,,,,,,,,,,,,,,Änd.Ausgl.posten ohne Erg.Körperschaften,Change tax adjustment item (without appropriation of net profit corporations)
+9259,,,,,,,,,,,,,,,,,,,Änd.Ausgl.posten ohne Erg.Pers.gesellsch,"Change tax adjustment item (without appropriation of net profit partnerships, sole proprietorships)"
+9260,,,,,,,,,,,,,,,,,,,Kurzfristige Rückstellungen,Short-term provisions
+9262,,,,,,,,,,,,,,,,,,,Mittelfristige Rückstellungen,Medium-term provisions
+9264,,,,,,,,,,,,,,,,,,,Langfristige Rückstellung o.Pensionen,"Long-term provisions, excluding pensions"
+9269,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konten 9260-9268,Contra account for accounts 9260-9268
+9270,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konten 9271-9279,Contra account for 9271-9279 (debit entries)
+9271,,,,,,,,,,,,,,,,,,,Verbindl. Wechselbegebung/-übertragung,Contingent liabilities from the issuance and transfer of bills
+9272,,,,,,,,,,,,,,,,,,,Verbindl. Wechsel verb./assoziierte UN,Contingent liabilities to affiliated companies/associates from issuance and transfer of bills
+9273,,,,,,,,,,,,,,,,,,,"Verbindl. Bürgsch.,Wechsel-/Scheckbürg.","Contingent liabilities from guarantees, bill and cheque guarantees"
+9274,,,,,,,,,,,,,,,,,,,Verbindl.Bürgschaft verb./assoziierte UN,"Contingent liabilities to affiliated companies/associates from guarantees, bill and cheque guarantees"
+9275,,,,,,,,,,,,,,,,,,,Verbindl.a. Gewährleistungsverträgen,Contingent liabilities from warranties
+9276,,,,,,,,,,,,,,,,,,,Verbindl. Gewährleistg. verb./assoz. UN,Contingent liabilities to affiliated companies/associates from warranties
+9277,,,,,,,,,,,,,,,,,,,Haftung fremde Verbindlichkeiten,Contingent liabilities from the granting of security for third-party liabilities
+9278,,,,,,,,,,,,,,,,,,,Haftung Verbindl. verb./assoziierte UN,Contingent liabilities to affiliated companies/associates from the granting of security for thirdparty liabilities
+9279,,,,,,,,,,,,,,,,,,,Verpflichtungen aus Treuhandvermögen,Contingent liabilities from assets held in trust
+9280,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konten 9281-9284,Contra account for 9281-9284
+9281,,,,,,,,,,,,,,,,,,,Verpflichtungen Leasing u.Mietverträgen,Obligations arising from rental agreements and leases
+9282,,,,,,,,,,,,,,,,,,,Verpflichtungen Leasing-/Mietvertr.v.UN,Obligations to affiliated companies arising from rental agreements and leases
+9283,,,,,,,,,,,,,,,,,,,Andere Verpflichtungen § 285 Nr. 3a HGB,Other obligations under section 285 no. 3a HGB
+9284,,,,,,,,,,,,,,,,,,,Andere Verpflichtg. §285 Nr. 3a HGB v.UN,Other obligations to affiliated companies under section 285 no. 3a HGB
+9285,,,,,,,,,,,,,,,,,,,UB Abzinsg Altersversorg. § 253 (6) HGB,Difference of discounting of post-employment benefit obligations under section 253 (6) HGB (credit balance)
+9286,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9285,Contra account for 9285
+9287,,,,,,,,,,,,,,,,,,,Zinsen Debitoren Buchung § 4 (3) EStG,"Interest for postings via receivables, section 4(3) EStG"
+9288,,,,,,,,,,,,,,,,,,,Mahngeb. Debitoren Buchung § 4 (3) EStG,"Dunning fees for postings via receivables, section 4(3) EStG"
+9289,,,,,,,,,,,,,,,,,,,Gegenkonto zu Konto 9287 und 9288,Contra account for 9287
+9290,,,,,,,,,,,,,,,,,,,Statistisches Konto steuerfreie Auslagen,Statistical account for tax-exempt out-ofpocket expenses
+9291,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9290,Contra account for 9290
+9292,,,,,,,,,,,,,,,,,,,Statistisches Konto Fremdgeld,Statistical account for third-party funds
+9293,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9292,Contra account for 9292
+9295,,,,,,,,,,,,,,,,,,,Einlagen atypisch stiller Gesellschafter,Contributions by atypical silent partners
+9297,,,,,,,,,,,,,,,,,,,Steuerlicher Ausgl.posten Körperschaften,Tax adjustment item (corporations)
+9298,,,,,,,,,,,,,,,,,,,Steuerlicher Ausgleichsposten Vollhafter,"Tax adjustment item GP (partnerships, sole proprietorships)"
+9299,,,,,,,,,,,,,,,,,,,Steuerlicher Ausgleichsposten Teilhafter,Tax adjustment item LP (partnerships)
+9400,,,,,,,,,,,,,,,,,,,"Privatentnahmen allgemein (TH), EK","Private withdrawals, general, lp"
+9410,,,,,,,,,,,,,,,,,,,"Privatsteuern (TH), EK","Private taxes, lp 9411"
+9420,,,,,,,,,,,,,,,,,,,"Sonderausg. beschränkt abzugsf. (TH), EK","Special personal deductions, partly deductible, lp"
+9430,,,,,,,,,,,,,,,,,,,"Sonderausg. unbeschr. abzugsf. (TH), EK","Special personal deductions, fully deductible, lp"
+9440,,,,,,,,,,,,,,,,,,,"Zuwendungen, Spenden (TH), EK","Non-cash benefits, donations, lp"
+9450,,,,,,,,,,,,,,,,,,,"Außergewöhnliche Belastungen (TH), EK","Extraordinary expenses, lp"
+9460,,,,,,,,,,,,,,,,,,,"Grundstücksaufwand (TH), EK","Real estate expenses, lp"
+9470,,,,,,,,,,,,,,,,,,,"Grundstücksertrag (TH), EK","Income from real estate, lp"
+9480,,,,,,,,,,,,,,,,,,,"Unentgeltliche Wertabgaben (TH), EK","Non-cash withdrawals, lp"
+9490,,,,,,,,,,,,,,,,,,,"Privateinlagen (TH), EK","Private contributions, lp"
+9500,,,,,,,,,,,,,,,,,,,Anteil für Konto 0900 (TH) Kom.Kapital,"Allocation to account 0900, limited partner"
+9510,,,,,,,,,,,,,,,,,,,Anteil für Konto 0910 (TH) Verlustausgl.,"Allocation to account 0910, limited partner"
+9520,,,,,,,,,,,,,,,,,,,Anteil f.Konto 0920 (TH) Gesellsch.Darl.,"Allocation to account 0920, limited partner"
+9530,,,,,,,,,,,,,,,,,,,Ant.für Kto.9950 (TH) Ausst.Einl.Kap.,"Allocation to account 9950, limited partner"
+9540,,,,,,,,,,,,,,,,,,,Ant.für Kto.9930 (VH) Ausst.Einl.Kap.,"Allocation to account 9930, general partner"
+9550,,,,,,,,,,,,,,,,,,,Anteil für Konto 9810 (VH) Kap.Konto III,"Allocation to account 9810, general partner"
+9560,,,,,,,,,,,,,,,,,,,Anteil für Konto 9820 (VH) Verlustvortr.,"Allocation to account 9820, general partner"
+9570,,,,,,,,,,,,,,,,,,,Anteil für Konto 0870 (VH) Festkapital,"Allocation to account 0870, general partner"
+9580,,,,,,,,,,,,,,,,,,,Anteil für Konto 0880 (VH) Var.Kapital,"Allocation to account 0880, general partner"
+9590,,,,,,,,,,,,,,,,,,,Anteil f.Konto 0890 (VH) Gesellsch.Darl.,"Allocation to account 0890, general partner"
+9610,,,,,,,,,,,,,,,,,,,Tätigkeitsvergütung (VH),"Remuneration of work performed, general partner"
+9620,,,,,,,,,,,,,,,,,,,Tantieme (VH),"Management bonus, general partner"
+9630,,,,,,,,,,,,,,,,,,,Darlehensverzinsung (VH),"Loan interest, general partner"
+9640,,,,,,,,,,,,,,,,,,,Gebrauchsüberlassung (VH),"Transfer for use, general partner"
+9650,,,,,,,,,,,,,,,,,,,Sonstige Vergütungen (VH),"Other remuneration, general partner"
+9690,,,,,,,,,,,,,,,,,,,Restanteil (VH),"Residual allocation, general partner"
+9710,,,,,,,,,,,,,,,,,,,Tätigkeitsvergütung (TH),"Remuneration of work performed, limited partner"
+9720,,,,,,,,,,,,,,,,,,,Tantieme (TH),"Management bonus, limited partner"
+9730,,,,,,,,,,,,,,,,,,,Darlehensverzinsung (TH),"Loan interest, limited partner"
+9740,,,,,,,,,,,,,,,,,,,Gebrauchsüberlassung (TH),"Transfer for use, limited partner"
+9750,,,,,,,,,,,,,,,,,,,Sonstige Vergütungen (TH),"Other remuneration, limited partner"
+9780,,,,,,,,,,,,,,,,,,,Anteil für Konto 9840 (TH) Kap.Konto III,"Allocation to account 9840, limited partner"
+9790,,,,,,,,,,,,,,,,,,,Restanteil (TH),"Remaining allocation, limited partner"
+9802,,,,,,,,,,,,,,,,,,,Rücklagen - andere Kapitalanpassung,Collectively held reserves other capital account adjustments
+9803,,,,,,,,,,,,,,,,,,,Gewinn-/Verlustvortrag -and.Kap.anpass,Retained profits/ accumulated losses brought forward other capital account adjustments
+9804,,,,,,,,,,,,,,,,,,,Rücklagen - Umbuchungen,Collectively held reserves transfers
+9805,,,,,,,,,,,,,,,,,,,Gewinn-/Verlustvortrag - Umbuchungen,Retained profits/ accumulated losses brought forward transfers
+9806,,,,,,,,,,,,,,,,,,,Anteil Jahresüberschuss/-fehlbetrag,Attributable share of net income/net loss for financial year per partner
+9807,,,,,,,,,,,,,,,,,,,Anteil Bilanzgewinn/-verlust je Ges.er,Attributable share of net retained profits/net accumulated losses per partner
+9808,,,,,,,,,,,,,,,,,,,Gg.Kto Verteilung Jahresübersch/-fehlb,Contra account for attributable share of net income/net loss for financial year
+9809,,,,,,,,,,,,,,,,,,,Gg.Kto Verteilung Bilanzgew./-verlust,Contra account for attributable share of net retained profits/net accumulated losses
+9810,,,,,,,,,,,,,,,,,,,"Kapitalkonto III (VH), EK","Capital accounts III, gp"
+9820,,,,,,,,,,,,,,,,,,,Verlust-/Vortragskonto (VH),"Accumulated loss carryforward account, gp"
+9830,,,,,,,,,,,,,,,,,,,Verrkto Einzahlungsverpflichtungen (VH),"Allocation account for call obligations, gp"
+9840,,,,,,,,,,,,,,,,,,,"Kapitalkonto III (TH), EK","Capital accounts III, lp"
+9850,,,,,,,,,,,,,,,,,,,Verrkto Einzahlungsverpflichtungen (TH),"Allocation account for call obligations, lp"
+9860,,,,,,,,,,,,,,,,,,,Einz.Verpfl.pers.haft.Gesellsch. (VH),"Call obligations of general partners, gp"
+9870,,,,,,,,,,,,,,,,,,,Einz.Verpfl.Kommanditisten (TH),"Call obligations of limited partners, lp"
+9880,,,,,,,,,,,,,,,,,,,Ausgleichsposten f. aktiv. eig. Anteile,Special reserve for capitalised own shares
+9883,,,,,,,,,,,,,,,,,,,Ungedeckte Entnahme p. haft. Gesellsch.,Withdrawals by general partners not covered by capital contributions
+9884,,,,,,,,,,,,,,,,,,,Ungedeckte Entnahme Kommanditisten,Withdrawals by limited partners not covered by capital contributions
+9885,,,,,,,,,,,,,,,,,,,Verr.kto ungedeckte Entnahme p.haft.Ges.,Allocation account for withdrawals by general partners not covered by capital contributions
+9886,,,,,,,,,,,,,,,,,,,Verr.kto ungedeckte Entnahme Kommandit.,Allocation account for withdrawals by limited partners not covered by capital contributions
+9887,,,,,,,,,,,,,,,,,,,Steueraufwand der Gesellschafter,Partners’ tax expense
+9889,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9887,Contra account for 9887
+9890,,,,,,,,,,,,,,,,,,,"Gewinnzuschlag §§ 6b, 6c EStG (Haben)","Statistical account for profit mark-up under sections 6b, 6c EStG (credit balance)"
+9891,,,,,,,,,,,,,,,,,,,"Gewinnzuschlag §§ 6b, 6c EStG (Soll)","Statistical account for profit mark-up under sections 6b, 6c EStG (debit balance) Contra account for 9890"
+9892,,,,,,,,,,,,,,,,,,,Veränderung gesamthänd. geb. Rücklagen,Change of collectively held reserves (contributions/withdrawals)
+9893,,,,,,,,,,,,,,,,,,,Umsatzsteuer in Forderungen allg. Satz,VAT in receivables at general VAT rate (cash basis accounting)
+9894,,,,,,,,,,,,,,,,,,,Umsatzsteuer in Forderungen ermäß. Satz,VAT in receivables at reduced VAT rate (cash basis accounting)
+9895,,,,,,,,,,,,,,,,,,,Gegenkonto Aufteilung Umsatzsteuer,Contra account 98939894 for allocation of VAT (cash basis accounting)
+9896,,,,,,,,,,,,,,,,,,,Vorsteuer in Verbindl. allgem. Satz,Input tax in liabilities at general VAT rate (cash basis accounting)
+9897,,,,,,,,,,,,,,,,,,,Vorsteuer in Verbindl. ermäßig. Satz,Input tax in liabilities at reduced VAT rate (cash basis accounting)
+9898,,,,,,,,,,,,,,,,,,,Vorsteuer in Verbindl.aus versch.Kosten,Input tax in liabilities from various costs (cash basis accounting)
+9899,,,,,,,,,,,,,,,,,,,Gegenkonto Aufteilung Vorsteuer,Contra account 98969897 for allocation of input tax (cash basis accounting)
+9900,,,,,,,,,,,,,,,,,,,Umsatzsteuer nicht fällig - sonst.Erlöse,VAT not due other revenues (cash basis accounting)
+9901,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9900,Contra account for 9900
+9902,,,,,,,,,,,,,,,,,,,Umsatzsteuer in Ford. aus sonst.Erlösen,VAT in receivables from other revenues (cash basis accounting)
+9910,,,,,,,,,,,,,,,,,,,Gegenkto.Minderg Entnahmen § 4 (4a) EStG,"Contra account for reduction in withdrawals, section 4(4a) EStG"
+9911,,,,,,,,,,,,,,,,,,,"Minderung Entnahmen § 4 (4a) EStG, (H)","Reduction in withdrawals, section 4(4a) EStG (credit balance)"
+9912,,,,,,,,,,,,,,,,,,,Erhöhung Entnahmen § 4 (4a) EStG,"Increase in withdrawals, section 4(4a) EStG"
+9913,,,,,,,,,,,,,,,,,,,"Gegenkto.Erhöhg Entnahmen §4 (4a) EStG,H","Contra account for increase in withdrawals, section 4(4a) EStG (credit balance)"
+9914,,,,,,,,,,,,,,,,,,,"Hinzurg IAB §7g (2) EStG aus 4. WJ, (H)","Add-back of investment deduction section 7g (2) EStG from four tax years ago, off-balance sheet (credit balance)"
+9915,,,,,,,,,,,,,,,,,,,"Rückgängigm.IAB § 7g (3,4) EStG im 4.WJ.","Reversal of investment deduction section 7g (3), (4) EStG from four tax years ago, off-balance sheet"
+9916,,,,,,,,,,,,,,,,,,,"Hinzurg IAB §7g (2) EStG aus 2. WJ, (H)","Reversal of investment deduction section 7g (3), (4) EStG from four tax years ago, off-balance sheet"
+9917,,,,,,,,,,,,,,,,,,,Hinzurg IAB §7g (2) EStG aus 3. WJ. (H),"Add-back of investment deduction section 7g (2) EStG from three tax years ago, off-balance sheet (credit balance)"
+9918,,,,,,,,,,,,,,,,,,,"Rückgängigm.IAB § 7g (3,4) EStG im 2.WJ.","Reversal of investment deduction section 7g (3), (4) EStG from two tax years ago, off-balance sheet"
+9919,,,,,,,,,,,,,,,,,,,"Rückgängigm.IAB § 7g (3,4) EStG im 3.WJ.","Reversal of investment deduction section 7g (3), (4) EStG from three tax years ago, off-balance sheet"
+9920,,,,,,,,,,,,,,,,,,,"Ausst.Einl.Komplementär, n.eingef. (VH)","Unpaid uncalled contributions to general partner capital, gp"
+9930,,,,,,,,,,,,,,,,,,,"Ausst.Einl.Komplementär, eingef. (VH)","Unpaid called contributions to general partner capital, gp"
+9940,,,,,,,,,,,,,,,,,,,"Ausst.Einl.Kommanditist, n.eingef. (TH)","Unpaid uncalled contributions to limited partner capital, lp"
+9950,,,,,,,,,,,,,,,,,,,"Ausst.Einl.Kommanditist, eingef. (TH)","Unpaid called contributions to limited partner capital, lp"
+9960,,,,,,,,,,,,,,,,,,,Bewertungskorrektur zu Forderungen L+L,"Valuation adjustment, trade receivables"
+9961,,,,,,,,,,,,,,,,,,,Bewertungskorrektur zu sonst. Verbindl.,"Valuation adjustment, other liabilities"
+9962,,,,,,,,,,,,,,,,,,,Bewertungskorrektur Guth. Kreditinstitut,"Valuation adjustment, bank balances"
+9963,,,,,,,,,,,,,,,,,,,Bewertungskorr. Verbindl.Kreditinstitut,"Valuation adjustment, liabilities to banks"
+9964,,,,,,,,,,,,,,,,,,,Bewertungskorrektur zu Verbindlichk. L+L,"Valuation adjustment, trade payables"
+9965,,,,,,,,,,,,,,,,,,,Bewertungskorrektur zu sonstigen VermG,"Valuation adjustment, other assets"
+9968,,,,,,,,,,,,,,,,,,,"Hinzurg IAB §7g (2) EStG aus 5. WJ, (H)","Add-back of investment deduction section 7g (2) EStG from five tax years ago, off-balance sheet (credit balance)"
+9969,,,,,,,,,,,,,,,,,,,"Rückgängigm.IAB § 7g (3,4) EStG im 5.WJ.","Reversal of investment deduction section 7g (3), (4) EStG from five tax years ago, off-balance sheet"
+9970,,,,,,,,,,,,,,,,,,,"IAB § 7g (1) EStG, (S)","Investment deduction section 7g(1) EStG, offbalance sheet (debit balance)"
+9971,,,,,,,,,,,,,,,,,,,"IAB § 7g (1) EStG, (H),Gegenkto zu 9970","Investment deduction section 7g(1) EStG, offbalance sheet (credit balance) contra account for 9970"
+9972,,,,,,,,,,,,,,,,,,,"Hinzurg.IAB § 7g (2)EStG, vorang. WJ (H)","Add-back of investment deduction section 7g (2) EStG from preceding tax year, off-balance sheet (credit balance)"
+9973,,,,,,,,,,,,,,,,,,,"Gkto. Hinzurg. IAB § 7g (2) EStG, (S)","Add-back of investment deduction section 7g (2) EStG from previous tax years, off-balance sheet (debit balance) contra account for 9972, 9914,"
+9974,,,,,,,,,,,,,,,,,,,"Rückgängigm.IAB §7g (3,4) EStG i.vor. WJ","Reversal of investment deduction section 7g (3), (4) EStG in preceding tax year"
+9975,,,,,,,,,,,,,,,,,,,"Gkto. Rückgängigm. IAB § 7g (3,4) EStG","Reversal of investment deduction section 7g (3), (4) EStG in previous tax years contra account for 9974, 9915,"
+9976,,,,,,,,,,,,,,,,,,,"Nicht abzugsf. Zinsaufw. § 4h EStG, (H)",Non-deductible interest expenses under section 4h EStG (credit balance)
+9977,,,,,,,,,,,,,,,,,,,"Nicht abzugsf. Zinsaufw. § 4h EStG, (S)",Non-deductible interest expenses under section 4h EStG (debit balance)
+9978,,,,,,,,,,,,,,,,,,,"Abziehb. Zinsaufw. VJ § 4h EStG, (S)",Deductible interest expenses from prior years under section 4h EStG (debit balance)
+9979,,,,,,,,,,,,,,,,,,,"Abziehb. Zinsaufw. VJ § 4h EStG, (H)",Deductible interest expenses from prior years under section 4h EStG (credit balance) contra account for 9978
+9980,,,,,,,,,,,,,,,,,,,Anteil Belastung auf Verbindl.konten,Allocation of debit entry to liability accounts
+9981,,,,,,,,,,,,,,,,,,,Verr.kto. Anteil Belastung Verb.konten,Allocation account for allocation of debit entry to liability accounts
+9982,,,,,,,,,,,,,,,,,,,Anteil Gutschrift auf Verbindl.konten,Allocation of credit entry to liability accounts
+9983,,,,,,,,,,,,,,,,,,,Verr.kto Anteil Gutschrift Verb.konten,Allocation account for allocation of credit entry to liability accounts
+9984,,,,,,,,,,,,,,,,,,,Gewinnkorrektur § 60 (2) EStDV,Adjustment of profit under section 60(2) EStDV increase in accounting profit due to credit entry reduction in accounting profit due to debit entry
+9985,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9984,Contra account for 9984
+9986,,,,,,,,,,,,,,,,,,,Ergebnisverteilung auf Fremdkapital,Profit attributable to debt
+9987,,,,,,,,,,,,,,,,,,,Korrekturkto. für Überleitungsrechnung,Adjustment account for reconciliation
+9989,,,,,,,,,,,,,,,,,,,Gegenkonto zu 9986-9988,Contra account for 9986
+9990,,,,,,,,,,,,,,,,,,,Ertr. außergewöhnl. Größe oder Bedeutung,Income of exceptional size or incidence
+9991,,,,,,,,,,,,,,,,,,,Erträge aperiodisch,Income (aperiodic) 9992 Income of exceptional
+9992,,,,,,,,,,,,,,,,,,,Ertr. außerg. Größe / Bedeutung aperiod.,#NV
+9993,,,,,,,,,,,,,,,,,,,Aufw. außergewöhnl. Größe oder Bedeutung,Expenses of exceptional size or incidence
+9994,,,,,,,,,,,,,,,,,,,Aufwendungen aperiodisch,Expenses (aperiodic)
+9995,,,,,,,,,,,,,,,,,,,Aufw. außerg. Größe / Bedeutung aperiod.,Expenses of exceptional size or incidence (aperiodic)

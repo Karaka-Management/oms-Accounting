@@ -9,14 +9,9 @@
                 "primary": true,
                 "autoincrement": true
             },
-            "accounting_account_name": {
-                "name": "accounting_account_name",
+            "accounting_account_account": {
+                "name": "accounting_account_account",
                 "type": "VARCHAR(50)",
-                "null": false
-            },
-            "accounting_account_description": {
-                "name": "accounting_account_description",
-                "type": "VARCHAR(255)",
                 "null": false
             },
             "accounting_account_type": {
@@ -29,6 +24,37 @@
                 "type": "INT",
                 "default": null,
                 "null": true
+            }
+        }
+    },
+    "accounting_account_l11n": {
+        "name": "accounting_account_l11n",
+        "fields": {
+            "accounting_account_l11n_id": {
+                "name": "accounting_account_l11n_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_account_l11n_title": {
+                "name": "accounting_account_l11n_title",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_account_l11n_account": {
+                "name": "accounting_account_l11n_account",
+                "type": "INT(11)",
+                "null": false,
+                "foreignTable": "accounting_account",
+                "foreignKey": "accounting_account_id"
+            },
+            "accounting_account_l11n_lang": {
+                "name": "accounting_account_l11n_lang",
+                "type": "VARCHAR(2)",
+                "null": false,
+                "foreignTable": "language",
+                "foreignKey": "language_639_1"
             }
         }
     },
