@@ -36,10 +36,10 @@ class AccountAbstractMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'accounting_account_id'                  => ['name' => 'accounting_account_id',           'type' => 'int',      'internal' => 'id'],
+        'accounting_account_id'                    => ['name' => 'accounting_account_id',           'type' => 'int',      'internal' => 'id'],
         'accounting_account_account'               => ['name' => 'accounting_account_account',        'type' => 'string',   'internal' => 'account', 'autocomplete' => true],
-        'accounting_account_type'               => ['name' => 'accounting_account_type',        'type' => 'int',   'internal' => 'type'],
-        'accounting_account_parent'               => ['name' => 'accounting_account_parent',        'type' => 'string',   'internal' => 'parent'],
+        'accounting_account_type'                  => ['name' => 'accounting_account_type',        'type' => 'int',   'internal' => 'type'],
+        'accounting_account_parent'                => ['name' => 'accounting_account_parent',        'type' => 'string',   'internal' => 'parent'],
     ];
 
     /**

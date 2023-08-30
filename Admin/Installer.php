@@ -50,7 +50,7 @@ final class Installer extends InstallerAbstract
         self::importAccounts($app);
     }
 
-    private static function importAccounts(ApplicationAbstract $app)
+    private static function importAccounts(ApplicationAbstract $app) : void
     {
         /** @var \Modules\Accounting\Controller\ApiController $module */
         $module = $app->moduleManager->getModuleInstance('Accounting', 'Api');

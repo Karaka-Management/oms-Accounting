@@ -14,15 +14,15 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Controller;
 
-use phpOMS\Message\Http\RequestStatusCode;
-use phpOMS\Message\RequestAbstract;
-use phpOMS\Message\ResponseAbstract;
-use phpOMS\Model\Message\FormValidation;
 use Modules\Accounting\Models\AccountAbstract;
 use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\AccountL11nMapper;
 use phpOMS\Localization\BaseStringL11n;
 use phpOMS\Localization\ISO639x1Enum;
+use phpOMS\Message\Http\RequestStatusCode;
+use phpOMS\Message\RequestAbstract;
+use phpOMS\Message\ResponseAbstract;
+use phpOMS\Model\Message\FormValidation;
 
 /**
  * Accounting controller class.
@@ -95,7 +95,7 @@ final class ApiController extends Controller
      */
     private function createAccountFromRequest(RequestAbstract $request) : AccountAbstract
     {
-        $account = new AccountAbstract();
+        $account          = new AccountAbstract();
         $account->account = $request->getDataString('account') ?? '';
         $account->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
 
