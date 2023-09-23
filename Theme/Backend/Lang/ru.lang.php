@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Создатель',
     'Credit'          => 'Кредит',
     'Debit'           => 'Списание средств',
+    'Description'     => '',
     'Due'             => 'Должное',
     'Entries'         => 'Заявление',
     'EntryDate'       => 'Дата ввода',

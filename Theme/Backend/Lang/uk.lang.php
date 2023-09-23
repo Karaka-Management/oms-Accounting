@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Творець',
     'Credit'          => 'Кредит',
     'Debit'           => 'Дебет',
+    'Description'     => '',
     'Due'             => 'Заборгованість',
     'Entries'         => 'Записи',
     'EntryDate'       => 'Дата вступу',

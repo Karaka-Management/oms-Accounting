@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Δημιουργός',
     'Credit'          => 'Πίστωση',
     'Debit'           => 'Χρέωση',
+    'Description'     => '',
     'Due'             => 'Λόγω',
     'Entries'         => 'Καταχωρήσεις',
     'EntryDate'       => 'Ημερομηνία εισαγωγής',

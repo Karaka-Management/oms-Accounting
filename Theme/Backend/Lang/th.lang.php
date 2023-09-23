@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'ผู้สร้าง',
     'Credit'          => 'เครดิต',
     'Debit'           => 'การหักบัญชี',
+    'Description'     => '',
     'Due'             => 'เนื่องจาก',
     'Entries'         => 'รายการ',
     'EntryDate'       => 'วันที่เข้า',

@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'クリエーター',
     'Credit'          => 'クレジット',
     'Debit'           => 'deb deb',
+    'Description'     => '',
     'Due'             => '期限',
     'Entries'         => 'エントリ',
     'EntryDate'       => '申し込み日',

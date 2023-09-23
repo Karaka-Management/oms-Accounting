@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => '创造者',
     'Credit'          => '信用',
     'Debit'           => '借方',
+    'Description'     => '',
     'Due'             => '到期的',
     'Entries'         => '参赛作品',
     'EntryDate'       => '入场日期',

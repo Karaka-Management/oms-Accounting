@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'المنشئ',
     'Credit'          => 'ائتمان',
     'Debit'           => 'مدين',
+    'Description'     => '',
     'Due'             => 'بسبب',
     'Entries'         => 'مداخل',
     'EntryDate'       => 'موعد الدخول',

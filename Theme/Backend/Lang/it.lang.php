@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Creatore',
     'Credit'          => 'Credito',
     'Debit'           => 'Addebito',
+    'Description'     => '',
     'Due'             => 'Dovuto',
     'Entries'         => 'Inserimenti',
     'EntryDate'       => 'Data di ingresso',

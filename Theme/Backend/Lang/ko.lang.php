@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => '창조자',
     'Credit'          => '신용 거래',
     'Debit'           => '직불 카드',
+    'Description'     => '',
     'Due'             => '로 인한',
     'Entries'         => '항목',
     'EntryDate'       => '진입 일자',

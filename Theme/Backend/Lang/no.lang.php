@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Skaperen.',
     'Credit'          => 'Kreditt',
     'Debit'           => 'Debitering',
+    'Description'     => '',
     'Due'             => 'På grunn av det',
     'Entries'         => 'Innganger',
     'EntryDate'       => 'Påmeldingsfrist',

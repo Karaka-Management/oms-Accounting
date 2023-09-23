@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Teremtő',
     'Credit'          => 'Hitel',
     'Debit'           => 'Terhelés',
+    'Description'     => '',
     'Due'             => 'Esedékes',
     'Entries'         => 'Bejegyzés',
     'EntryDate'       => 'Belépés dátuma',

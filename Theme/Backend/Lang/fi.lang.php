@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Luoja',
     'Credit'          => 'Luotto',
     'Debit'           => 'Veloittaa',
+    'Description'     => '',
     'Due'             => 'Takia',
     'Entries'         => 'Merkinnät',
     'EntryDate'       => 'Päivämäärä',

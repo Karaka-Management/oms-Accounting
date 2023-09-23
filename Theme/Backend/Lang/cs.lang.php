@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Tvůrce',
     'Credit'          => 'Kredit',
     'Debit'           => 'Debetní',
+    'Description'     => '',
     'Due'             => 'Způsoben',
     'Entries'         => 'Záznamy',
     'EntryDate'       => 'Datum vstupu',

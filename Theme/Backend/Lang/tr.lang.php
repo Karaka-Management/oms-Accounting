@@ -27,6 +27,7 @@ return ['Accounting' => [
     'Creator'         => 'Yaratıcı',
     'Credit'          => 'Kredi',
     'Debit'           => 'Borç',
+    'Description'     => '',
     'Due'             => 'Vadesi dolmuş',
     'Entries'         => 'Girdileri',
     'EntryDate'       => 'Giriş tarihi',
