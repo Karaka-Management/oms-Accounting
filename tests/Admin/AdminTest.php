@@ -23,5 +23,5 @@ final class AccountingTest extends \PHPUnit\Framework\TestCase
 
     protected const URI_LOAD = 'http://127.0.0.1/en/backend/accounting';
 
-    use \Modules\tests\ModuleTestTrait;
+    use \Build\Helper\ModuleTestTrait;
 }
