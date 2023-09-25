@@ -50,6 +50,15 @@ final class Installer extends InstallerAbstract
         self::importAccounts($app);
     }
 
+    /**
+     * Import accounts
+     *
+     * @param ApplicationAbstract $app Application
+     *
+     * @return void
+     *
+     * @since 1.0.0
+     */
     private static function importAccounts(ApplicationAbstract $app) : void
     {
         /** @var \Modules\Accounting\Controller\ApiController $module */

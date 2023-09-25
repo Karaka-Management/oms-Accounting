@@ -215,20 +215,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update account from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateAccountFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an cost center
      *
      * @param RequestAbstract  $request  Request
@@ -269,20 +255,6 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to create cost center from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createCostCenterFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 
     /**
@@ -329,20 +301,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update cost center from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateCostCenterFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an cost object
      *
      * @param RequestAbstract  $request  Request
@@ -383,20 +341,6 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to create cost object from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createCostObjectFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 
     /**
@@ -443,20 +387,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update cost object from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateCostObjectFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an entry
      *
      * @param RequestAbstract  $request  Request
@@ -497,20 +427,6 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to create entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 
     /**
@@ -557,20 +473,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an recurring entry
      *
      * @param RequestAbstract  $request  Request
@@ -611,20 +513,6 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to create recurring entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createRecurringEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 
     /**
@@ -671,20 +559,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update recurring entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateRecurringEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an tax key
      *
      * @param RequestAbstract  $request  Request
@@ -725,20 +599,6 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to create tax key from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createTaxKeyFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 
     /**
@@ -785,20 +645,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to update tax key from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateTaxKeyFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to create an batch entry
      *
      * @param RequestAbstract  $request  Request
@@ -842,20 +688,6 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to create batch entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function createBatchEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
-    }
-
-    /**
      * Api method to update an batch entry
      *
      * @param RequestAbstract  $request  Request
@@ -896,19 +728,5 @@ final class ApiController extends Controller
         }
 
         return [];
-    }
-
-    /**
-     * Method to update batch entry from request.
-     *
-     * @param RequestAbstract $request Request
-     *
-     * @return mixed
-     *
-     * @since 1.0.0
-     */
-    private function updateBatchEntryFromRequest(RequestAbstract $request) : mixed
-    {
-        return null;
     }
 }

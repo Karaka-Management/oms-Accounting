@@ -198,7 +198,7 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
-        $view->data['accounts']  = AccountAbstractMapper::getAll()
+        $view->data['accounts'] = AccountAbstractMapper::getAll()
             ->with('l11n')
             ->where('l11n/language', $response->header->l11n->language)
             ->execute();
