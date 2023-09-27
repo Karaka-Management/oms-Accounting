@@ -41,7 +41,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -49,7 +49,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiAccountCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiAccountCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateAccountCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -107,7 +107,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -115,7 +115,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiAccountL11nCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiAccountL11nCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateAccountL11nCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -176,7 +176,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -184,7 +184,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiAccountUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiAccountUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateAccountUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -219,7 +219,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -227,7 +227,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateCostCenterCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -262,7 +262,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -270,7 +270,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostCenterUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiCostCenterUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateCostCenterUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -305,7 +305,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -313,7 +313,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateCostObjectCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -348,7 +348,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -356,7 +356,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiCostObjectUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiCostObjectUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateCostObjectUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -391,7 +391,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -399,7 +399,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiEntryCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateEntryCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -434,7 +434,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -442,7 +442,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiEntryUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -477,7 +477,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -485,7 +485,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiRecurringEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiRecurringEntryCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateRecurringEntryCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -520,7 +520,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -528,7 +528,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiRecurringEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiRecurringEntryUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateRecurringEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -563,7 +563,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -571,7 +571,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiTaxKeyCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiTaxKeyCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateTaxKeyCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -606,7 +606,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -614,7 +614,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiTaxKeyUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiTaxKeyUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateTaxKeyUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
@@ -649,7 +649,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -657,7 +657,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiBatchEntryCreate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiBatchEntryCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateBatchEntryCreate($request))) {
             $response->header->status = RequestStatusCode::R_400;
@@ -692,7 +692,7 @@ final class ApiController extends Controller
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
-     * @param mixed            $data     Generic data
+     * @param array            $data     Generic data
      *
      * @return void
      *
@@ -700,7 +700,7 @@ final class ApiController extends Controller
      *
      * @since 1.0.0
      */
-    public function apiBatchEntryUpdate(RequestAbstract $request, ResponseAbstract $response, mixed $data = null) : void
+    public function apiBatchEntryUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
     {
         if (!empty($val = $this->validateBatchEntryUpdate($request))) {
             $response->data['account_update'] = new FormValidation($val);
