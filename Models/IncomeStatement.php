@@ -38,7 +38,7 @@ class IncomeStatement
      * @var null|\DateTime
      * @since 1.0.0
      */
-    private ?\DateTime $date = null;
+    public ?\DateTime $date = null;
 
     /**
      * Income statement structure.
@@ -46,5 +46,5 @@ class IncomeStatement
      * @var array
      * @since 1.0.0
      */
-    private array $incomeStatement = [];
+    public array $incomeStatement = [];
 }

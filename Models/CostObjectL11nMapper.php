@@ -15,6 +15,7 @@ declare(strict_types=1);
 namespace Modules\Accounting\Models;
 
 use phpOMS\DataStorage\Database\Mapper\DataMapperFactory;
+use phpOMS\Localization\BaseStringL11n;
 
 /**
  * CostObject mapper class.
