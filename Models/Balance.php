@@ -38,7 +38,7 @@ class Balance
      * @var array
      * @since 1.0.0
      */
-    private array $balance = [];
+    public array $balance = [];
 
     /**
      * Localization.
