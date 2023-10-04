@@ -62,7 +62,7 @@ class BatchPosting implements \Countable
      * @var PostingInterface[]
      * @since 1.0.0
      */
-    private $postings = [];
+    public $postings = [];
 
     /**
      * Constructor.

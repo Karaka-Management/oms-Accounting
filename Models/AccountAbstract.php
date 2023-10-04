@@ -69,7 +69,7 @@ class AccountAbstract
      * @var EntryInterface[]
      * @since 1.0.0
      */
-    protected array $entries = [];
+    public array $entries = [];
 
     /**
      * Get account id.
