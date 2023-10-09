@@ -94,7 +94,7 @@ final class Installer extends InstallerAbstract
             $request->setData('language', $definitions[19]);
             $module->apiAccountCreate($request, $response);
 
-            $responseData = $response->get('');
+            $responseData = $response->getData('');
             if (!\is_array($responseData)) {
                 continue;
             }

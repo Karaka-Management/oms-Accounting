@@ -36,7 +36,7 @@ trait ApiControllerCostCenterTrait
         $this->module->apiCostCenterCreate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->id);
+        //self::assertGreaterThan(0, $response->getDataArray('')['response']->id);
     }
 
     /**
@@ -70,7 +70,7 @@ trait ApiControllerCostCenterTrait
         $this->module->apiCostCenterUpdate($request, $response);
 
         self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->get('')['response']->id);
+        //self::assertGreaterThan(0, $response->getDataArray('')['response']->id);
     }
 
     /**
