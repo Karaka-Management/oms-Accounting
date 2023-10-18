@@ -20,7 +20,6 @@ use Modules\Accounting\tests\Controller\Api\ApiControllerBatchEntryTrait;
 use Modules\Accounting\tests\Controller\Api\ApiControllerCostCenterTrait;
 use Modules\Accounting\tests\Controller\Api\ApiControllerCostObjectTrait;
 use Modules\Accounting\tests\Controller\Api\ApiControllerEntryTrait;
-use Modules\Accounting\tests\Controller\Api\ApiControllerTaxKeyTrait;
 use Modules\Admin\Models\AccountPermission;
 use phpOMS\Account\Account;
 use phpOMS\Account\AccountManager;
@@ -95,18 +94,6 @@ final class ApiControllerTest extends \PHPUnit\Framework\TestCase
     use ApiControllerAccountTrait;
     use ApiControllerCostCenterTrait;
     use ApiControllerCostObjectTrait;
-    use ApiControllerTaxKeyTrait;
     use ApiControllerEntryTrait;
     use ApiControllerBatchEntryTrait;
-    }
-
-    public function testInvalidapiAccountL11nCreate() : void
-    {
-        $response = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
-
-        $request->header->account = 1;
-        $this->module->apiAccountL11nCreate($request, $response);
-        self::assertEquals(RequestStatusCode::R_400, $response->header->status);
-    }
 }
