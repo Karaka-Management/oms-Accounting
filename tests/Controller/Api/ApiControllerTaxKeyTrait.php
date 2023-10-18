@@ -12,80 +12,101 @@
  */
 declare(strict_types=1);
 
-namespace Modules\Accounting\tests\Controller\Api;
+namespace Modules\Accounting\tests\Controller;
 
-use phpOMS\Message\Http\HttpRequest;
-use phpOMS\Message\Http\HttpResponse;
-use phpOMS\Message\Http\RequestStatusCode;
-use phpOMS\Uri\HttpUri;
+use Model\CoreSettings;
+use Modules\Accounting\tests\Controller\Api\ApiControllerAccountTrait;
+use Modules\Accounting\tests\Controller\Api\ApiControllerBatchEntryTrait;
+use Modules\Accounting\tests\Controller\Api\ApiControllerCostCenterTrait;
+use Modules\Accounting\tests\Controller\Api\ApiControllerCostObjectTrait;
+use Modules\Accounting\tests\Controller\Api\ApiControllerEntryTrait;
+use Modules\Accounting\tests\Controller\Api\ApiControllerTaxKeyTrait;
+use Modules\Admin\Models\AccountPermission;
+use phpOMS\Account\Account;
+use phpOMS\Account\AccountManager;
+use phpOMS\Account\PermissionType;
+use phpOMS\Application\ApplicationAbstract;
+use phpOMS\Dispatcher\Dispatcher;
+use phpOMS\Event\EventManager;
+use phpOMS\Localization\L11nManager;
+use phpOMS\Module\ModuleAbstract;
+use phpOMS\Module\ModuleManager;
+use phpOMS\Router\WebRouter;
+use phpOMS\Utils\TestUtils;
 
-trait ApiControllerTaxKeyTrait
+/**
+ * @testdox Modules\Accounting\tests\Controller\ApiControllerTest: Accounting api controller
+ *
+ * @internal
+ */
+final class ApiControllerTest extends \PHPUnit\Framework\TestCase
 {
+    protected ApplicationAbstract $app;
+
     /**
-     * @covers Modules\Accounting\Controller\ApiController
-     * @group module
+     * @var \Modules\Accounting\Controller\ApiController
      */
-    public function testApiTaxKeyCreate() : void
+    protected ModuleAbstract $module;
+
+    /**
+     * {@inheritdoc}
+     */
+    protected function setUp() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+        $this->app = new class() extends ApplicationAbstract
+        {
+            protected string $appName = 'Api';
+        };
 
-        $request->header->account = 1;
-        $request->setData('name', '1');
+        $this->app->dbPool         = $GLOBALS['dbpool'];
+        $this->app->unitId         = 1;
+        $this->app->accountManager = new AccountManager($GLOBALS['session']);
+        $this->app->appSettings    = new CoreSettings();
+        $this->app->moduleManager  = new ModuleManager($this->app, __DIR__ . '/../../../../Modules/');
+        $this->app->dispatcher     = new Dispatcher($this->app);
+        $this->app->eventManager   = new EventManager($this->app->dispatcher);
+        $this->app->l11nManager    = new L11nManager();
+        $this->app->eventManager->importFromFile(__DIR__ . '/../../../../Web/Api/Hooks.php');
 
-        $this->module->apiTaxKeyCreate($request, $response);
+        $account = new Account();
+        TestUtils::setMember($account, 'id', 1);
 
-        self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->getDataArray('')['response']->id);
+        $permission       = new AccountPermission();
+        $permission->unit = 1;
+        $permission->app  = 2;
+        $permission->setPermission(
+            PermissionType::READ
+            | PermissionType::CREATE
+            | PermissionType::MODIFY
+            | PermissionType::DELETE
+            | PermissionType::PERMISSION
+        );
+
+        $account->addPermission($permission);
+
+        $this->app->accountManager->add($account);
+        $this->app->router = new WebRouter();
+
+        $this->module = $this->app->moduleManager->get('Accounting');
+
+        TestUtils::setMember($this->module, 'app', $this->app);
     }
 
-    /**
-     * @covers Modules\Accounting\Controller\ApiController
-     * @group module
-     */
-    public function testApiTaxKeyCreateInvalid() : void
-    {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
-
-        $request->header->account = 1;
-        $request->setData('invalid', '1');
-
-        $this->module->apiTaxKeyCreate($request, $response);
-        self::assertEquals(RequestStatusCode::R_400, $response->header->status);
+    use ApiControllerAccountTrait;
+    use ApiControllerCostCenterTrait;
+    use ApiControllerCostObjectTrait;
+    use ApiControllerTaxKeyTrait;
+    use ApiControllerEntryTrait;
+    use ApiControllerBatchEntryTrait;
     }
 
-    /**
-     * @covers Modules\Accounting\Controller\ApiController
-     * @group module
-     */
-    public function testApiTaxKeyUpdate() : void
+    public function testInvalidapiAccountL11nCreate() : void
     {
-       $response  = new HttpResponse();
+        $response = new HttpResponse();
         $request  = new HttpRequest(new HttpUri(''));
 
         $request->header->account = 1;
-        $request->setData('id', '1');
-
-        $this->module->apiTaxKeyUpdate($request, $response);
-
-        self::assertTrue(true);
-        //self::assertGreaterThan(0, $response->getDataArray('')['response']->id);
-    }
-
-    /**
-     * @covers Modules\Accounting\Controller\ApiController
-     * @group module
-     */
-    public function testApiTaxKeyUpdateInvalid() : void
-    {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
-
-        $request->header->account = 1;
-        $request->setData('invalid', '1');
-
-        $this->module->apiTaxKeyUpdate($request, $response);
+        $this->module->apiAccountL11nCreate($request, $response);
         self::assertEquals(RequestStatusCode::R_400, $response->header->status);
     }
 }
