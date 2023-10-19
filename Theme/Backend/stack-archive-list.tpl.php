@@ -27,7 +27,7 @@ echo $this->data['nav']->render(); ?>
 
 <div class="box w-100">
     <table class="default sticky">
-        <caption><?= $this->getHtml('BatchPostings'); ?><i class="fa fa-download end-xs download btn"></i></caption>
+        <caption><?= $this->getHtml('BatchPostings'); ?><i class="g-icon end-xs download btn">download</i></caption>
         <thead>
         <tr>
             <td><?= $this->getHtml('ID', '0', '0'); ?>

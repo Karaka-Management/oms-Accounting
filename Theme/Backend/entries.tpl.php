@@ -34,11 +34,11 @@ $footerView->setResults(1);
                             <td><label for="iAccountStart"><?= $this->getHtml('CostObject'); ?>
                             <td><label for="iAccountStart"><?= $this->getHtml('EntryDate'); ?>
                         <tr>
-                            <td><span class="input"><button type="button" id="account-start" formaction="" data-action='[{"type": "popup", "tpl": "entry-list-tpl", "aniIn": "fadeIn", "aniOut": "fadeOut", "stay": 1000}]'><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" id="account-start" formaction="" data-action='[{"type": "popup", "tpl": "entry-list-tpl", "aniIn": "fadeIn", "aniOut": "fadeOut", "stay": 1000}]'><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
-                            <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
-                            <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
                             <td><input type="datetime-local" id="iId" min="1" name="id" required>
                         <tr>
@@ -47,11 +47,11 @@ $footerView->setResults(1);
                             <td><label for="iAccountStart"><?= $this->getHtml('To'); ?>
                             <td><label for="iAccountStart"><?= $this->getHtml('To'); ?>
                         <tr>
-                            <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
-                            <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
-                            <td><span class="input"><button type="button" formaction=""><i class="fa fa-book"></i>
+                            <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="number" id="iId" min="1" name="id" required></span>
                             <td><input type="datetime-local" id="iId" min="1" name="id" required>
                         <tr>
@@ -77,7 +77,7 @@ $footerView->setResults(1);
                     <div class="col-xs-12">
                         <section class="wf-100">
                             <table class="default">
-                                <caption><?= $this->getHtml('Entries'); ?><i class="fa fa-download end-xs download btn"></i></caption>
+                                <caption><?= $this->getHtml('Entries'); ?><i class="g-icon end-xs download btn">download</i></caption>
                                 <thead>
                                 <tr>
                                     <td><?= $this->getHtml('EntryDate'); ?>
@@ -112,7 +112,7 @@ $footerView->setResults(1);
                     <div class="col-xs-4">
                         <section class="wf-100">
                             <table class="default">
-                                <caption><?= $this->getHtml('Accounts'); ?><i class="fa fa-download end-xs download btn"></i></caption>
+                                <caption><?= $this->getHtml('Accounts'); ?><i class="g-icon end-xs download btn">download</i></caption>
                                 <thead>
                                 <tr>
                                     <td><?= $this->getHtml('Account'); ?>
@@ -132,7 +132,7 @@ $footerView->setResults(1);
                     <div class="col-xs-4">
                         <section class="wf-100">
                             <table class="table green">
-                                <caption><?= $this->getHtml('CostCenter'); ?><i class="fa fa-download end-xs download btn"></i></caption>
+                                <caption><?= $this->getHtml('CostCenter'); ?><i class="g-icon end-xs download btn">download</i></caption>
                                 <thead>
                                 <tr>
                                     <td><?= $this->getHtml('CostCenter'); ?>
@@ -152,7 +152,7 @@ $footerView->setResults(1);
                     <div class="col-xs-4">
                         <section class="wf-100">
                             <table class="table blue">
-                                <caption><?= $this->getHtml('CostObject'); ?><i class="fa fa-download end-xs download btn"></i></caption>
+                                <caption><?= $this->getHtml('CostObject'); ?><i class="g-icon end-xs download btn">download</i></caption>
                                 <thead>
                                 <tr>
                                     <td><?= $this->getHtml('Account'); ?>
