@@ -16,6 +16,7 @@ namespace Modules\Accounting\Admin;
 
 use phpOMS\Application\ApplicationAbstract;
 use phpOMS\Config\SettingsInterface;
+use phpOMS\Localization\ISO639x1Enum;
 use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Module\InstallerAbstract;
@@ -99,7 +100,11 @@ final class Installer extends InstallerAbstract
                 continue;
             }
 
-            $accountId = $responseData['response']->id;
+            $account = \is_array($responseData['response'])
+                ? $responseData['response']
+                : $responseData['response']->toArray();
+
+            $accountId = $account['id'];
 
             for ($i = 1; $i < $languages; ++$i) {
                 $response = new HttpResponse();
@@ -114,5 +119,39 @@ final class Installer extends InstallerAbstract
         }
 
         \fclose($fp);
+    }
+
+    /**
+     * Import accounts
+     *
+     * @param ApplicationAbstract $app  Application
+     * @param string              $type Personal account type
+     *
+     * @return void
+     *
+     * @since 1.0.0
+     */
+    public static function importPersonalAccounts(ApplicationAbstract $app, string $type) : void
+    {
+        /** @var \Modules\Accounting\Controller\ApiController $module */
+        $module = $app->moduleManager->getModuleInstance('Accounting', 'Api');
+
+        $mapper = $type === 'client'
+            ? \Modules\ClientManagement\Models\ClientMapper::class
+            : \Modules\SupplierManagement\Models\SupplierMapper::class;
+
+        foreach ($mapper::yield() as $person) {
+            $response = new HttpResponse();
+            $request  = new HttpRequest(new HttpUri(''));
+
+            // @todo define default account number format for clients, if number -> consider number as starting value
+            // @todo define default account number format for suppliers, if number -> consider number as starting value
+
+            $request->header->account = 1;
+            $request->setData('account', $person->number);
+            $request->setData('content', \rtrim($person->account->name1 . ' ' . $person->account->name2));
+            $request->setData('language', ISO639x1Enum::_EN);
+            $module->apiAccountCreate($request, $response);
+        }
     }
 }

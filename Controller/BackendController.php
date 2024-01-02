@@ -17,6 +17,8 @@ namespace Modules\Accounting\Controller;
 use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObjectMapper;
+use Modules\ClientManagement\Models\ClientMapper;
+use Modules\SupplierManagement\Models\SupplierMapper;
 use phpOMS\Contract\RenderableInterface;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
@@ -34,7 +36,7 @@ use phpOMS\Views\View;
 final class BackendController extends Controller
 {
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -55,7 +57,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -76,7 +78,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -97,7 +99,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -118,7 +120,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -139,7 +141,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -160,7 +162,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -181,7 +183,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -207,7 +209,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -228,7 +230,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -249,7 +251,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -270,7 +272,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -291,7 +293,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -312,7 +314,7 @@ final class BackendController extends Controller
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -329,19 +331,27 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response);
 
+        $mapper = CostCenterMapper::getAll()
+            ->with('l11n')
+            ->where('l11n/language', $response->header->l11n->language)
+            ->limit(25);
+
         if ($request->getData('ptype') === 'p') {
-            $view->data['costcenter'] = CostCenterMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '<')->limit(25)->execute();
+            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '<')
+                ->execute();
         } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costcenter'] = CostCenterMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '>')->limit(25)->execute();
+            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '>')
+                ->execute();
         } else {
-            $view->data['costcenter'] = CostCenterMapper::getAll()->where('id', 0, '>')->limit(25)->execute();
+            $view->data['costcenter'] = $mapper->where('id', 0, '>')
+                ->execute();
         }
 
         return $view;
     }
 
     /**
-     * Routing end-point for application behaviour.
+     * Routing end-point for application behavior.
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -358,13 +368,73 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response);
 
+        $mapper = CostObjectMapper::getAll()
+            ->with('l11n')
+            ->where('l11n/language', $response->header->l11n->language)
+            ->limit(25);
+
         if ($request->getData('ptype') === 'p') {
-            $view->data['costobject'] = CostObjectMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '<')->limit(25)->execute();
+            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '<')
+                ->execute();
         } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costobject'] = CostObjectMapper::getAll()->where('id', $request->getDataInt('id') ?? 0, '>')->limit(25)->execute();
+            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '>')
+                ->execute();
         } else {
-            $view->data['costobject'] = CostObjectMapper::getAll()->where('id', 0, '>')->limit(25)->execute();
+            $view->data['costobject'] = $mapper->where('id', 0, '>')
+                ->execute();
         }
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behavior.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewSupplierList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-list');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+
+        $accounts = SupplierMapper::getAll()
+            ->execute();
+
+        $view->data['accounts'] = $accounts;
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behavior.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewClientList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-list');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+
+        $accounts = ClientMapper::getAll()
+            ->execute();
+
+        $view->data['accounts'] = $accounts;
 
         return $view;
     }

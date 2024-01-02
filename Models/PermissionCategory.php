@@ -17,7 +17,7 @@ namespace Modules\Accounting\Models;
 use phpOMS\Stdlib\Base\Enum;
 
 /**
- * Permision state enum.
+ * Permission category enum.
  *
  * @package Modules\Accounting\Models
  * @license OMS License 2.0
@@ -43,4 +43,8 @@ abstract class PermissionCategory extends Enum
     public const ACCOUNT = 8;
 
     public const ENTRY = 9;
+
+    public const SUPPLIER = 10;
+
+    public const CLIENT = 11;
 }

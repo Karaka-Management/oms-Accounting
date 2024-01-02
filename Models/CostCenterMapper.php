@@ -38,6 +38,7 @@ final class CostCenterMapper extends DataMapperFactory
     public const COLUMNS = [
         'accounting_costcenter_id'   => ['name' => 'accounting_costcenter_id',   'type' => 'int',    'internal' => 'id'],
         'accounting_costcenter_code' => ['name' => 'accounting_costcenter_code', 'type' => 'string', 'internal' => 'code'],
+        'accounting_costcenter_unit' => ['name' => 'accounting_costcenter_unit', 'type' => 'int', 'internal' => 'unit'],
     ];
 
     /**
@@ -51,7 +52,7 @@ final class CostCenterMapper extends DataMapperFactory
             'mapper'      => CostCenterL11nMapper::class,
             'table'       => 'accounting_costcenter_l11n',
             'self'        => 'accounting_costcenter_l11n_costcenter',
-            'conditional' => true,
+            'column'   => 'content',
             'external'    => null,
         ],
     ];

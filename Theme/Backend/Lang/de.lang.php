@@ -17,6 +17,7 @@ return ['Accounting' => [
     'Accounts'        => 'Konten',
     'BatchPostings'   => 'Chargenbuchungen',
     'Charts'          => 'Charts',
+    'COA'          => 'Chart of Accounts (COA)',
     'Code'            => 'Code',
     'ContraAccount'   => 'Gegenkonto',
     'CostCenter'      => 'Kostenstelle',

@@ -2,7 +2,7 @@
     {
         "name": "1",
         "l11n": {
-            "en": "Turnorver",
+            "en": "Turnover",
             "de": "Umsatzerlöse"
         },
         "account": [2750,2751,2752,2753,2754,2764],

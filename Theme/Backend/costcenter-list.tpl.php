@@ -37,8 +37,10 @@ echo $this->data['nav']->render(); ?>
             <?php $count = 0; foreach ($costcenter as $key => $value) : ++$count;
             $url         = UriFactory::build('{/base}/tag/single?{?}&id=' . $value->id); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
-                    <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->code); ?></a>
-                    <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->l11n->name); ?></a>
+                    <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>">
+                        <?= $this->printHtml($value->code); ?></a>
+                    <td data-label="<?= $this->getHtml('Name'); ?>"><a href="<?= $url; ?>">
+                        <?= $this->printHtml($value->getL11n()); ?></a>
             <?php endforeach; ?>
             <?php if ($count === 0) : ?>
                 <tr><td colspan="3" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>

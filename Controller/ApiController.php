@@ -17,6 +17,10 @@ namespace Modules\Accounting\Controller;
 use Modules\Accounting\Models\AccountAbstract;
 use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\AccountL11nMapper;
+use Modules\Accounting\Models\CostCenter;
+use Modules\Accounting\Models\CostCenterMapper;
+use Modules\Accounting\Models\CostObject;
+use Modules\Accounting\Models\CostObjectMapper;
 use phpOMS\Localization\BaseStringL11n;
 use phpOMS\Localization\ISO639x1Enum;
 use phpOMS\Message\Http\RequestStatusCode;
@@ -36,6 +40,11 @@ use phpOMS\Model\Message\FormValidation;
  */
 final class ApiController extends Controller
 {
+    public function hookPersonalAccountCreate(...$data)
+    {
+        \var_dump($data);
+    }
+
     /**
      * Api method to create an account
      *
@@ -124,9 +133,9 @@ final class ApiController extends Controller
             return;
         }
 
-        $contractTypeL11n = $this->createAccountL11nFromRequest($request);
-        $this->createModel($request->header->account, $contractTypeL11n, AccountL11nMapper::class, 'contract_type_l11n', $request->getOrigin());
-        $this->createStandardCreateResponse($request, $response, $contractTypeL11n);
+        $accountL11n = $this->createAccountL11nFromRequest($request);
+        $this->createModel($request->header->account, $accountL11n, AccountL11nMapper::class, 'account_l11n', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $accountL11n);
     }
 
     /**
@@ -140,14 +149,14 @@ final class ApiController extends Controller
      */
     private function createAccountL11nFromRequest(RequestAbstract $request) : BaseStringL11n
     {
-        $contractTypeL11n      = new BaseStringL11n();
-        $contractTypeL11n->ref = $request->getDataInt('ref') ?? 0;
-        $contractTypeL11n->setLanguage(
+        $accountL11n      = new BaseStringL11n();
+        $accountL11n->ref = $request->getDataInt('ref') ?? 0;
+        $accountL11n->setLanguage(
             $request->getDataString('language') ?? $request->header->l11n->language
         );
-        $contractTypeL11n->content = $request->getDataString('content') ?? '';
+        $accountL11n->content = $request->getDataString('content') ?? '';
 
-        return $contractTypeL11n;
+        return $accountL11n;
     }
 
     /**
@@ -235,6 +244,10 @@ final class ApiController extends Controller
 
             return;
         }
+
+        $costcenter = $this->createCostCenterFromRequest($request);
+        $this->createModel($request->header->account, $costcenter, CostCenterMapper::class, 'costcenter', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $costcenter);
     }
 
     /**
@@ -249,12 +262,31 @@ final class ApiController extends Controller
     private function validateCostCenterCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = !$request->hasData('name'))
+        if (($val['code'] = !$request->hasData('code'))
         ) {
             return $val;
         }
 
         return [];
+    }
+
+    /**
+     * Method to create costcenter from request.
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return CostCenter
+     *
+     * @since 1.0.0
+     */
+    private function createCostCenterFromRequest(RequestAbstract $request) : CostCenter
+    {
+        $costcenter          = new CostCenter();
+        $costcenter->code = $request->getDataString('code') ?? '';
+        $costcenter->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+        $costcenter->unit = $request->getDataInt('unit') ?? 1;
+
+        return $costcenter;
     }
 
     /**
@@ -321,6 +353,29 @@ final class ApiController extends Controller
 
             return;
         }
+
+        $costobject = $this->createCostObjectFromRequest($request);
+        $this->createModel($request->header->account, $costobject, CostObjectMapper::class, 'costobject', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $costobject);
+    }
+
+    /**
+     * Method to create costobject from request.
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return CostObject
+     *
+     * @since 1.0.0
+     */
+    private function createCostObjectFromRequest(RequestAbstract $request) : CostObject
+    {
+        $costobject          = new CostObject();
+        $costobject->code = $request->getDataString('code') ?? '';
+        $costobject->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+        $costobject->unit = $request->getDataInt('unit') ?? 1;
+
+        return $costobject;
     }
 
     /**
@@ -335,7 +390,7 @@ final class ApiController extends Controller
     private function validateCostObjectCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['name'] = !$request->hasData('name'))
+        if (($val['code'] = !$request->hasData('code'))
         ) {
             return $val;
         }

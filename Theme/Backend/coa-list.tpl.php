@@ -12,6 +12,8 @@
  */
 declare(strict_types=1);
 
+use phpOMS\Uri\UriFactory;
+
 /**
  * @var \phpOMS\Views\View $this
  */
@@ -22,7 +24,7 @@ echo $this->data['nav']->render(); ?>
 <div class="row">
     <div class="col-xs-12">
         <div class="portlet">
-            <div class="portlet-head"><?= $this->getHtml('Chart of Accounts (COA)'); ?><i class="g-icon download btn end-xs">download</i></div>
+            <div class="portlet-head"><?= $this->getHtml('COA'); ?><i class="g-icon download btn end-xs">download</i></div>
             <div class="slider">
             <table class="default sticky">
                 <thead>
@@ -32,8 +34,8 @@ echo $this->data['nav']->render(); ?>
                 <tbody>
                 <?php $c = 0;
                 foreach ($accounts as $key => $value) : ++$c;
-                    $url = \phpOMS\Uri\UriFactory::build('{/base}/admin/group/settings?{?}&id=' . $value->id); ?>
-                <tr>
+                    $url = UriFactory::build('{/base}/accounting/coa/profile?{?}&id=' . $value->id); ?>
+                <tr data-href="<?= $url; ?>">
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->account); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getL11n()); ?></a>
                 <?php endforeach; ?>

@@ -14,13 +14,14 @@
         "name": "Jingga",
         "website": "jingga.app"
     },
-    "description": "Accounting module.",
     "directory": "Accounting",
     "dependencies": {
         "Admin": "1.0.0"
     },
     "providing": {
-        "Navigation": "*"
+        "Navigation": "*",
+        "ClientManagement": "*",
+        "SupplierManagement": "*"
     },
     "load": [
         {

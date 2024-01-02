@@ -117,6 +117,17 @@ return [
             ],
         ],
     ],
+    '^.*/accounting/coa/profile.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewAccountProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::ACCOUNT,
+            ],
+        ],
+    ],
     '^.*/accounting/coa/list.*$' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCOAList',
@@ -214,6 +225,95 @@ return [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionCategory::COST_OBJECT,
+            ],
+        ],
+    ],
+    '^.*/accounting/costcenter/profile.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::COST_CENTER,
+            ],
+        ],
+    ],
+    '^.*/accounting/costobject/profile.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::COST_OBJECT,
+            ],
+        ],
+    ],
+
+    '^.*/accounting/supplier/list.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierList',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::SUPPLIER,
+            ],
+        ],
+    ],
+    '^.*/accounting/client/list.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientList',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::CLIENT,
+            ],
+        ],
+    ],
+    '^.*/accounting/supplier/profile.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::SUPPLIER,
+            ],
+        ],
+    ],
+    '^.*/accounting/client/profile.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::CLIENT,
+            ],
+        ],
+    ],
+    '^.*/accounting/supplier/entries.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::SUPPLIER,
+            ],
+        ],
+    ],
+    '^.*/accounting/client/entries.*$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientProfile',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::CLIENT,
             ],
         ],
     ],

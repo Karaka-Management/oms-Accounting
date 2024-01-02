@@ -150,4 +150,22 @@ class AccountAbstract
     {
         return [];
     }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function toArray() : array
+    {
+        return [
+            'id'    => $this->id,
+        ];
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function jsonSerialize() : mixed
+    {
+        return $this->toArray();
+    }
 }

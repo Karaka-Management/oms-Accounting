@@ -78,6 +78,13 @@
                 "type": "INT",
                 "default": null,
                 "null": true
+            },
+            "accounting_costcenter_unit": {
+                "name": "accounting_costcenter_unit",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "unit",
+                "foreignKey": "unit_id"
             }
         }
     },
@@ -138,6 +145,13 @@
                 "type": "INT",
                 "default": null,
                 "null": true
+            },
+            "accounting_costobject_unit": {
+                "name": "accounting_costobject_unit",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "unit",
+                "foreignKey": "unit_id"
             }
         }
     },

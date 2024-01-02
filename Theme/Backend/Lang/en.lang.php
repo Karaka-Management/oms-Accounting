@@ -17,6 +17,7 @@ return ['Accounting' => [
     'Accounts'        => 'Accounts',
     'BatchPostings'   => 'Batch Postings',
     'Charts'          => 'Charts',
+    'COA'          => 'Chart of Accounts (COA)',
     'Code'            => 'Code',
     'ContraAccount'   => 'Contra Account',
     'CostCenter'      => 'Cost Center',
