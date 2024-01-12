@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => '스택',
     'TAccount'        => 'T-Account.',
     'Text'            => '텍스트',
-    'To'              => '에게',
     'Total'           => '총',
     'Type'            => '유형',
 ]];

@@ -35,7 +35,9 @@ class AccountAbstract
      */
     public int $id = 0;
 
-    public string $account = '';
+    public string $code = '';
+
+    public ?int $account = null;
 
     /*
      * String l11n

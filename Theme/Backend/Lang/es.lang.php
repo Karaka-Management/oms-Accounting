@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Apilar',
     'TAccount'        => 'Cuenta t',
     'Text'            => 'Texto',
-    'To'              => 'A',
     'Total'           => 'Total',
     'Type'            => 'Escribe',
 ]];

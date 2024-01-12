@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Pilha',
     'TAccount'        => 'Conta t.',
     'Text'            => 'Texto',
-    'To'              => 'Para',
     'Total'           => 'Total',
     'Type'            => 'Modelo',
 ]];

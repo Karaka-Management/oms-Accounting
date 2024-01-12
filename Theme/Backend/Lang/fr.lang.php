@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Empiler',
     'TAccount'        => 'Compte T-Compte',
     'Text'            => 'Texte',
-    'To'              => 'À',
     'Total'           => 'Le total',
     'Type'            => 'Taper',
 ]];

@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'كومة',
     'TAccount'        => 'T- حساب',
     'Text'            => 'نص',
-    'To'              => 'ل',
     'Total'           => 'مجموع',
     'Type'            => 'نوع',
 ]];

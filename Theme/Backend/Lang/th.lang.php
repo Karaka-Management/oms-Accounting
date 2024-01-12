@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'ซ้อนกัน',
     'TAccount'        => 'บัญชี T',
     'Text'            => 'ข้อความ',
-    'To'              => 'ถึง',
     'Total'           => 'ทั้งหมด',
     'Type'            => 'พิมพ์',
 ]];

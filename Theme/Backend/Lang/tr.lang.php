@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Yığın',
     'TAccount'        => 'Te hesabı',
     'Text'            => 'Metin',
-    'To'              => 'İle',
     'Total'           => 'Toplam',
     'Type'            => 'Tip',
 ]];

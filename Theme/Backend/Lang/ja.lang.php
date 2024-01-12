@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'スタック',
     'TAccount'        => 'T  - アカウント',
     'Text'            => '文章',
-    'To'              => 'に',
     'Total'           => '合計',
     'Type'            => 'タイプ',
 ]];

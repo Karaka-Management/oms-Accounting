@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Pino',
     'TAccount'        => 'T-tili',
     'Text'            => 'Teksti',
-    'To'              => 'Jllek',
     'Total'           => 'Kaikki yhteensä',
     'Type'            => 'Tyyppi',
 ]];

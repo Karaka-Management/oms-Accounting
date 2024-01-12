@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => '堆',
     'TAccount'        => 't账户',
     'Text'            => '文本',
-    'To'              => '到',
     'Total'           => '全部的',
     'Type'            => '类型',
 ]];

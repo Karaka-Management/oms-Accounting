@@ -17,6 +17,7 @@ namespace Modules\Accounting\Controller;
 use Modules\Accounting\Models\AccountAbstract;
 use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\AccountL11nMapper;
+use Modules\Accounting\Models\AccountType;
 use Modules\Accounting\Models\CostCenter;
 use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObject;
@@ -84,8 +85,7 @@ final class ApiController extends Controller
     private function validateAccountCreate(RequestAbstract $request) : array
     {
         $val = [];
-        if (($val['account'] = !$request->hasData('account'))
-            || ($val['content'] = !$request->hasData('content'))
+        if (($val['code'] = !$request->hasData('code'))
         ) {
             return $val;
         }
@@ -105,8 +105,14 @@ final class ApiController extends Controller
     private function createAccountFromRequest(RequestAbstract $request) : AccountAbstract
     {
         $account          = new AccountAbstract();
-        $account->account = $request->getDataString('account') ?? '';
-        $account->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+        $account->code = $request->getDataString('code') ?? '';
+        $account->account = $request->getDataInt('account');
+
+        if ($request->hasData('content')) {
+            $account->setL11n($request->getDataString('content') ?? '', $request->getDataString('language') ?? ISO639x1Enum::_EN);
+        }
+
+        $account->type = $request->getDataInt('type') ?? AccountType::IMPERSONAL;
 
         return $account;
     }

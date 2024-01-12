@@ -36,7 +36,7 @@ echo $this->data['nav']->render(); ?>
                 foreach ($accounts as $key => $value) : ++$c;
                     $url = UriFactory::build('{/base}/accounting/coa/profile?{?}&id=' . $value->id); ?>
                 <tr data-href="<?= $url; ?>">
-                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->account); ?></a>
+                    <td><a href="<?= $url; ?>"><?= $this->printHtml($value->code); ?></a>
                     <td><a href="<?= $url; ?>"><?= $this->printHtml($value->getL11n()); ?></a>
                 <?php endforeach; ?>
                 <?php if ($c === 0) : ?>

@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Kazal',
     'TAccount'        => 'T-számla',
     'Text'            => 'Szöveg',
-    'To'              => 'Nak nek',
     'Total'           => 'Teljes',
     'Type'            => 'típus',
 ]];

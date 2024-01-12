@@ -46,7 +46,6 @@ return ['Accounting' => [
     'Stack'           => 'Zásobník',
     'TAccount'        => 'T-Account.',
     'Text'            => 'Text',
-    'To'              => 'Na',
     'Total'           => 'Celkový',
     'Type'            => 'Typ',
 ]];

@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Admin;
 
+use Modules\Accounting\Models\AccountType;
 use phpOMS\Application\ApplicationAbstract;
 use phpOMS\Config\SettingsInterface;
 use phpOMS\Localization\ISO639x1Enum;
@@ -65,7 +66,7 @@ final class Installer extends InstallerAbstract
         /** @var \Modules\Accounting\Controller\ApiController $module */
         $module = $app->moduleManager->getModuleInstance('Accounting', 'Api');
 
-        $fp = \fopen(__DIR__ . '/Install/Coa/skr03.csv', 'r');
+        $fp = \fopen(__DIR__ . '/Install/Coa/SKR03_DE_GAAP.csv', 'r');
         if ($fp === false) {
             return;
         }
@@ -90,7 +91,7 @@ final class Installer extends InstallerAbstract
             $request  = new HttpRequest(new HttpUri(''));
 
             $request->header->account = 1;
-            $request->setData('account', $line[0]);
+            $request->setData('code', $line[0]);
             $request->setData('content', \trim($line[19]));
             $request->setData('language', $definitions[19]);
             $module->apiAccountCreate($request, $response);
@@ -140,7 +141,11 @@ final class Installer extends InstallerAbstract
             ? \Modules\ClientManagement\Models\ClientMapper::class
             : \Modules\SupplierManagement\Models\SupplierMapper::class;
 
-        foreach ($mapper::yield() as $person) {
+        $accountType = $type === 'client'
+            ? AccountType::DEBITOR
+            : AccountType::CREDITOR;
+
+        foreach ($mapper::yield()->execute() as $person) {
             $response = new HttpResponse();
             $request  = new HttpRequest(new HttpUri(''));
 
@@ -148,9 +153,11 @@ final class Installer extends InstallerAbstract
             // @todo define default account number format for suppliers, if number -> consider number as starting value
 
             $request->header->account = 1;
-            $request->setData('account', $person->number);
+            $request->setData('code', $person->number);
             $request->setData('content', \rtrim($person->account->name1 . ' ' . $person->account->name2));
-            $request->setData('language', ISO639x1Enum::_EN);
+            $request->setData('language', ISO639x1Enum::_EN); // @todo personal accounts shouldn't have a translation?!
+            $request->setData('type', $accountType);
+            $request->setData('account', $person->account->id);
             $module->apiAccountCreate($request, $response);
         }
     }

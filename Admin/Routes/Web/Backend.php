@@ -18,28 +18,6 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^.*/accounting/personal/entries.*$' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewPersonalEntries',
-            'verb'       => RouteVerb::GET,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::PERSONAL,
-            ],
-        ],
-    ],
-    '^.*/accounting/impersonal/entries.*$' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewImpersonalEntries',
-            'verb'       => RouteVerb::GET,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::IMPERSONAL,
-            ],
-        ],
-    ],
     '^.*/accounting/entries.*$' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntries',
@@ -48,17 +26,6 @@ return [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
                 'state'  => PermissionCategory::ENTRY,
-            ],
-        ],
-    ],
-    '^.*/accounting/impersonal/journal/list.*$' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewJournalList',
-            'verb'       => RouteVerb::GET,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::JOURNAL,
             ],
         ],
     ],
@@ -146,17 +113,6 @@ return [
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
-                'state'  => PermissionCategory::GL,
-            ],
-        ],
-    ],
-    '^.*/accounting/gl/profile.*$' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewGLProfile',
-            'verb'       => RouteVerb::GET,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
                 'state'  => PermissionCategory::GL,
             ],
         ],
