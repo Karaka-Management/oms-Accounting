@@ -48,8 +48,8 @@ final class DebitorTest extends \PHPUnit\Framework\TestCase
     {
         self::assertEquals(
             [
-                'id'            => 0,
-                'account'       => null,
+                'id'      => 0,
+                'account' => null,
             ],
             $this->debitor->jsonSerialize()
         );

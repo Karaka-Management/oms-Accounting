@@ -37,10 +37,10 @@ final class CostCenterL11nMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'accounting_costcenter_l11n_id'          => ['name' => 'accounting_costcenter_l11n_id',          'type' => 'int',    'internal' => 'id'],
-        'accounting_costcenter_l11n_name'        => ['name' => 'accounting_costcenter_l11n_name',        'type' => 'string', 'internal' => 'content',        'autocomplete' => true],
-        'accounting_costcenter_l11n_costcenter'  => ['name' => 'accounting_costcenter_l11n_costcenter',  'type' => 'int',    'internal' => 'ref'],
-        'accounting_costcenter_l11n_language'    => ['name' => 'accounting_costcenter_l11n_language',    'type' => 'string', 'internal' => 'language'],
+        'accounting_costcenter_l11n_id'         => ['name' => 'accounting_costcenter_l11n_id',          'type' => 'int',    'internal' => 'id'],
+        'accounting_costcenter_l11n_name'       => ['name' => 'accounting_costcenter_l11n_name',        'type' => 'string', 'internal' => 'content',        'autocomplete' => true],
+        'accounting_costcenter_l11n_costcenter' => ['name' => 'accounting_costcenter_l11n_costcenter',  'type' => 'int',    'internal' => 'ref'],
+        'accounting_costcenter_l11n_language'   => ['name' => 'accounting_costcenter_l11n_language',    'type' => 'string', 'internal' => 'language'],
     ];
 
     /**

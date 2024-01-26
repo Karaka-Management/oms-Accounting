@@ -17,8 +17,6 @@ namespace Modules\Accounting\Controller;
 use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObjectMapper;
-use Modules\Admin\Models\LocalizationMapper;
-use Modules\Admin\Models\SettingsEnum;
 use Modules\Auditor\Models\AuditMapper;
 use Modules\ClientManagement\Models\Attribute\ClientAttributeTypeMapper;
 use Modules\ClientManagement\Models\ClientMapper;
@@ -252,10 +250,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewCostCenterProfile(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewCostCenterView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-profile');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
         return $view;
@@ -273,10 +271,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewCostObjectProfile(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewCostObjectView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-profile');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
         return $view;
@@ -426,7 +424,7 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewSupplierProfile(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewSupplierView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $head  = $response->data['Content']->head;
         $nonce = $this->app->appSettings->getOption('script-nonce');
@@ -437,7 +435,7 @@ final class BackendController extends Controller
         $head->addAsset(AssetType::JSLATE, 'Modules/Accounting/Controller.js', ['nonce' => $nonce, 'type' => 'module']);
 
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-profile');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
         $account = SupplierMapper::get()
@@ -459,11 +457,8 @@ final class BackendController extends Controller
 
         $view->data['hasBilling'] = $this->app->moduleManager->isActive('Billing');
 
-        /** @var \Model\Setting $settings */
-        $settings = $this->app->appSettings->get(null, SettingsEnum::DEFAULT_LOCALIZATION);
-
-        $view->data['attributeView']                              = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
-        $view->data['attributeView']->data['default_localization'] = LocalizationMapper::get()->where('id', (int) $settings->id)->execute();
+        $view->data['attributeView']                               = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
+        $view->data['attributeView']->data['default_localization'] = $this->app->l11nServer;
 
         /** @var \Modules\Media\Models\Media[] $files */
         $files = MediaMapper::getAll()
@@ -474,8 +469,10 @@ final class BackendController extends Controller
 
         $view->data['files'] = $files;
 
-        $view->data['media-upload'] = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
-        $view->data['note'] = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['media-upload']      = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['note']              = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['address-component'] = new \Modules\Admin\Theme\Backend\Components\AddressEditor\AddressView($this->app->l11nManager, $request, $response);
+        $view->data['contact-component'] = new \Modules\Admin\Theme\Backend\Components\ContactEditor\ContactView($this->app->l11nManager, $request, $response);
 
         return $view;
     }
@@ -492,7 +489,7 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewClientProfile(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewClientView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $head  = $response->data['Content']->head;
         $nonce = $this->app->appSettings->getOption('script-nonce');
@@ -503,12 +500,13 @@ final class BackendController extends Controller
         $head->addAsset(AssetType::JSLATE, 'Modules/Accounting/Controller.js', ['nonce' => $nonce, 'type' => 'module']);
 
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-profile');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
         $account = ClientMapper::get()
             ->with('account')
-            ->with('contactElements')
+            ->with('account/addresses')
+            ->with('account/contacts')
             ->with('mainAddress')
             ->with('files')->limit(5, 'files')->sort('files/id', OrderType::DESC)
             ->with('notes')->limit(5, 'notes')->sort('notes/id', OrderType::DESC)
@@ -517,11 +515,8 @@ final class BackendController extends Controller
 
         $view->data['account'] = $account;
 
-        /** @var \Model\Setting $settings */
-        $settings = $this->app->appSettings->get(null, SettingsEnum::DEFAULT_LOCALIZATION);
-
-        $view->data['attributeView']                              = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
-        $view->data['attributeView']->data['default_localization'] = LocalizationMapper::get()->where('id', (int) $settings->id)->execute();
+        $view->data['attributeView']                               = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
+        $view->data['attributeView']->data['default_localization'] = $this->app->l11nServer;
 
         /** @var \Modules\Attribute\Models\AttributeType[] $attributeTypes */
         $attributeTypes = ClientAttributeTypeMapper::getAll()
@@ -585,8 +580,10 @@ final class BackendController extends Controller
 
         $view->data['files'] = $files;
 
-        $view->data['media-upload'] = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
-        $view->data['note'] = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['media-upload']      = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['note']              = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);
+        $view->data['address-component'] = new \Modules\Admin\Theme\Backend\Components\AddressEditor\AddressView($this->app->l11nManager, $request, $response);
+        $view->data['contact-component'] = new \Modules\Admin\Theme\Backend\Components\ContactEditor\ContactView($this->app->l11nManager, $request, $response);
 
         $view->data['hasBilling'] = $this->app->moduleManager->isActive('Billing');
 

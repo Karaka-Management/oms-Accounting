@@ -17,7 +17,6 @@ namespace Modules\Accounting\tests\Controller\Api;
 use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Message\Http\RequestStatusCode;
-use phpOMS\Uri\HttpUri;
 
 trait ApiControllerCostObjectTrait
 {
@@ -27,8 +26,8 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectCreate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('name', '1');
@@ -45,8 +44,8 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectCreateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');
@@ -61,8 +60,8 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectUpdate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('id', '1');
@@ -79,8 +78,8 @@ trait ApiControllerCostObjectTrait
      */
     public function testApiCostObjectUpdateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');

@@ -17,7 +17,6 @@ namespace Modules\Accounting\tests\Controller\Api;
 use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Message\Http\RequestStatusCode;
-use phpOMS\Uri\HttpUri;
 
 trait ApiControllerEntryTrait
 {
@@ -28,7 +27,7 @@ trait ApiControllerEntryTrait
     public function testApiEntryCreate() : void
     {
         $response = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+        $request  = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('name', '1');
@@ -46,7 +45,7 @@ trait ApiControllerEntryTrait
     public function testApiEntryCreateInvalidData() : void
     {
         $response = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+        $request  = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');
@@ -62,7 +61,7 @@ trait ApiControllerEntryTrait
     public function testApiEntryUpdate() : void
     {
         $response = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+        $request  = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('id', '1');
@@ -80,7 +79,7 @@ trait ApiControllerEntryTrait
     public function testApiEntryUpdateInvalidData() : void
     {
         $response = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+        $request  = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');

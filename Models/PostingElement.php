@@ -25,29 +25,15 @@ use Modules\Admin\Models\NullAccount;
  * @link    https://jingga.app
  * @since   1.0.0
  */
-class Posting
+class PostingElement
 {
     public int $id = 0;
 
     public int $status = 0;
 
-    public string $number = '';
+    public string $text = '';
 
-    public ?AccountAbstract $account = null;
-
-    public ?int $paymentTerms = null;
-
-    public ?int $payment = null;
-
-    public int $dunLevel = 0;
-
-    public bool $dunStop = false;
-
-    public ?int $bill = null;
-
-    public ?int $batch = null;
-
-    public int $value = 0;
+    public int $type = 0;
 
     public \DateTimeImmutable $createdAt;
 
@@ -55,9 +41,21 @@ class Posting
 
     public Account $createdBy;
 
+    public AccountAbstract $account;
+
+    public ?CostCenter $costcenter = null;
+
+    public ?CostObject $costobject = null;
+
+    public int $value = 0;
+
+    public int $tax = 0;
+
     public int $unit = 0;
 
-    public array $elements = [];
+    public ?self $opposite = null;
+
+    public int $posting = 0;
 
     public function __construct()
     {
@@ -65,5 +63,6 @@ class Posting
         $this->performanceDate = new \DateTimeImmutable('now');
 
         $this->createdBy = new NullAccount();
+        $this->account   = new NullAccountAbstract();
     }
 }

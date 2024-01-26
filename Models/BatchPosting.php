@@ -75,32 +75,6 @@ class BatchPosting implements \Countable
     }
 
     /**
-     * Get id.
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getId() : int
-    {
-        return $this->id;
-    }
-
-    /**
-     * Get posting.
-     *
-     * @param int $id Posting ID
-     *
-     * @return null|PostingInterface
-     *
-     * @since 1.0.0
-     */
-    public function getPosting(int $id) : ?PostingInterface
-    {
-        return $this->postings[$id] ?? null;
-    }
-
-    /**
      * Remove posting.
      *
      * @param int $id Posting ID
@@ -118,20 +92,6 @@ class BatchPosting implements \Countable
         unset($this->postings[$id]);
 
         return true;
-    }
-
-    /**
-     * Add posting.
-     *
-     * @param PostingInterface $posting Posting
-     *
-     * @return void
-     *
-     * @since 1.0.0
-     */
-    public function addPosting(PostingInterface $posting) : void
-    {
-        $this->postings[] = $posting;
     }
 
     /**

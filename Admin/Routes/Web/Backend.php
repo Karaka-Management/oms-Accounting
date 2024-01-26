@@ -18,7 +18,7 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^.*/accounting/entries.*$' => [
+    '^.*/accounting/entries(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntries',
             'verb'       => RouteVerb::GET,
@@ -29,7 +29,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/stack/list.*$' => [
+    '^.*/accounting/stack/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackList',
             'verb'       => RouteVerb::GET,
@@ -40,7 +40,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/stack/entries.*$' => [
+    '^.*/accounting/stack/entries(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackEntries',
             'verb'       => RouteVerb::GET,
@@ -51,7 +51,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/stack/archive/list.*$' => [
+    '^.*/accounting/stack/archive/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackArchiveList',
             'verb'       => RouteVerb::GET,
@@ -62,7 +62,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/stack/create.*$' => [
+    '^.*/accounting/stack/create(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackCreate',
             'verb'       => RouteVerb::GET,
@@ -73,7 +73,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/stack/predefined/list.*$' => [
+    '^.*/accounting/stack/predefined/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackPredefinedList',
             'verb'       => RouteVerb::GET,
@@ -84,9 +84,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/coa/profile.*$' => [
+    '^.*/accounting/coa/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewAccountProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewAccountView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -95,7 +95,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/coa/list.*$' => [
+    '^.*/accounting/coa/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCOAList',
             'verb'       => RouteVerb::GET,
@@ -106,7 +106,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/coa/create.*$' => [
+    '^.*/accounting/coa/create(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCOACreate',
             'verb'       => RouteVerb::GET,
@@ -117,9 +117,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/dun/print.*$' => [
+    '^.*/accounting/dun/print(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -128,9 +128,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/statement/print.*$' => [
+    '^.*/accounting/statement/print(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -139,9 +139,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/balances/print.*$' => [
+    '^.*/accounting/balances/print(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -150,9 +150,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/accountform/print.*$' => [
+    '^.*/accounting/accountform/print(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -162,7 +162,7 @@ return [
         ],
     ],
 
-    '^.*/accounting/costcenter/list.*$' => [
+    '^.*/accounting/costcenter/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterList',
             'verb'       => RouteVerb::GET,
@@ -173,7 +173,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/costobject/list.*$' => [
+    '^.*/accounting/costobject/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectList',
             'verb'       => RouteVerb::GET,
@@ -184,9 +184,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/costcenter/profile.*$' => [
+    '^.*/accounting/costcenter/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -195,9 +195,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/costobject/profile.*$' => [
+    '^.*/accounting/costobject/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -207,7 +207,7 @@ return [
         ],
     ],
 
-    '^.*/accounting/supplier/list.*$' => [
+    '^.*/accounting/supplier/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierList',
             'verb'       => RouteVerb::GET,
@@ -218,7 +218,7 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/client/list.*$' => [
+    '^.*/accounting/client/list(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientList',
             'verb'       => RouteVerb::GET,
@@ -229,9 +229,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/supplier/profile.*$' => [
+    '^.*/accounting/supplier/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -240,9 +240,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/client/profile.*$' => [
+    '^.*/accounting/client/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -251,9 +251,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/supplier/entries.*$' => [
+    '^.*/accounting/supplier/entries(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,
@@ -262,9 +262,9 @@ return [
             ],
         ],
     ],
-    '^.*/accounting/client/entries.*$' => [
+    '^.*/accounting/client/entries(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientProfile',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientView',
             'verb'       => RouteVerb::GET,
             'permission' => [
                 'module' => BackendController::NAME,

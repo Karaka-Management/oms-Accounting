@@ -37,10 +37,10 @@ final class AccountL11nMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'accounting_account_l11n_id'       => ['name' => 'accounting_account_l11n_id',    'type' => 'int',    'internal' => 'id'],
-        'accounting_account_l11n_title'    => ['name' => 'accounting_account_l11n_title', 'type' => 'string', 'internal' => 'content', 'autocomplete' => true],
-        'accounting_account_l11n_account'  => ['name' => 'accounting_account_l11n_account',  'type' => 'int',    'internal' => 'ref'],
-        'accounting_account_l11n_lang'     => ['name' => 'accounting_account_l11n_lang',  'type' => 'string', 'internal' => 'language'],
+        'accounting_account_l11n_id'      => ['name' => 'accounting_account_l11n_id',    'type' => 'int',    'internal' => 'id'],
+        'accounting_account_l11n_title'   => ['name' => 'accounting_account_l11n_title', 'type' => 'string', 'internal' => 'content', 'autocomplete' => true],
+        'accounting_account_l11n_account' => ['name' => 'accounting_account_l11n_account',  'type' => 'int',    'internal' => 'ref'],
+        'accounting_account_l11n_lang'    => ['name' => 'accounting_account_l11n_lang',  'type' => 'string', 'internal' => 'language'],
     ];
 
     /**

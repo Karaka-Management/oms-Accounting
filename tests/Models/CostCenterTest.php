@@ -72,9 +72,9 @@ final class CostCenterTest extends \PHPUnit\Framework\TestCase
 
         self::assertEquals(
             [
-                'id'           => 0,
-                'code'         => '123',
-                'parent'       => null,
+                'id'     => 0,
+                'code'   => '123',
+                'parent' => null,
             ],
             $this->cc->jsonSerialize()
         );

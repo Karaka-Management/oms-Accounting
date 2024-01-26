@@ -22,7 +22,6 @@ use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Module\InstallerAbstract;
 use phpOMS\Module\ModuleInfo;
-use phpOMS\Uri\HttpUri;
 
 /**
  * Installer class.
@@ -88,7 +87,7 @@ final class Installer extends InstallerAbstract
             }
 
             $response = new HttpResponse();
-            $request  = new HttpRequest(new HttpUri(''));
+            $request  = new HttpRequest();
 
             $request->header->account = 1;
             $request->setData('code', $line[0]);
@@ -109,7 +108,7 @@ final class Installer extends InstallerAbstract
 
             for ($i = 1; $i < $languages; ++$i) {
                 $response = new HttpResponse();
-                $request  = new HttpRequest(new HttpUri(''));
+                $request  = new HttpRequest();
 
                 $request->header->account = 1;
                 $request->setData('ref', $accountId);
@@ -147,7 +146,7 @@ final class Installer extends InstallerAbstract
 
         foreach ($mapper::yield()->execute() as $person) {
             $response = new HttpResponse();
-            $request  = new HttpRequest(new HttpUri(''));
+            $request  = new HttpRequest();
 
             // @todo define default account number format for clients, if number -> consider number as starting value
             // @todo define default account number format for suppliers, if number -> consider number as starting value

@@ -14,14 +14,19 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Models;
 
+use phpOMS\Stdlib\Base\Enum;
+
 /**
- * Posting interface.
+ * Posting side enum.
  *
  * @package Modules\Accounting\Models
  * @license OMS License 2.0
  * @link    https://jingga.app
  * @since   1.0.0
  */
-interface PostingInterface
+abstract class PostingSide extends Enum
 {
+    public const DEBIT = 1; /* Soll */
+
+    public const CREDIT = 2; /* Haben */
 }

@@ -246,29 +246,168 @@
                 "primary": true,
                 "autoincrement": true
             },
+            "accounting_posting_status": {
+                "name": "accounting_posting_status",
+                "type": "TINYINT",
+                "null": false
+            },
+            "accounting_posting_number": {
+                "name": "accounting_posting_number",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
+            "accounting_posting_account": {
+                "name": "accounting_posting_account",
+                "type": "INT",
+                "null": true,
+                "default": null,
+                "foreignTable": "accounting_account",
+                "foreignKey": "accounting_account_id"
+            },
+            "accounting_posting_paymentterms": {
+                "@todo": "only install in providing case + then use foreignTable/Key",
+                "name": "accounting_posting_paymentterms",
+                "type": "INT",
+                "null": true,
+                "default": null
+            },
+            "accounting_posting_payment": {
+                "description": "should this handle the dues?",
+                "name": "accounting_posting_payment",
+                "type": "INT",
+                "null": true,
+                "default": null
+            },
+            "accounting_posting_dun_level": {
+                "name": "accounting_posting_dun_level",
+                "type": "TINYINT",
+                "null": false
+            },
+            "accounting_posting_dun_stop": {
+                "name": "accounting_posting_dun_stop",
+                "type": "TINYINT(1)",
+                "null": false
+            },
+            "accounting_posting_bill": {
+                "@todo": "only install in providing case + then use foreignTable/Key",
+                "name": "accounting_posting_bill",
+                "type": "INT",
+                "null": true
+            },
             "accounting_posting_batch": {
                 "name": "accounting_posting_batch",
                 "type": "INT",
-                "null": false,
+                "null": true,
                 "foreignTable": "accounting_batch",
                 "foreignKey": "accounting_batch_id"
             },
-            "accounting_posting_receipt": {
-                "name": "accounting_posting_receipt",
-                "type": "INT",
-                "default": null,
-                "null": true
-            },
-            "accounting_posting_receipt_ext": {
-                "name": "accounting_posting_receipt_ext",
-                "type": "INT",
-                "default": null,
-                "null": true
-            },
-            "accounting_posting_price": {
-                "name": "accounting_posting_price",
+            "accounting_posting_value": {
+                "name": "accounting_posting_value",
                 "type": "BIGINT",
                 "null": false
+            },
+            "accounting_posting_createdat": {
+                "name": "accounting_posting_createdat",
+                "type": "DATETIME",
+                "null": false
+            },
+            "accounting_posting_createdby": {
+                "name": "accounting_posting_createdby",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "account",
+                "foreignKey": "account_id"
+            },
+            "accounting_posting_performance": {
+                "name": "accounting_posting_performance",
+                "type": "DATETIME",
+                "null": false
+            },
+            "accounting_posting_unit": {
+                "name": "accounting_posting_unit",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "unit",
+                "foreignKey": "unit_id"
+            }
+        }
+    },
+    "accounting_posting_note": {
+        "name": "accounting_posting_note",
+        "fields": {
+            "accounting_posting_note_id": {
+                "name": "accounting_posting_note_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_posting_note_dst": {
+                "name": "accounting_posting_note_dst",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "editor_doc",
+                "foreignKey": "editor_doc_id"
+            },
+            "accounting_posting_note_src": {
+                "name": "accounting_posting_note_src",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_posting",
+                "foreignKey": "accounting_posting_id"
+            }
+        }
+    },
+    "accounting_posting_media": {
+        "name": "accounting_posting_media",
+        "fields": {
+            "accounting_posting_media_id": {
+                "name": "accounting_posting_media_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_posting_media_dst": {
+                "name": "accounting_posting_media_dst",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "media",
+                "foreignKey": "media_id"
+            },
+            "accounting_posting_media_src": {
+                "name": "accounting_posting_media_src",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_posting",
+                "foreignKey": "accounting_posting_id"
+            }
+        }
+    },
+    "accounting_posting_eq": {
+        "name": "accounting_posting_eq",
+        "description": "Marks posts as equalized credit/debit",
+        "fields": {
+            "accounting_posting_eq_id": {
+                "name": "accounting_posting_eq_id",
+                "type": "INT",
+                "null": false,
+                "primary": true,
+                "autoincrement": true
+            },
+            "accounting_posting_eq_1": {
+                "name": "accounting_posting_eq_1",
+                "type": "INT",
+                "null": true,
+                "foreignTable": "accounting_posting",
+                "foreignKey": "accounting_posting_id"
+            },
+            "accounting_posting_eq_2": {
+                "name": "accounting_posting_eq_2",
+                "type": "INT",
+                "null": true,
+                "foreignTable": "accounting_posting",
+                "foreignKey": "accounting_posting_id"
             }
         }
     },
@@ -282,7 +421,20 @@
                 "primary": true,
                 "autoincrement": true
             },
+            "accounting_posting_ele_status": {
+                "description": "debit/credit",
+                "name": "accounting_posting_ele_status",
+                "type": "TINYINT",
+                "null": false
+            },
+            "accounting_posting_ele_text": {
+                "description": "debit/credit",
+                "name": "accounting_posting_ele_text",
+                "type": "VARCHAR(255)",
+                "null": false
+            },
             "accounting_posting_ele_type": {
+                "description": "debit/credit",
                 "name": "accounting_posting_ele_type",
                 "type": "TINYINT",
                 "null": false
@@ -294,6 +446,22 @@
                 "foreignTable": "accounting_account",
                 "foreignKey": "accounting_account_id"
             },
+            "accounting_posting_ele_cc": {
+                "name": "accounting_posting_ele_cc",
+                "type": "INT",
+                "null": true,
+                "default": null,
+                "foreignTable": "accounting_costcenter",
+                "foreignKey": "accounting_costcenter_id"
+            },
+            "accounting_posting_ele_co": {
+                "name": "accounting_posting_ele_co",
+                "type": "INT",
+                "null": true,
+                "default": null,
+                "foreignTable": "accounting_costobject",
+                "foreignKey": "accounting_costobject_id"
+            },
             "accounting_posting_ele_value": {
                 "name": "accounting_posting_ele_value",
                 "type": "BIGINT",
@@ -303,6 +471,45 @@
                 "name": "accounting_posting_ele_tax",
                 "type": "INT",
                 "null": false
+            },
+            "accounting_posting_ele_createdat": {
+                "name": "accounting_posting_ele_createdat",
+                "type": "DATETIME",
+                "null": false
+            },
+            "accounting_posting_ele_createdby": {
+                "name": "accounting_posting_ele_createdby",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "account",
+                "foreignKey": "account_id"
+            },
+            "accounting_posting_ele_performance": {
+                "name": "accounting_posting_ele_performance",
+                "type": "DATETIME",
+                "null": false
+            },
+            "accounting_posting_ele_opposite": {
+                "description": "Often you have a 1:1 match between credit/debit posting, this speeds it up. Alternatively you have to find the opposite postings through the posting",
+                "name": "accounting_posting_ele_opposite",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_posting_ele",
+                "foreignKey": "accounting_posting_ele_id"
+            },
+            "accounting_posting_ele_posting": {
+                "name": "accounting_posting_ele_posting",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "accounting_posting",
+                "foreignKey": "accounting_posting_id"
+            },
+            "accounting_posting_ele_unit": {
+                "name": "accounting_posting_ele_unit",
+                "type": "INT",
+                "null": false,
+                "foreignTable": "unit",
+                "foreignKey": "unit_id"
             }
         }
     }

@@ -49,11 +49,11 @@ final class CostObjectMapper extends DataMapperFactory
      */
     public const HAS_MANY = [
         'l11n' => [
-            'mapper'      => CostObjectL11nMapper::class,
-            'table'       => 'accounting_costobject_l11n',
-            'self'        => 'accounting_costobject_l11n_costobject',
+            'mapper'   => CostObjectL11nMapper::class,
+            'table'    => 'accounting_costobject_l11n',
+            'self'     => 'accounting_costobject_l11n_costobject',
             'column'   => 'content',
-            'external'    => null,
+            'external' => null,
         ],
     ];
 

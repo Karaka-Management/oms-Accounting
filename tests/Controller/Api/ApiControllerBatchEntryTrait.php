@@ -17,7 +17,6 @@ namespace Modules\Accounting\tests\Controller\Api;
 use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Message\Http\RequestStatusCode;
-use phpOMS\Uri\HttpUri;
 
 trait ApiControllerBatchEntryTrait
 {
@@ -27,8 +26,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryCreate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('name', '1');
@@ -45,8 +44,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryCreateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');
@@ -61,8 +60,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryUpdate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('id', '1');
@@ -79,8 +78,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiBatchEntryUpdateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');
@@ -95,8 +94,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryCreate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('name', '1');
@@ -113,8 +112,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryCreateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');
@@ -129,8 +128,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryUpdate() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('id', '1');
@@ -147,8 +146,8 @@ trait ApiControllerBatchEntryTrait
      */
     public function testApiRecurringEntryUpdateInvalid() : void
     {
-       $response  = new HttpResponse();
-        $request  = new HttpRequest(new HttpUri(''));
+       $response = new HttpResponse();
+        $request = new HttpRequest();
 
         $request->header->account = 1;
         $request->setData('invalid', '1');

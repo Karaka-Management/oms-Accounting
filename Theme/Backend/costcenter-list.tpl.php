@@ -35,7 +35,7 @@ echo $this->data['nav']->render(); ?>
                 <td class="wf-100"><?= $this->getHtml('Name'); ?>
             <tbody>
             <?php $count = 0; foreach ($costcenter as $key => $value) : ++$count;
-            $url         = UriFactory::build('{/base}/tag/single?{?}&id=' . $value->id); ?>
+            $url         = UriFactory::build('{/base}/tag/view?{?}&id=' . $value->id); ?>
                 <tr tabindex="0" data-href="<?= $url; ?>">
                     <td data-label="<?= $this->getHtml('Code'); ?>"><a href="<?= $url; ?>">
                         <?= $this->printHtml($value->code); ?></a>

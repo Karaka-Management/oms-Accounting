@@ -74,18 +74,6 @@ class AccountAbstract
     public array $entries = [];
 
     /**
-     * Get account id.
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getId() : int
-    {
-        return $this->id;
-    }
-
-    /**
      * Get entry.
      *
      * @param int $id Entry ID
@@ -114,12 +102,12 @@ class AccountAbstract
         if ($l11n instanceof BaseStringL11n) {
             $this->l11n = $l11n;
         } elseif (isset($this->l11n) && $this->l11n instanceof BaseStringL11n) {
-            $this->l11n->content = $l11n;
-            $this->l11n->setLanguage($lang);
+            $this->l11n->content  = $l11n;
+            $this->l11n->language = $lang;
         } else {
-            $this->l11n          = new BaseStringL11n();
-            $this->l11n->content = $l11n;
-            $this->l11n->setLanguage($lang);
+            $this->l11n           = new BaseStringL11n();
+            $this->l11n->content  = $l11n;
+            $this->l11n->language = $lang;
         }
     }
 
@@ -148,7 +136,7 @@ class AccountAbstract
      *
      * @since   1.0.0
      */
-    public function getEntriesByDate(\DateTime $start, \DateTime $end = null, int $dateType = TimeRangeType::RECEIPT_DATE) : array
+    public function getEntriesByDate(\DateTime $start, ?\DateTime $end = null, int $dateType = TimeRangeType::RECEIPT_DATE) : array
     {
         return [];
     }
@@ -159,7 +147,7 @@ class AccountAbstract
     public function toArray() : array
     {
         return [
-            'id'    => $this->id,
+            'id' => $this->id,
         ];
     }
 

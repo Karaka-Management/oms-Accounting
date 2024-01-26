@@ -62,18 +62,6 @@ class CostCenter
     public int $unit = 0;
 
     /**
-     * Get balance id
-     *
-     * @return int
-     *
-     * @since 1.0.0
-     */
-    public function getId() : int
-    {
-        return $this->id;
-    }
-
-    /**
      * Set l11n
      *
      * @param string|BaseStringL11n $l11n Tag article l11n
@@ -88,12 +76,12 @@ class CostCenter
         if ($l11n instanceof BaseStringL11n) {
             $this->l11n = $l11n;
         } elseif (isset($this->l11n) && $this->l11n instanceof BaseStringL11n) {
-            $this->l11n->content = $l11n;
-            $this->l11n->setLanguage($lang);
+            $this->l11n->content  = $l11n;
+            $this->l11n->language = $lang;
         } else {
-            $this->l11n          = new BaseStringL11n();
-            $this->l11n->content = $l11n;
-            $this->l11n->setLanguage($lang);
+            $this->l11n           = new BaseStringL11n();
+            $this->l11n->content  = $l11n;
+            $this->l11n->language = $lang;
         }
     }
 
@@ -117,9 +105,9 @@ class CostCenter
     public function toArray() : array
     {
         return [
-            'id'        => $this->id,
-            'code'      => $this->code,
-            'parent'    => $this->parent,
+            'id'     => $this->id,
+            'code'   => $this->code,
+            'parent' => $this->parent,
         ];
     }
 
