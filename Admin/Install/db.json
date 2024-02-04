@@ -12,8 +12,7 @@
             "accounting_account_code": {
                 "name": "accounting_account_code",
                 "type": "VARCHAR(50)",
-                "null": false,
-                "unique": true
+                "null": false
             },
             "accounting_account_type": {
                 "name": "accounting_account_type",

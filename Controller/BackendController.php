@@ -527,10 +527,8 @@ final class BackendController extends Controller
         $view->data['attributeTypes'] = $attributeTypes;
 
         // Get item profile image
-        // It might not be part of the 5 newest item files from above
-        // @todo It would be nice to have something like this as a default method in the model e.g.
-        // ItemManagement::getRelations()->with('types')->where(...);
-        // This should return the relations and NOT the model itself
+        // @feature Create a new read mapper function that returns relation models instead of its own model
+        //      https://github.com/Karaka-Management/phpOMS/issues/320
         $query   = new Builder($this->app->dbPool->get());
         $results = $query->selectAs(ClientMapper::HAS_MANY['files']['external'], 'file')
             ->from(ClientMapper::TABLE)

@@ -148,13 +148,13 @@ final class Installer extends InstallerAbstract
             $response = new HttpResponse();
             $request  = new HttpRequest();
 
-            // @todo define default account number format for clients, if number -> consider number as starting value
-            // @todo define default account number format for suppliers, if number -> consider number as starting value
+            // @feature Create a way to let admins create a default account format for clients/suppliers
+            //      https://github.com/Karaka-Management/oms-Accounting/issues/8
 
             $request->header->account = 1;
             $request->setData('code', $person->number);
             $request->setData('content', \rtrim($person->account->name1 . ' ' . $person->account->name2));
-            $request->setData('language', ISO639x1Enum::_EN); // @todo personal accounts shouldn't have a translation?!
+            $request->setData('language', ISO639x1Enum::_EN);
             $request->setData('type', $accountType);
             $request->setData('account', $person->account->id);
             $module->apiAccountCreate($request, $response);

@@ -137,9 +137,11 @@ final class ApiController extends Controller
         $posting->elements[] = $firstElement;
 
         // Second side
+        // @todo Implement automatic posting of archived bill
+        //      https://github.com/Karaka-Management/oms-Accounting/issues/10
         foreach ($new->elements as $element) {
-            // @todo handle pl account from bill
-            // @todo handle taxes
+            // handle pl account from bill
+            // handle taxes
             $postingElement            = new PostingElement();
             $postingElement->createdBy = new NullAccount($account);
             $postingElement->unit      = $posting->unit;
@@ -152,10 +154,10 @@ final class ApiController extends Controller
             $posting->elements[] = $postingElement;
         }
 
-        // @todo check debit === credit
-        // @todo check bill tax = sum(element.tax)
-        // @todo check bill net = sum(element.net)
-        // @todo check bill gross = sum(element.gross)
+        // check debit === credit
+        // check bill tax = sum(element.tax)
+        // check bill net = sum(element.net)
+        // check bill gross = sum(element.gross)
 
         $this->createModel($account, $posting, PostingMapper::class, 'posting-bill', $ip);
     }
@@ -183,8 +185,8 @@ final class ApiController extends Controller
         $response = new HttpResponse();
         $request  = new HttpRequest();
 
-        // @todo define default account number format for clients, if number -> consider number as starting value
-        // @todo define default account number format for suppliers, if number -> consider number as starting value
+        // @feature Create a way to let admins create a default account format for clients/suppliers
+        //      https://github.com/Karaka-Management/oms-Accounting/issues/8
 
         $request->header->account = $account;
         $request->setData('code', $new->number);
