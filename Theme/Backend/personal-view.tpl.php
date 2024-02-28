@@ -189,7 +189,7 @@ echo $this->data['nav']->render(); ?>
                         </div>
                     </section>
 
-                    <section class="portlet highlight-4">
+                    <section class="portlet hl-4">
                         <div class="portlet-body">
                             <textarea class="undecorated"><?= $this->printHtml($account->info); ?></textarea>
                         </div>
@@ -200,7 +200,7 @@ echo $this->data['nav']->render(); ?>
                     <!-- If note warning exists -->
                     <div class="row">
                         <div class="col-xs-12">
-                            <section class="portlet highlight-1">
+                            <section class="portlet hl-1">
                                 <div class="portlet-body"><?= $this->printHtml($warning->plain); ?></div>
                             </section>
                         </div>
@@ -210,7 +210,7 @@ echo $this->data['nav']->render(); ?>
                     <?php if ($this->data['hasBilling']) : ?>
                     <div class="row">
                         <div class="col-xs-12 col-lg-4">
-                            <section class="portlet highlight-7">
+                            <section class="portlet hl-7">
                                 <div class="portlet-body">
                                     <table class="wf-100">
                                         <tr><td><?= $this->getHtml('YTDSales'); ?>:
@@ -225,7 +225,7 @@ echo $this->data['nav']->render(); ?>
                         </div>
 
                         <div class="col-xs-12 col-lg-4">
-                            <section class="portlet highlight-2">
+                            <section class="portlet hl-2">
                                 <div class="portlet-body">
                                     <table class="wf-100">
                                         <tr><td><?= $this->getHtml('LastContact'); ?>:
@@ -240,7 +240,7 @@ echo $this->data['nav']->render(); ?>
                         </div>
 
                         <div class="col-xs-12 col-lg-4">
-                            <section class="portlet highlight-3">
+                            <section class="portlet hl-3">
                                 <div class="portlet-body">
                                     <table class="wf-100">
                                         <tr><td><?= $this->getHtml('DSO'); ?>:

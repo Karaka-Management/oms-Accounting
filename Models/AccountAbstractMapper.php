@@ -41,6 +41,7 @@ class AccountAbstractMapper extends DataMapperFactory
         'accounting_account_type'    => ['name' => 'accounting_account_type',        'type' => 'int',   'internal' => 'type'],
         'accounting_account_parent'  => ['name' => 'accounting_account_parent',        'type' => 'int',   'internal' => 'parent'],
         'accounting_account_account' => ['name' => 'accounting_account_account',        'type' => 'int',   'internal' => 'account'],
+        'accounting_account_unit' => ['name' => 'accounting_account_unit',        'type' => 'int',   'internal' => 'unit'],
     ];
 
     /**

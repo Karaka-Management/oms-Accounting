@@ -73,6 +73,8 @@ class AccountAbstract
      */
     public array $entries = [];
 
+    public ?int $unit = null;
+
     /**
      * Get entry.
      *

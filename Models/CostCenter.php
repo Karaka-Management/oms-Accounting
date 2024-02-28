@@ -59,7 +59,7 @@ class CostCenter
      */
     public $parent = null;
 
-    public int $unit = 0;
+    public ?int $unit = null;
 
     /**
      * Set l11n

@@ -63,7 +63,7 @@ final class Installer extends InstallerAbstract
     private static function importAccounts(ApplicationAbstract $app) : void
     {
         /** @var \Modules\Accounting\Controller\ApiController $module */
-        $module = $app->moduleManager->getModuleInstance('Accounting', 'Api');
+        $module = $app->moduleManager->get('Accounting', 'Api');
 
         $fp = \fopen(__DIR__ . '/Install/Coa/SKR03_DE_GAAP.csv', 'r');
         if ($fp === false) {
@@ -134,7 +134,7 @@ final class Installer extends InstallerAbstract
     public static function importPersonalAccounts(ApplicationAbstract $app, string $type) : void
     {
         /** @var \Modules\Accounting\Controller\ApiController $module */
-        $module = $app->moduleManager->getModuleInstance('Accounting', 'Api');
+        $module = $app->moduleManager->get('Accounting', 'Api');
 
         $mapper = $type === 'client'
             ? \Modules\ClientManagement\Models\ClientMapper::class

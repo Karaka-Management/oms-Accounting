@@ -28,6 +28,7 @@ use Modules\Accounting\Models\PostingMapper;
 use Modules\Accounting\Models\PostingSide;
 use Modules\Admin\Models\AccountMapper;
 use Modules\Admin\Models\NullAccount;
+use Modules\Billing\Models\BillStatus;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeTypeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeValueMapper;
 use phpOMS\Localization\BaseStringL11n;
@@ -82,7 +83,27 @@ final class ApiController extends Controller
         ?string $ip = null
     ) : void
     {
-        if (!$new->type->isAccounting) {
+        if (!$new->type->isAccounting
+            || $new->status !== BillStatus::ARCHIVED
+        ) {
+            return;
+        }
+
+        $posting = PostingMapper::get()
+            ->where('bill', $new->id)
+            ->limit(1)
+            ->execute();
+
+        // Posting already created
+        if ($posting->id !== 0) {
+            \phpOMS\Log\FileLogger::getInstance()->warning(
+                \phpOMS\Log\FileLogger::MSG_FULL, [
+                    'message' => 'Posting for bill "' . $new->id . '" already created',
+                    'line'    => __LINE__,
+                    'file'    => self::class,
+                ]
+            );
+
             return;
         }
 
@@ -111,6 +132,7 @@ final class ApiController extends Controller
             ->execute();
 
         $posting            = new Posting();
+        $posting->bill      = $new->id;
         $posting->createdBy = new NullAccount($account);
         $posting->unit      = $new->unit;
         $posting->account   = AccountAbstractMapper::get()
@@ -470,7 +492,7 @@ final class ApiController extends Controller
             $request->getDataString('content') ?? '',
             ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? ISO639x1Enum::_EN
         );
-        $costcenter->unit = $request->getDataInt('unit') ?? 1;
+        $costcenter->unit = $request->getDataInt('unit');
 
         return $costcenter;
     }
@@ -587,7 +609,7 @@ final class ApiController extends Controller
             $request->getDataString('content') ?? '',
             ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? ISO639x1Enum::_EN
         );
-        $costobject->unit = $request->getDataInt('unit') ?? 1;
+        $costobject->unit = $request->getDataInt('unit');
 
         return $costobject;
     }
