@@ -19,8 +19,10 @@ use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\AccountL11nMapper;
 use Modules\Accounting\Models\AccountType;
 use Modules\Accounting\Models\CostCenter;
+use Modules\Accounting\Models\CostCenterL11nMapper;
 use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObject;
+use Modules\Accounting\Models\CostObjectL11nMapper;
 use Modules\Accounting\Models\CostObjectMapper;
 use Modules\Accounting\Models\Posting;
 use Modules\Accounting\Models\PostingElement;
@@ -111,7 +113,7 @@ final class ApiController extends Controller
         $person = null;
 
         /** @var \Modules\Billing\Models\Bill $new */
-        if ($new->client !== null) {
+        if (($new->client?->id ?? 0) !== 0) {
             $new->client = \Modules\ClientManagement\Models\ClientMapper::get()
                 ->where('id', $new->client->id)
                 ->execute();
@@ -1014,6 +1016,140 @@ final class ApiController extends Controller
     {
         $val = [];
         if (($val['id'] = !$request->hasData('id'))
+        ) {
+            return $val;
+        }
+
+        return [];
+    }
+
+    /**
+     * Api method to create item attribute l11n
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiCostCenterL11nCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
+    {
+        if (!empty($val = $this->validateCostCenterL11nCreate($request))) {
+            $response->header->status = RequestStatusCode::R_400;
+            $this->createInvalidCreateResponse($request, $response, $val);
+
+            return;
+        }
+
+        $l11n = $this->createCostCenterL11nFromRequest($request);
+        $this->createModel($request->header->account, $l11n, CostCenterL11nMapper::class, 'account_l11n', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $l11n);
+    }
+
+    /**
+     * Method to create item attribute l11n from request.
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return BaseStringL11n
+     *
+     * @since 1.0.0
+     */
+    private function createCostCenterL11nFromRequest(RequestAbstract $request) : BaseStringL11n
+    {
+        $l11n           = new BaseStringL11n();
+        $l11n->ref      = $request->getDataInt('ref') ?? 0;
+        $l11n->language = ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? $request->header->l11n->language;
+        $l11n->content  = $request->getDataString('content') ?? '';
+
+        return $l11n;
+    }
+
+    /**
+     * Validate item attribute l11n create request
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return array<string, bool>
+     *
+     * @since 1.0.0
+     */
+    private function validateCostCenterL11nCreate(RequestAbstract $request) : array
+    {
+        $val = [];
+        if (($val['content'] = !$request->hasData('content'))
+            || ($val['ref'] = !$request->hasData('ref'))
+        ) {
+            return $val;
+        }
+
+        return [];
+    }
+
+    /**
+     * Api method to create item attribute l11n
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiCostObjectL11nCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
+    {
+        if (!empty($val = $this->validateCostObjectL11nCreate($request))) {
+            $response->header->status = RequestStatusCode::R_400;
+            $this->createInvalidCreateResponse($request, $response, $val);
+
+            return;
+        }
+
+        $l11n = $this->createCostObjectL11nFromRequest($request);
+        $this->createModel($request->header->account, $l11n, CostObjectL11nMapper::class, 'account_l11n', $request->getOrigin());
+        $this->createStandardCreateResponse($request, $response, $l11n);
+    }
+
+    /**
+     * Method to create item attribute l11n from request.
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return BaseStringL11n
+     *
+     * @since 1.0.0
+     */
+    private function createCostObjectL11nFromRequest(RequestAbstract $request) : BaseStringL11n
+    {
+        $l11n           = new BaseStringL11n();
+        $l11n->ref      = $request->getDataInt('ref') ?? 0;
+        $l11n->language = ISO639x1Enum::tryFromValue($request->getDataString('language')) ?? $request->header->l11n->language;
+        $l11n->content  = $request->getDataString('content') ?? '';
+
+        return $l11n;
+    }
+
+    /**
+     * Validate item attribute l11n create request
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return array<string, bool>
+     *
+     * @since 1.0.0
+     */
+    private function validateCostObjectL11nCreate(RequestAbstract $request) : array
+    {
+        $val = [];
+        if (($val['content'] = !$request->hasData('content'))
+            || ($val['ref'] = !$request->hasData('ref'))
         ) {
             return $val;
         }

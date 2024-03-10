@@ -195,6 +195,17 @@ return [
             ],
         ],
     ],
+    '^.*/accounting/costcenter/create(\?.*$|$)' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterCreate',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::CREATE,
+                'state'  => PermissionCategory::COST_CENTER,
+            ],
+        ],
+    ],
     '^.*/accounting/costobject/view(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectView',
@@ -202,6 +213,17 @@ return [
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::COST_OBJECT,
+            ],
+        ],
+    ],
+    '^.*/accounting/costobject/create(\?.*$|$)' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostObjectCreate',
+            'verb'       => RouteVerb::GET,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::CREATE,
                 'state'  => PermissionCategory::COST_OBJECT,
             ],
         ],

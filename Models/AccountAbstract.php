@@ -55,6 +55,49 @@ class AccountAbstract
      */
     public ?int $summaryAccount = null;
 
+    // Tax accounts can be defined in:
+    //      1. Account (gross postings are automatically split)
+    //      2. Tax code
+    //      3. Tax combination
+    public ?int $taxAccount1 = null;
+
+    public ?int $taxAccount2 = null;
+
+    public int $taxCodeRequirement = RequirementType::ALLOWED;
+    public ?int $defaultTaxCode = null;
+    public ?int $mandatoryTaxCode = null;
+
+    public int $costCenterRequirement = RequirementType::ALLOWED;
+    public ?int $defaultCostCenter = null;
+    public ?int $mandatoryCostCenter = null;
+
+    public int $costObjectRequirement = RequirementType::ALLOWED;
+    public ?int $defaultCostObject = null;
+    public ?int $mandatoryCostObject = null;
+
+    // Indicators and report position for different reports (e.g. EÜR, ZM, UVA, OSS)
+    public array $reportIndicators = [];
+
+    public bool $manualPosting = true;
+
+    public string $currency = '';
+
+    public bool $isConfidential = false;
+
+    public bool $isMoneyAccount = false;
+
+    public bool $isCashflowAccount = false;
+
+    public bool $hasOpenPositions = false;
+
+    public bool $createOpeningBalancePosting = false;
+
+    public int $status = AccountStatus::ACTIVE;
+
+    public ?\DateTime $start = null;
+
+    public ?\DateTime $end = null;
+
     /**
      * Type.
      *

@@ -15,8 +15,14 @@ declare(strict_types=1);
 namespace Modules\Accounting\Controller;
 
 use Modules\Accounting\Models\AccountAbstractMapper;
+use Modules\Accounting\Models\AccountL11nMapper;
+use Modules\Accounting\Models\CostCenterL11nMapper;
 use Modules\Accounting\Models\CostCenterMapper;
+use Modules\Accounting\Models\CostObjectL11nMapper;
 use Modules\Accounting\Models\CostObjectMapper;
+use Modules\Accounting\Models\NullAccountAbstract;
+use Modules\Accounting\Models\NullCostCenter;
+use Modules\Accounting\Models\NullCostObject;
 use Modules\Auditor\Models\AuditMapper;
 use Modules\ClientManagement\Models\Attribute\ClientAttributeTypeMapper;
 use Modules\ClientManagement\Models\ClientMapper;
@@ -229,11 +235,96 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
+    public function viewAccountView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-view');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+
+        $view->data['account'] = AccountAbstractMapper::get()
+            ->with('parent')
+            ->with('l11n')
+            ->where('id', (int) $request->getData('id'))
+            ->where('l11n/language', $response->header->l11n->language)
+            ->execute();
+
+        $view->data['l11nView'] = new \Web\Backend\Views\L11nView($this->app->l11nManager, $request, $response);
+
+        /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
+        $l11nValues = AccountL11nMapper::getAll()
+            ->where('ref', $view->data['account']->id)
+            ->execute();
+
+        $view->data['l11nValues'] = $l11nValues;
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behavior.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
     public function viewCOACreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-create');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/coa-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+
+        $view->data['account'] = new NullAccountAbstract();
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behavior.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewCostObjectCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-view');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response);
+
+        $view->data['costobject'] = new NullCostObject();
+
+        return $view;
+    }
+
+    /**
+     * Routing end-point for application behavior.
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return RenderableInterface
+     *
+     * @since 1.0.0
+     * @codeCoverageIgnore
+     */
+    public function viewCostCenterCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    {
+        $view = new View($this->app->l11nManager, $request, $response);
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-view');
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response);
+
+        $view->data['costcenter'] = new NullCostCenter();
 
         return $view;
     }
@@ -254,7 +345,23 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-view');
-        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response);
+
+        $view->data['costcenter'] = CostCenterMapper::get()
+            ->with('parent')
+            ->with('l11n')
+            ->where('id', (int) $request->getData('id'))
+            ->where('l11n/language', $response->header->l11n->language)
+            ->execute();
+
+        $view->data['l11nView'] = new \Web\Backend\Views\L11nView($this->app->l11nManager, $request, $response);
+
+        /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
+        $l11nValues = CostCenterL11nMapper::getAll()
+            ->where('ref', $view->data['costcenter']->id)
+            ->execute();
+
+        $view->data['l11nValues'] = $l11nValues;
 
         return $view;
     }
@@ -275,7 +382,25 @@ final class BackendController extends Controller
     {
         $view = new View($this->app->l11nManager, $request, $response);
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-view');
-        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
+        $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response);
+
+        $view->data['costobject'] = CostObjectMapper::get()
+            ->with('parent')
+            ->with('l11n')
+            ->where('id', (int) $request->getData('id'))
+            ->where('l11n/language', $response->header->l11n->language)
+            ->execute();
+
+        $view->data['l11nView'] = new \Web\Backend\Views\L11nView($this->app->l11nManager, $request, $response);
+
+        /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
+        $l11nValues = CostObjectL11nMapper::getAll()
+            ->where('ref', $view->data['costobject']->id)
+            ->execute();
+
+        $view->data['l11nValues'] = $l11nValues;
+
+        return $view;
 
         return $view;
     }
