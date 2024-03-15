@@ -1,11 +1,10 @@
-<?php
+<?php declare(strict_types=1);
 
 use phpOMS\Uri\UriFactory;
 
 $costcenter = $this->data['costcenter'];
 
 $isNew = $costcenter->id === 0;
-
 
 /** @var \phpOMS\Views\View $this */
 echo $this->data['nav']->render(); ?>

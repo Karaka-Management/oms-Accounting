@@ -64,15 +64,21 @@ class AccountAbstract
     public ?int $taxAccount2 = null;
 
     public int $taxCodeRequirement = RequirementType::ALLOWED;
+
     public ?int $defaultTaxCode = null;
+
     public ?int $mandatoryTaxCode = null;
 
     public int $costCenterRequirement = RequirementType::ALLOWED;
+
     public ?int $defaultCostCenter = null;
+
     public ?int $mandatoryCostCenter = null;
 
     public int $costObjectRequirement = RequirementType::ALLOWED;
+
     public ?int $defaultCostObject = null;
+
     public ?int $mandatoryCostObject = null;
 
     // Indicators and report position for different reports (e.g. EÜR, ZM, UVA, OSS)

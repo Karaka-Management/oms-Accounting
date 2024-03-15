@@ -24,6 +24,6 @@ return ['Navigation' => [
     'Entries'         => 'Einträge',
     'Postings'        => 'Buchungen',
     'Predefined'      => 'Vordefiniert',
-    'Suppliers'      => 'Lieferanten',
-    'Clients'      => 'Kunden',
+    'Suppliers'       => 'Lieferanten',
+    'Clients'         => 'Kunden',
 ]];

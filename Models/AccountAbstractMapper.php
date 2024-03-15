@@ -36,12 +36,14 @@ class AccountAbstractMapper extends DataMapperFactory
      * @since 1.0.0
      */
     public const COLUMNS = [
-        'accounting_account_id'      => ['name' => 'accounting_account_id',           'type' => 'int',      'internal' => 'id'],
-        'accounting_account_code'    => ['name' => 'accounting_account_code',        'type' => 'string',   'internal' => 'code', 'autocomplete' => true],
-        'accounting_account_type'    => ['name' => 'accounting_account_type',        'type' => 'int',   'internal' => 'type'],
-        'accounting_account_parent'  => ['name' => 'accounting_account_parent',        'type' => 'int',   'internal' => 'parent'],
-        'accounting_account_account' => ['name' => 'accounting_account_account',        'type' => 'int',   'internal' => 'account'],
-        'accounting_account_unit' => ['name' => 'accounting_account_unit',        'type' => 'int',   'internal' => 'unit'],
+        'accounting_account_id'           => ['name' => 'accounting_account_id',           'type' => 'int',      'internal' => 'id'],
+        'accounting_account_code'         => ['name' => 'accounting_account_code',        'type' => 'string',   'internal' => 'code', 'autocomplete' => true],
+        'accounting_account_type'         => ['name' => 'accounting_account_type',        'type' => 'int',   'internal' => 'type'],
+        'accounting_account_parent'       => ['name' => 'accounting_account_parent',        'type' => 'int',   'internal' => 'parent'],
+        'accounting_account_account'      => ['name' => 'accounting_account_account',        'type' => 'int',   'internal' => 'account'],
+        'accounting_account_unit'         => ['name' => 'accounting_account_unit',        'type' => 'int',   'internal' => 'unit'],
+        'accounting_account_tax1_account' => ['name' => 'accounting_account_tax1_account',        'type' => 'int',   'internal' => 'taxAccount1'],
+        'accounting_account_tax2_account' => ['name' => 'accounting_account_tax2_account',        'type' => 'int',   'internal' => 'taxAccount2'],
     ];
 
     /**

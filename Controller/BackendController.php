@@ -401,8 +401,6 @@ final class BackendController extends Controller
         $view->data['l11nValues'] = $l11nValues;
 
         return $view;
-
-        return $view;
     }
 
     /**

@@ -57,6 +57,13 @@ class PostingElement
 
     public int $posting = 0;
 
+    // @todo Create some hard values similar to bill and bill element for taxCode, customer/supplier taxId, ...
+
+    /**
+     * Constructor.
+     *
+     * @since 1.0.0
+     */
     public function __construct()
     {
         $this->createdAt       = new \DateTimeImmutable('now');

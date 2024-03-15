@@ -14,6 +14,7 @@ declare(strict_types=1);
 
 namespace Modules\Accounting\Admin;
 
+use Modules\Accounting\Models\AccountAbstractMapper;
 use Modules\Accounting\Models\AccountType;
 use phpOMS\Application\ApplicationAbstract;
 use phpOMS\Config\SettingsInterface;
@@ -79,7 +80,7 @@ final class Installer extends InstallerAbstract
 
             if ($c === 2) {
                 $definitions = $line;
-                $languages   = \count($definitions) - 19;
+                $languages   = \count($definitions) - 21;
             }
 
             if ($c < 3) {
@@ -91,8 +92,25 @@ final class Installer extends InstallerAbstract
 
             $request->header->account = 1;
             $request->setData('code', $line[0]);
-            $request->setData('content', \trim($line[19]));
-            $request->setData('language', $definitions[19]);
+            $request->setData('content', \trim($line[21]));
+            $request->setData('language', $definitions[21]);
+
+            $tax1 = AccountAbstractMapper::get()
+                ->where('code', (string) $line[14])
+                ->execute();
+
+            if ($tax1->id !== 0) {
+                $request->setData('tax1', $tax1->id);
+            }
+
+            $tax2 = AccountAbstractMapper::get()
+                ->where('code', (string) $line[15])
+                ->execute();
+
+            if ($tax2->id !== 0) {
+                $request->setData('tax2', $tax2->id);
+            }
+
             $module->apiAccountCreate($request, $response);
 
             $responseData = $response->getData('');
@@ -112,8 +130,8 @@ final class Installer extends InstallerAbstract
 
                 $request->header->account = 1;
                 $request->setData('ref', $accountId);
-                $request->setData('content', \trim($line[19 + $i]));
-                $request->setData('language', $definitions[19 + $i]);
+                $request->setData('content', \trim($line[21 + $i]));
+                $request->setData('language', $definitions[21 + $i]);
                 $module->apiAccountL11nCreate($request, $response);
             }
         }

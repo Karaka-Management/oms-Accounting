@@ -33,6 +33,22 @@
                 "foreignTable": "account",
                 "foreignKey": "account_id"
             },
+            "accounting_account_tax1_account": {
+                "name": "accounting_account_tax1_account",
+                "type": "INT",
+                "default": null,
+                "null": true,
+                "foreignTable": "accounting_account",
+                "foreignKey": "accounting_account_id"
+            },
+            "accounting_account_tax2_account": {
+                "name": "accounting_account_tax2_account",
+                "type": "INT",
+                "default": null,
+                "null": true,
+                "foreignTable": "accounting_account",
+                "foreignKey": "accounting_account_id"
+            },
             "accounting_account_unit": {
                 "name": "accounting_account_unit",
                 "type": "INT",

@@ -24,6 +24,7 @@ use Modules\Accounting\Models\CostCenterMapper;
 use Modules\Accounting\Models\CostObject;
 use Modules\Accounting\Models\CostObjectL11nMapper;
 use Modules\Accounting\Models\CostObjectMapper;
+use Modules\Accounting\Models\NullAccountAbstract;
 use Modules\Accounting\Models\Posting;
 use Modules\Accounting\Models\PostingElement;
 use Modules\Accounting\Models\PostingMapper;
@@ -31,6 +32,7 @@ use Modules\Accounting\Models\PostingSide;
 use Modules\Admin\Models\AccountMapper;
 use Modules\Admin\Models\NullAccount;
 use Modules\Billing\Models\BillStatus;
+use Modules\Finance\Models\TaxCodeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeTypeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeValueMapper;
 use phpOMS\Localization\BaseStringL11n;
@@ -146,7 +148,7 @@ final class ApiController extends Controller
         $firstElement->createdBy = new NullAccount($account);
         $firstElement->unit      = $posting->unit;
         $firstElement->account   = $finAcc;
-        $firstElement->value     = $new->grossSales->getInt();
+        $firstElement->value     = \abs($new->grossSales->getInt());
 
         if ($type === 'client') {
             $firstElement->type = $new->grossSales->getInt() > 0
@@ -165,17 +167,132 @@ final class ApiController extends Controller
         //      https://github.com/Karaka-Management/oms-Accounting/issues/10
         foreach ($new->elements as $element) {
             // handle pl account from bill
-            // handle taxes
-            $postingElement            = new PostingElement();
-            $postingElement->createdBy = new NullAccount($account);
-            $postingElement->unit      = $posting->unit;
-            $postingElement->account   = $finAcc;
-            $postingElement->value     = $element->totalSalesPriceGross->getInt();
-            $postingElement->type      = $firstElement->type === PostingSide::DEBIT
-                ? PostingSide::CREDIT
-                : PostingSide::DEBIT;
+            $elementAcc = AccountAbstractMapper::get()
+                ->where('code', $element->fiAccount)
+                ->execute();
+
+            $costCenter = CostCenterMapper::get()
+                ->where('code', $element->costcenter)
+                ->execute();
+
+            $costObject = CostObjectMapper::get()
+                ->where('code', $element->costobject)
+                ->execute();
+
+            $postingElement             = new PostingElement();
+            $postingElement->createdBy  = new NullAccount($account);
+            $postingElement->unit       = $posting->unit;
+            $postingElement->account    = $elementAcc;
+            $postingElement->value      = \abs($element->totalListPriceNet->getInt());
+            $postingElement->costcenter = $costCenter;
+            $postingElement->costobject = $costObject;
+
+            if ($element->totalSalesPriceNet->getInt() > 0) {
+                $postingElement->type = $firstElement->type === PostingSide::DEBIT
+                    ? PostingSide::CREDIT
+                    : PostingSide::DEBIT;
+            } else {
+                $postingElement->type = $firstElement->type;
+            }
 
             $posting->elements[] = $postingElement;
+
+            // @todo Since this is an automatic posting we should be able to combine net+tax posting,
+            //      at least visually into one posting line. e.g. EUR 119 M19 instead of 2.
+            //      Maybe there needs to be a ref to another posting line so that the frontend knows that this tax posting
+            //      should not be shown in the default view
+
+            // handle taxes
+            // Tax accounts can be defined in:
+            //      1. Account
+            //      2. Tax code
+            //      3. Tax combination
+            $taxAcc1 = null;
+            $taxAcc2 = null;
+            if ($elementAcc->taxAccount1 !== null || $elementAcc->taxAccount2 === null) {
+                // Try finding tax accounts by checking primary account
+                if ($elementAcc->taxAccount1 !== null) {
+                    $taxAcc1 = new NullAccountAbstract($elementAcc->taxAccount1);
+                }
+
+                if ($elementAcc->taxAccount2 !== null) {
+                    $taxAcc2 = new NullAccountAbstract($elementAcc->taxAccount2);
+                }
+            } else {
+                // Try finding tax accounts by checking tax code
+                $taxCode = TaxCodeMapper::get()
+                    ->where('abbr', $element->taxCode)
+                    ->execute();
+
+                if ($taxCode->taxAccount1 !== null) {
+                    $taxAcc1 = AccountAbstractMapper::get()
+                        ->where('code', $taxCode->taxAccount1)
+                        ->execute();
+                }
+
+                if ($taxCode->taxAccount2 !== null) {
+                    $taxAcc2 = AccountAbstractMapper::get()
+                        ->where('code', $taxCode->taxAccount2)
+                        ->execute();
+                }
+
+                // Still no tax account found
+                if ($taxAcc1 === null && $taxAcc2 === null) {
+                    // Try finding tax accounts by checking tax combination
+                    $taxAcc1 = AccountAbstractMapper::get()
+                        ->where('code', $element->taxCombination->taxAccount1)
+                        ->execute();
+
+                    $taxAcc2 = AccountAbstractMapper::get()
+                        ->where('code', $element->taxCombination->taxAccount2)
+                        ->execute();
+                }
+            }
+
+            // Swap taxAcc1 and taxAcc2 if credit note
+            if ($element->totalSalesPriceNet->getInt() < 0) {
+                $tmp     = $taxAcc1;
+                $taxAcc1 = $taxAcc2;
+                $taxAcc2 = $tmp;
+            }
+
+            if ($taxAcc1 !== null) {
+                $taxElement1            = new PostingElement();
+                $taxElement1->createdBy = new NullAccount($account);
+                $taxElement1->unit      = $postingElement->unit;
+                $taxElement1->account   = $taxAcc1;
+                $taxElement1->value     = \abs($element->taxP->getInt());
+                $taxElement1->type      = PostingSide::CREDIT;
+
+                $posting->elements[] = $taxElement1;
+            }
+
+            if ($taxAcc2 !== null) {
+                $taxElement2            = new PostingElement();
+                $taxElement2->createdBy = new NullAccount($account);
+                $taxElement2->unit      = $postingElement->unit;
+                $taxElement2->account   = $taxAcc2;
+                $taxElement2->value     = \abs($element->taxP->getInt());
+                $taxElement2->type      = PostingSide::DEBIT;
+
+                $posting->elements[] = $taxElement2;
+            }
+
+            // Handle discount
+            if ($element->totalListPriceNet->value !== $element->totalSalesPriceNet->value) {
+                $discountElement            = new PostingElement();
+                $discountElement->createdBy = new NullAccount($account);
+                $discountElement->unit      = $posting->unit;
+                $discountElement->account   = empty($element->taxCombination->discountAccount)
+                    ? $elementAcc
+                    : $element->taxCombination->discountAccount;
+                $discountElement->value      = \abs($element->totalListPriceNet->value - $element->totalSalesPriceNet->value);
+                $discountElement->costcenter = $costCenter;
+                $discountElement->costobject = $costObject;
+                $discountElement->type       = $firstElement->type;
+
+                $posting->elements[] = $discountElement;
+            }
         }
 
         // check debit === credit
@@ -186,6 +303,25 @@ final class ApiController extends Controller
         $this->createModel($account, $posting, PostingMapper::class, 'posting-bill', $ip);
     }
 
+    /**
+     * A hook which creates a personal account.
+     *
+     * Usually called by ClientManagement or SupplierManagement (maybe even HR)
+     *
+     * @param int    $account Account who created the model
+     * @param mixed  $old     Old value
+     * @param mixed  $new     New value (unused, should be null)
+     * @param int    $type    Module model type
+     * @param string $trigger What triggered this log?
+     * @param string $module  Module name
+     * @param string $ref     Reference to other model
+     * @param string $content Message
+     * @param string $ip      Ip
+     *
+     * @return void
+     *
+     * @since 1.0.0
+     */
     public function hookPersonalAccountCreate(
         int $account,
         mixed $old,
@@ -279,9 +415,11 @@ final class ApiController extends Controller
      */
     private function createAccountFromRequest(RequestAbstract $request) : AccountAbstract
     {
-        $account          = new AccountAbstract();
-        $account->code    = $request->getDataString('code') ?? '';
-        $account->account = $request->getDataInt('account');
+        $account              = new AccountAbstract();
+        $account->code        = $request->getDataString('code') ?? '';
+        $account->account     = $request->getDataInt('account');
+        $account->taxAccount1 = $request->getDataInt('tax1');
+        $account->taxAccount2 = $request->getDataInt('tax2');
 
         if ($request->hasData('content')) {
             $account->setL11n(
