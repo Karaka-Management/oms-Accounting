@@ -162,7 +162,7 @@ final class Installer extends InstallerAbstract
             ? AccountType::DEBITOR
             : AccountType::CREDITOR;
 
-        foreach ($mapper::yield()->execute() as $person) {
+        foreach ($mapper::yield()->executeYield() as $person) {
             $response = new HttpResponse();
             $request  = new HttpRequest();
 
