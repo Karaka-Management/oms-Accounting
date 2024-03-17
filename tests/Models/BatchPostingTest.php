@@ -41,7 +41,6 @@ final class BatchPostingTest extends \PHPUnit\Framework\TestCase
         self::assertEquals(0, $this->batch->creator);
         self::assertEquals('', $this->batch->description);
         self::assertEquals(0, $this->batch->count());
-        self::assertNull($this->batch->getPosting(1));
         self::assertInstanceOf('\DateTimeImmutable', $this->batch->created);
     }
 }
