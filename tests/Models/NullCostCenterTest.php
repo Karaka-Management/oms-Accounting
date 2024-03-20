@@ -19,31 +19,23 @@ use Modules\Accounting\Models\NullCostCenter;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\NullCostCenter::class)]
 final class NullCostCenterTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @covers \Modules\Accounting\Models\NullCostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testNull() : void
     {
         self::assertInstanceOf('\Modules\Accounting\Models\CostCenter', new NullCostCenter());
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\NullCostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testId() : void
     {
         $null = new NullCostCenter(2);
         self::assertEquals(2, $null->id);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\NullCostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testJsonSerialize() : void
     {
         $null = new NullCostCenter(2);

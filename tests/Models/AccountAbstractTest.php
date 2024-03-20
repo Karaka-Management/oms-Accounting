@@ -17,10 +17,9 @@ namespace Modules\Accounting\tests\Models;
 use Modules\Accounting\Models\AccountAbstract;
 
 /**
- * @testdox Modules\Accounting\tests\Models\AccountAbstractTest: Account abstraction
- *
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\TestDox('Modules\Accounting\tests\Models\AccountAbstractTest: Account abstraction')]
 final class AccountAbstractTest extends \PHPUnit\Framework\TestCase
 {
     private $class = null;

@@ -22,8 +22,8 @@ trait ApiControllerBatchEntryTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiBatchEntryCreate() : void
     {
        $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiBatchEntryCreateInvalid() : void
     {
        $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiBatchEntryUpdate() : void
     {
        $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiBatchEntryUpdateInvalid() : void
     {
        $response = new HttpResponse();
@@ -90,8 +90,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiRecurringEntryCreate() : void
     {
        $response = new HttpResponse();
@@ -108,8 +108,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiRecurringEntryCreateInvalid() : void
     {
        $response = new HttpResponse();
@@ -124,8 +124,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiRecurringEntryUpdate() : void
     {
        $response = new HttpResponse();
@@ -142,8 +142,8 @@ trait ApiControllerBatchEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiRecurringEntryUpdateInvalid() : void
     {
        $response = new HttpResponse();

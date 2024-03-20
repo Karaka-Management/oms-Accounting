@@ -22,12 +22,10 @@ use phpOMS\Localization\ISO639x1Enum;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\CostObjectMapper::class)]
 final class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
 {
-    /**
-     * @covers \Modules\Accounting\Models\CostObjectMapper
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testCR() : void
     {
         $costobject                    = new CostObject();

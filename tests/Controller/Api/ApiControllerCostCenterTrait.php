@@ -22,8 +22,8 @@ trait ApiControllerCostCenterTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostCenterCreate() : void
     {
        $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerCostCenterTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostCenterCreateInvalid() : void
     {
        $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerCostCenterTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostCenterUpdate() : void
     {
        $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerCostCenterTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostCenterUpdateInvalid() : void
     {
        $response = new HttpResponse();

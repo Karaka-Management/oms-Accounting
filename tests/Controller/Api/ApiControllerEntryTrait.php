@@ -22,8 +22,8 @@ trait ApiControllerEntryTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiEntryCreate() : void
     {
         $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiEntryCreateInvalidData() : void
     {
         $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiEntryUpdate() : void
     {
         $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerEntryTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiEntryUpdateInvalidData() : void
     {
         $response = new HttpResponse();

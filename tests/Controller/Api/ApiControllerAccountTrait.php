@@ -22,8 +22,8 @@ trait ApiControllerAccountTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiAccountCreate() : void
     {
         $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerAccountTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiAccountCreateInvalid() : void
     {
         $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerAccountTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiAccountUpdate() : void
     {
         $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerAccountTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiAccountUpdateInvalid() : void
     {
         $response = new HttpResponse();

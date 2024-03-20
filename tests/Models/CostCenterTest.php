@@ -19,6 +19,7 @@ use Modules\Accounting\Models\CostCenter;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\CostCenter::class)]
 final class CostCenterTest extends \PHPUnit\Framework\TestCase
 {
     private CostCenter $cc;
@@ -31,10 +32,7 @@ final class CostCenterTest extends \PHPUnit\Framework\TestCase
         $this->cc = new CostCenter();
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\CostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testDefault() : void
     {
         self::assertEquals(0, $this->cc->id);
@@ -42,30 +40,21 @@ final class CostCenterTest extends \PHPUnit\Framework\TestCase
         self::assertNull($this->cc->parent);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\CostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testCodeInputOutput() : void
     {
         $this->cc->code = 'TestCode';
         self::assertEquals('TestCode', $this->cc->code);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\CostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testParentInputOutput() : void
     {
         $this->cc->parent = 1;
         self::assertEquals(1, $this->cc->parent);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\CostCenter
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testSerialize() : void
     {
         $this->cc->code = '123';

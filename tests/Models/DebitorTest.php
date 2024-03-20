@@ -19,6 +19,7 @@ use Modules\Accounting\Models\Debitor;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\Debitor::class)]
 final class DebitorTest extends \PHPUnit\Framework\TestCase
 {
     private Debitor $debitor;
@@ -31,19 +32,13 @@ final class DebitorTest extends \PHPUnit\Framework\TestCase
         $this->debitor = new Debitor();
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\Debitor
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testDefault() : void
     {
         self::assertEquals(0, $this->debitor->id);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\Debitor
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testSerialize() : void
     {
         self::assertEquals(

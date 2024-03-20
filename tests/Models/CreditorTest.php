@@ -19,6 +19,7 @@ use Modules\Accounting\Models\Creditor;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\Creditor::class)]
 final class CreditorTest extends \PHPUnit\Framework\TestCase
 {
     private Creditor $creditor;
@@ -31,19 +32,13 @@ final class CreditorTest extends \PHPUnit\Framework\TestCase
         $this->creditor = new Creditor();
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\Creditor
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testDefault() : void
     {
         self::assertEquals(0, $this->creditor->id);
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\Creditor
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testSerialize() : void
     {
         self::assertEquals(

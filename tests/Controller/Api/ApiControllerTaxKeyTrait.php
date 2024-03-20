@@ -22,8 +22,8 @@ trait ApiControllerTaxKeyTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiTaxKeyCreate() : void
     {
        $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerTaxKeyTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiTaxKeyCreateInvalid() : void
     {
        $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerTaxKeyTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiTaxKeyUpdate() : void
     {
        $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerTaxKeyTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiTaxKeyUpdateInvalid() : void
     {
        $response = new HttpResponse();

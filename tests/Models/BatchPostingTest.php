@@ -19,6 +19,7 @@ use Modules\Accounting\Models\BatchPosting;
 /**
  * @internal
  */
+#[\PHPUnit\Framework\Attributes\CoversClass(\Modules\Accounting\Models\BatchPosting::class)]
 final class BatchPostingTest extends \PHPUnit\Framework\TestCase
 {
     private BatchPosting $batch;
@@ -31,10 +32,7 @@ final class BatchPostingTest extends \PHPUnit\Framework\TestCase
         $this->batch = new BatchPosting();
     }
 
-    /**
-     * @covers \Modules\Accounting\Models\BatchPosting
-     * @group module
-     */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testDefault() : void
     {
         self::assertEquals(0, $this->batch->id);

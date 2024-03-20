@@ -22,8 +22,8 @@ trait ApiControllerCostObjectTrait
 {
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostObjectCreate() : void
     {
        $response = new HttpResponse();
@@ -40,8 +40,8 @@ trait ApiControllerCostObjectTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostObjectCreateInvalid() : void
     {
        $response = new HttpResponse();
@@ -56,8 +56,8 @@ trait ApiControllerCostObjectTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostObjectUpdate() : void
     {
        $response = new HttpResponse();
@@ -74,8 +74,8 @@ trait ApiControllerCostObjectTrait
 
     /**
      * @covers \Modules\Accounting\Controller\ApiController
-     * @group module
      */
+    #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testApiCostObjectUpdateInvalid() : void
     {
        $response = new HttpResponse();
