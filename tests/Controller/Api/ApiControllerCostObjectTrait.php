@@ -21,7 +21,7 @@ use phpOMS\Message\Http\RequestStatusCode;
 trait ApiControllerCostObjectTrait
 {
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiCostObjectCreate() : void
@@ -39,7 +39,7 @@ trait ApiControllerCostObjectTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiCostObjectCreateInvalid() : void
@@ -55,7 +55,7 @@ trait ApiControllerCostObjectTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiCostObjectUpdate() : void
@@ -73,7 +73,7 @@ trait ApiControllerCostObjectTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiCostObjectUpdateInvalid() : void

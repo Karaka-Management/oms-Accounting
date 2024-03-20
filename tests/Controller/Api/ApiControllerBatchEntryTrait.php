@@ -21,7 +21,7 @@ use phpOMS\Message\Http\RequestStatusCode;
 trait ApiControllerBatchEntryTrait
 {
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiBatchEntryCreate() : void
@@ -39,7 +39,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiBatchEntryCreateInvalid() : void
@@ -55,7 +55,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiBatchEntryUpdate() : void
@@ -73,7 +73,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiBatchEntryUpdateInvalid() : void
@@ -89,7 +89,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiRecurringEntryCreate() : void
@@ -107,7 +107,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiRecurringEntryCreateInvalid() : void
@@ -123,7 +123,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiRecurringEntryUpdate() : void
@@ -141,7 +141,7 @@ trait ApiControllerBatchEntryTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiRecurringEntryUpdateInvalid() : void

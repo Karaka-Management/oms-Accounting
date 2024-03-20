@@ -32,7 +32,7 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\CostObject
+     * @covers \Modules\Accounting\Models\CostObject
      * @group module
      */
     public function testDefault() : void
@@ -43,7 +43,7 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\CostObject
+     * @covers \Modules\Accounting\Models\CostObject
      * @group module
      */
     public function testCodeInputOutput() : void
@@ -53,7 +53,7 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\CostObject
+     * @covers \Modules\Accounting\Models\CostObject
      * @group module
      */
     public function testParentInputOutput() : void
@@ -63,7 +63,7 @@ final class CostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\CostObject
+     * @covers \Modules\Accounting\Models\CostObject
      * @group module
      */
     public function testSerialize() : void

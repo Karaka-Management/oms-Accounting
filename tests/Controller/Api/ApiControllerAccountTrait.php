@@ -21,7 +21,7 @@ use phpOMS\Message\Http\RequestStatusCode;
 trait ApiControllerAccountTrait
 {
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiAccountCreate() : void
@@ -39,7 +39,7 @@ trait ApiControllerAccountTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiAccountCreateInvalid() : void
@@ -55,7 +55,7 @@ trait ApiControllerAccountTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiAccountUpdate() : void
@@ -73,7 +73,7 @@ trait ApiControllerAccountTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiAccountUpdateInvalid() : void

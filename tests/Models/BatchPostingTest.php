@@ -32,7 +32,7 @@ final class BatchPostingTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\BatchPosting
+     * @covers \Modules\Accounting\Models\BatchPosting
      * @group module
      */
     public function testDefault() : void

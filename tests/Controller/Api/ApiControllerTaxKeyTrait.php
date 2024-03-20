@@ -21,7 +21,7 @@ use phpOMS\Message\Http\RequestStatusCode;
 trait ApiControllerTaxKeyTrait
 {
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiTaxKeyCreate() : void
@@ -39,7 +39,7 @@ trait ApiControllerTaxKeyTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiTaxKeyCreateInvalid() : void
@@ -55,7 +55,7 @@ trait ApiControllerTaxKeyTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiTaxKeyUpdate() : void
@@ -73,7 +73,7 @@ trait ApiControllerTaxKeyTrait
     }
 
     /**
-     * @covers Modules\Accounting\Controller\ApiController
+     * @covers \Modules\Accounting\Controller\ApiController
      * @group module
      */
     public function testApiTaxKeyUpdateInvalid() : void

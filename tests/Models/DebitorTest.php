@@ -32,7 +32,7 @@ final class DebitorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\Debitor
+     * @covers \Modules\Accounting\Models\Debitor
      * @group module
      */
     public function testDefault() : void
@@ -41,7 +41,7 @@ final class DebitorTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\Debitor
+     * @covers \Modules\Accounting\Models\Debitor
      * @group module
      */
     public function testSerialize() : void

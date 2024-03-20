@@ -22,7 +22,7 @@ use Modules\Accounting\Models\NullCostObject;
 final class NullCostObjectTest extends \PHPUnit\Framework\TestCase
 {
     /**
-     * @covers Modules\Accounting\Models\NullCostObject
+     * @covers \Modules\Accounting\Models\NullCostObject
      * @group module
      */
     public function testNull() : void
@@ -31,7 +31,7 @@ final class NullCostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\NullCostObject
+     * @covers \Modules\Accounting\Models\NullCostObject
      * @group module
      */
     public function testId() : void
@@ -41,7 +41,7 @@ final class NullCostObjectTest extends \PHPUnit\Framework\TestCase
     }
 
     /**
-     * @covers Modules\Accounting\Models\NullCostObject
+     * @covers \Modules\Accounting\Models\NullCostObject
      * @group module
      */
     public function testJsonSerialize() : void
