@@ -22,6 +22,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiAccountCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -31,6 +32,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiAccountUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -42,6 +44,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiAccountL11nCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -51,6 +54,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiAccountL11nUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -63,6 +67,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostCenterCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -72,6 +77,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostCenterUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -83,6 +89,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostCenterL11nCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -92,6 +99,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostCenterL11nUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -104,6 +112,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostObjectCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -113,6 +122,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostObjectUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -124,6 +134,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostObjectL11nCreate',
             'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,
@@ -133,6 +144,7 @@ return [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostObjectL11nUpdate',
             'verb'       => RouteVerb::SET,
+            'csrf'       => true,
             'permission' => [
                 'module' => ApiController::NAME,
                 'type'   => PermissionType::CREATE,

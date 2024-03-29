@@ -11,12 +11,12 @@ echo $this->data['nav']->render(); ?>
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <section class="portlet">
-            <form method="<?= $isNew ? 'PUT' : 'POST'; ?>" action="<?= UriFactory::build('{/api}accounting/costobject'); ?>">
+            <form method="<?= $isNew ? 'PUT' : 'POST'; ?>" action="<?= UriFactory::build('{/api}accounting/costobject?csrf={$CSRF}'); ?>">
                 <div class="portlet-head"><?= $this->getHtml('CostCenter'); ?></div>
                 <div class="portlet-body">
                     <div class="form-group">
                         <label for="iId"><?= $this->getHtml('ID', '0', '0'); ?></label>
-                        <input type="text" name="id" id="iId" value="<?= $this->printHtml($costobject->id); ?>" disabled>
+                        <input type="text" name="id" id="iId" value="<?= $costobject->id; ?>" disabled>
                     </div>
 
                     <div class="form-group">
@@ -51,7 +51,7 @@ echo $this->data['nav']->render(); ?>
     <?= $this->data['l11nView']->render(
         $this->data['l11nValues'],
         [],
-        '{/api}accounting/costobject/l11n'
+        '{/api}accounting/costobject/l11n?csrf={$CSRF}'
     );
     ?>
 </div>
