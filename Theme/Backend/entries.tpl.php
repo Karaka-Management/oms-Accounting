@@ -35,9 +35,9 @@ $footerView->setResults(1);
                             <td><label for="iCostObject"><?= $this->getHtml('CostObject'); ?>
                             <td><label for="iDate"><?= $this->getHtml('Date'); ?>
                         <tr>
-                            <td><span class="input"><button type="button" id="account-start" formaction="" data-action='[{"type": "popup", "tpl": "entry-list-tpl", "aniIn": "fadeIn", "aniOut": "fadeOut", "stay": 1000}]'><i class="g-icon">book</i>
+                            <td><span class="input"><button type="button" id="account-start" formaction=""><i class="g-icon">book</i>
                                     </button><input type="text" id="iAccount" min="1" name="id" required></span>
-                            <td><span class="input"><button type="button" id="contra-start" formaction="" data-action='[{"type": "popup", "tpl": "entry-list-tpl", "aniIn": "fadeIn", "aniOut": "fadeOut", "stay": 1000}]'><i class="g-icon">book</i>
+                            <td><span class="input"><button type="button" id="contra-start" formaction=""><i class="g-icon">book</i>
                                 </button><input type="text" id="iContra" min="1" name="id" required></span>
                             <td><span class="input"><button type="button" formaction=""><i class="g-icon">book</i>
                                     </button><input type="text" id="iCostCenter" min="1" name="id" required></span>
@@ -220,5 +220,3 @@ $footerView->setResults(1);
         </div>
     </div>
 </div>
-
-<?php include __DIR__ . '/account-list.tpl.php'; ?>

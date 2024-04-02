@@ -28,10 +28,10 @@ final class CostCenterMapperTest extends \PHPUnit\Framework\TestCase
     #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testCR() : void
     {
-        $costcenter                    = new CostCenter();
-        $costcenter->code              = '123';
-        $costcenter->l11n = new BaseStringL11n();
-        $costcenter->l11n->name        = 'Test CostCenter';
+        $costcenter                = new CostCenter();
+        $costcenter->code          = '123';
+        $costcenter->l11n          = new BaseStringL11n();
+        $costcenter->l11n->name    = 'Test CostCenter';
         $costcenter->l11n->content = 'Test description';
 
         $id = CostCenterMapper::create()->execute($costcenter);

@@ -218,7 +218,8 @@ final class BackendController extends Controller
         $view->data['accounts'] = AccountAbstractMapper::getAll()
             ->with('l11n')
             ->where('l11n/language', $response->header->l11n->language)
-            ->execute();
+            ->where('account', null)
+            ->executeGetArray();
 
         return $view;
     }
@@ -253,7 +254,7 @@ final class BackendController extends Controller
         /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
         $l11nValues = AccountL11nMapper::getAll()
             ->where('ref', $view->data['account']->id)
-            ->execute();
+            ->executeGetArray();
 
         $view->data['l11nValues'] = $l11nValues;
 
@@ -359,7 +360,7 @@ final class BackendController extends Controller
         /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
         $l11nValues = CostCenterL11nMapper::getAll()
             ->where('ref', $view->data['costcenter']->id)
-            ->execute();
+            ->executeGetArray();
 
         $view->data['l11nValues'] = $l11nValues;
 
@@ -396,7 +397,7 @@ final class BackendController extends Controller
         /** @var \phpOMS\Localization\BaseStringL11n[] $l11nValues */
         $l11nValues = CostObjectL11nMapper::getAll()
             ->where('ref', $view->data['costobject']->id)
-            ->execute();
+            ->executeGetArray();
 
         $view->data['l11nValues'] = $l11nValues;
 
@@ -427,10 +428,10 @@ final class BackendController extends Controller
             ->limit(25);
 
         if ($request->getData('ptype') === 'p') {
-            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '<')
+            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '<')
                 ->execute();
         } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '>')
+            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '>')
                 ->execute();
         } else {
             $view->data['costcenter'] = $mapper->where('id', 0, '>')
@@ -464,10 +465,10 @@ final class BackendController extends Controller
             ->limit(25);
 
         if ($request->getData('ptype') === 'p') {
-            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '<')
+            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '<')
                 ->execute();
         } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('id') ?? 0, '>')
+            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '>')
                 ->execute();
         } else {
             $view->data['costobject'] = $mapper->where('id', 0, '>')
@@ -499,7 +500,7 @@ final class BackendController extends Controller
             ->with('account')
             ->with('mainAddress')
             ->limit(25)
-            ->execute();
+            ->executeGetArray();
 
         $view->data['accounts'] = $accounts;
 
@@ -528,7 +529,7 @@ final class BackendController extends Controller
             ->with('account')
             ->with('mainAddress')
             ->limit(25)
-            ->execute();
+            ->executeGetArray();
 
         $view->data['accounts'] = $accounts;
 
@@ -561,13 +562,54 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
-        $account = SupplierMapper::get()
+        $view->data['account'] = SupplierMapper::get()
             ->with('account')
+            ->with('account/addresses')
+            ->with('account/contacts')
             ->with('mainAddress')
+            ->with('files')->limit(5, 'files')->sort('files/id', OrderType::DESC)
+            ->with('notes')->limit(5, 'notes')->sort('notes/id', OrderType::DESC)
+            ->with('attributes')
+            ->with('attributes/type')
+            ->with('attributes/type/l11n')
+            ->with('attributes/value')
             ->where('id', (int) $request->getData('id'))
             ->execute();
 
-        $view->data['account'] = $account;
+        $view->data['fiAccounts'] = AccountAbstractMapper::getAll()
+            ->where('account', $view->data['account']->account->id)
+            ->executeGetArray();
+
+        $view->data['attributeView']                               = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
+        $view->data['attributeView']->data['default_localization'] = $this->app->l11nServer;
+
+        $view->data['attributeTypes'] = ClientAttributeTypeMapper::getAll()
+            ->with('l11n')
+            ->where('l11n/language', $response->header->l11n->language)
+            ->executeGetArray();
+
+        // Get item profile image
+        // @feature Create a new read mapper function that returns relation models instead of its own model
+        //      https://github.com/Karaka-Management/phpOMS/issues/320
+        $query   = new Builder($this->app->dbPool->get());
+        $results = $query->selectAs(SupplierMapper::HAS_MANY['files']['external'], 'file')
+            ->from(SupplierMapper::TABLE)
+            ->leftJoin(SupplierMapper::HAS_MANY['files']['table'])
+                ->on(SupplierMapper::HAS_MANY['files']['table'] . '.' . SupplierMapper::HAS_MANY['files']['self'], '=', SupplierMapper::TABLE . '.' . SupplierMapper::PRIMARYFIELD)
+            ->leftJoin(MediaMapper::TABLE)
+                ->on(SupplierMapper::HAS_MANY['files']['table'] . '.' . SupplierMapper::HAS_MANY['files']['external'], '=', MediaMapper::TABLE . '.' . MediaMapper::PRIMARYFIELD)
+                ->leftJoin(MediaMapper::HAS_MANY['types']['table'])
+                ->on(MediaMapper::TABLE . '.' . MediaMapper::PRIMARYFIELD, '=', MediaMapper::HAS_MANY['types']['table'] . '.' . MediaMapper::HAS_MANY['types']['self'])
+            ->leftJoin(MediaTypeMapper::TABLE)
+                ->on(MediaMapper::HAS_MANY['types']['table'] . '.' . MediaMapper::HAS_MANY['types']['external'], '=', MediaTypeMapper::TABLE . '.' . MediaTypeMapper::PRIMARYFIELD)
+            ->where(SupplierMapper::HAS_MANY['files']['self'], '=', $view->data['account']->id)
+            ->where(MediaTypeMapper::TABLE . '.' . MediaTypeMapper::getColumnByMember('name'), '=', 'supplier_profile_image');
+
+        $view->data['accountImage'] = MediaMapper::get()
+            ->with('types')
+            ->where('id', $results)
+            ->limit(1)
+            ->execute();
 
         $businessStart = UnitAttributeMapper::get()
             ->with('type')
@@ -578,24 +620,24 @@ final class BackendController extends Controller
 
         $view->data['business_start'] = $businessStart->id === 0 ? 1 : $businessStart->value->getValue();
 
-        $view->data['hasBilling'] = $this->app->moduleManager->isActive('Billing');
+        $view->data['audits'] = AuditMapper::getAll()
+            ->where('type', StringUtils::intHash(ClientMapper::class))
+            ->where('module', 'ClientManagement')
+            ->where('ref', (string) $view->data['account']->id)
+            ->executeGetArray();
 
-        $view->data['attributeView']                               = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
-        $view->data['attributeView']->data['default_localization'] = $this->app->l11nServer;
-
-        /** @var \Modules\Media\Models\Media[] $files */
-        $files = MediaMapper::getAll()
+        $view->data['files'] = MediaMapper::getAll()
             ->with('types')
             ->join('id', ClientMapper::class, 'files') // id = media id, files = client relations
-                ->on('id', $account->id, relation: 'files') // id = item id
-            ->execute();
-
-        $view->data['files'] = $files;
+                ->on('id', $view->data['account']->id, relation: 'files') // id = item id
+            ->executeGetArray();
 
         $view->data['media-upload']      = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
         $view->data['note']              = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);
         $view->data['address-component'] = new \Modules\Admin\Theme\Backend\Components\AddressEditor\AddressView($this->app->l11nManager, $request, $response);
         $view->data['contact-component'] = new \Modules\Admin\Theme\Backend\Components\ContactEditor\ContactView($this->app->l11nManager, $request, $response);
+
+        $view->data['hasBilling'] = $this->app->moduleManager->isActive('Billing');
 
         return $view;
     }
@@ -626,28 +668,31 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/personal-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002604001, $request, $response);
 
-        $account = ClientMapper::get()
+        $view->data['account'] = ClientMapper::get()
             ->with('account')
             ->with('account/addresses')
             ->with('account/contacts')
             ->with('mainAddress')
             ->with('files')->limit(5, 'files')->sort('files/id', OrderType::DESC)
             ->with('notes')->limit(5, 'notes')->sort('notes/id', OrderType::DESC)
+            ->with('attributes')
+            ->with('attributes/type')
+            ->with('attributes/type/l11n')
+            ->with('attributes/value')
             ->where('id', (int) $request->getData('id'))
             ->execute();
 
-        $view->data['account'] = $account;
+        $view->data['fiAccounts'] = AccountAbstractMapper::getAll()
+            ->where('account', $view->data['account']->account->id)
+            ->executeGetArray();
 
         $view->data['attributeView']                               = new \Modules\Attribute\Theme\Backend\Components\AttributeView($this->app->l11nManager, $request, $response);
         $view->data['attributeView']->data['default_localization'] = $this->app->l11nServer;
 
-        /** @var \Modules\Attribute\Models\AttributeType[] $attributeTypes */
-        $attributeTypes = ClientAttributeTypeMapper::getAll()
+        $view->data['attributeTypes'] = ClientAttributeTypeMapper::getAll()
             ->with('l11n')
             ->where('l11n/language', $response->header->l11n->language)
-            ->execute();
-
-        $view->data['attributeTypes'] = $attributeTypes;
+            ->executeGetArray();
 
         // Get item profile image
         // @feature Create a new read mapper function that returns relation models instead of its own model
@@ -663,16 +708,14 @@ final class BackendController extends Controller
                 ->on(MediaMapper::TABLE . '.' . MediaMapper::PRIMARYFIELD, '=', MediaMapper::HAS_MANY['types']['table'] . '.' . MediaMapper::HAS_MANY['types']['self'])
             ->leftJoin(MediaTypeMapper::TABLE)
                 ->on(MediaMapper::HAS_MANY['types']['table'] . '.' . MediaMapper::HAS_MANY['types']['external'], '=', MediaTypeMapper::TABLE . '.' . MediaTypeMapper::PRIMARYFIELD)
-            ->where(ClientMapper::HAS_MANY['files']['self'], '=', $account->id)
+            ->where(ClientMapper::HAS_MANY['files']['self'], '=', $view->data['account']->id)
             ->where(MediaTypeMapper::TABLE . '.' . MediaTypeMapper::getColumnByMember('name'), '=', 'client_profile_image');
 
-        $accountImage = MediaMapper::get()
+        $view->data['accountImage'] = MediaMapper::get()
             ->with('types')
             ->where('id', $results)
             ->limit(1)
             ->execute();
-
-        $view->data['accountImage'] = $accountImage;
 
         $businessStart = UnitAttributeMapper::get()
             ->with('type')
@@ -683,23 +726,17 @@ final class BackendController extends Controller
 
         $view->data['business_start'] = $businessStart->id === 0 ? 1 : $businessStart->value->getValue();
 
-        /** @var \Modules\Auditor\Models\Audit[] $audits */
-        $audits = AuditMapper::getAll()
+        $view->data['audits'] = AuditMapper::getAll()
             ->where('type', StringUtils::intHash(ClientMapper::class))
             ->where('module', 'ClientManagement')
-            ->where('ref', (string) $account->id)
-            ->execute();
+            ->where('ref', (string) $view->data['account']->id)
+            ->executeGetArray();
 
-        $view->data['audits'] = $audits;
-
-        /** @var \Modules\Media\Models\Media[] $files */
-        $files = MediaMapper::getAll()
+        $view->data['files'] = MediaMapper::getAll()
             ->with('types')
             ->join('id', ClientMapper::class, 'files') // id = media id, files = client relations
-                ->on('id', $account->id, relation: 'files') // id = item id
-            ->execute();
-
-        $view->data['files'] = $files;
+                ->on('id', $view->data['account']->id, relation: 'files') // id = item id
+            ->executeGetArray();
 
         $view->data['media-upload']      = new \Modules\Media\Theme\Backend\Components\Upload\BaseView($this->app->l11nManager, $request, $response);
         $view->data['note']              = new \Modules\Editor\Theme\Backend\Components\Note\BaseView($this->app->l11nManager, $request, $response);

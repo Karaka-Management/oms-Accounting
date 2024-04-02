@@ -28,10 +28,10 @@ final class CostObjectMapperTest extends \PHPUnit\Framework\TestCase
     #[\PHPUnit\Framework\Attributes\Group('module')]
     public function testCR() : void
     {
-        $costobject                    = new CostObject();
-        $costobject->code              = '123';
-        $costobject->l11n = new BaseStringL11n();
-        $costobject->l11n->name        = 'Test CostObject';
+        $costobject                = new CostObject();
+        $costobject->code          = '123';
+        $costobject->l11n          = new BaseStringL11n();
+        $costobject->l11n->name    = 'Test CostObject';
         $costobject->l11n->content = 'Test description';
 
         $id = CostObjectMapper::create()->execute($costobject);

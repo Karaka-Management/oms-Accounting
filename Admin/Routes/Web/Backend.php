@@ -18,7 +18,7 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^/accounting/entries(\?.*$|$)' => [
+    '^/accounting/entries/dashboard(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntries',
             'verb'       => RouteVerb::GET,

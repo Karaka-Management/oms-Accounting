@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costcenter = $this->data['costcenter'];
 
-$previous = empty($costcenter) ? '{/base}/accounting/costcenter/list' : '{/base}/accounting/costcenter/list?{?}&id=' . \reset($costcenter)->id . '&ptype=p';
-$next     = empty($costcenter) ? '{/base}/accounting/costcenter/list' : '{/base}/accounting/costcenter/list?{?}&id=' . \end($costcenter)->id . '&ptype=n';
+$previous = empty($costcenter) ? '{/base}/accounting/costcenter/list' : '{/base}/accounting/costcenter/list?{?}&offset=' . \reset($costcenter)->id . '&ptype=p';
+$next     = empty($costcenter) ? '{/base}/accounting/costcenter/list' : '{/base}/accounting/costcenter/list?{?}&offset=' . \end($costcenter)->id . '&ptype=n';
 
 echo $this->data['nav']->render(); ?>
 <div class="row">

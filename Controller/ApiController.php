@@ -349,7 +349,7 @@ final class ApiController extends Controller
         //      https://github.com/Karaka-Management/oms-Accounting/issues/8
 
         $request->header->account = $account;
-        $request->setData('code', $new->number);
+        $request->setData('code', $new->number . '-1');
         $request->setData('content', \rtrim($new->account->name1 . ' ' . $new->account->name2));
         $request->setData('language', ISO639x1Enum::_EN);
         $request->setData('type', $accountType);

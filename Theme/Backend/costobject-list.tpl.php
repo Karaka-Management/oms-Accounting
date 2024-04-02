@@ -20,8 +20,8 @@ use phpOMS\Uri\UriFactory;
  */
 $costobject = $this->data['costobject'];
 
-$previous = empty($costobject) ? '{/base}/accounting/costobject/list' : '{/base}/accounting/costobject/list?{?}&id=' . \reset($costobject)->id . '&ptype=p';
-$next     = empty($costobject) ? '{/base}/accounting/costobject/list' : '{/base}/accounting/costobject/list?{?}&id=' . \end($costobject)->id . '&ptype=n';
+$previous = empty($costobject) ? '{/base}/accounting/costobject/list' : '{/base}/accounting/costobject/list?{?}&offset=' . \reset($costobject)->id . '&ptype=p';
+$next     = empty($costobject) ? '{/base}/accounting/costobject/list' : '{/base}/accounting/costobject/list?{?}&offset=' . \end($costobject)->id . '&ptype=n';
 
 echo $this->data['nav']->render(); ?>
 <div class="row">

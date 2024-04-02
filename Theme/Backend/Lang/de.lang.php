@@ -84,4 +84,10 @@ return ['Accounting' => [
     'Title'           => 'Titel',
     'Net'             => 'Netto',
     'BalanceSheet'    => 'Balance Sheet',
+    'QuickAction'     => 'Aktion',
+    'Status'          => 'Status',
+    'Wire'            => 'Überweisung',
+    'Creditcard'      => 'Kreditkarte',
+    ':status-1'       => 'Aktiv',
+    ':status-2'       => 'Inaktiv',
 ]];
