@@ -21,7 +21,7 @@ echo $this->data['nav']->render(); ?>
 
                     <div class="form-group">
                         <label for="iCode"><?= $this->getHtml('Code'); ?></label>
-                        <input type="text" name="code" id="iCode" value="<?= $this->printHtml($costobject->code); ?>">
+                        <input type="text" name="code" id="iCode" value="<?= $this->printHtml($costobject->code); ?>" required>
                     </div>
 
                     <div class="form-group">
@@ -31,7 +31,7 @@ echo $this->data['nav']->render(); ?>
 
                     <div class="form-group">
                         <label for="iName"><?= $this->getHtml('Name'); ?></label>
-                        <input type="text" name="Name" id="iName" value="<?= $this->printHtml($costobject->getL11n()); ?>" disabled>
+                        <input type="text" name="Name" id="iName" value="<?= $this->printHtml($costobject->getL11n()); ?>"<?php $isNew ? '' : ' disabled'; ?>>
                     </div>
                 </div>
                 <div class="portlet-foot">

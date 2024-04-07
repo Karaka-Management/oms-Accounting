@@ -434,7 +434,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Api method to create item attribute l11n
+     * Api method to create account l11n
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -461,7 +461,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to create item attribute l11n from request.
+     * Method to create account l11n from request.
      *
      * @param RequestAbstract $request Request
      *
@@ -480,7 +480,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Validate item attribute l11n create request
+     * Validate account l11n create request
      *
      * @param RequestAbstract $request Request
      *
@@ -1162,7 +1162,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Api method to create item attribute l11n
+     * Api method to create CostCenter l11n
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -1189,7 +1189,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to create item attribute l11n from request.
+     * Method to create CostCenter l11n from request.
      *
      * @param RequestAbstract $request Request
      *
@@ -1208,7 +1208,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Validate item attribute l11n create request
+     * Validate CostCenter l11n create request
      *
      * @param RequestAbstract $request Request
      *
@@ -1229,7 +1229,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Api method to create item attribute l11n
+     * Api method to create CostObject l11n
      *
      * @param RequestAbstract  $request  Request
      * @param ResponseAbstract $response Response
@@ -1256,7 +1256,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Method to create item attribute l11n from request.
+     * Method to create CostObject l11n from request.
      *
      * @param RequestAbstract $request Request
      *
@@ -1275,7 +1275,7 @@ final class ApiController extends Controller
     }
 
     /**
-     * Validate item attribute l11n create request
+     * Validate CostObject l11n create request
      *
      * @param RequestAbstract $request Request
      *
