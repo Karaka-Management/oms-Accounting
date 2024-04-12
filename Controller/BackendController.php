@@ -422,21 +422,15 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costcenter-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002602001, $request, $response);
 
-        $mapper = CostCenterMapper::getAll()
+        $view->data['costcenter'] = CostCenterMapper::getAll()
             ->with('l11n')
             ->where('l11n/language', $response->header->l11n->language)
-            ->limit(25);
-
-        if ($request->getData('ptype') === 'p') {
-            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '<')
-                ->execute();
-        } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costcenter'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '>')
-                ->execute();
-        } else {
-            $view->data['costcenter'] = $mapper->where('id', 0, '>')
-                ->execute();
-        }
+            ->limit(25)
+            ->paginate(
+                'id',
+                $request->getDataString('ptype') ?? '',
+                $request->getDataInt('offset')
+            )->executeGetArray();
 
         return $view;
     }
@@ -459,21 +453,15 @@ final class BackendController extends Controller
         $view->setTemplate('/Modules/Accounting/Theme/Backend/costobject-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002603001, $request, $response);
 
-        $mapper = CostObjectMapper::getAll()
+        $view->data['costobject'] = CostObjectMapper::getAll()
             ->with('l11n')
             ->where('l11n/language', $response->header->l11n->language)
-            ->limit(25);
-
-        if ($request->getData('ptype') === 'p') {
-            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '<')
-                ->execute();
-        } elseif ($request->getData('ptype') === 'n') {
-            $view->data['costobject'] = $mapper->where('id', $request->getDataInt('offset') ?? 0, '>')
-                ->execute();
-        } else {
-            $view->data['costobject'] = $mapper->where('id', 0, '>')
-                ->execute();
-        }
+            ->limit(25)
+            ->paginate(
+                'id',
+                $request->getDataString('ptype') ?? '',
+                $request->getDataInt('offset')
+            )->executeGetArray();
 
         return $view;
     }
