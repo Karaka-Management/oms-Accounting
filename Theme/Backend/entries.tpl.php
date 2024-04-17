@@ -90,7 +90,7 @@ $footerView->setResults(1);
             <div class="tab">
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="portlet">
+                        <section class="portlet">
                             <div class="portlet-head"><?= $this->getHtml('Entries'); ?><i class="g-icon download btn end-xs">download</i></div>
                             <div class="slider">
                             <table class="default sticky">
@@ -119,7 +119,7 @@ $footerView->setResults(1);
                                         <?php endif; ?>
                             </table>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
@@ -127,7 +127,7 @@ $footerView->setResults(1);
             <div class="tab">
                 <div class="row">
                     <div class="col-xs-4">
-                        <div class="portlet">
+                        <section class="portlet">
                             <div class="portlet-head"><?= $this->getHtml('Accounts'); ?><i class="g-icon download btn end-xs">download</i></div>
                             <div class="slider">
                             <table class="default sticky">
@@ -146,10 +146,10 @@ $footerView->setResults(1);
                                         <?php endif; ?>
                             </table>
                             </div>
-                        </div>
+                        </section>
                     </div>
                     <div class="col-xs-4">
-                        <div class="portlet">
+                        <section class="portlet">
                             <div class="portlet-head"><?= $this->getHtml('CostCenter'); ?><i class="g-icon download btn end-xs">download</i></div>
                             <div class="slider">
                             <table class="default sticky">
@@ -168,10 +168,10 @@ $footerView->setResults(1);
                                         <?php endif; ?>
                             </table>
                             </div>
-                        </div>
+                        </section>
                     </div>
                     <div class="col-xs-4">
-                        <div class="portlet">
+                        <section class="portlet">
                             <div class="portlet-head"><?= $this->getHtml('CostObject'); ?><i class="g-icon download btn end-xs">download</i></div>
                             <div class="slider">
                             <table class="default sticky">
@@ -190,7 +190,7 @@ $footerView->setResults(1);
                                         <?php endif; ?>
                             </table>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>

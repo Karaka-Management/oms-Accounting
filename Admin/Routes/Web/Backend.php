@@ -18,7 +18,7 @@ use phpOMS\Account\PermissionType;
 use phpOMS\Router\RouteVerb;
 
 return [
-    '^/accounting/entries/dashboard(\?.*$|$)' => [
+    '^/accounting/entry/dashboard(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntries',
             'verb'       => RouteVerb::GET,
@@ -30,63 +30,63 @@ return [
             ],
         ],
     ],
-    '^/accounting/stack/list(\?.*$|$)' => [
+    '^/accounting/entry/list(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackList',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntryList',
             'verb'       => RouteVerb::GET,
             'active'     => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::STACK,
+                'state'  => PermissionCategory::ENTRY,
             ],
         ],
     ],
-    '^/accounting/stack/entries(\?.*$|$)' => [
+    '^/accounting/entry/view(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackEntries',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntryView',
             'verb'       => RouteVerb::GET,
             'active'     => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::STACK,
+                'state'  => PermissionCategory::ENTRY,
             ],
         ],
     ],
-    '^/accounting/stack/archive/list(\?.*$|$)' => [
+    '^/accounting/entry/create(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackArchiveList',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntryCreate',
             'verb'       => RouteVerb::GET,
             'active'     => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::STACK,
+                'state'  => PermissionCategory::ENTRY,
             ],
         ],
     ],
-    '^/accounting/stack/create(\?.*$|$)' => [
+    '^/accounting/entry/archive(\?.*$|$)' => [
         [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackCreate',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::CREATE,
-                'state'  => PermissionCategory::STACK,
-            ],
-        ],
-    ],
-    '^/accounting/stack/predefined/list(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewStackPredefinedList',
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntryArchiveList',
             'verb'       => RouteVerb::GET,
             'active'     => true,
             'permission' => [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::STACK,
+                'state'  => PermissionCategory::ENTRY,
+            ],
+        ],
+    ],
+    '^/accounting/entry/template/list(\?.*$|$)' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\BackendController:viewEntryTemplateList',
+            'verb'       => RouteVerb::GET,
+            'active'     => true,
+            'permission' => [
+                'module' => BackendController::NAME,
+                'type'   => PermissionType::READ,
+                'state'  => PermissionCategory::ENTRY,
             ],
         ],
     ],
@@ -123,54 +123,6 @@ return [
                 'module' => BackendController::NAME,
                 'type'   => PermissionType::CREATE,
                 'state'  => PermissionCategory::GL,
-            ],
-        ],
-    ],
-    '^/accounting/dun/print(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::COST_CENTER,
-            ],
-        ],
-    ],
-    '^/accounting/statement/print(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::ACCOUNT,
-            ],
-        ],
-    ],
-    '^/accounting/balances/print(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::ACCOUNT,
-            ],
-        ],
-    ],
-    '^/accounting/accountform/print(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewCostCenterView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::ACCOUNT,
             ],
         ],
     ],
@@ -285,30 +237,6 @@ return [
         ],
     ],
     '^/accounting/client/view(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::CLIENT,
-            ],
-        ],
-    ],
-    '^/accounting/supplier/entries(\?.*$|$)' => [
-        [
-            'dest'       => '\Modules\Accounting\Controller\BackendController:viewSupplierView',
-            'verb'       => RouteVerb::GET,
-            'active'     => true,
-            'permission' => [
-                'module' => BackendController::NAME,
-                'type'   => PermissionType::READ,
-                'state'  => PermissionCategory::SUPPLIER,
-            ],
-        ],
-    ],
-    '^/accounting/client/entries(\?.*$|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\BackendController:viewClientView',
             'verb'       => RouteVerb::GET,

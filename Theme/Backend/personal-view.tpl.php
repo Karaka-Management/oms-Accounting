@@ -210,7 +210,7 @@ echo $this->data['nav']->render(); ?>
 
                     <section class="portlet hl-4">
                         <div class="portlet-body">
-                            <textarea class="undecorated"><?= $this->printHtml($account->info); ?></textarea>
+                            <textarea class="undecorated"><?= $this->printTextarea($account->info); ?></textarea>
                         </div>
                     </section>
                     <?php endif; ?>

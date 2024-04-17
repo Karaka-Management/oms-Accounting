@@ -104,10 +104,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewStackList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewEntryList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/stack-list');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/entry-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002605001, $request, $response);
 
         return $view;
@@ -125,10 +125,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewStackPredefinedList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewEntryTemplateList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/stack-predefined-list');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/entry-template-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002605001, $request, $response);
 
         return $view;
@@ -146,10 +146,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewStackCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewEntryCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/stack-create');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/entry-create');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002605001, $request, $response);
 
         return $view;
@@ -167,10 +167,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewStackEntries(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewEntryView(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/stack-entries');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/entry-view');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002605001, $request, $response);
 
         return $view;
@@ -188,10 +188,10 @@ final class BackendController extends Controller
      * @since 1.0.0
      * @codeCoverageIgnore
      */
-    public function viewStackArchiveList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
+    public function viewEntryArchiveList(RequestAbstract $request, ResponseAbstract $response, array $data = []) : RenderableInterface
     {
         $view = new View($this->app->l11nManager, $request, $response);
-        $view->setTemplate('/Modules/Accounting/Theme/Backend/stack-archive-list');
+        $view->setTemplate('/Modules/Accounting/Theme/Backend/entry-archive-list');
         $view->data['nav'] = $this->app->moduleManager->get('Navigation')->createNavigationMid(1002605001, $request, $response);
 
         return $view;
