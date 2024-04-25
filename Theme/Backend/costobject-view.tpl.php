@@ -31,7 +31,7 @@ echo $this->data['nav']->render(); ?>
 
                     <div class="form-group">
                         <label for="iName"><?= $this->getHtml('Name'); ?></label>
-                        <input type="text" name="Name" id="iName" value="<?= $this->printHtml($costobject->getL11n()); ?>"<?php $isNew ? '' : ' disabled'; ?>>
+                        <input type="text" name="Name" id="iName" value="<?= $this->printHtml($costobject->getL11n()); ?>"<?= $isNew ? '' : ' disabled'; ?>>
                     </div>
                 </div>
                 <div class="portlet-foot">
