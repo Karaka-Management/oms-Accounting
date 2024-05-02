@@ -13,13 +13,6 @@
 declare(strict_types=1);
 
 //echo $this->data['nav']->render();
-
-$footerView = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
-$footerView->setTemplate('/Web/Templates/Lists/Footer/PaginationBig');
-
-$footerView->setPages(25);
-$footerView->setPage(1);
-$footerView->setResults(1);
 ?>
 
 <div class="row">

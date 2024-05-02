@@ -53,6 +53,11 @@ use phpOMS\Model\Message\FormValidation;
  * @license OMS License 2.0
  * @link    https://jingga.app
  * @since   1.0.0
+ *
+ * @feature Implement accounting forensics
+ *      Benfords Law, cent value distribution analysis, amount of bookings between specific amounts,
+ *      amount * bookings between specific amounts, etc.
+ *      https://github.com/Karaka-Management/oms-Accounting/issues/1
  */
 final class ApiController extends Controller
 {
@@ -72,6 +77,9 @@ final class ApiController extends Controller
      * @param null|string $ip      Ip of the account
      *
      * @return void
+     *
+     * @todo Implement automatic posting of archived bill
+     *      https://github.com/Karaka-Management/oms-Accounting/issues/10
      *
      * @since 1.0.0
      */
@@ -347,6 +355,9 @@ final class ApiController extends Controller
 
         // @feature Create a way to let admins create a default account format for clients/suppliers
         //      https://github.com/Karaka-Management/oms-Accounting/issues/8
+
+        // @feature Add multiple accounts for a client/supplier (see BillTypeCategory)
+        //      https://github.com/Karaka-Management/oms-Accounting/issues/9
 
         $request->header->account = $account;
         $request->setData('code', $new->number . '-1');

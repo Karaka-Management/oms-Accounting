@@ -116,7 +116,7 @@ echo $this->data['nav']->render(); ?>
                     <td data-label="<?= $this->getHtml('Country'); ?>"><a href="<?= $url; ?>"><?= $this->printHtml($value->mainAddress->country); ?></a>
                 <?php endforeach; ?>
                 <?php if ($count === 0) : ?>
-                    <tr><td colspan="8" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>
+                    <tr><td colspan="6" class="empty"><?= $this->getHtml('Empty', '0', '0'); ?>
                 <?php endif; ?>
             </table>
             </div>

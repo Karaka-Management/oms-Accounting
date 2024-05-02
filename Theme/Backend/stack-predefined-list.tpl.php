@@ -16,13 +16,6 @@ declare(strict_types=1);
  * @var \phpOMS\Views\View $this
  */
 
-$footerView = new \phpOMS\Views\PaginationView($this->l11nManager, $this->request, $this->response);
-$footerView->setTemplate('/Web/Templates/Lists/Footer/PaginationBig');
-
-$footerView->setPages(25);
-$footerView->setPage(1);
-$footerView->setResults(1);
-
 echo $this->data['nav']->render(); ?>
 
 <div class="box w-100">
@@ -37,7 +30,7 @@ echo $this->data['nav']->render(); ?>
             <td><?= $this->getHtml('Created'); ?>
         <tbody>
         <?php $c = 0; foreach ([] as $key => $value) : ++$c;
-        $url     = \phpOMS\Uri\UriFactory::build('{/base}/admin/group/settings?{?}&id=' . $value->id); ?>
+        $url     = \phpOMS\Uri\UriFactory::build('{/base}/admin/group/view?{?}&id=' . $value->id); ?>
         <tr>
             <td><a href="<?= $url; ?>"><?= $value->id; ?></a>
             <td><a href="<?= $url; ?>"><?= $this->printHtml($value->name); ?></a>

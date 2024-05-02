@@ -11,7 +11,10 @@ echo $this->data['nav']->render(); ?>
 <div class="row">
     <div class="col-xs-12 col-md-6">
         <section class="portlet">
-            <form method="<?= $isNew ? 'PUT' : 'POST'; ?>" action="<?= UriFactory::build('{/api}accounting/costcenter?csrf={$CSRF}'); ?>">
+            <form id="iCostCenterForm"
+                method="<?= $isNew ? 'PUT' : 'POST'; ?>"
+                action="<?= UriFactory::build('{/api}accounting/costcenter?csrf={$CSRF}'); ?>"
+                <?= $isNew ? 'data-redirect="' . UriFactory::build('{/base}/accounting/costcenter/view') . '?id={/0/response/id}"' : ''; ?>>
                 <div class="portlet-head"><?= $this->getHtml('CostCenter'); ?></div>
                 <div class="portlet-body">
                     <div class="form-group">

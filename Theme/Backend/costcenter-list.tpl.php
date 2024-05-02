@@ -16,7 +16,7 @@ use phpOMS\Uri\UriFactory;
 
 /**
  * @var \phpOMS\Views\View               $this
- * @var \Modules\Tag\Models\CostCenter[] $costcenter
+ * @var \Modules\Accounting\Models\CostCenter[] $costcenter
  */
 $costcenter = $this->data['costcenter'];
 
