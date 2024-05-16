@@ -297,7 +297,7 @@
                 "default": null
             },
             "accounting_posting_payment": {
-                "description": "should this handle the dues?",
+                "comment": "should this handle the dues?",
                 "name": "accounting_posting_payment",
                 "type": "INT",
                 "null": true,
@@ -411,7 +411,7 @@
     },
     "accounting_posting_eq": {
         "name": "accounting_posting_eq",
-        "description": "Marks posts as equalized credit/debit",
+        "comment": "Marks posts as equalized credit/debit",
         "fields": {
             "accounting_posting_eq_id": {
                 "name": "accounting_posting_eq_id",
@@ -447,19 +447,19 @@
                 "autoincrement": true
             },
             "accounting_posting_ele_status": {
-                "description": "debit/credit",
+                "comment": "debit/credit",
                 "name": "accounting_posting_ele_status",
                 "type": "TINYINT",
                 "null": false
             },
             "accounting_posting_ele_text": {
-                "description": "debit/credit",
+                "comment": "debit/credit",
                 "name": "accounting_posting_ele_text",
                 "type": "VARCHAR(255)",
                 "null": false
             },
             "accounting_posting_ele_type": {
-                "description": "debit/credit",
+                "comment": "debit/credit",
                 "name": "accounting_posting_ele_type",
                 "type": "TINYINT",
                 "null": false
@@ -515,7 +515,7 @@
                 "null": false
             },
             "accounting_posting_ele_opposite": {
-                "description": "Often you have a 1:1 match between credit/debit posting, this speeds it up. Alternatively you have to find the opposite postings through the posting",
+                "comment": "Often you have a 1:1 match between credit/debit posting, this speeds it up. Alternatively you have to find the opposite postings through the posting",
                 "name": "accounting_posting_ele_opposite",
                 "type": "INT",
                 "null": false,
