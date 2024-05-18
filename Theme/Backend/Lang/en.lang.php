@@ -13,6 +13,7 @@
 declare(strict_types=1);
 
 return ['Accounting' => [
+    'Addition'         => 'Addition',
     'Account'         => 'Account',
     'Accounts'        => 'Accounts',
     'BatchPostings'   => 'Batch Postings',
