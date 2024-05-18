@@ -46,6 +46,7 @@ return ['Accounting' => [
     'Search'          => 'Suche',
     'Stack'           => 'Stapel',
     'TAccount'        => 'T-Konto',
+    'FAO'        => 'z.Hd.',
     'Text'            => 'Text',
     'Total'           => 'Gesamt',
     'Type'            => 'Typ',

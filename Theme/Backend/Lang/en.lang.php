@@ -46,6 +46,7 @@ return ['Accounting' => [
     'Search'          => 'Search',
     'Stack'           => 'Stack',
     'TAccount'        => 'T-Account',
+    'FAO'            => 'FAO',
     'Text'            => 'Text',
     'Total'           => 'Total',
     'Type'            => 'Type',
