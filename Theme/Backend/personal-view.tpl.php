@@ -15,6 +15,7 @@ declare(strict_types=1);
 use Modules\Accounting\Models\AccountStatus;
 use Modules\Admin\Models\ContactType;
 use Modules\Billing\Models\BillMapper;
+use Modules\Billing\Models\BillTransferType;
 use Modules\Billing\Models\PurchaseBillMapper;
 use Modules\Billing\Models\SalesBillMapper;
 use Modules\ClientManagement\Models\Client;
@@ -371,9 +372,10 @@ echo $this->data['nav']->render(); ?>
                                     $newestInvoices = BillMapper::getAll()
                                         ->with('type')
                                         ->with('type/l11n')
-                                        ->with('account')
-                                        ->where('account', $account->id)
+                                        ->with($isClient ? 'client' : 'supplier')
+                                        ->where($isClient ? 'client' : 'supplier', $account->id)
                                         ->where('type/l11n/language', $this->response->header->l11n->language)
+                                        ->where('type/isAccounting', true)
                                         ->sort('id', OrderType::DESC)
                                         ->limit(5)
                                         ->executeGetArray();
@@ -386,7 +388,7 @@ echo $this->data['nav']->render(); ?>
                                         <td><a href="<?= $url; ?>"><?= $invoice->getNumber(); ?></a>
                                         <td><a href="<?= $url; ?>"><?= $invoice->type->getL11n(); ?></a>
                                         <td><a href="<?= $url; ?>"><?= $invoice->billTo; ?></a>
-                                        <td><a href="<?= $url; ?>"><?= $this->getCurrency($invoice->netSales); ?></a>
+                                        <td><a href="<?= $url; ?>"><?= $this->getCurrency($invoice->netSales, symbol: ''); ?></a>
                                         <td><a href="<?= $url; ?>"><?= $invoice->createdAt->format('Y-m-d'); ?></a>
                                     <?php endforeach; ?>
                                 </table>
