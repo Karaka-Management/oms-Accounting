@@ -88,7 +88,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'insert' => [
@@ -98,7 +97,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'select' => [
@@ -108,7 +106,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'update' => [
@@ -118,7 +115,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'delete' => [
@@ -128,7 +124,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'schema' => [
@@ -138,7 +133,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
             ],
@@ -150,7 +144,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'insert' => [
@@ -160,7 +153,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'select' => [
@@ -170,7 +162,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'update' => [
@@ -180,7 +171,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'delete' => [
@@ -190,7 +180,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'schema' => [
@@ -200,7 +189,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'orange', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
             ],
@@ -208,37 +196,31 @@ $CONFIG = [
                 'admin' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'insert' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'select' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'update' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'delete' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'schema' => [
                     'db'             => 'sqlite', /* db type */
                     'database'       => __DIR__ . '/../Karaka/phpOMS/Localization/Defaults/localization.sqlite', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
             ],
@@ -250,7 +232,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'insert' => [
@@ -260,7 +241,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'select' => [
@@ -270,7 +250,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'update' => [
@@ -280,7 +259,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'delete' => [
@@ -290,7 +268,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
                 'schema' => [
@@ -300,7 +277,6 @@ $CONFIG = [
                     'login'          => 'test', /* db login name */
                     'password'       => 'c0MplicatedP@ssword', /* db login password */
                     'database'       => 'omt', /* db name */
-                    'weight'         => 1000, /* db table prefix */
                     'datetimeformat' => 'Y-m-d H:i:s',
                 ],
             ],
