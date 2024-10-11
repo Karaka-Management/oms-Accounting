@@ -25,6 +25,7 @@ use Modules\Accounting\Models\CostObject;
 use Modules\Accounting\Models\CostObjectL11nMapper;
 use Modules\Accounting\Models\CostObjectMapper;
 use Modules\Accounting\Models\NullAccountAbstract;
+use Modules\Accounting\Models\PermissionCategory;
 use Modules\Accounting\Models\Posting;
 use Modules\Accounting\Models\PostingElement;
 use Modules\Accounting\Models\PostingMapper;
@@ -35,11 +36,13 @@ use Modules\Billing\Models\BillStatus;
 use Modules\Finance\Models\TaxCodeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeTypeMapper;
 use Modules\ItemManagement\Models\Attribute\ItemAttributeValueMapper;
+use phpOMS\Account\PermissionType;
 use phpOMS\Localization\BaseStringL11n;
 use phpOMS\Localization\ISO639x1Enum;
 use phpOMS\Message\Http\HttpRequest;
 use phpOMS\Message\Http\HttpResponse;
 use phpOMS\Message\Http\RequestStatusCode;
+use phpOMS\Message\NotificationLevel;
 use phpOMS\Message\RequestAbstract;
 use phpOMS\Message\ResponseAbstract;
 use phpOMS\Model\Message\FormValidation;
@@ -1304,5 +1307,124 @@ final class ApiController extends Controller
         }
 
         return [];
+    }
+
+    /**
+     * Api method to create Note
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiCoaNoteCreate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
+    {
+        if (!empty($val = $this->validateCoaNoteCreate($request))) {
+            $response->header->status = RequestStatusCode::R_400;
+            $this->createInvalidCreateResponse($request, $response, $val);
+
+            return;
+        }
+
+        $request->setData('virtualpath', '/Modules/Accounting/Account/' . $request->getData('ref'), true);
+        $this->app->moduleManager->get('Editor', 'Api')->apiEditorCreate($request, $response, $data);
+
+        if ($response->header->status !== RequestStatusCode::R_200) {
+            return;
+        }
+
+        $responseData = $response->getDataArray($request->uri->__toString());
+        if (!\is_array($responseData)) {
+            return;
+        }
+
+        $model = $responseData['response'];
+        $this->createModelRelation($request->header->account, (int) $request->getData('ref'), $model->id, AccountAbstractMapper::class, 'notes', '', $request->getOrigin());
+    }
+
+    /**
+     * Validate note create request
+     *
+     * @param RequestAbstract $request Request
+     *
+     * @return array<string, bool>
+     *
+     * @since 1.0.0
+     */
+    private function validateCoaNoteCreate(RequestAbstract $request) : array
+    {
+        $val = [];
+        if (($val['ref'] = !$request->hasData('ref'))
+        ) {
+            return $val;
+        }
+
+        return [];
+    }
+
+    /**
+     * Api method to update Note
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiCoaNoteUpdate(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
+    {
+        $accountId = $request->header->account;
+        if (!$this->app->accountManager->get($accountId)->hasPermission(
+            PermissionType::MODIFY, $this->app->unitId, $this->app->appId, self::NAME, PermissionCategory::NOTE, $request->getDataInt('id'))
+        ) {
+            $this->fillJsonResponse(
+                $request, $response,
+                NotificationLevel::ERROR, '',
+                $this->app->l11nManager->getText($response->header->l11n->language, '0', '0', 'InvalidPermission'),
+                []
+            );
+            $response->header->status = RequestStatusCode::R_403;
+
+            return;
+        }
+
+        $this->app->moduleManager->get('Editor', 'Api')->apiEditorUpdate($request, $response, $data);
+    }
+
+    /**
+     * Api method to delete Note
+     *
+     * @param RequestAbstract  $request  Request
+     * @param ResponseAbstract $response Response
+     * @param array            $data     Generic data
+     *
+     * @return void
+     *
+     * @api
+     *
+     * @since 1.0.0
+     */
+    public function apiNoteDelete(RequestAbstract $request, ResponseAbstract $response, array $data = []) : void
+    {
+        $accountId = $request->header->account;
+        if (!$this->app->accountManager->get($accountId)->hasPermission(
+            PermissionType::DELETE, $this->app->unitId, $this->app->appId, self::NAME, PermissionCategory::NOTE, $request->getDataInt('id'))
+        ) {
+            $this->fillJsonResponse($request, $response, NotificationLevel::HIDDEN, '', '', []);
+            $response->header->status = RequestStatusCode::R_403;
+
+            return;
+        }
+
+        $this->app->moduleManager->get('Editor', 'Api')->apiEditorDelete($request, $response, $data);
     }
 }

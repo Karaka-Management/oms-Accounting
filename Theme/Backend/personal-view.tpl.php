@@ -547,12 +547,12 @@ echo $this->data['nav']->render(); ?>
 
         <input type="radio" id="c-tab-5" name="tabular-2"<?= $this->request->uri->fragment === 'c-tab-5' ? ' checked' : ''; ?>>
         <div class="tab col-simple">
-            <?= $this->data['media-upload']->render('account-file', 'files', '', $account->files); ?>
+            <?= $this->data['media-upload']->render('account-file', 'files', '', $account->files, '{/api}accounting/coa/file?csrf={$CSRF}', (string) $account->id); ?>
         </div>
 
         <input type="radio" id="c-tab-6" name="tabular-2"<?= $this->request->uri->fragment === 'c-tab-6' ? ' checked' : ''; ?>>
         <div class="tab col-simple">
-            <?= $this->data['note']->render('account-note', 'notes', $account->notes); ?>
+            <?= $this->data['note']->render('account-note', 'notes', $account->notes, '{/api}accounting/coa/note?csrf={$CSRF}', (string) $account->id); ?>
         </div>
         <?php endif; ?>
     </div>

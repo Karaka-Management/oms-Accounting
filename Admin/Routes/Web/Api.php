@@ -67,6 +67,56 @@ return [
         ],
     ],
 
+    '^.*/accounting/coa/file(\?.*|$)$' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\ApiController:apiCoaDocumentCreate',
+            'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
+            'active'     => true,
+            'permission' => [
+                'module' => ApiController::NAME,
+                'type'   => PermissionType::CREATE,
+                'state'  => PermissionCategory::ACCOUNT,
+            ],
+        ],
+    ],
+
+    '^.*/accounting/coa/note(\?.*|$)' => [
+        [
+            'dest'       => '\Modules\Accounting\Controller\ApiController:apiCoaNoteCreate',
+            'verb'       => RouteVerb::PUT,
+            'csrf'       => true,
+            'active'     => true,
+            'permission' => [
+                'module' => ApiController::NAME,
+                'type'   => PermissionType::CREATE,
+                'state'  => PermissionCategory::ACCOUNT,
+            ],
+        ],
+        [
+            'dest'       => '\Modules\Accounting\Controller\ApiController:apiCoaNoteUpdate',
+            'verb'       => RouteVerb::SET,
+            'csrf'       => true,
+            'active'     => true,
+            'permission' => [
+                'module' => ApiController::NAME,
+                'type'   => PermissionType::MODIFY,
+                'state'  => PermissionCategory::ACCOUNT,
+            ],
+        ],
+        [
+            'dest'       => '\Modules\Accounting\Controller\ApiController:apiNoteDelete',
+            'verb'       => RouteVerb::DELETE,
+            'csrf'       => true,
+            'active'     => true,
+            'permission' => [
+                'module' => ApiController::NAME,
+                'type'   => PermissionType::DELETE,
+                'state'  => PermissionCategory::ACCOUNT,
+            ],
+        ],
+    ],
+
     '^.*/accounting/costcenter(\?.*|$)' => [
         [
             'dest'       => '\Modules\Accounting\Controller\ApiController:apiCostCenterCreate',
