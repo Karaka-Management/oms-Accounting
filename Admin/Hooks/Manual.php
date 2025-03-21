@@ -13,7 +13,7 @@
 declare(strict_types=1);
 
 return [
-    '/PRE:Module:Billing\-bill\-finalize/' => [
+    '/PRE:Billing\-bill\-finalize/' => [
         'callback' => ['\Modules\Accounting\Controller\ApiController:eventBillArchive'],
     ],
 ];
