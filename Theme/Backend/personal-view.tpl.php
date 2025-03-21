@@ -31,7 +31,7 @@ $isNew   = ($account?->id ?? 0) === 0;
 
 $isClient = $account instanceof Client;
 
-$accountImage = $this->getData('accountImage') ?? new NullMedia();
+$accountImage = $this->data['accountImage'] ?? new NullMedia();
 
 $attributeView = $this->data['attributeView'];
 
@@ -211,7 +211,7 @@ echo $this->data['nav']->render(); ?>
 
                     <section class="portlet hl-4">
                         <div class="portlet-body">
-                            <textarea class="undecorated"><?= $this->printTextarea($account->info); ?></textarea>
+                            <textarea class="undecorated" aria-label="Info"><?= $this->printTextarea($account->info); ?></textarea>
                         </div>
                     </section>
                     <?php endif; ?>

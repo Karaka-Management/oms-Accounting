@@ -13,10 +13,10 @@
 declare(strict_types=1);
 
 return [
-    'POST:Module:ClientManagement-client-create' => [
+    'POST:ClientManagement-client-create' => [
         'callback' => ['\Modules\Accounting\Controller\ApiController:hookPersonalAccountCreate'],
     ],
-    'POST:Module:SupplierManagement-supplier-create' => [
+    'POST:SupplierManagement-supplier-create' => [
         'callback' => ['\Modules\Accounting\Controller\ApiController:hookPersonalAccountCreate'],
     ],
 ];

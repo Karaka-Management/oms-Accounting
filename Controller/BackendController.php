@@ -245,7 +245,7 @@ final class BackendController extends Controller
         $view->data['account'] = AccountAbstractMapper::get()
             ->with('parent')
             ->with('l11n')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->where('l11n/language', $response->header->l11n->language)
             ->execute();
 
@@ -351,7 +351,7 @@ final class BackendController extends Controller
         $view->data['costcenter'] = CostCenterMapper::get()
             ->with('parent')
             ->with('l11n')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->where('l11n/language', $response->header->l11n->language)
             ->execute();
 
@@ -388,7 +388,7 @@ final class BackendController extends Controller
         $view->data['costobject'] = CostObjectMapper::get()
             ->with('parent')
             ->with('l11n')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->where('l11n/language', $response->header->l11n->language)
             ->execute();
 
@@ -562,7 +562,7 @@ final class BackendController extends Controller
             ->with('attributes/type/l11n')
             ->with('attributes/value')
             ->with('attributes/value/l11n')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->where('attributes/type/l11n/language', $response->header->l11n->language)
             ->where('attributes/value/l11n/language', [$response->header->l11n->language, null])
             ->execute();
@@ -671,7 +671,7 @@ final class BackendController extends Controller
             ->with('attributes/type/l11n')
             ->with('attributes/value')
             ->with('attributes/value/l11n')
-            ->where('id', (int) $request->getData('id'))
+            ->where('id', $request->getDataInt('id') ?? 0)
             ->where('attributes/type/l11n/language', $response->header->l11n->language)
             ->where('attributes/value/l11n/language', [$response->header->l11n->language, null])
             ->execute();
